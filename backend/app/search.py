@@ -68,9 +68,25 @@ def parse_pages(payload: dict, query_index: int) -> list[dict]:
         if not url:
             continue
         # Results are discovery leads, not verified hardware claims. No trust score copied from score.
-        results.append({"id": f"search-{query_index}-{i}", "title": str(page.get("title") or url)[:300],
-                        "url": url, "snippet": str(page.get("passage") or page.get("content") or "")[:4000],
-                        "kind": "search_lead", "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）"})
+        item = {"id": f"search-{query_index}-{i}", "title": str(page.get("title") or url)[:300],
+                "url": url, "snippet": str(page.get("passage") or page.get("content") or "")[:4000],
+                "kind": "search_lead", "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）"}
+        # SearchPro providers differ in their timestamp field names. Preserve a
+        # supplied publication/update hint for later monitoring, but never infer
+        # that a page was published today merely because it was found today.
+        for key in ("published_at", "publish_time", "publishTime", "datePublished"):
+            value = page.get(key)
+            if isinstance(value, (str, int, float)) and str(value).strip():
+                item["search_date_hint"] = str(value)[:80]
+                item["search_date_hint_kind"] = "publication"
+                break
+        for key in ("updated_at", "modified_at", "dateModified", "last_updated"):
+            value = page.get(key)
+            if isinstance(value, (str, int, float)) and str(value).strip():
+                item.setdefault("search_date_hint", str(value)[:80])
+                item.setdefault("search_date_hint_kind", "update")
+                break
+        results.append(item)
     return results
 
 

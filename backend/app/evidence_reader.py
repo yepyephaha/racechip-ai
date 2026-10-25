@@ -101,6 +101,23 @@ def extract_document(raw: bytes, content_type: str, url: str) -> list[dict]:
     return [{"locator": "网页正文", "text": text}] if text else []
 
 
+def page_dates(raw: bytes, content_type: str) -> dict:
+    """Read publisher-supplied date metadata without guessing from fetch time."""
+    if "html" not in content_type and "xml" not in content_type:
+        return {}
+    html = raw[:500_000].decode("utf-8", errors="replace")
+    values = {}
+    patterns = {
+        "published_at": r'''(?:article:published_time|datePublished|publish[_-]?date)["'\s:=]+(?:content["'\s:=]+)?([0-9]{4}[-/][0-9]{1,2}[-/][0-9]{1,2}(?:[T\s][^"'< ]+)?)''',
+        "updated_at": r'''(?:article:modified_time|dateModified|modified[_-]?date|last[_-]?updated)["'\s:=]+(?:content["'\s:=]+)?([0-9]{4}[-/][0-9]{1,2}[-/][0-9]{1,2}(?:[T\s][^"'< ]+)?)''',
+    }
+    for name, pattern in patterns.items():
+        match = re.search(pattern, html, re.I)
+        if match:
+            values[name] = re.sub(r"\s+", " ", match.group(1))[:80]
+    return values
+
+
 def relevant_windows(chunks: list[dict], terms: list[str], budget=6500) -> list[dict]:
     windows = []
     needles = [term.casefold() for term in terms if 1 < len(term) < 100]
@@ -156,12 +173,15 @@ async def read_source(source: dict, terms: list[str]) -> dict:
                         data.extend(chunk)
                         if len(data) > 6_000_000:
                             raise ValueError("原文超过6MB读取上限")
-                    chunks = await asyncio.to_thread(extract_document, bytes(data), response.headers.get("content-type", ""), url)
+                    content_type = response.headers.get("content-type", "")
+                    raw = bytes(data)
+                    chunks = await asyncio.to_thread(extract_document, raw, content_type, url)
                     if not chunks:
                         raise ValueError("没有可提取的正文，可能需要登录或只有图片")
                     selected = relevant_windows(chunks, terms)
                     result.update(read_status="read", final_url=url, _chunks=selected,
                                   read_scope="相关正文片段；PDF最多80页、文本最多20万字符，不代表整份文档完整审阅")
+                    result.update(page_dates(raw, content_type))
                     return result
             raise ValueError("来源跳转次数超出上限")
     except ValueError as error:

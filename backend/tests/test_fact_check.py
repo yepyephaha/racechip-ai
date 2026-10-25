@@ -20,6 +20,35 @@ def new_job():
     return {"id":str(uuid4()),"input":{"statement":"RP2040的GPIO可以直接接5V吗？","context":"","depth":"standard"},"status":"queued","phase":"等待","created_at":fc.now(),"planned_queries":0,"search_request_count":0,"read_count":0,"request_ids":[],"search_records":[],"model_calls":[],"sources":[],"report":None,"error":None,"warnings":[]}
 
 
+def test_monitor_change_detection_uses_last_successful_snapshot_after_error():
+    job=new_job()
+    job.update(status='complete',report=report(),updated_at=fc.now(),sources=[{'id':'S1','url':'https://vendor.example/spec','title':'厂商规格','kind':'official','read_status':'read'}])
+    previous=fc.snapshot(job)
+    monitor={'id':str(uuid4()),'enabled':True,'interval_hours':24,'history':[{'job_id':None,'status':'error','changed':None},{'job_id':job['id'],'status':'running','changed':None}], 'last_snapshot':previous,'change_count':0}
+
+    fc.finish_monitor_run(monitor,job)
+
+    assert monitor['history'][-1]['changed'] is False
+    assert monitor['history'][-1]['new_sources']==[]
+    assert monitor['last_snapshot']['report_fingerprint']==previous['report_fingerprint']
+
+
+def test_monitor_snapshot_marks_new_sources_and_only_explicit_publisher_dates():
+    previous_job=new_job()
+    previous_job.update(status='complete',report=report(),sources=[{'id':'S1','url':'https://vendor.example/spec','title':'规格','kind':'official','read_status':'read'}])
+    previous=fc.snapshot(previous_job)
+    latest=new_job()
+    latest.update(status='complete',report=report(),sources=[
+        {'id':'S1','url':'https://vendor.example/spec/','title':'规格','kind':'official','read_status':'read'},
+        {'id':'S2','url':'https://forum.example/correction','title':'纠正帖','kind':'community','read_status':'read','published_at':'2026-10-24'}
+    ])
+
+    current=fc.snapshot(latest,previous)
+
+    assert [item['title'] for item in current['new_sources']]==['纠正帖']
+    assert current['new_sources'][0]['published_at']=='2026-10-24'
+
+
 @pytest.mark.asyncio
 async def test_nonvision_topic_uses_all_angles_and_actual_citations(tmp_path, monkeypatch):
     monkeypatch.setattr(fc,'ROOT',tmp_path)

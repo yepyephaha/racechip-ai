@@ -1,5 +1,7 @@
 import json
+import asyncio
 import copy
+from contextlib import asynccontextmanager
 from collections import OrderedDict
 import re
 from datetime import datetime
@@ -23,18 +25,36 @@ from .suitability import apply_profile, verification_actions
 from .hardware_api import router as hardware_router
 from .decision import settings as decision_settings
 from .procurement_api import router as procurement_router
-from .fact_check import router as fact_check_router, monitor_router
+from .fact_check import router as fact_check_router, monitor_router, monitor_scheduler
 from .design_runs import router as design_runs_router
 
 ROOT = Path(__file__).resolve().parents[2]
 VERSION = "0.3.0"
 CACHE: OrderedDict = OrderedDict()
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    runner = asyncio.create_task(monitor_scheduler())
+    app.state.monitor_scheduler = runner
+    try:
+        yield
+    finally:
+        runner.cancel()
+        try:
+            await runner
+        except asyncio.CancelledError:
+            pass
+
+
 app = FastAPI(title="赛芯智选 RaceChip AI", version=VERSION,
-              description="P0 证据选型工作台。规则解析 + 三态约束 + SearchPro 真实/Mock 显式模式。")
+              description="P0 证据选型工作台。规则解析 + 三态约束 + SearchPro 真实/Mock 显式模式。", lifespan=lifespan)
 app.include_router(hardware_router)
 app.include_router(procurement_router)
 app.include_router(fact_check_router)
 app.include_router(monitor_router)
+
+
 app.include_router(design_runs_router)
 
 

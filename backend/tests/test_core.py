@@ -97,9 +97,10 @@ def test_sort_never_rewards_a_conflict():
 
 
 def test_official_pages_string_array_contract():
-    payload = {"Response": {"Pages": [json.dumps({"title": "Test", "url": "https://example.org/doc", "passage": "test"}), "broken", "{}", json.dumps({"url": "javascript:alert(1)"})]}}
+    payload = {"Response": {"Pages": [json.dumps({"title": "Test", "url": "https://example.org/doc", "passage": "test", "published_at": "2026-10-24"}), "broken", "{}", json.dumps({"url": "javascript:alert(1)"})]}}
     result = parse_pages(payload, 0)
     assert len(result) == 1 and result[0]["kind"] == "search_lead"
+    assert result[0]["search_date_hint"] == "2026-10-24" and "published_at" not in result[0]
 
 
 def test_page_errors_are_not_results():

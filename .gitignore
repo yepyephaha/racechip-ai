@@ -52,3 +52,15 @@ artifacts/novice/*
 !artifacts/novice/final-desktop.png
 !artifacts/novice/final-mobile.png
 !artifacts/novice/complete-hardware-handoff.zip
+
+# Local-only planning, competition submissions and promotional drafts
+/social/
+/docs/submission-kit.md
+/docs/codex-prompt-v2.md
+/docs/competition-p0-plan-v2.md
+/docs/competitive-audit-2026-10-24.md
+/docs/competitive-research-2026-10-24.md
+/docs/development-plan.md
+/docs/official-verification.md
+/docs/delivery.md
+/docs/continuation-qa.md

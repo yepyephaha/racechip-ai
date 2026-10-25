@@ -28,9 +28,11 @@
 
 明确选择的规则演示仅用于离线测试，不是生产对话的后备。模型未配置或调用失败时显示错误，不生成假问题。访谈读取最近38条对话、当前工程、上次方案和近期检索证据，保留实际调用记录。
 
-## v0.2 历史交付
+## 截图识别与持续监测
 
-三案真实提问与原文核对3/3完成，每案3查询，有截图、RequestId、MD/JSON。双击[三案证据索引](artifacts/submission/index.html)查看。新增主张四态、输入耐压方向、队伍画像和零搜索重算，见[交付清单](docs/delivery.md)与[最新验收](docs/acceptance-v0.2.md)。
+“证据核验”支持从 PNG、JPG、WebP 图片以及 MP4、WebM 视频中提取文字，再由使用者编辑并选择待核查说法或背景。原始媒体留在浏览器，首次识别需要联网下载 OCR 组件和中英文语言数据；视频最长 5 分钟、最多抽取 5 帧，文件上限 100MB。
+
+“持续盯梢”可以按 6 小时、每天、每 3 天或每周复查同一说法，并显示新来源、判断变化和来源日期。首次核查会立即开始；后续定时任务仅在本机后端运行时执行。任务记录保存在本机，不会随源码发布；桌面提醒需要浏览器保持打开并授权通知。
 
 ## Windows 一次安装，单端口运行
 
@@ -75,7 +77,7 @@ Remove-Variable racechipSecret,racechipCredential
 powershell -ExecutionPolicy Bypass -File .\scripts\run.ps1
 ```
 
-重启服务后，健康接口只返回 `search_configured: true/false`，不回显密钥。前端主动选择真实搜索再运行。若原服务已启动，先在它的终端按 Ctrl+C。服务 API KEY 的 Bearer 方式与腾讯云 SecretId/SecretKey 的 TC3 签名方式不同，不能混用；详见官方核验文档。
+重启服务后，健康接口只返回 `search_configured: true/false`，不回显密钥。前端主动选择真实搜索再运行。若原服务已启动，先在它的终端按 Ctrl+C。服务 API KEY 的 Bearer 方式与腾讯云 SecretId/SecretKey 的 TC3 签名方式不同，不能混用；详见[运行与配置](docs/deployment.md)。
 
 ## v0.2 保留的单项证据核验
 
@@ -94,18 +96,14 @@ powershell -ExecutionPolicy Bypass -File .\scripts\verify.ps1
 
 验收运行不会调用真实 SearchPro，输出 `artifacts/verification.json` 和三份 `*-mock.json`。测试里的 HTTP MockTransport 是传输契约测试，不是联网凭证。
 
-- [开发方案、任务分解、架构与 P1](docs/development-plan.md)
-- [赛前增量 P0/P1 计划 v2（待实施）](docs/competition-p0-plan-v2.md)
-- [竞品来源复核与原报告更正](docs/competitive-audit-2026-10-24.md)
-- [Windows Codex 执行提示词 v2](docs/codex-prompt-v2.md)
-- [官方规则与 SearchPro 核验](docs/official-verification.md)
+- [完整硬件方案与采购流程](docs/guided-flow.md)
+- [方案生成与器件搜索操作](docs/workflow-actions.md)
+- [证据核验方法与边界](docs/evidence-audit.md)
+- [运行与配置](docs/deployment.md)
 - [接口与数据契约](docs/api.md)
 - [真实硬件数据来源](docs/data-provenance.md)
-- [提交材料、三案记录与三分钟脚本](docs/submission-kit.md)
 - [实际验收结果](docs/acceptance.md)
 
-比赛截止：**2026-10-25 16:00 北京时间**，12:00 停止组队。[官方规则](https://1024.waytoagi.com/rules)。侦探要求三份真实查询与可点击来源；[官方侦探页](https://1024.waytoagi.com/tracks/detective)。本机 localhost 只供当前电脑使用，不能作为异地评委可访问地址；提交可运行源码包或另外提供实际部署地址。
-
-当前已完成真实SearchPro连通、三案真实提问与原文摘句核对、截图/报告和画像重算。仍未完成：免费额度核验、硬件实测、公网部署、本人公开分享及正式提交。48项离线回归和真实运行分别记录。P1继续后置。
+公开仓库和 Windows 使用包仅包含应用源码、运行与使用文档、测试及应用示例。比赛提交说明、演示讲稿、社媒草稿和内部调研计划保留在本地，不属于分发内容。当前程序默认运行在本机，不自动部署到公网；硬件兼容性、实物效果和实时采购信息仍需按实际条件核对。
 
 标准SecretId/SecretKey请运行 `powershell -ExecutionPolicy Bypass -File .\scripts\run-tc3.ps1` 隐藏输入。见[运行与部署交接](docs/deployment.md)。

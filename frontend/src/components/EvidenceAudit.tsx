@@ -1,6 +1,8 @@
 import {useEffect, useState} from 'react';
-import {AlertTriangle, ArrowRight, BookOpen, CheckCircle2, ExternalLink, FileDown, Search, Square, Users} from 'lucide-react';
+import {AlertTriangle, ArrowRight, BookOpen, CheckCircle2, ExternalLink, FileDown, Search, Square, Users, ScanText, RefreshCw} from 'lucide-react';
 import './evidence-audit.css';
+import EvidenceCapture from './EvidenceCapture';
+import EvidenceMonitors from './EvidenceMonitors';
 
 type Citation={source_id:string;quote:string;locator:string};
 type Finding={statement:string;verdict:string;explanation:string;conditions:string[];citations:Citation[]};
@@ -16,13 +18,16 @@ function download(content:string,name:string,type:string){const url=URL.createOb
 function Quotes({items,sources}:{items:Citation[];sources:Source[]}){return <div className="ev-quotes">{items.map((c,index)=>{const source=sources.find(s=>s.id===c.source_id);return <figure key={c.source_id+index}><blockquote>{c.quote}</blockquote><figcaption><a href={source?safe(source.url):undefined} target="_blank" rel="noopener noreferrer">[{c.source_id}] {source?.title||'来源未找到'}<ExternalLink size={12}/></a><span>{c.locator}</span></figcaption></figure>;})}</div>;}
 function markdown(job:Job){const r=job.report;return [`# ${r?.headline||'证据核验记录'}`,`待核查说法：${job.input.statement}`,`补充背景：${job.input.context||'未补充'}`,`时间：${job.created_at}；状态：${job.status}；真实搜索请求：${job.search_request_count}；去重来源：${job.sources.length}；已读原文：${job.read_count}`,r?.summary||job.error||job.phase,...(r?.findings||[]).map(f=>`## ${f.statement} · ${labels[f.verdict]}\n${f.explanation}\n${f.conditions.map(c=>'- '+c).join('\n')}\n${f.citations.map(c=>`> ${c.quote}\n\n[${c.source_id}] ${c.locator}`).join('\n\n')}`),'## 其他用户的使用经验',...(r?.user_experiences||[]).map(e=>`${e.observation}\n场景：${e.context}\n局限：${e.limitation}\n${e.citations.map(c=>`> ${c.quote}\n\n[${c.source_id}] ${c.locator}`).join('\n')}`),'## 争议与缺口',...(r?.disagreements||[]),...(r?.missing||[]),r?.independence_note||'','## 来源',...job.sources.map(s=>`- [${s.id}] [${s.title}](${s.url}) · ${labels[s.kind]} · ${s.read_status==='read'?'已读相关原文':s.read_error||'仅搜索线索'}`),'## 后续核对',...(r?.next_steps||[]),'## 搜索记录',...job.search_records.map(s=>`- ${s.query} · ${s.status} · ${s.request_ids.join(', ')}`)].join('\n\n');}
 
-export default function EvidenceAudit({ready,onConfigure}:{ready:boolean;onConfigure:()=>void}){
+export default function EvidenceAudit({searchReady,modelReady,onConfigure}:{searchReady:boolean;modelReady:boolean;onConfigure:()=>void}){
+  const ready=searchReady&&modelReady;
   const [statement,setStatement]=useState(()=>storage('racechip-fact-draft'));
   const [context,setContext]=useState('');const [depth,setDepth]=useState('standard');
   const [job,setJob]=useState<Job|null>(null);const [jobId,setJobId]=useState(()=>storage('racechip-fact-job'));
   const [starting,setStarting]=useState(false);const [error,setError]=useState('');const [notice,setNotice]=useState('');
   const [pollVersion,setPollVersion]=useState(0);
   const [filter,setFilter]=useState('read');const [sourceLimit,setSourceLimit]=useState(20);
+  const [tool,setTool]=useState<'check'|'capture'|'monitor'>('check');
+  function openMonitorReport(identifier:string){setTool('check');setError('');setNotice('');setJob(null);setJobId(identifier);remember('racechip-fact-job',identifier);setPollVersion(value=>value+1);}
   useEffect(()=>{remember('racechip-fact-draft',statement.replace(/AKID[A-Za-z0-9]{20,}|sk-[A-Za-z0-9_-]{20,}/g,'[密钥已过滤]'));},[statement]);
   useEffect(()=>{
     if(!jobId)return;
@@ -42,14 +47,18 @@ export default function EvidenceAudit({ready,onConfigure}:{ready:boolean;onConfi
   const visibleSources=matchingSources.slice(0,sourceLimit);
   return <div className="ev-audit">
     <div className="hw-section-title"><div><h1>这句话，靠谱吗？</h1><p>直接查说法本身。对照厂商资料、其他用户的实际经历，以及相反证据。</p></div></div>
-    <div className="ev-layout"><section className="ev-input"><form onSubmit={start}>
+    <nav className="ev-tool-switch" aria-label="证据核验工具"><button type="button" className={tool==='check'?'active':''} onClick={()=>setTool('check')}><Search size={15}/>主张核验</button><button type="button" className={tool==='capture'?'active':''} onClick={()=>setTool('capture')}><ScanText size={15}/>截图 / 视频</button><button type="button" className={tool==='monitor'?'active':''} onClick={()=>setTool('monitor')}><RefreshCw size={15}/>持续盯梢</button></nav>
+    {tool==='capture'?<EvidenceCapture onUseAsStatement={value=>{setStatement(value);setTool('check');setNotice('已把识别结果放入待核查说法，请编辑后开始核验。');}} onUseAsContext={value=>{setContext(value);setTool('check');setNotice('已把识别结果放入补充背景，请确认后开始核验。');}}/>:tool==='monitor'?<EvidenceMonitors statement={statement} context={context} depth={depth} ready={ready} searchReady={searchReady} modelReady={modelReady} onConfigure={onConfigure} onOpenReport={openMonitorReport}/>:<div className="ev-layout"><section className="ev-input"><form onSubmit={start}>
       <label htmlFor="evidence-statement">你想核查的说法</label><textarea id="evidence-statement" value={statement} onChange={e=>setStatement(e.target.value)} rows={5} maxLength={4000} minLength={3} required placeholder="例如：ESP32只能用3.3V。这句话在芯片、开发板供电和GPIO上都成立吗？"/>
       <div className="ev-examples"><button type="button" disabled={running} onClick={()=>setStatement('ESP32只能用3.3V')}>查“ESP32只能用3.3V”</button><button type="button" disabled={running} onClick={()=>setStatement('RP2040的GPIO可以直接接5V信号吗？')}>换个硬件主题试试<ArrowRight size={13}/></button></div>
       <details><summary>补充型号、来源或使用条件（可选）</summary><label htmlFor="evidence-context">帮助判断适用范围</label><textarea id="evidence-context" rows={3} value={context} maxLength={2000} onChange={e=>setContext(e.target.value)} placeholder="精确型号、开发板版本、看到这句话的上下文，或你自己的使用场景。"/></details>
       <label htmlFor="evidence-depth">检索深度</label><select id="evidence-depth" value={depth} onChange={e=>setDepth(e.target.value)} disabled={running}><option value="standard">标准核验 · 12条检索</option><option value="deep">深入核验 · 18条检索</option></select>
       <p className="ev-cost-note">会实际调用元宝搜索，并读取相关网页 / PDF。用量、读取失败和证据缺口都会保留。</p>
       <button className="hw-primary ev-submit" disabled={running||!ready||statement.trim().length<3}><Search size={16}/>{running?'正在核查这句话':'多角度搜索并核查'}</button>
-      {!ready&&<p className="ev-connection">需要先连接搜索与模型。<button type="button" onClick={onConfigure}>查看模型配置</button></p>}
+      {!ready&&<div className="ev-connection" role="status">
+        {!modelReady&&<p>上下文模型还未配置或验证。<button type="button" onClick={onConfigure}>打开模型配置</button></p>}
+        {!searchReady&&<><p><strong>元宝 SearchPro 搜索凭据未连接。</strong>模型调用成功不代表联网搜索已配置；搜索凭据由后端单独读取。</p><details><summary>查看本机配置步骤</summary><p>先停止当前后端，在项目根目录的 PowerShell 里启动并加载你的腾讯云密钥 CSV：</p><code>powershell -ExecutionPolicy Bypass -File .\scripts\run.ps1 -SearchCredentialsFile "C:\path\to\search-credentials.csv"</code><p>CSV需包含一组 SecretId、SecretKey。不要把密钥发到聊天或填进网页源码。服务启动后刷新页面。</p></details></>}
+      </div>}
       {active(job)&&<button className="hw-button ev-stop" type="button" onClick={async()=>{try{const response=await fetch('/api/hardware/fact-checks/'+job?.id+'/cancel',{method:'POST'});if(!response.ok)throw Error();setNotice('已请求停止后续阶段；已发出的请求可能仍计费。');}catch{setError('停止请求未送达，请稍后重试。');}}}><Square size={13}/>停止后续核验</button>}
     </form><div className="ev-input-note"><BookOpen size={17}/><p>不需要填写赛题或选定器件库。型号不明确时，核验会指出不同解释，而不会把它套成视觉选型。</p></div></section>
     <div className="ev-results">
@@ -65,6 +74,6 @@ export default function EvidenceAudit({ready,onConfigure}:{ready:boolean;onConfi
       </article>}
       {job&&job.sources.length>0&&<section className="ev-sources"><div className="ev-sources-heading"><h3>原文资料与检索线索</h3><button className="hw-button" onClick={()=>download(JSON.stringify(job,null,2),'RaceChip-核验记录.json','application/json')}><FileDown size={14}/>JSON</button></div><div className="ev-source-filters" role="group" aria-label="按资料类别筛选">{['read','all','official','community','other','seller'].map(kind=><button key={kind} aria-pressed={filter===kind} onClick={()=>{setFilter(kind);setSourceLimit(20);}}>{kind==='all'?'全部线索':kind==='read'?'已读原文':labels[kind]} · {job.sources.filter(s=>kind==='all'||(kind==='read'?s.read_status==='read':s.kind===kind)).length}</button>)}</div>{visibleSources.map(s=><article key={s.id}><div><span>[{s.id}] {labels[s.kind]}</span><span className={s.read_status==='read'?'ev-read':''}>{s.read_status==='read'?<><CheckCircle2 size={13}/>已读相关原文</>:s.read_status==='unavailable'?'原文暂不可读':'仅搜索线索'}</span></div><a href={safe(s.url)} target="_blank" rel="noopener noreferrer">{s.title}<ExternalLink size={14}/></a><small>{new URL(s.url).hostname}</small>{s.read_error&&<p className="ev-gap">{s.read_error}</p>}<details><summary>来源说明与命中的检索词</summary><p>{s.read_scope||'搜索摘要未作为已核实的原文；可打开链接自行查看。'}</p><ul>{s.queries.map((q,i)=><li key={i}>{labels[q.angle]||q.angle}：{q.query}</li>)}</ul></details></article>)}{matchingSources.length===0&&<p className="ev-cost-note">当前类别还没有可展示的原文。可以切换到全部线索，查看实际搜索结果与读取状态。</p>}{matchingSources.length>sourceLimit&&<button className="hw-button" onClick={()=>setSourceLimit(v=>v+20)}>再显示20份线索 · 还有{matchingSources.length-sourceLimit}份</button>}</section>}
       {job&&<details className="ev-run-log"><summary>查看实际查询与模型运行记录</summary><p>开始时间：{new Date(job.created_at).toLocaleString('zh-CN',{timeZone:'Asia/Shanghai'})}（北京时间）</p>{job.warnings.map(w=><p key={w}>{w}</p>)}{job.search_records.map((r,i)=><div key={i}><strong>{labels[r.angle]||r.angle} · {r.status}</strong><p>{r.query} · 返回{r.result_count}条</p>{r.error&&<p className="ev-gap">{r.error}</p>}{r.request_ids.map(id=><code key={id}>{id}</code>)}</div>)}{job.model_calls.map((m,i)=><p key={i}>模型 {m.model} · {m.request_id||'供应商未返回RequestId'}</p>)}</details>}
-    </div></div>
+    </div></div>}
   </div>;
 }
