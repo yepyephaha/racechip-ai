@@ -1,0 +1,47 @@
+[
+  {
+    "id": "synthetic-color-line",
+    "title": "合成练习题 · 新生颜色巡线",
+    "description": "自编训练输入，非真实国赛题；验证 UART、电平、离线处理与颜色/巡线任务提取。",
+    "text": "【合成练习题，非真实竞赛题】新生队用机器人识别红色色块，并沿黑色引导线行驶。视觉模块必须离线运行，通过 UART 向 3.3V 主控发送横向偏差。暂未给出预算与功耗上限。请列出候选、证据、接线核验项与需要实测的帧率。",
+    "constraints": {
+      "budget_cny": null,
+      "max_power_w": null,
+      "required_interfaces": ["UART"],
+      "logic_voltage_v": 3.3,
+      "offline_required": true,
+      "banned_hardware": []
+    },
+    "expected": "应提取 color_tracking 与 line_tracking；OpenMV 的 UART、3.3V 和本地处理有官方证据，可进入候选。不得据此承诺帧率；必须展示停产供货提示与未知价格/功耗。未核验能力或电平的候选应拒绝或待核验，不能当作已通过。"
+  },
+  {
+    "id": "synthetic-apriltag",
+    "title": "合成练习题 · AprilTag 定位",
+    "description": "自编训练输入，非真实国赛题；验证能力匹配、工程经验与性能待核验提示。",
+    "text": "【合成练习题，非真实竞赛题】机器人在室内读取 AprilTag TAG36H11 的 ID 与位置，通过 UART 与 3.3V 主控通信；运行时不能联网。希望达到 20 FPS，但尚无光照、标签尺寸、拍摄距离或整链路基准测试。预算暂未指定。请说明能核验什么、哪些性能必须现场验证。",
+    "constraints": {
+      "budget_cny": null,
+      "max_power_w": null,
+      "required_interfaces": ["UART"],
+      "logic_voltage_v": 3.3,
+      "offline_required": true,
+      "banned_hardware": []
+    },
+    "expected": "应识别 apriltag 与未验证的 20 FPS 目标；OpenMV API 可作为算法支持证据。论坛经验必须标注 community/needs_verification，不能把他人的帧率当作本板本赛题的保证值。"
+  },
+  {
+    "id": "synthetic-budget-conflict",
+    "title": "合成练习题 · 预算与功耗证据冲突",
+    "description": "自编边界测试，非真实国赛题；未知价格和功耗不能按零处理。",
+    "text": "【合成练习题，非真实竞赛题】需要离线目标检测，完整视觉方案预算不得超过 50 元，算法运行时整机功耗不得超过 1 W，必须有 USB；禁止使用 OpenMV。预算必须包括摄像头、电源和必要线材，不能用裸板价格代替完整套件成本。请严格验证，不允许用未知价格或未经测量的功耗宣布满足要求。",
+    "constraints": {
+      "budget_cny": 50,
+      "max_power_w": 1,
+      "required_interfaces": ["USB"],
+      "logic_voltage_v": null,
+      "offline_required": true,
+      "banned_hardware": ["OpenMV"]
+    },
+    "expected": "不得给出已满足全部硬约束的推荐。OpenMV 应因禁用硬件排除；其余候选的价格/功耗为 null，应保持待核验，不能当作 0、低于上限或已通过。"
+  }
+]

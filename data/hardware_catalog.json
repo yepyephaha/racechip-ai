@@ -1,0 +1,418 @@
+[
+  {
+    "id": "openmv-rt1062",
+    "name": "OpenMV Cam RT1062（欠货可订购）",
+    "mpn": "OpenMV Cam RT1062",
+    "manufacturer": "OpenMV",
+    "category": "vision",
+    "kind": "board",
+    "facts": {
+      "logic_voltage_v": {
+        "value": 3.3,
+        "unit": "V",
+        "source_url": "https://openmv.io/products/openmv-cam-rt",
+        "status": "source_checked",
+        "scope": "输出额定电平"
+      },
+      "io_input_max_v": {
+        "value": 3.3,
+        "unit": "V",
+        "source_url": "https://openmv.io/products/openmv-cam-rt",
+        "status": "source_checked",
+        "scope": "厂商I/O耐受声明；具体引脚例外仍需核对"
+      },
+      "interfaces": {
+        "value": [
+          "UART",
+          "I2C",
+          "SPI",
+          "USB"
+        ],
+        "unit": "",
+        "source_url": "https://openmv.io/products/openmv-cam-rt",
+        "status": "source_checked",
+        "scope": "板级接口；不保证所有引脚同时可用"
+      }
+    },
+    "source_url": "https://openmv.io/products/openmv-cam-rt",
+    "notes": [
+      "2026-10-24 官网为欠货可订购状态；新购前必须确认现货、修订版、交期与到手成本，不能承诺比赛前送达。",
+      "RT1062 I/O 为 3.3V 且不耐 5V；3.3V 引脚为输出，不能当作供电输入。",
+      "官方说明排针未预焊，新生应将焊接或代焊、接线时间计入准备计划。",
+      "支持本地图像处理不代表已达成赛题帧率、定位精度或运动速度；需测完整处理和通信链路。",
+      "官方分工况电流不代表包含所有附件的统一功耗，power_w 保留未知。",
+      "人民币完整 BOM 未核验，price_cny 保留未知；不把美元板价换算当作现货套件报价。",
+      "skill_level 与 docs_quality 是人工评审分。"
+    ],
+    "capabilities": [
+      "color_tracking",
+      "line_tracking",
+      "apriltag",
+      "offline_inference"
+    ],
+    "accessed_at": "2026-10-24"
+  },
+  {
+    "id": "openmv-h7-plus",
+    "name": "OpenMV Cam H7 Plus",
+    "mpn": "OpenMV Cam H7 Plus",
+    "manufacturer": "OpenMV",
+    "category": "vision",
+    "kind": "board",
+    "facts": {
+      "logic_voltage_v": {
+        "value": 3.3,
+        "unit": "V",
+        "source_url": "https://openmv.io/products/openmv-cam-h7-plus",
+        "status": "source_checked",
+        "scope": "输出额定电平"
+      },
+      "io_input_max_v": {
+        "value": 5.0,
+        "unit": "V",
+        "source_url": "https://openmv.io/products/openmv-cam-h7-plus",
+        "status": "source_checked",
+        "scope": "厂商I/O耐受声明；具体引脚例外仍需核对"
+      },
+      "interfaces": {
+        "value": [
+          "UART",
+          "I2C",
+          "SPI",
+          "USB"
+        ],
+        "unit": "",
+        "source_url": "https://openmv.io/products/openmv-cam-h7-plus",
+        "status": "source_checked",
+        "scope": "板级接口；不保证所有引脚同时可用"
+      }
+    },
+    "source_url": "https://openmv.io/products/openmv-cam-h7-plus",
+    "notes": [
+      "官方已停止常规生产；如需新购，先确认供货、具体板型及是否原厂。",
+      "logic_voltage_v 表示 I/O 输出电平，不能当作 VIN；部分引脚模式的耐压另有例外。",
+      "官方给出的不同工况电流不能压成全套硬件统一功耗，power_w 保留未知。",
+      "算法 API 可用不等于达成指定帧率、距离、光照、运动速度或识别精度；需用实际赛场条件验证。",
+      "本地视觉运行前需预装固件与脚本；offline_inference 只表示运行时有本地处理路径。",
+      "skill_level 与 docs_quality 是项目人工评审分，不是制造商指标。"
+    ],
+    "capabilities": [
+      "color_tracking",
+      "line_tracking",
+      "apriltag",
+      "offline_inference"
+    ],
+    "accessed_at": "2026-10-24"
+  },
+  {
+    "id": "maix-bit-k210",
+    "name": "Sipeed Maix Bit（K210）",
+    "mpn": "Sipeed Maix Bit",
+    "manufacturer": "Sipeed",
+    "category": "vision",
+    "kind": "board",
+    "facts": {
+      "interfaces": {
+        "value": [
+          "UART",
+          "I2C",
+          "SPI",
+          "USB"
+        ],
+        "unit": "",
+        "source_url": "https://wiki.sipeed.com/soft/maixpy/en/develop_kit_board/maix_bit.html",
+        "status": "source_checked",
+        "scope": "板级接口；不保证所有引脚同时可用"
+      }
+    },
+    "source_url": "https://wiki.sipeed.com/soft/maixpy/en/develop_kit_board/maix_bit.html",
+    "notes": [
+      "K210 使用 MaixPy v1；新版 MaixPy / MaixCAM 示例不能直接视为本板可运行。",
+      "K210 本体无原生 USB 外设，板级 USB 用于下载与串口桥；不应推荐其作为通用 USB 主机。",
+      "GPIO 电压未在本轮完整读取并交叉核验，logic_voltage_v 为未知；连接前查具体修订版原理图。",
+      "颜色等视觉函数依赖固件功能集，minimum 固件可能缺失；相机需与引脚映射匹配。",
+      "采购成本必须核对相机、屏幕、电源、线材的完整 BOM。",
+      "本地运行前需预置模型/固件；未核验 AprilTag 与巡线能力，不将其列入已核验能力。",
+      "skill_level 与 docs_quality 是人工评审分。"
+    ],
+    "capabilities": [
+      "color_tracking",
+      "object_detection",
+      "offline_inference"
+    ],
+    "accessed_at": "2026-10-24"
+  },
+  {
+    "id": "esp32-s3-eye",
+    "name": "ESP32-S3-EYE v2.2",
+    "mpn": "ESP32-S3-EYE v2.2",
+    "manufacturer": "Espressif",
+    "category": "vision",
+    "kind": "board",
+    "facts": {
+      "interfaces": {
+        "value": [
+          "USB"
+        ],
+        "unit": "",
+        "source_url": "https://docs.espressif.com/projects/esp-board-manager/en/latest/references/boards/esp32_s3_eye.html",
+        "status": "source_checked",
+        "scope": "板级接口；不保证所有引脚同时可用"
+      }
+    },
+    "source_url": "https://docs.espressif.com/projects/esp-board-manager/en/latest/references/boards/esp32_s3_eye.html",
+    "notes": [
+      "只将本轮确认可用于外部连接的 USB 写入 interfaces；SoC 自带 UART/I2C/SPI 不代表此板已引出可用接口。",
+      "模块供电 3.3V 不能自动证明全部可连接信号的逻辑电平，logic_voltage_v 保留未知。",
+      "官方教程要求匹配 ESP-IDF / ESP-WHO 版本；本项目尚未执行板卡刷写。",
+      "检测模型、固件与依赖需预先安装，推理可在本地执行；网络传输是可选能力。",
+      "未核验颜色追踪、AprilTag 或巡线的具体板卡示例，因此不列为已核验能力。",
+      "skill_level 与 docs_quality 是人工评审分。"
+    ],
+    "capabilities": [
+      "object_detection",
+      "offline_inference"
+    ],
+    "accessed_at": "2026-10-24"
+  },
+  {
+    "id": "raspberry-pi-5",
+    "name": "Raspberry Pi 5（需另配摄像头）",
+    "mpn": "Raspberry Pi 5",
+    "manufacturer": "Raspberry Pi",
+    "category": "compute",
+    "kind": "board",
+    "facts": {
+      "logic_voltage_v": {
+        "value": 3.3,
+        "unit": "V",
+        "source_url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+        "status": "source_checked",
+        "scope": "输出额定电平"
+      },
+      "interfaces": {
+        "value": [
+          "UART",
+          "I2C",
+          "SPI",
+          "USB",
+          "CSI"
+        ],
+        "unit": "",
+        "source_url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+        "status": "source_checked",
+        "scope": "板级接口；不保证所有引脚同时可用"
+      }
+    },
+    "source_url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+    "notes": [
+      "此候选为开发平台而非带摄像头完整视觉套件，价格不能引用裸板价当整机价。",
+      "需另配兼容摄像头和 Pi 5 相机排线、microSD/存储、电源及合适散热。",
+      "官方 5V/5A 供电规格表示供电要求，不能写成恒定 25W 算法功耗。",
+      "3.3V 为 GPIO 逻辑电平，不等于 USB-C 输入电压；严禁把 5V 电源引脚当作 GPIO。",
+      "本地检测前需要安装/构建依赖和下载模型；未验证任务帧率及准确率。",
+      "未核验本板颜色/巡线/AprilTag 的端到端示例，因此本轮能力表保守只列目标检测。",
+      "skill_level 与 docs_quality 是人工评审分。"
+    ],
+    "capabilities": [
+      "object_detection",
+      "offline_inference"
+    ],
+    "accessed_at": "2026-10-24"
+  },
+  {
+    "id": "arduino-uno-r3",
+    "name": "Arduino UNO R3",
+    "mpn": "UNO R3",
+    "manufacturer": "Arduino",
+    "category": "controller",
+    "kind": "board",
+    "source_url": "https://docs.arduino.cc/hardware/uno-rev3/",
+    "accessed_at": "2026-10-24",
+    "capabilities": [
+      "mcu",
+      "pwm",
+      "adc"
+    ],
+    "facts": {
+      "clock_mhz": {
+        "value": 16,
+        "unit": "MHz",
+        "source_url": "https://docs.arduino.cc/hardware/uno-rev3/",
+        "status": "source_checked",
+        "scope": "已读取厂商产品资料；未做实物测试"
+      },
+      "digital_pins": {
+        "value": 14,
+        "unit": "",
+        "source_url": "https://docs.arduino.cc/hardware/uno-rev3/",
+        "status": "source_checked",
+        "scope": "已读取厂商产品资料；未做实物测试"
+      },
+      "analog_inputs": {
+        "value": 6,
+        "unit": "",
+        "source_url": "https://docs.arduino.cc/hardware/uno-rev3/",
+        "status": "source_checked",
+        "scope": "已读取厂商产品资料；未做实物测试"
+      }
+    },
+    "notes": [
+      "基于ATmega328P；未将芯片引脚能力推定为全部板级连接可用。",
+      "本轮只录入已读取的官方参数，未核验的电平与整机功耗保持未知。"
+    ]
+  },
+  {
+    "id": "esp32-devkitc-v4",
+    "name": "ESP32-DevKitC V4",
+    "mpn": "ESP32-DevKitC V4",
+    "manufacturer": "Espressif",
+    "category": "controller",
+    "kind": "board",
+    "source_url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide.html",
+    "accessed_at": "2026-10-24",
+    "capabilities": [
+      "mcu",
+      "wifi",
+      "bluetooth"
+    ],
+    "facts": {},
+    "notes": [
+      "官方开发板指南已读取；模块/板卡修订版与可用GPIO需按实物核对。",
+      "USB供电与GPIO耐压分开，未用3V3电源引脚推定所有信号阈值。"
+    ]
+  },
+  {
+    "id": "bosch-bme280",
+    "name": "Bosch BME280 裸传感器IC",
+    "mpn": "BME280",
+    "manufacturer": "Bosch Sensortec",
+    "category": "sensor",
+    "kind": "ic",
+    "source_url": "https://www.bosch-sensortec.com/en/products/environmental-sensors/humidity-sensors-bme280",
+    "accessed_at": "2026-10-24",
+    "capabilities": [
+      "temperature",
+      "humidity",
+      "pressure"
+    ],
+    "facts": {
+      "supply_min_v": {
+        "value": 1.71,
+        "unit": "V",
+        "source_url": "https://www.bosch-sensortec.com/en/products/environmental-sensors/humidity-sensors-bme280",
+        "status": "source_checked",
+        "scope": "已读取厂商产品资料；未做实物测试"
+      },
+      "supply_max_v": {
+        "value": 3.6,
+        "unit": "V",
+        "source_url": "https://www.bosch-sensortec.com/en/products/environmental-sensors/humidity-sensors-bme280",
+        "status": "source_checked",
+        "scope": "已读取厂商产品资料；未做实物测试"
+      },
+      "io_supply_min_v": {
+        "value": 1.2,
+        "unit": "V",
+        "source_url": "https://www.bosch-sensortec.com/en/products/environmental-sensors/humidity-sensors-bme280",
+        "status": "source_checked",
+        "scope": "已读取厂商产品资料；未做实物测试"
+      },
+      "io_supply_max_v": {
+        "value": 3.6,
+        "unit": "V",
+        "source_url": "https://www.bosch-sensortec.com/en/products/environmental-sensors/humidity-sensors-bme280",
+        "status": "source_checked",
+        "scope": "已读取厂商产品资料；未做实物测试"
+      },
+      "interfaces": {
+        "value": [
+          "I2C",
+          "SPI"
+        ],
+        "unit": "",
+        "source_url": "https://www.bosch-sensortec.com/en/products/environmental-sensors/humidity-sensors-bme280",
+        "status": "source_checked",
+        "scope": "已读取厂商产品资料；未做实物测试"
+      }
+    },
+    "notes": [
+      "这是裸IC，不是带稳压/电平转换的第三方模块。",
+      "第三方BME280模块需单独核对原理图、套装和引出接口。"
+    ]
+  },
+  {
+    "id": "ti-lm2596-adj",
+    "name": "TI LM2596 可调降压芯片",
+    "mpn": "LM2596-ADJ",
+    "manufacturer": "Texas Instruments",
+    "category": "power",
+    "kind": "ic",
+    "source_url": "https://www.ti.com/product/LM2596",
+    "accessed_at": "2026-10-24",
+    "capabilities": [
+      "buck"
+    ],
+    "facts": {
+      "supply_min_v": {
+        "value": 4.5,
+        "unit": "V",
+        "source_url": "https://www.ti.com/product/LM2596",
+        "status": "source_checked",
+        "scope": "已读取厂商产品资料；未做实物测试"
+      },
+      "supply_max_v": {
+        "value": 40,
+        "unit": "V",
+        "source_url": "https://www.ti.com/product/LM2596",
+        "status": "source_checked",
+        "scope": "已读取厂商产品资料；未做实物测试"
+      }
+    },
+    "notes": [
+      "芯片需电感、电容、二极管等外围；不能当完整模块。",
+      "3A为厂商器件规格，实际持续输出受散热、外围与工况影响，不预填为整套电源保证值。"
+    ]
+  },
+  {
+    "id": "ti-lm2596-evm",
+    "name": "TI LM2596S-ADJEVM 评估模块",
+    "mpn": "LM2596S-ADJEVM",
+    "manufacturer": "Texas Instruments",
+    "category": "power",
+    "kind": "module",
+    "source_url": "https://www.ti.com/product/LM2596",
+    "accessed_at": "2026-10-24",
+    "capabilities": [
+      "buck",
+      "regulated_5v"
+    ],
+    "facts": {
+      "supply_min_v": {
+        "value": 7,
+        "unit": "V",
+        "source_url": "https://www.ti.com/product/LM2596",
+        "status": "source_checked",
+        "scope": "该EVM段落；不能移用于任意廉价模块"
+      },
+      "supply_max_v": {
+        "value": 40,
+        "unit": "V",
+        "source_url": "https://www.ti.com/product/LM2596",
+        "status": "source_checked",
+        "scope": "EVM输入范围"
+      },
+      "output_voltage_v": {
+        "value": 5,
+        "unit": "V",
+        "source_url": "https://www.ti.com/product/LM2596",
+        "status": "source_checked",
+        "scope": "EVM输出说明；需实测验证"
+      }
+    },
+    "notes": [
+      "这是指定厂商EVM，不是淘宝任意LM2596模块的统一规格。",
+      "价格/库存/交期未预填。"
+    ]
+  }
+]

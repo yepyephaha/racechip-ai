@@ -1,0 +1,98 @@
+{
+  "viewports": [
+    {
+      "viewport": "desktop",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "ctaBottom": 912.0521240234375,
+      "navTop": 76,
+      "ctaVisibleAboveNav": true
+    },
+    {
+      "viewport": "tablet",
+      "width": 768,
+      "scrollWidth": 753,
+      "ctaBottom": 955.5208740234375,
+      "navTop": 76,
+      "ctaVisibleAboveNav": true
+    },
+    {
+      "viewport": "mobile",
+      "width": 390,
+      "scrollWidth": 375,
+      "ctaBottom": 749.1666870117188,
+      "navTop": 777.3333740234375,
+      "ctaVisibleAboveNav": true
+    },
+    {
+      "viewport": "small-mobile",
+      "width": 320,
+      "scrollWidth": 305,
+      "ctaBottom": 812.7604370117188,
+      "navTop": 643.5416870117188,
+      "ctaVisibleAboveNav": false
+    }
+  ],
+  "contrasts": [
+    {
+      "selector": ".hw-guide-title h1",
+      "foreground": "rgb(24, 36, 62)",
+      "background": "rgb(243, 246, 252)",
+      "ratio": 14.26
+    },
+    {
+      "selector": ".hw-guide-title > p",
+      "foreground": "rgb(86, 99, 123)",
+      "background": "rgb(243, 246, 252)",
+      "ratio": 5.6
+    },
+    {
+      "selector": ".hw-chat-input .hw-primary",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(36, 89, 211)",
+      "ratio": 6.1
+    },
+    {
+      "selector": ".hw-example-preview h2",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(36, 89, 211)",
+      "ratio": 6.1
+    },
+    {
+      "selector": ".hw-example-preview > p",
+      "foreground": "rgb(224, 234, 255)",
+      "background": "rgb(36, 89, 211)",
+      "ratio": 5.05
+    },
+    {
+      "selector": ".hw-example-preview > button",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(189, 67, 14)",
+      "ratio": 5.29
+    },
+    {
+      "selector": ".hw-example-preview > small:last-child",
+      "foreground": "rgb(224, 234, 255)",
+      "background": "rgb(36, 89, 211)",
+      "ratio": 5.05
+    }
+  ],
+  "consoleErrors": [],
+  "tabNavigation": true,
+  "keyboardStarter": true,
+  "demo": {
+    "rounds": 5,
+    "items": 9,
+    "productLinks": 16,
+    "newUpstreamCalls": 0
+  },
+  "motion": {
+    "normal": "hw-signal-route",
+    "reduced": "static route"
+  },
+  "health": {
+    "searchConfigured": false,
+    "modelConfigured": true,
+    "modelStatus": "available"
+  }
+}

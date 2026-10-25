@@ -1,0 +1,2503 @@
+# RaceChip AI 真实查询 C
+
+执行时间：2026-10-24T18:46:19.375975+08:00
+
+模式：LIVE / 元宝 SearchPro TC3；这是已保存实录，打开文件不重新搜索。
+
+## 原问题
+
+新生做离线颜色巡线，打算使用 OpenMV Cam H7 Plus。听说该型号已经停止常规生产，请核查生命周期原文，并比较已有该板与需要新购时的适配风险。不能把已有板卡当作已完成性能实测。
+
+## 原说法与结论
+
+OpenMV Cam H7 Plus 已停止常规生产，仍可定制批量订单。
+
+证据支持
+
+官方原文说明停止该版本常规生产，仍可定制批量订单；持有设备不改变生命周期事实。
+
+## 完整结构化结果
+
+```json
+
+{
+  "case_id": "357051ca-5404-41a9-b2ca-7f8c6c81a2c2",
+  "created_at": "2026-10-24T18:46:19.375975+08:00",
+  "mode": "live",
+  "input_text": "新生做离线颜色巡线，打算使用 OpenMV Cam H7 Plus。听说该型号已经停止常规生产，请核查生命周期原文，并比较已有该板与需要新购时的适配风险。不能把已有板卡当作已完成性能实测。",
+  "problem": {
+    "title": "颜色识别 / 色块跟踪 / 视觉巡线 · 选型调查",
+    "tasks": [
+      "color_tracking",
+      "line_tracking"
+    ],
+    "requirements": [
+      {
+        "text": "颜色识别 / 色块跟踪",
+        "kind": "task",
+        "source_quote": "颜色"
+      },
+      {
+        "text": "视觉巡线",
+        "kind": "task",
+        "source_quote": "巡线"
+      }
+    ],
+    "ambiguities": [
+      "P0 使用关键词与单位规则解析；原题限定器件、测量条件、评分细则须逐条人工复核。"
+    ],
+    "parser": "deterministic-rules-v1",
+    "unmodeled_constraints": [],
+    "voltage_conflict": false
+  },
+  "constraints": {
+    "budget_cny": null,
+    "max_power_w": null,
+    "required_interfaces": [
+      "UART"
+    ],
+    "logic_voltage_v": null,
+    "offline_required": true,
+    "banned_hardware": [],
+    "only_existing_hardware": false
+  },
+  "search": {
+    "provider": "tencent-searchpro",
+    "mode": "live",
+    "status": "ok",
+    "queries": [
+      "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation",
+      "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件",
+      "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测"
+    ],
+    "results": [
+      {
+        "id": "search-0-0",
+        "title": "OpenMV Cam H7 Plus",
+        "url": "https://openmv.io/products/openmv-cam-h7-plus?srsltid=AfmBOoq0XC6rMqBfLJyto0uqxKdck9jlG5apIein5rfq9Ti17uy2-NgP",
+        "snippet": "OpenMV Cam H7 Plus OpenMV。OpenMV Cam H7 Plus $135.00 USD We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. See our successor to the OpenMV Cam H7 Plus, the OpenMV Cam N6 here. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily impleme... Read more We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. See our successor to the OpenMV Cam H7 Plus, the OpenMV Cam N6...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation"
+      },
+      {
+        "id": "search-0-1",
+        "title": "OpenMV Cam H7 Plus",
+        "url": "https://openmv.io/products/openmv-cam-h7-plus?srsltid=AfmBOoowvf_y7KS3v6Jh7RhFzodklQcA7tSvqDmb5UEGV5DU_Jx8yajo",
+        "snippet": "OpenMV Cam H7 Plus OpenMV。View in space View in space View in space View in space OpenMV Cam H7 Plus We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. See our successor to the OpenMV Cam H7 Plus, the OpenMV Cam N6 here. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily impleme... Read more Specs Processor: ARM® 32-bit Cortex®-M7 CPU w/ Double Precision FPU 480 MHz (1027 DMIPS) Core Mark Score: 2400 (compare w/ Raspberry Pi 2: 2340) Supported Image Formats: Grayscale RGB565 JPEG (and BAYER/YUV422) Maximum Supported Resolutions: Grayscale: 2952x1944 (5MP) a...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation"
+      },
+      {
+        "id": "search-0-2",
+        "title": "v4.4.0",
+        "url": "https://docs.openmv.io/dev/ro/changelog/ide/v4.4.0.html",
+        "snippet": "v4.4.0 OpenMV文档。 OpenMV cameras migrate to vendor ID 37C5 with new product and DFU bootloader IDs; boards on the old 1209:ABD1 VID are now labeled “Legacy”. The IDE supports both old and new firmware simultaneously, but Linux users must reinstall the updated udev rules for the new IDs to be recognized. Legacy board entries hidden. Legacy variants of the OpenMV Cam M4/M7/H7/H7 Plus/Pure Thermal boards are now suppressed from the firmware/board selection list via a new legacy board flag (distinct from the pre-existing hidden flag), so users who specifically need a legacy board entry will no longer see it in the dropdown (6d78d6571). Shorter serial timeouts. The default response read timeout drops from 10000 ms to 5000 ms and the write timeout from 6000 ms to 3000 ms (the -override_read_timeo...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation"
+      },
+      {
+        "id": "search-0-3",
+        "title": "H7 plus Firmware warning / out of date / SOLVED - OpenMV Boards - OpenMV Forums",
+        "url": "https://forums.openmv.io/t/h7-plus-firmware-warning-out-of-date-solved/2194",
+        "snippet": "H7 plus Firmware warning / out of date / SOLVED - OpenMV Boards - OpenMV Forums OpenMV Forums。H7 plus Firmware warning / out of date / SOLVED Belgium-47 Hlo, all. H7 Plus just worsk fine. Did the first steps. Used the examples… Nice. I did the OpenMv Ide update vers 2.6.9 When connecting the board in the script i get the message : your OpenMv Cam’s firmware is out of date. Do you want to upgrade ?. Click OK, nothing happens. On OpenMv or Github pages i dont find a firmware. Can u direct me to correct firmware or explain how to update H7 Plus. Best regards, Peter OK I FOUND IT… NICE PLACE TO implement the update in the IDE. IN the right down corner border of the IDE. There u get information about your Board, Sensor, Firmware version and so on. With this message : Firmware Version: Out of da...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation"
+      },
+      {
+        "id": "search-0-4",
+        "title": "OpenMV Cam H7 Plus Production Update",
+        "url": "https://openmv.io/blogs/news?page=57",
+        "snippet": "OpenMV Cam H7 Plus Production Update OpenMV。OpenMV Cam H7 Plus Production Update Hey folks! We're still hard at work trying to get the OpenMV Cam H7 Plus into production even though the Coronavirus has definitely slowed things down... Anyway, we'd like to share status updates: OpenMV Cam H7 Plus Status Assembly for the OpenMV Cam H7 Plus main board finished last week! Here are some pics: We expect to finish production of the OV5640 sensor board in about 2 weeks which will put us in April to begin shipping... assuming China is operational in April. Geometric Image Transform Improvements Continuing on performance improvements this year we've speed up all of our geometric image transform algorithms! linear_polar(), log_polar(), lens_correction(), and rotation_correction() are now 2X or more f...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation"
+      },
+      {
+        "id": "search-0-5",
+        "title": "OpenMV Cam H7 Plus",
+        "url": "https://docs.openmv.io/dev/de/openmvcam/quickref/openmv-cam-h7-plus.html",
+        "snippet": "OpenMV Cam H7 Plus OpenMV。txt by default; created on the very first boot. microSD card — if a card is inserted it is mounted at /sdcard. ROMFS — read‑only, memory‑mapped filesystem at /rom used to ship large data assets (e.g. AI models) that benefit from zero‑copy access. Mounted automatically by MicroPython at startup, before any user Python runs. After mounting, the working directory is set to /sdcard when the card is present, otherwise /flash. The interpreter then runs scripts from that directory: boot.py is executed on every soft reset (cold boot, Ctrl‑D from the REPL, or whenever the running script returns). main.py is executed only on cold boot, immediately after boot.py. Subsequent soft resets re‑run boot.py but drop straight to the REPL — to re‑run main.py you have to fully reset t...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation"
+      },
+      {
+        "id": "search-0-6",
+        "title": "OpenMV Cam H7 Plus",
+        "url": "https://core-electronics.com.au/openmv-cam-h7-plus-48703.html",
+        "snippet": "OpenMV Cam H7 Plus Core Electronics。OpenMV Cam H7 Plus SKU: DFR0833 Brand: DFRobot Retired Product Replaced by: SEN-16989 This product has been replaced by: SEN-16989 This product is no longer available. This page is only for reference. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. You program the OpenMV Cam in high level Python scripts(courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and its I/O pins in Python. You can easily trigger taking pictures and video on external events or execute mac...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation"
+      },
+      {
+        "id": "search-0-7",
+        "title": "OpenMV Cam H7 Plus",
+        "url": "https://www.proe.vn/openmv-cam-h7-plus",
+        "snippet": "OpenMV Cam H7 Plus ProE Electronics。 Template Matching You can use template matching with your OpenMV Cam to detect when a translated pre-saved image is in view. For example, template matching can be used to find fiducials on a PCB or read known digits on a display. Image Capture You can use the OpenMV Cam to capture Grayscale/RGB565 BMP/JPG/PPM/PGM images. You directly control how images are captured in your Python script. Best of all, you can preform machine vision functions and/or draw on frames before saving them. Video Recording You can use the OpenMV Cam to record up to Grayscale/RGB565 MJPEG video or GIF images (or RAW video). You directly control how each frame of video is recorded in your Python script and have total control on how video recording starts and finishes. And, like ca...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation"
+      },
+      {
+        "id": "search-0-8",
+        "title": "OpenMV Cam RT1062, H7 Plus, and more!",
+        "url": "https://openmv.io/blogs/news/openmv-cam-rt1062-h7-plus-ide-firmware-updates-and-more",
+        "snippet": "OpenMV Cam RT1062, H7 Plus, and more! OpenMV。Hi all, We finally shipped out half of our order backlog! OpenMV Cam RT1062's are on their way now! Hopefully, we should be able to clear out the remainder of our backlog over next week. Also, the OpenMV Cam RT1062 is now in stock on the online store and available to purchase! As mentioned before, we are sampling second-revision versions of shields for the OpenMV Cam RT1062, which we will be able to roll out next year. Anyway, please buy your OpenMV Cam RT1062 now! OpenMV Cam H7 Plus Production Status As for the 5000 OpenMV Cam H7 Plus units we are building, the factory has completed about 20% of the order so far and will start making partial shipments to our shipping warehouse soon. We expect to be able to start shipping OpenMV Cam H7 Plus unit...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation"
+      },
+      {
+        "id": "search-0-9",
+        "title": "OpenMV Cam H7 Plus",
+        "url": "https://openmv.io/products/openmv-cam-h7-plus",
+        "snippet": "OpenMV Cam H7 Plus。For full functionality of this site it is necessary to enable JavaScript. Click here for the instructions on how to enable JavaScript in your web browser. Skip to content Search for products Call us for support 1800 123 456 1800 123 456 $0.00 USD Login Home Products All Cams Shields Sensors Lenses Accessories AE3 Accessories Retired Products All Cams Shields Accessories Applications Drones Industrial Sites Manufacturing and Warehouses Agriculture and Construction Security and Smart Cities OEM Vehicles Robotics National Security Education and Research Partners Distributors Engineering Service Firms Licensees Silicon Vendors Trade Groups Download OpenMV IDE OpenMV Viewer Python Calibration Tools Python Library and CLI RPC Library for Arduino Shield Templates Sensor Templat...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation"
+      },
+      {
+        "id": "search-1-0",
+        "title": "OpenMV Cam H7 Plus",
+        "url": "https://openmv.io/products/openmv-cam-h7-plus?srsltid=AfmBOoq0XC6rMqBfLJyto0uqxKdck9jlG5apIein5rfq9Ti17uy2-NgP",
+        "snippet": "OpenMV Cam H7 Plus OpenMV。OpenMV Cam H7 Plus $135.00 USD We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. See our successor to the OpenMV Cam H7 Plus, the OpenMV Cam N6 here. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily impleme... Read more We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. See our successor to the OpenMV Cam H7 Plus, the OpenMV Cam N6...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件"
+      },
+      {
+        "id": "search-1-1",
+        "title": "别只用来巡线了!OpenMV H7 Plus的‘跨界’玩法:用一套代码同时搞定地面数字和手持卡牌识别",
+        "url": "https://blog.csdn.net/weixin_30439067/article/details/97943719",
+        "snippet": "别只用来巡线了!OpenMV H7 Plus的‘跨界’玩法:用一套代码同时搞定地面数字和手持卡牌识别 CSDN博客。此外,两者的处理帧率、曝光设置和图像预处理流程也存在显著差异。 核心解决策略 可归纳为三个层面: 硬件层优化 :充分利用H7 Plus的双核架构(Cortex-M7+M4),将图像采集与识别任务分配到不同核心 算法层设计 :采用ROI(感兴趣区域)分割技术,在单帧图像中划分不同处理区域 系统层调度 :实现轻量级状态机管理,通过串口指令动态切换工作模式 # 硬件配置示例(双核协作基础)import pyb# M7核心处理高负载任务def m7_task(): while True: process_heavy_algorithm()# M4核心处理实时控制def m4_task(): while True: handle_uart_commands()# 启动双核任务pyb.bootloader() # 确保运行在M7核心_thread.start_new_thread(m4_task, ()) 2. 动态视觉管道的构建方法 传统视觉处理流程是线性的:采集→预处理→特征提取→决策。但在多任务场景下,我们需要更智能的管道管理。以下是经过实战验证的管道设计方案: 处理阶段 巡线模式配置 数字识别模式配置 混合模式优化方案 图像采集 RGB565 QVGA Grayscale QVGA 双缓冲区并行采集 预处理 镜头校正+色彩阈值 直方图均衡化 动态切换预处理链 特征提取 find_blobs() CNN推理 区域隔离处理 决策输出 坐标+角度 分类结果 协议封装融合 关键突破点 在于ROI的动态划分技术。...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件"
+      },
+      {
+        "id": "search-1-2",
+        "title": "OpenMV4 H7 Plus的摄像头,可以设置成8-bit 灰度图模式吗?",
+        "url": "https://forum.singtown.com/topic/4972/openmv4-h7-plus%E7%9A%84%E6%91%84%E5%83%8F%E5%A4%B4-%E5%8F%AF%E4%BB%A5%E8%AE%BE%E7%BD%AE%E6%88%908-bit-%E7%81%B0%E5%BA%A6%E5%9B%BE%E6%A8%A1%E5%BC%8F%E5%90%97/1",
+        "snippet": "OpenMV4 H7 Plus的摄像头,可以设置成8-bit 灰度图模式吗? 星瞳科技论坛。OpenMV4 H7 Plus的摄像头,可以设置成8-bit 灰度图模式吗? imaz 类似OpenMV4上的sensor.set_pixformat(sensor.GRAYSCALE),分辨率可以达到多少? 2020年5月11日12:21 可以设置8-bit 灰度图,OpenMV4 Plus是5640,500万像素,可以设置WQXGA2(2592x1944),帧率比较低。...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件"
+      },
+      {
+        "id": "search-1-3",
+        "title": "OPENMV CAM H7 PLUS",
+        "url": "https://www.digikey.in/en/products/detail/sparkfun-electronics/SEN-16989/1568-SEN-16989-ND/13148771",
+        "snippet": "OPENMV CAM H7 PLUS Digi-Key。Image shown is a representation only. Exact specifications should be obtained from the product data sheet. 16989 DigiKey Part Number 1568-16989-ND Manufacturer SparkFun Electronics Manufacturer Product Number 16989 Description OPENMV CAM H7 PLUS Customer Reference Detailed Description OV5640 - Image Sensor Sensor Evaluation Board Product Attributes Category Development Boards, Kits, Programmers Evaluation Boards Sensor Evaluation Boards Interface I2C, Serial, SPI Manufacturer SparkFun Electronics Voltage - Supply 3.3V ~ 5V Packaging Bulk Embedded Yes, MCU, 32-Bit Part Status Obsolete Contents Board(s), Accessories Sensor Type Image Sensor Utilized IC / Part OV5640 Documents & Media PCN Obsolescence/ EOL 16989 obs 15/Jun/2026 Projects LEGO Brick Finder with OpenM...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件"
+      },
+      {
+        "id": "search-1-4",
+        "title": "H7 plus Firmware warning / out of date / SOLVED - OpenMV Boards - OpenMV Forums",
+        "url": "https://forums.openmv.io/t/h7-plus-firmware-warning-out-of-date-solved/2194",
+        "snippet": "H7 plus Firmware warning / out of date / SOLVED - OpenMV Boards - OpenMV Forums OpenMV Forums。H7 plus Firmware warning / out of date / SOLVED Belgium-47 Hlo, all. H7 Plus just worsk fine. Did the first steps. Used the examples… Nice. I did the OpenMv Ide update vers 2.6.9 When connecting the board in the script i get the message : your OpenMv Cam’s firmware is out of date. Do you want to upgrade ?. Click OK, nothing happens. On OpenMv or Github pages i dont find a firmware. Can u direct me to correct firmware or explain how to update H7 Plus. Best regards, Peter OK I FOUND IT… NICE PLACE TO implement the update in the IDE. IN the right down corner border of the IDE. There u get information about your Board, Sensor, Firmware version and so on. With this message : Firmware Version: Out of da...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件"
+      },
+      {
+        "id": "search-1-5",
+        "title": "OpenMV Cam H7 Files Disappeared (Auto Reset to Factory Settings?) - OpenMV Boards - OpenMV Forums",
+        "url": "https://forums.openmv.io/t/openmv-cam-h7-files-disappeared-auto-reset-to-factory-settings/11338",
+        "snippet": "OpenMV Cam H7 Files Disappeared (Auto Reset to Factory Settings?) - OpenMV Boards - OpenMV Forums。OpenMV Cam H7 Files Disappeared (Auto Reset to Factory Settings?) nelson Hello, I would like to ask if there is any mechanism that could cause the internal files on OpenMV to be automatically erased. Environment: Devices: OpenMV Cam H7 Plus (4.5.8 firmware), OpenMV Cam H7 R2(4.7.0 firmware) IDE: OpenMV IDE 4.7.0 Issue description: While I was in the middle of development, I connected the OpenMV to my computer and opened main.py. To my surprise, its contents had been replaced with the default startup code: main.py -- put your code here! import pyb, time led = pyb.LED(3) usb = pyb.USB_VCP() while(usb.isconnected()==False): led.on() time.sleep_ms(150) led.off() time.sleep_ms(100) led.on() time.sl...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件"
+      },
+      {
+        "id": "search-1-6",
+        "title": "OpenMV Cam H7 Plus",
+        "url": "https://core-electronics.com.au/openmv-cam-h7-plus-retired.html",
+        "snippet": "OpenMV Cam H7 Plus Core Electronics。OpenMV Cam H7 Plus SKU: SEN-16989 Brand: Sparkfun Tools Product Markdown AI/LLM Markdown Ask a question Retired Product Replaced by: SEN-19728 Description This product has been replaced by: SEN-19728 This product is no longer available. This page is only for reference. The OpenMV H7 Plus Camera is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. The Plus variation adds 32 MB of external 32-bit SDRAM and 32 MB of external quad SPI flash. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data str...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件"
+      },
+      {
+        "id": "search-1-7",
+        "title": "OpenMV Cam H7 Plus",
+        "url": "https://openmv.io/products/openmv-cam-h7-plus?srsltid=AfmBOoowvf_y7KS3v6Jh7RhFzodklQcA7tSvqDmb5UEGV5DU_Jx8yajo",
+        "snippet": "OpenMV Cam H7 Plus OpenMV。View in space View in space View in space View in space OpenMV Cam H7 Plus We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. See our successor to the OpenMV Cam H7 Plus, the OpenMV Cam N6 here. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily impleme... Read more Specs Processor: ARM® 32-bit Cortex®-M7 CPU w/ Double Precision FPU 480 MHz (1027 DMIPS) Core Mark Score: 2400 (compare w/ Raspberry Pi 2: 2340) Supported Image Formats: Grayscale RGB565 JPEG (and BAYER/YUV422) Maximum Supported Resolutions: Grayscale: 2952x1944 (5MP) a...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件"
+      },
+      {
+        "id": "search-1-8",
+        "title": "OpenMV cam H7 plus not detected - OpenMV Boards - OpenMV Forums",
+        "url": "https://forums.openmv.io/t/openmv-cam-h7-plus-not-detected/6089/2",
+        "snippet": "OpenMV cam H7 plus not detected - OpenMV Boards - OpenMV Forums。OpenMV cam H7 plus not detected jaimeolvera Hello everybody. I am using an OpenMV cam H7 plus for the first time and the IDE does not recognize it. When connecting it to usb it flashes green and then it flashes blue and it stays that way. I followed all the instructions and it is still not detected. Me too post by iabdalkader on Jul 11, 2021 iabdalkader Jul 2021 Try a different USB cable. post by kwagyeman on Jul 11, 2021 kwagyeman Jul 2021 Your cable is probably power only. Use a different cable with data support. post by jaimeolvera on Jul 11, 2021 jaimeolvera Jul 2021 Thank you. Now it is working fine. Muchas gracias....",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件"
+      },
+      {
+        "id": "search-1-9",
+        "title": "OpenMV Cam H7 Plus Apriltag detection / crashes? · Issue #3268 · openmv/openmv",
+        "url": "https://github.com/openmv/openmv/issues/3268",
+        "snippet": "OpenMV Cam H7 Plus Apriltag detection / crashes? · Issue #3268 · openmv/openmv GitHub。 Test F: is AprilTags involved at all? (one line, five minutes) Worth running whether or not you get to Test E, because it costs nothing and either answer is valuable. This is your normal loop with find_apriltags() replaced by a plain delay of roughly the same duration. You can run it on the stock firmware. Test F: same loop shape and timing, but NO AprilTags. import csi, time csi0 = csi.CSI() csi0.reset() csi0.pixformat(csi.RGB565) csi0.framesize(csi.QQVGA) csi0.snapshot(time=2000) csi0.auto_gain(False) csi0.auto_whitebal(False) clock = time.clock() n = 0 try: while True: clock.tick() img = csi0.snapshot() time.sleep_ms(25) # stands in for find_apriltags() n += 1 print(n, clock.fps()) except BaseExceptio...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件"
+      },
+      {
+        "id": "search-2-0",
+        "title": "H7 plus Firmware warning / out of date / SOLVED - OpenMV Boards - OpenMV Forums",
+        "url": "https://forums.openmv.io/t/h7-plus-firmware-warning-out-of-date-solved/2194",
+        "snippet": "H7 plus Firmware warning / out of date / SOLVED - OpenMV Boards - OpenMV Forums OpenMV Forums。H7 plus Firmware warning / out of date / SOLVED Belgium-47 Hlo, all. H7 Plus just worsk fine. Did the first steps. Used the examples… Nice. I did the OpenMv Ide update vers 2.6.9 When connecting the board in the script i get the message : your OpenMv Cam’s firmware is out of date. Do you want to upgrade ?. Click OK, nothing happens. On OpenMv or Github pages i dont find a firmware. Can u direct me to correct firmware or explain how to update H7 Plus. Best regards, Peter OK I FOUND IT… NICE PLACE TO implement the update in the IDE. IN the right down corner border of the IDE. There u get information about your Board, Sensor, Firmware version and so on. With this message : Firmware Version: Out of da...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测"
+      },
+      {
+        "id": "search-2-1",
+        "title": "H7 Plus bricked and IDE won't fix it - OpenMV Boards - OpenMV Forums",
+        "url": "https://forums.openmv.io/t/h7-plus-bricked-and-ide-wont-fix-it/2103/3",
+        "snippet": "H7 Plus bricked and IDE won't fix it - OpenMV Boards - OpenMV Forums OpenMV Forums。H7 Plus bricked and IDE won’t fix it post by glubad55 on Jan 2, 2021 glubad55 Plugged in my OpenMV Cam H7 Plus today (not new; have used several times). It flashes green 7 times, then white once, waits 2 seconds and then flashes red 3x, and stops flashing. Will not connect in IDE. Steps so far: IDE asked if it was bricked,I said yes, did the disconnect/reconnect step (it would not leave that step on its own so I hit cancel to skip to DFU programming), disconnected H7, added jumper from RST to BOOT, reconnected, and waited. Device Mgr shows an unknown USB device (which is this) instead of a COM device. DFU device does not appear like it did in this other OpenMV post: OpenMV doesnt recognise my CAM H7 - OpenMV...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测"
+      },
+      {
+        "id": "search-2-2",
+        "title": "Dead OpenMV H7 Plus - OpenMV Boards - OpenMV Forums",
+        "url": "https://forums.openmv.io/t/dead-openmv-h7-plus/11607/1",
+        "snippet": "Dead OpenMV H7 Plus - OpenMV Boards - OpenMV Forums。Dead OpenMV H7 Plus lightofshadow Apr 20 I had my openmv board connected to my robot running a FOMO AI model to detect objects and i also needed it to detect colors using find_blobs function. So that is a pretty heavy task to run. After more than an hour of continously testing the robot, the OpenMV board unexpectedly powered off. It was powered through a powerbank and the pins where not shorted. Now my computer doesnt detect it anymore, the led stays shut when i power it and it gets ridicolously hot. I think the board got too hot from running uninterruptedly and something broke. Is there someway i can fix that? What should i test to pin down the problem? post by kwagyeman on Apr 21 kwagyeman Apr 21 Hi, no, what likely happened is that som...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测"
+      },
+      {
+        "id": "search-2-3",
+        "title": "OpenMV Cam H7 Files Disappeared (Auto Reset to Factory Settings?) - OpenMV Boards - OpenMV Forums",
+        "url": "https://forums.openmv.io/t/openmv-cam-h7-files-disappeared-auto-reset-to-factory-settings/11338",
+        "snippet": "OpenMV Cam H7 Files Disappeared (Auto Reset to Factory Settings?) - OpenMV Boards - OpenMV Forums。OpenMV Cam H7 Files Disappeared (Auto Reset to Factory Settings?) nelson Hello, I would like to ask if there is any mechanism that could cause the internal files on OpenMV to be automatically erased. Environment: Devices: OpenMV Cam H7 Plus (4.5.8 firmware), OpenMV Cam H7 R2(4.7.0 firmware) IDE: OpenMV IDE 4.7.0 Issue description: While I was in the middle of development, I connected the OpenMV to my computer and opened main.py. To my surprise, its contents had been replaced with the default startup code: main.py -- put your code here! import pyb, time led = pyb.LED(3) usb = pyb.USB_VCP() while(usb.isconnected()==False): led.on() time.sleep_ms(150) led.off() time.sleep_ms(100) led.on() time.sl...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测"
+      },
+      {
+        "id": "search-2-4",
+        "title": "Bricked OpenMv Cam H7 Plus - OpenMV Boards - OpenMV Forums",
+        "url": "https://forums.openmv.io/t/bricked-openmv-cam-h7-plus/5800/1",
+        "snippet": "Bricked OpenMv Cam H7 Plus - OpenMV Boards - OpenMV Forums。Bricked OpenMv Cam H7 Plus Leyvonne May 2021 I’m having an issue with my H7 plus. When I power the cam, I get a rapid flashing green light. I’ve tried to un-brick it multiple times with no results. Even without the sd card. Any help would be appreciated. Thank you. post by kwagyeman on May 2, 2021 May 2021 The green light is the boot loader. Please click connect in the ide and follow the prompts. post by Leyvonne on May 9, 2021 May 2021 I’m still getting the green boot loader light. I’ve gone through the prompt multiple times in the ide. When I connect the cam, it only stays connected for two seconds then it disconnects on its own. post by iabdalkader on May 9, 2021 May 2021 It sounds like it’s stuck in a boot loop, are you sure yo...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测"
+      },
+      {
+        "id": "search-2-5",
+        "title": "Cant save openmv script to openmv H7 Plus - OpenMV Boards - OpenMV Forums",
+        "url": "https://forums.openmv.io/t/cant-save-openmv-script-to-openmv-h7-plus/11408",
+        "snippet": "Cant save openmv script to openmv H7 Plus - OpenMV Boards - OpenMV Forums OpenMV论坛。Cant save openmv script to openmv H7 Plus OPSLeoGong Oct 2025 Im on MacOS and when i go to tools and try to click save open script to cam its blacked out and cant click it. Can anyone help me? Me too post by kwagyeman on Oct 31, 2025 kwagyeman Oct 2025 It’s because the disk is not found in OpenMV IDE, either it’s not mounted by your PC or the IDE didn’t discover it. Try disconnecting and reconnecting via the button in the IDE. post by OPSLeoGong on Nov 1, 2025 OPSLeoGong Nov 2025 ive tried it but its still blacked out i can run code on it but it doesnt save post by kwagyeman on Nov 1, 2025 kwagyeman Nov 2025 Does a disk appear when the camera is plugged into USB? post by OPSLeoGong on Nov 2, 2025 OPSLeoGong ...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测"
+      },
+      {
+        "id": "search-2-6",
+        "title": "OpenMV Cam H7 Plus",
+        "url": "https://openmv.io/products/openmv-cam-h7-plus?srsltid=AfmBOoq0XC6rMqBfLJyto0uqxKdck9jlG5apIein5rfq9Ti17uy2-NgP",
+        "snippet": "OpenMV Cam H7 Plus OpenMV。OpenMV Cam H7 Plus $135.00 USD We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. See our successor to the OpenMV Cam H7 Plus, the OpenMV Cam N6 here. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily impleme... Read more We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. See our successor to the OpenMV Cam H7 Plus, the OpenMV Cam N6...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测"
+      },
+      {
+        "id": "search-2-7",
+        "title": "OpenMV not connecting to IDE. green light keeps blinking",
+        "url": "https://forums.openmv.io/t/openmv-not-connecting-to-ide-green-light-keeps-blinking/11803/4",
+        "snippet": "OpenMV not connecting to IDE. green light keeps blinking OpenMV Forums。OpenMV not connecting to IDE. green light keeps blinking post by HMT on Jul 4 HMT Jul 4 When i connect openMV H7 plus cam to the PC. the green light contineusly keeps blinking and the cam becomes hot after a couple of mins. but the IDE doesnt detect any usb, neither my computer ports detect anything. i tried it with multiple computer and multiple USB cables. same problem persists. I have also tried force boot by connecting jumper wires at boot to reset pins, the ide temporeryly resets and downloads the latest firmware, but while downloading, it again disconnects from the pc. and the problem persists please let me know how i can fix it. Thank you. post by kwagyeman on Jul 5 kwagyeman Jul 5 Hi, it sounds like the board is...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测"
+      },
+      {
+        "id": "search-2-8",
+        "title": "Dead OpenMV H7 Plus - OpenMV Boards - OpenMV Forums",
+        "url": "https://forums.openmv.io/t/dead-openmv-h7-plus/11607",
+        "snippet": "Dead OpenMV H7 Plus - OpenMV Boards - OpenMV Forums OpenMV论坛。Dead OpenMV H7 Plus lightofshadow I had my openmv board connected to my robot running a FOMO AI model to detect objects and i also needed it to detect colors using find_blobs function. So that is a pretty heavy task to run. After more than an hour of continously testing the robot, the OpenMV board unexpectedly powered off. It was powered through a powerbank and the pins where not shorted. Now my computer doesnt detect it anymore, the led stays shut when i power it and it gets ridicolously hot. I think the board got too hot from running uninterruptedly and something broke. Is there someway i can fix that? What should i test to pin down the problem? Me too kwagyeman Apr 21 Hi, no, what likely happened is that something was overvolt...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测"
+      },
+      {
+        "id": "search-2-9",
+        "title": "OpenMV Cam H7 Plus Apriltag detection / crashes? · Issue #3268 · openmv/openmv",
+        "url": "https://github.com/openmv/openmv/issues/3268",
+        "snippet": "OpenMV Cam H7 Plus Apriltag detection / crashes? · Issue #3268 · openmv/openmv GitHub。 Test F: is AprilTags involved at all? (one line, five minutes) Worth running whether or not you get to Test E, because it costs nothing and either answer is valuable. This is your normal loop with find_apriltags() replaced by a plain delay of roughly the same duration. You can run it on the stock firmware. Test F: same loop shape and timing, but NO AprilTags. import csi, time csi0 = csi.CSI() csi0.reset() csi0.pixformat(csi.RGB565) csi0.framesize(csi.QQVGA) csi0.snapshot(time=2000) csi0.auto_gain(False) csi0.auto_whitebal(False) clock = time.clock() n = 0 try: while True: clock.tick() img = csi0.snapshot() time.sleep_ms(25) # stands in for find_apriltags() n += 1 print(n, clock.fps()) except BaseExceptio...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测"
+      }
+    ],
+    "warnings": [
+      "实时搜索结果是待核验线索，P0 不用网页摘要覆盖已核验的硬件参数；社区经验不构成规格保证。"
+    ],
+    "error": null,
+    "request_count": 3,
+    "request_ids": [
+      "c13de63f-9b05-442d-a8a8-6eb23e750fb7",
+      "dd764ae7-27ca-46e7-8f48-3ba21da5b04c",
+      "ff0b46eb-aa98-45a6-983b-152b708e4788"
+    ],
+    "query_records": [
+      {
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation",
+        "status": "ok",
+        "request_id": "c13de63f-9b05-442d-a8a8-6eb23e750fb7",
+        "result_count": 10,
+        "version": "standard",
+        "message": ""
+      },
+      {
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件",
+        "status": "ok",
+        "request_id": "dd764ae7-27ca-46e7-8f48-3ba21da5b04c",
+        "result_count": 10,
+        "version": "standard",
+        "message": ""
+      },
+      {
+        "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测",
+        "status": "ok",
+        "request_id": "ff0b46eb-aa98-45a6-983b-152b708e4788",
+        "result_count": 10,
+        "version": "standard",
+        "message": ""
+      }
+    ],
+    "auth_mode": "tc3",
+    "new_request_count": 3
+  },
+  "evidence": [
+    {
+      "id": "rt1062-official-hardware",
+      "kind": "official",
+      "title": "OpenMV Cam RT1062 官方产品与电气说明",
+      "url": "https://openmv.io/products/openmv-cam-rt",
+      "claim": "官方列出 USB-C、SPI、I2C、异步串行接口、3.3V I/O 与 OV5640 摄像头；I/O 不耐 5V。",
+      "field": "interfaces,logic_voltage_v,summary,io_input_max_v",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "All I/O pins output 3.3V"
+    },
+    {
+      "id": "rt1062-official-availability",
+      "kind": "official",
+      "title": "OpenMV Cam RT1062 官网订购状态",
+      "url": "https://openmv.io/products/openmv-cam-rt",
+      "claim": "核验时官方产品正文显示可欠货订购。没有确认现货或送达日期，搜索缓存中的库存数字不能代替本次状态。",
+      "field": "caveats",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "Available for Backorder"
+    },
+    {
+      "id": "rt1062-official-image-api",
+      "kind": "official",
+      "title": "OpenMV Image API：颜色、直线与 AprilTag",
+      "url": "https://docs.openmv.io/v5.0.0/library/omv.image.Image.html",
+      "claim": "官方本地图像 API 提供颜色连通域、阈值直线回归与 AprilTag 检测；需要匹配固件并验证实际任务，不据此保证帧率。",
+      "field": "capabilities",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "find_blobs; get_regression; find_apriltags"
+    },
+    {
+      "id": "openmv-official-hardware",
+      "kind": "official",
+      "title": "OpenMV Cam H7 Plus 官方产品与电气说明",
+      "url": "https://openmv.io/products/openmv-cam-h7-plus",
+      "claim": "官方列出 USB、SPI、I2C、异步串行接口，I/O 输出为 3.3V；随板为 OV5640 摄像头。",
+      "field": "interfaces,logic_voltage_v,summary,io_input_max_v",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "All I/O pins output 3.3V"
+    },
+    {
+      "id": "openmv-official-image-api",
+      "kind": "official",
+      "title": "OpenMV Image API：颜色、直线与 AprilTag",
+      "url": "https://docs.openmv.io/v5.0.0/library/omv.image.Image.html",
+      "claim": "官方本地图像 API 提供颜色阈值连通域、阈值像素直线回归与 AprilTag 检测；这是软件能力证据，未保证本赛题帧率或精度。",
+      "field": "capabilities",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "find_blobs; get_regression; find_apriltags"
+    },
+    {
+      "id": "openmv-official-lifecycle",
+      "kind": "official",
+      "title": "OpenMV H7 Plus 产品生命周期说明",
+      "url": "https://openmv.io/products/openmv-cam-h7-plus",
+      "claim": "官方称该版本已不再生产，仍接受定制批量订单；页面保留作资料用途。采购前必须确认库存与供货。",
+      "field": "caveats",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "We are no longer producing this version"
+    },
+    {
+      "id": "openmv-community-apriltag-pipeline",
+      "kind": "community",
+      "title": "Higher fps from OpenMV Cam H7 plus and MT9V034（第一人称工程记录）",
+      "url": "https://forums.openmv.io/t/higher-fps-from-openmv-cam-h7-plus-and-mt9v034/5585",
+      "claim": "作者 Priyanka 描述加入 AprilTag 计算和 ROS 发布后帧率下降；讨论涉及分辨率、传感器与 readout control。可生成验证清单，不能作为统一规格或本项目实测。",
+      "field": "engineering_experience",
+      "accessed_at": "2026-10-24",
+      "status": "needs_verification",
+      "excerpt": "the fps drops down to ~30 fps"
+    },
+    {
+      "id": "maix-official-board",
+      "kind": "official",
+      "title": "Sipeed Maix Bit 官方板卡介绍",
+      "url": "https://wiki.sipeed.com/soft/maixpy/en/develop_kit_board/maix_bit.html",
+      "claim": "官方板卡页确认双核 RISC-V、板载存储以及套装摄像头信息。",
+      "field": "summary",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "Dual-core 64bit RISC-V / 400MHz"
+    },
+    {
+      "id": "maix-official-usb",
+      "kind": "official",
+      "title": "Sipeed Maix-Bit Specifications v2.0",
+      "url": "https://dl.sipeed.com/fileList/MAIX/HDK/Sipeed-Maix-Bit/Specifications/Sipeed%20Maix-Bit%20Specifications_EN%20V2.0.pdf",
+      "claim": "官方 PDF 首页说明 USB Type-C 下载电路；此处 USB 指板级下载连接，不表示 K210 原生 USB 外设。首次读取成功，后续分页请求超时，未据此填入 GPIO 电压。",
+      "field": "interfaces",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "Download circuit"
+    },
+    {
+      "id": "maix-official-peripherals",
+      "kind": "official",
+      "title": "MaixPy v1 K210 外设文档入口与 UART API",
+      "url": "https://wiki.sipeed.com/soft/maixpy/en/api_reference/machine/uart.html",
+      "claim": "K210 的 MaixPy v1 文档提供 UART，并在同一文档树列出 I2C 与 SPI；引脚需经 FPIOA 配置，不能把可映射等同同时无冲突。",
+      "field": "interfaces",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "There are 3 uarts in k210"
+    },
+    {
+      "id": "maix-official-color",
+      "kind": "official",
+      "title": "MaixPy v1 image 机器视觉 API",
+      "url": "https://wiki.sipeed.com/soft/maixpy/en/api_reference/machine_vision/image/image.html",
+      "claim": "旧版官方 API 给出板上摄像头循环和绿色色块检测例程。未以新版 MaixCAM 文档替代 K210 证据。",
+      "field": "capabilities",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "Routine 1: Find green"
+    },
+    {
+      "id": "maix-official-kpu",
+      "kind": "official",
+      "title": "MaixPy v1 KPU API",
+      "url": "https://wiki.sipeed.com/soft/maixpy/en/api_reference/Maix/kpu.html",
+      "claim": "官方文档给出从 Flash 加载模型与 YOLO2 推理接口；需要兼容模型、内存与固件，未核验任意目标或帧率。",
+      "field": "capabilities",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "Run face detection"
+    },
+    {
+      "id": "esp-eye-official-hardware",
+      "kind": "official",
+      "title": "Espressif ESP32-S3-EYE v2.2 官方指南",
+      "url": "https://docs.espressif.com/projects/esp-board-manager/en/latest/references/boards/esp32_s3_eye.html",
+      "claim": "指南确认 OV2640、LCD、Micro-USB 供电及芯片通信；板上 SPI LCD 等内部连接不视为可自由外接的接口。",
+      "field": "summary,interfaces",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "A Micro-USB port used for 5 V power supply"
+    },
+    {
+      "id": "esp-eye-official-local-ai",
+      "kind": "official",
+      "title": "Espressif Developer Portal：ESP-WHO Get started（2026-05-28）",
+      "url": "https://developer.espressif.com/blog/2026/05/esp-who-get-started/",
+      "claim": "官方教程在 ESP32-S3-EYE 上运行 ESP-WHO，并说明视觉处理在 SoC 本地执行。object_detection 此处是已有检测框架路径，不保证任意赛题目标。",
+      "field": "capabilities",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "run image processing workloads directly on Espressif SoCs"
+    },
+    {
+      "id": "esp-eye-community-windows-flash",
+      "kind": "community",
+      "title": "ESP-WHO issue #288：恢复固件后 Windows USB 识别异常",
+      "url": "https://github.com/espressif/esp-who/issues/288",
+      "claim": "SamHall 第一人称报告刷写后 Windows USB 连续连接/断开；讨论最后仅怀疑其板卡硬件问题。可提示准备恢复步骤与备用线材，不能推断所有板卡有此缺陷。",
+      "field": "engineering_experience",
+      "accessed_at": "2026-10-24",
+      "status": "needs_verification",
+      "excerpt": "the board is no longer recognized as a USB device"
+    },
+    {
+      "id": "pi5-official-product",
+      "kind": "official",
+      "title": "Raspberry Pi 5 官方产品规格",
+      "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+      "claim": "产品页列出 USB、双 MIPI 相机/显示连接器、40-pin 排针与 UART 调试口。电源供给能力不能用作算法实耗。",
+      "field": "summary,interfaces",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "2 × 4-lane MIPI camera/display transceivers"
+    },
+    {
+      "id": "pi5-official-gpio",
+      "kind": "official",
+      "title": "Raspberry Pi 官方 GPIO 文档源",
+      "url": "https://github.com/raspberrypi/documentation/blob/master/documentation/asciidoc/computers/raspberry-pi/gpio-on-raspberry-pi.adoc",
+      "claim": "官方文档确认 GPIO 输出高电平为 3.3V，并列出 SPI、I2C 与串行功能；外设需启用并检查引脚复用。",
+      "field": "logic_voltage_v,interfaces",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "high (3.3V) or low (0V)"
+    },
+    {
+      "id": "pi5-official-camera-detection",
+      "kind": "official",
+      "title": "Raspberry Pi 官方 Camera software 文档",
+      "url": "https://www.raspberrypi.com/documentation/computers/camera_software.html",
+      "claim": "官方介绍在 Raspberry Pi 上构建带 TensorFlow Lite 的 rpicam-detect 并运行相机检测，属于本地软件路径。需要摄像头、兼容模型及依赖，不代表预装即用或已实测 Pi 5 性能。",
+      "field": "capabilities",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "rpicam-detect: Not built by default"
+    }
+  ],
+  "recommendations": [
+    {
+      "hardware": {
+        "id": "openmv-rt1062",
+        "name": "OpenMV Cam RT1062（欠货可订购）",
+        "vendor": "OpenMV",
+        "summary": "带 OV5640 摄像头、可用 MicroPython 开发的视觉板，适合颜色、巡线与 AprilTag 原型；核验时官网可欠货订购，交期与现货待确认。",
+        "interfaces": [
+          "UART",
+          "I2C",
+          "SPI",
+          "USB"
+        ],
+        "logic_voltage_v": 3.3,
+        "power_w": null,
+        "price_cny": null,
+        "price_kind": "unknown",
+        "capabilities": [
+          "color_tracking",
+          "line_tracking",
+          "apriltag",
+          "offline_inference"
+        ],
+        "skill_level": 2,
+        "docs_quality": 5,
+        "evidence": [
+          {
+            "id": "rt1062-official-hardware",
+            "kind": "official",
+            "title": "OpenMV Cam RT1062 官方产品与电气说明",
+            "url": "https://openmv.io/products/openmv-cam-rt",
+            "claim": "官方列出 USB-C、SPI、I2C、异步串行接口、3.3V I/O 与 OV5640 摄像头；I/O 不耐 5V。",
+            "field": "interfaces,logic_voltage_v,summary,io_input_max_v",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "All I/O pins output 3.3V"
+          },
+          {
+            "id": "rt1062-official-availability",
+            "kind": "official",
+            "title": "OpenMV Cam RT1062 官网订购状态",
+            "url": "https://openmv.io/products/openmv-cam-rt",
+            "claim": "核验时官方产品正文显示可欠货订购。没有确认现货或送达日期，搜索缓存中的库存数字不能代替本次状态。",
+            "field": "caveats",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "Available for Backorder"
+          },
+          {
+            "id": "rt1062-official-image-api",
+            "kind": "official",
+            "title": "OpenMV Image API：颜色、直线与 AprilTag",
+            "url": "https://docs.openmv.io/v5.0.0/library/omv.image.Image.html",
+            "claim": "官方本地图像 API 提供颜色连通域、阈值直线回归与 AprilTag 检测；需要匹配固件并验证实际任务，不据此保证帧率。",
+            "field": "capabilities",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "find_blobs; get_regression; find_apriltags"
+          }
+        ],
+        "caveats": [
+          "2026-10-24 官网为欠货可订购状态；新购前必须确认现货、修订版、交期与到手成本，不能承诺比赛前送达。",
+          "RT1062 I/O 为 3.3V 且不耐 5V；3.3V 引脚为输出，不能当作供电输入。",
+          "官方说明排针未预焊，新生应将焊接或代焊、接线时间计入准备计划。",
+          "支持本地图像处理不代表已达成赛题帧率、定位精度或运动速度；需测完整处理和通信链路。",
+          "官方分工况电流不代表包含所有附件的统一功耗，power_w 保留未知。",
+          "人民币完整 BOM 未核验，price_cny 保留未知；不把美元板价换算当作现货套件报价。",
+          "skill_level 与 docs_quality 是人工评审分。"
+        ],
+        "availability_status": "backorder",
+        "io_input_max_v": 3.3
+      },
+      "verdict": "pass",
+      "checks": [
+        {
+          "constraint": "预算上限（板卡，不含完整系统）",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "功耗上限",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "通信接口",
+          "expected": [
+            "UART"
+          ],
+          "actual": [
+            "UART",
+            "I2C",
+            "SPI",
+            "USB"
+          ],
+          "status": "pass",
+          "reason": "官方接口证据覆盖需求"
+        },
+        {
+          "constraint": "逻辑电平 V",
+          "expected": null,
+          "actual": 3.3,
+          "status": "not_requested",
+          "reason": "未限定逻辑电平"
+        },
+        {
+          "constraint": "颜色识别 / 色块跟踪",
+          "expected": true,
+          "actual": true,
+          "status": "pass",
+          "reason": "存在官方示例/文档；未承诺比赛环境帧率"
+        },
+        {
+          "constraint": "视觉巡线",
+          "expected": true,
+          "actual": true,
+          "status": "pass",
+          "reason": "存在官方示例/文档；未承诺比赛环境帧率"
+        },
+        {
+          "constraint": "离线运行",
+          "expected": true,
+          "actual": true,
+          "status": "pass",
+          "reason": "官方文档支持设备本地执行；依赖安装可需联网"
+        },
+        {
+          "constraint": "禁用器件",
+          "expected": [],
+          "actual": "OpenMV Cam RT1062（欠货可订购）",
+          "status": "pass",
+          "reason": "未命中用户列出的禁用器件（仍须复核原题）"
+        },
+        {
+          "constraint": "实时检索覆盖",
+          "expected": "查询完成且发现对应官方站点线索",
+          "actual": 30,
+          "status": "pass",
+          "reason": "已检索到候选官方域线索；具体参数仍以固定库逐条官方证据为准"
+        }
+      ],
+      "score": 87,
+      "score_breakdown": [
+        {
+          "name": "任务资料覆盖",
+          "points": 40,
+          "max_points": 40,
+          "reason": "官方示例覆盖已识别任务的比例"
+        },
+        {
+          "name": "文档可用性",
+          "points": 20,
+          "max_points": 20,
+          "reason": "人工维护的文档完整度评分，非客观性能"
+        },
+        {
+          "name": "新生上手",
+          "points": 16,
+          "max_points": 20,
+          "reason": "人工维护的学习难度评分，需结合团队经验"
+        },
+        {
+          "name": "证据覆盖",
+          "points": 15,
+          "max_points": 20,
+          "reason": "已核验官方资料条目数，最高 20 分"
+        },
+        {
+          "name": "供货风险扣分",
+          "points": -4,
+          "max_points": 0,
+          "reason": "官方停产 -10、欠货订购 -4；未核验库存不等于现货，无额外加分"
+        }
+      ],
+      "reasons": [
+        "通信接口：官方接口证据覆盖需求",
+        "颜色识别 / 色块跟踪：存在官方示例/文档；未承诺比赛环境帧率",
+        "视觉巡线：存在官方示例/文档；未承诺比赛环境帧率",
+        "离线运行：官方文档支持设备本地执行；依赖安装可需联网",
+        "禁用器件：未命中用户列出的禁用器件（仍须复核原题）",
+        "实时检索覆盖：已检索到候选官方域线索；具体参数仍以固定库逐条官方证据为准"
+      ],
+      "risks": [
+        "2026-10-24 官网为欠货可订购状态；新购前必须确认现货、修订版、交期与到手成本，不能承诺比赛前送达。",
+        "RT1062 I/O 为 3.3V 且不耐 5V；3.3V 引脚为输出，不能当作供电输入。",
+        "官方说明排针未预焊，新生应将焊接或代焊、接线时间计入准备计划。",
+        "支持本地图像处理不代表已达成赛题帧率、定位精度或运动速度；需测完整处理和通信链路。",
+        "官方分工况电流不代表包含所有附件的统一功耗，power_w 保留未知。",
+        "人民币完整 BOM 未核验，price_cny 保留未知；不把美元板价换算当作现货套件报价。",
+        "skill_level 与 docs_quality 是人工评审分。"
+      ],
+      "live_leads": [
+        {
+          "id": "search-0-0",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://openmv.io/products/openmv-cam-h7-plus?srsltid=AfmBOoq0XC6rMqBfLJyto0uqxKdck9jlG5apIein5rfq9Ti17uy2-NgP",
+          "snippet": "OpenMV Cam H7 Plus OpenMV。OpenMV Cam H7 Plus $135.00 USD We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. See our successor to the OpenMV Cam H7 Plus, the OpenMV Cam N6 here. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily impleme... Read more We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. See our successor to the OpenMV Cam H7 Plus, the OpenMV Cam N6...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-0-1",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://openmv.io/products/openmv-cam-h7-plus?srsltid=AfmBOoowvf_y7KS3v6Jh7RhFzodklQcA7tSvqDmb5UEGV5DU_Jx8yajo",
+          "snippet": "OpenMV Cam H7 Plus OpenMV。View in space View in space View in space View in space OpenMV Cam H7 Plus We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. See our successor to the OpenMV Cam H7 Plus, the OpenMV Cam N6 here. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily impleme... Read more Specs Processor: ARM® 32-bit Cortex®-M7 CPU w/ Double Precision FPU 480 MHz (1027 DMIPS) Core Mark Score: 2400 (compare w/ Raspberry Pi 2: 2340) Supported Image Formats: Grayscale RGB565 JPEG (and BAYER/YUV422) Maximum Supported Resolutions: Grayscale: 2952x1944 (5MP) a...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-0-2",
+          "title": "v4.4.0",
+          "url": "https://docs.openmv.io/dev/ro/changelog/ide/v4.4.0.html",
+          "snippet": "v4.4.0 OpenMV文档。 OpenMV cameras migrate to vendor ID 37C5 with new product and DFU bootloader IDs; boards on the old 1209:ABD1 VID are now labeled “Legacy”. The IDE supports both old and new firmware simultaneously, but Linux users must reinstall the updated udev rules for the new IDs to be recognized. Legacy board entries hidden. Legacy variants of the OpenMV Cam M4/M7/H7/H7 Plus/Pure Thermal boards are now suppressed from the firmware/board selection list via a new legacy board flag (distinct from the pre-existing hidden flag), so users who specifically need a legacy board entry will no longer see it in the dropdown (6d78d6571). Shorter serial timeouts. The default response read timeout drops from 10000 ms to 5000 ms and the write timeout from 6000 ms to 3000 ms (the -override_read_timeo...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-0-3",
+          "title": "H7 plus Firmware warning / out of date / SOLVED - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/t/h7-plus-firmware-warning-out-of-date-solved/2194",
+          "snippet": "H7 plus Firmware warning / out of date / SOLVED - OpenMV Boards - OpenMV Forums OpenMV Forums。H7 plus Firmware warning / out of date / SOLVED Belgium-47 Hlo, all. H7 Plus just worsk fine. Did the first steps. Used the examples… Nice. I did the OpenMv Ide update vers 2.6.9 When connecting the board in the script i get the message : your OpenMv Cam’s firmware is out of date. Do you want to upgrade ?. Click OK, nothing happens. On OpenMv or Github pages i dont find a firmware. Can u direct me to correct firmware or explain how to update H7 Plus. Best regards, Peter OK I FOUND IT… NICE PLACE TO implement the update in the IDE. IN the right down corner border of the IDE. There u get information about your Board, Sensor, Firmware version and so on. With this message : Firmware Version: Out of da...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-0-4",
+          "title": "OpenMV Cam H7 Plus Production Update",
+          "url": "https://openmv.io/blogs/news?page=57",
+          "snippet": "OpenMV Cam H7 Plus Production Update OpenMV。OpenMV Cam H7 Plus Production Update Hey folks! We're still hard at work trying to get the OpenMV Cam H7 Plus into production even though the Coronavirus has definitely slowed things down... Anyway, we'd like to share status updates: OpenMV Cam H7 Plus Status Assembly for the OpenMV Cam H7 Plus main board finished last week! Here are some pics: We expect to finish production of the OV5640 sensor board in about 2 weeks which will put us in April to begin shipping... assuming China is operational in April. Geometric Image Transform Improvements Continuing on performance improvements this year we've speed up all of our geometric image transform algorithms! linear_polar(), log_polar(), lens_correction(), and rotation_correction() are now 2X or more f...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-0-5",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://docs.openmv.io/dev/de/openmvcam/quickref/openmv-cam-h7-plus.html",
+          "snippet": "OpenMV Cam H7 Plus OpenMV。txt by default; created on the very first boot. microSD card — if a card is inserted it is mounted at /sdcard. ROMFS — read‑only, memory‑mapped filesystem at /rom used to ship large data assets (e.g. AI models) that benefit from zero‑copy access. Mounted automatically by MicroPython at startup, before any user Python runs. After mounting, the working directory is set to /sdcard when the card is present, otherwise /flash. The interpreter then runs scripts from that directory: boot.py is executed on every soft reset (cold boot, Ctrl‑D from the REPL, or whenever the running script returns). main.py is executed only on cold boot, immediately after boot.py. Subsequent soft resets re‑run boot.py but drop straight to the REPL — to re‑run main.py you have to fully reset t...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-0-6",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://core-electronics.com.au/openmv-cam-h7-plus-48703.html",
+          "snippet": "OpenMV Cam H7 Plus Core Electronics。OpenMV Cam H7 Plus SKU: DFR0833 Brand: DFRobot Retired Product Replaced by: SEN-16989 This product has been replaced by: SEN-16989 This product is no longer available. This page is only for reference. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. You program the OpenMV Cam in high level Python scripts(courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and its I/O pins in Python. You can easily trigger taking pictures and video on external events or execute mac...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-0-7",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://www.proe.vn/openmv-cam-h7-plus",
+          "snippet": "OpenMV Cam H7 Plus ProE Electronics。 Template Matching You can use template matching with your OpenMV Cam to detect when a translated pre-saved image is in view. For example, template matching can be used to find fiducials on a PCB or read known digits on a display. Image Capture You can use the OpenMV Cam to capture Grayscale/RGB565 BMP/JPG/PPM/PGM images. You directly control how images are captured in your Python script. Best of all, you can preform machine vision functions and/or draw on frames before saving them. Video Recording You can use the OpenMV Cam to record up to Grayscale/RGB565 MJPEG video or GIF images (or RAW video). You directly control how each frame of video is recorded in your Python script and have total control on how video recording starts and finishes. And, like ca...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-0-8",
+          "title": "OpenMV Cam RT1062, H7 Plus, and more!",
+          "url": "https://openmv.io/blogs/news/openmv-cam-rt1062-h7-plus-ide-firmware-updates-and-more",
+          "snippet": "OpenMV Cam RT1062, H7 Plus, and more! OpenMV。Hi all, We finally shipped out half of our order backlog! OpenMV Cam RT1062's are on their way now! Hopefully, we should be able to clear out the remainder of our backlog over next week. Also, the OpenMV Cam RT1062 is now in stock on the online store and available to purchase! As mentioned before, we are sampling second-revision versions of shields for the OpenMV Cam RT1062, which we will be able to roll out next year. Anyway, please buy your OpenMV Cam RT1062 now! OpenMV Cam H7 Plus Production Status As for the 5000 OpenMV Cam H7 Plus units we are building, the factory has completed about 20% of the order so far and will start making partial shipments to our shipping warehouse soon. We expect to be able to start shipping OpenMV Cam H7 Plus unit...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-0-9",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://openmv.io/products/openmv-cam-h7-plus",
+          "snippet": "OpenMV Cam H7 Plus。For full functionality of this site it is necessary to enable JavaScript. Click here for the instructions on how to enable JavaScript in your web browser. Skip to content Search for products Call us for support 1800 123 456 1800 123 456 $0.00 USD Login Home Products All Cams Shields Sensors Lenses Accessories AE3 Accessories Retired Products All Cams Shields Accessories Applications Drones Industrial Sites Manufacturing and Warehouses Agriculture and Construction Security and Smart Cities OEM Vehicles Robotics National Security Education and Research Partners Distributors Engineering Service Firms Licensees Silicon Vendors Trade Groups Download OpenMV IDE OpenMV Viewer Python Calibration Tools Python Library and CLI RPC Library for Arduino Shield Templates Sensor Templat...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-1-0",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://openmv.io/products/openmv-cam-h7-plus?srsltid=AfmBOoq0XC6rMqBfLJyto0uqxKdck9jlG5apIein5rfq9Ti17uy2-NgP",
+          "snippet": "OpenMV Cam H7 Plus OpenMV。OpenMV Cam H7 Plus $135.00 USD We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. See our successor to the OpenMV Cam H7 Plus, the OpenMV Cam N6 here. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily impleme... Read more We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. See our successor to the OpenMV Cam H7 Plus, the OpenMV Cam N6...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-1-1",
+          "title": "别只用来巡线了!OpenMV H7 Plus的‘跨界’玩法:用一套代码同时搞定地面数字和手持卡牌识别",
+          "url": "https://blog.csdn.net/weixin_30439067/article/details/97943719",
+          "snippet": "别只用来巡线了!OpenMV H7 Plus的‘跨界’玩法:用一套代码同时搞定地面数字和手持卡牌识别 CSDN博客。此外,两者的处理帧率、曝光设置和图像预处理流程也存在显著差异。 核心解决策略 可归纳为三个层面: 硬件层优化 :充分利用H7 Plus的双核架构(Cortex-M7+M4),将图像采集与识别任务分配到不同核心 算法层设计 :采用ROI(感兴趣区域)分割技术,在单帧图像中划分不同处理区域 系统层调度 :实现轻量级状态机管理,通过串口指令动态切换工作模式 # 硬件配置示例(双核协作基础)import pyb# M7核心处理高负载任务def m7_task(): while True: process_heavy_algorithm()# M4核心处理实时控制def m4_task(): while True: handle_uart_commands()# 启动双核任务pyb.bootloader() # 确保运行在M7核心_thread.start_new_thread(m4_task, ()) 2. 动态视觉管道的构建方法 传统视觉处理流程是线性的:采集→预处理→特征提取→决策。但在多任务场景下,我们需要更智能的管道管理。以下是经过实战验证的管道设计方案: 处理阶段 巡线模式配置 数字识别模式配置 混合模式优化方案 图像采集 RGB565 QVGA Grayscale QVGA 双缓冲区并行采集 预处理 镜头校正+色彩阈值 直方图均衡化 动态切换预处理链 特征提取 find_blobs() CNN推理 区域隔离处理 决策输出 坐标+角度 分类结果 协议封装融合 关键突破点 在于ROI的动态划分技术。...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-2",
+          "title": "OpenMV4 H7 Plus的摄像头,可以设置成8-bit 灰度图模式吗?",
+          "url": "https://forum.singtown.com/topic/4972/openmv4-h7-plus%E7%9A%84%E6%91%84%E5%83%8F%E5%A4%B4-%E5%8F%AF%E4%BB%A5%E8%AE%BE%E7%BD%AE%E6%88%908-bit-%E7%81%B0%E5%BA%A6%E5%9B%BE%E6%A8%A1%E5%BC%8F%E5%90%97/1",
+          "snippet": "OpenMV4 H7 Plus的摄像头,可以设置成8-bit 灰度图模式吗? 星瞳科技论坛。OpenMV4 H7 Plus的摄像头,可以设置成8-bit 灰度图模式吗? imaz 类似OpenMV4上的sensor.set_pixformat(sensor.GRAYSCALE),分辨率可以达到多少? 2020年5月11日12:21 可以设置8-bit 灰度图,OpenMV4 Plus是5640,500万像素,可以设置WQXGA2(2592x1944),帧率比较低。...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-3",
+          "title": "OPENMV CAM H7 PLUS",
+          "url": "https://www.digikey.in/en/products/detail/sparkfun-electronics/SEN-16989/1568-SEN-16989-ND/13148771",
+          "snippet": "OPENMV CAM H7 PLUS Digi-Key。Image shown is a representation only. Exact specifications should be obtained from the product data sheet. 16989 DigiKey Part Number 1568-16989-ND Manufacturer SparkFun Electronics Manufacturer Product Number 16989 Description OPENMV CAM H7 PLUS Customer Reference Detailed Description OV5640 - Image Sensor Sensor Evaluation Board Product Attributes Category Development Boards, Kits, Programmers Evaluation Boards Sensor Evaluation Boards Interface I2C, Serial, SPI Manufacturer SparkFun Electronics Voltage - Supply 3.3V ~ 5V Packaging Bulk Embedded Yes, MCU, 32-Bit Part Status Obsolete Contents Board(s), Accessories Sensor Type Image Sensor Utilized IC / Part OV5640 Documents & Media PCN Obsolescence/ EOL 16989 obs 15/Jun/2026 Projects LEGO Brick Finder with OpenM...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-4",
+          "title": "H7 plus Firmware warning / out of date / SOLVED - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/t/h7-plus-firmware-warning-out-of-date-solved/2194",
+          "snippet": "H7 plus Firmware warning / out of date / SOLVED - OpenMV Boards - OpenMV Forums OpenMV Forums。H7 plus Firmware warning / out of date / SOLVED Belgium-47 Hlo, all. H7 Plus just worsk fine. Did the first steps. Used the examples… Nice. I did the OpenMv Ide update vers 2.6.9 When connecting the board in the script i get the message : your OpenMv Cam’s firmware is out of date. Do you want to upgrade ?. Click OK, nothing happens. On OpenMv or Github pages i dont find a firmware. Can u direct me to correct firmware or explain how to update H7 Plus. Best regards, Peter OK I FOUND IT… NICE PLACE TO implement the update in the IDE. IN the right down corner border of the IDE. There u get information about your Board, Sensor, Firmware version and so on. With this message : Firmware Version: Out of da...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-5",
+          "title": "OpenMV Cam H7 Files Disappeared (Auto Reset to Factory Settings?) - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/t/openmv-cam-h7-files-disappeared-auto-reset-to-factory-settings/11338",
+          "snippet": "OpenMV Cam H7 Files Disappeared (Auto Reset to Factory Settings?) - OpenMV Boards - OpenMV Forums。OpenMV Cam H7 Files Disappeared (Auto Reset to Factory Settings?) nelson Hello, I would like to ask if there is any mechanism that could cause the internal files on OpenMV to be automatically erased. Environment: Devices: OpenMV Cam H7 Plus (4.5.8 firmware), OpenMV Cam H7 R2(4.7.0 firmware) IDE: OpenMV IDE 4.7.0 Issue description: While I was in the middle of development, I connected the OpenMV to my computer and opened main.py. To my surprise, its contents had been replaced with the default startup code: main.py -- put your code here! import pyb, time led = pyb.LED(3) usb = pyb.USB_VCP() while(usb.isconnected()==False): led.on() time.sleep_ms(150) led.off() time.sleep_ms(100) led.on() time.sl...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-6",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://core-electronics.com.au/openmv-cam-h7-plus-retired.html",
+          "snippet": "OpenMV Cam H7 Plus Core Electronics。OpenMV Cam H7 Plus SKU: SEN-16989 Brand: Sparkfun Tools Product Markdown AI/LLM Markdown Ask a question Retired Product Replaced by: SEN-19728 Description This product has been replaced by: SEN-19728 This product is no longer available. This page is only for reference. The OpenMV H7 Plus Camera is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. The Plus variation adds 32 MB of external 32-bit SDRAM and 32 MB of external quad SPI flash. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data str...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-7",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://openmv.io/products/openmv-cam-h7-plus?srsltid=AfmBOoowvf_y7KS3v6Jh7RhFzodklQcA7tSvqDmb5UEGV5DU_Jx8yajo",
+          "snippet": "OpenMV Cam H7 Plus OpenMV。View in space View in space View in space View in space OpenMV Cam H7 Plus We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. See our successor to the OpenMV Cam H7 Plus, the OpenMV Cam N6 here. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily impleme... Read more Specs Processor: ARM® 32-bit Cortex®-M7 CPU w/ Double Precision FPU 480 MHz (1027 DMIPS) Core Mark Score: 2400 (compare w/ Raspberry Pi 2: 2340) Supported Image Formats: Grayscale RGB565 JPEG (and BAYER/YUV422) Maximum Supported Resolutions: Grayscale: 2952x1944 (5MP) a...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-1-8",
+          "title": "OpenMV cam H7 plus not detected - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/t/openmv-cam-h7-plus-not-detected/6089/2",
+          "snippet": "OpenMV cam H7 plus not detected - OpenMV Boards - OpenMV Forums。OpenMV cam H7 plus not detected jaimeolvera Hello everybody. I am using an OpenMV cam H7 plus for the first time and the IDE does not recognize it. When connecting it to usb it flashes green and then it flashes blue and it stays that way. I followed all the instructions and it is still not detected. Me too post by iabdalkader on Jul 11, 2021 iabdalkader Jul 2021 Try a different USB cable. post by kwagyeman on Jul 11, 2021 kwagyeman Jul 2021 Your cable is probably power only. Use a different cable with data support. post by jaimeolvera on Jul 11, 2021 jaimeolvera Jul 2021 Thank you. Now it is working fine. Muchas gracias....",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-9",
+          "title": "OpenMV Cam H7 Plus Apriltag detection / crashes? · Issue #3268 · openmv/openmv",
+          "url": "https://github.com/openmv/openmv/issues/3268",
+          "snippet": "OpenMV Cam H7 Plus Apriltag detection / crashes? · Issue #3268 · openmv/openmv GitHub。 Test F: is AprilTags involved at all? (one line, five minutes) Worth running whether or not you get to Test E, because it costs nothing and either answer is valuable. This is your normal loop with find_apriltags() replaced by a plain delay of roughly the same duration. You can run it on the stock firmware. Test F: same loop shape and timing, but NO AprilTags. import csi, time csi0 = csi.CSI() csi0.reset() csi0.pixformat(csi.RGB565) csi0.framesize(csi.QQVGA) csi0.snapshot(time=2000) csi0.auto_gain(False) csi0.auto_whitebal(False) clock = time.clock() n = 0 try: while True: clock.tick() img = csi0.snapshot() time.sleep_ms(25) # stands in for find_apriltags() n += 1 print(n, clock.fps()) except BaseExceptio...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-0",
+          "title": "H7 plus Firmware warning / out of date / SOLVED - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/t/h7-plus-firmware-warning-out-of-date-solved/2194",
+          "snippet": "H7 plus Firmware warning / out of date / SOLVED - OpenMV Boards - OpenMV Forums OpenMV Forums。H7 plus Firmware warning / out of date / SOLVED Belgium-47 Hlo, all. H7 Plus just worsk fine. Did the first steps. Used the examples… Nice. I did the OpenMv Ide update vers 2.6.9 When connecting the board in the script i get the message : your OpenMv Cam’s firmware is out of date. Do you want to upgrade ?. Click OK, nothing happens. On OpenMv or Github pages i dont find a firmware. Can u direct me to correct firmware or explain how to update H7 Plus. Best regards, Peter OK I FOUND IT… NICE PLACE TO implement the update in the IDE. IN the right down corner border of the IDE. There u get information about your Board, Sensor, Firmware version and so on. With this message : Firmware Version: Out of da...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-1",
+          "title": "H7 Plus bricked and IDE won't fix it - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/t/h7-plus-bricked-and-ide-wont-fix-it/2103/3",
+          "snippet": "H7 Plus bricked and IDE won't fix it - OpenMV Boards - OpenMV Forums OpenMV Forums。H7 Plus bricked and IDE won’t fix it post by glubad55 on Jan 2, 2021 glubad55 Plugged in my OpenMV Cam H7 Plus today (not new; have used several times). It flashes green 7 times, then white once, waits 2 seconds and then flashes red 3x, and stops flashing. Will not connect in IDE. Steps so far: IDE asked if it was bricked,I said yes, did the disconnect/reconnect step (it would not leave that step on its own so I hit cancel to skip to DFU programming), disconnected H7, added jumper from RST to BOOT, reconnected, and waited. Device Mgr shows an unknown USB device (which is this) instead of a COM device. DFU device does not appear like it did in this other OpenMV post: OpenMV doesnt recognise my CAM H7 - OpenMV...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-2",
+          "title": "Dead OpenMV H7 Plus - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/t/dead-openmv-h7-plus/11607/1",
+          "snippet": "Dead OpenMV H7 Plus - OpenMV Boards - OpenMV Forums。Dead OpenMV H7 Plus lightofshadow Apr 20 I had my openmv board connected to my robot running a FOMO AI model to detect objects and i also needed it to detect colors using find_blobs function. So that is a pretty heavy task to run. After more than an hour of continously testing the robot, the OpenMV board unexpectedly powered off. It was powered through a powerbank and the pins where not shorted. Now my computer doesnt detect it anymore, the led stays shut when i power it and it gets ridicolously hot. I think the board got too hot from running uninterruptedly and something broke. Is there someway i can fix that? What should i test to pin down the problem? post by kwagyeman on Apr 21 kwagyeman Apr 21 Hi, no, what likely happened is that som...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-3",
+          "title": "OpenMV Cam H7 Files Disappeared (Auto Reset to Factory Settings?) - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/t/openmv-cam-h7-files-disappeared-auto-reset-to-factory-settings/11338",
+          "snippet": "OpenMV Cam H7 Files Disappeared (Auto Reset to Factory Settings?) - OpenMV Boards - OpenMV Forums。OpenMV Cam H7 Files Disappeared (Auto Reset to Factory Settings?) nelson Hello, I would like to ask if there is any mechanism that could cause the internal files on OpenMV to be automatically erased. Environment: Devices: OpenMV Cam H7 Plus (4.5.8 firmware), OpenMV Cam H7 R2(4.7.0 firmware) IDE: OpenMV IDE 4.7.0 Issue description: While I was in the middle of development, I connected the OpenMV to my computer and opened main.py. To my surprise, its contents had been replaced with the default startup code: main.py -- put your code here! import pyb, time led = pyb.LED(3) usb = pyb.USB_VCP() while(usb.isconnected()==False): led.on() time.sleep_ms(150) led.off() time.sleep_ms(100) led.on() time.sl...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-4",
+          "title": "Bricked OpenMv Cam H7 Plus - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/t/bricked-openmv-cam-h7-plus/5800/1",
+          "snippet": "Bricked OpenMv Cam H7 Plus - OpenMV Boards - OpenMV Forums。Bricked OpenMv Cam H7 Plus Leyvonne May 2021 I’m having an issue with my H7 plus. When I power the cam, I get a rapid flashing green light. I’ve tried to un-brick it multiple times with no results. Even without the sd card. Any help would be appreciated. Thank you. post by kwagyeman on May 2, 2021 May 2021 The green light is the boot loader. Please click connect in the ide and follow the prompts. post by Leyvonne on May 9, 2021 May 2021 I’m still getting the green boot loader light. I’ve gone through the prompt multiple times in the ide. When I connect the cam, it only stays connected for two seconds then it disconnects on its own. post by iabdalkader on May 9, 2021 May 2021 It sounds like it’s stuck in a boot loop, are you sure yo...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-5",
+          "title": "Cant save openmv script to openmv H7 Plus - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/t/cant-save-openmv-script-to-openmv-h7-plus/11408",
+          "snippet": "Cant save openmv script to openmv H7 Plus - OpenMV Boards - OpenMV Forums OpenMV论坛。Cant save openmv script to openmv H7 Plus OPSLeoGong Oct 2025 Im on MacOS and when i go to tools and try to click save open script to cam its blacked out and cant click it. Can anyone help me? Me too post by kwagyeman on Oct 31, 2025 kwagyeman Oct 2025 It’s because the disk is not found in OpenMV IDE, either it’s not mounted by your PC or the IDE didn’t discover it. Try disconnecting and reconnecting via the button in the IDE. post by OPSLeoGong on Nov 1, 2025 OPSLeoGong Nov 2025 ive tried it but its still blacked out i can run code on it but it doesnt save post by kwagyeman on Nov 1, 2025 kwagyeman Nov 2025 Does a disk appear when the camera is plugged into USB? post by OPSLeoGong on Nov 2, 2025 OPSLeoGong ...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-6",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://openmv.io/products/openmv-cam-h7-plus?srsltid=AfmBOoq0XC6rMqBfLJyto0uqxKdck9jlG5apIein5rfq9Ti17uy2-NgP",
+          "snippet": "OpenMV Cam H7 Plus OpenMV。OpenMV Cam H7 Plus $135.00 USD We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. See our successor to the OpenMV Cam H7 Plus, the OpenMV Cam N6 here. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily impleme... Read more We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. See our successor to the OpenMV Cam H7 Plus, the OpenMV Cam N6...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-2-7",
+          "title": "OpenMV not connecting to IDE. green light keeps blinking",
+          "url": "https://forums.openmv.io/t/openmv-not-connecting-to-ide-green-light-keeps-blinking/11803/4",
+          "snippet": "OpenMV not connecting to IDE. green light keeps blinking OpenMV Forums。OpenMV not connecting to IDE. green light keeps blinking post by HMT on Jul 4 HMT Jul 4 When i connect openMV H7 plus cam to the PC. the green light contineusly keeps blinking and the cam becomes hot after a couple of mins. but the IDE doesnt detect any usb, neither my computer ports detect anything. i tried it with multiple computer and multiple USB cables. same problem persists. I have also tried force boot by connecting jumper wires at boot to reset pins, the ide temporeryly resets and downloads the latest firmware, but while downloading, it again disconnects from the pc. and the problem persists please let me know how i can fix it. Thank you. post by kwagyeman on Jul 5 kwagyeman Jul 5 Hi, it sounds like the board is...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-8",
+          "title": "Dead OpenMV H7 Plus - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/t/dead-openmv-h7-plus/11607",
+          "snippet": "Dead OpenMV H7 Plus - OpenMV Boards - OpenMV Forums OpenMV论坛。Dead OpenMV H7 Plus lightofshadow I had my openmv board connected to my robot running a FOMO AI model to detect objects and i also needed it to detect colors using find_blobs function. So that is a pretty heavy task to run. After more than an hour of continously testing the robot, the OpenMV board unexpectedly powered off. It was powered through a powerbank and the pins where not shorted. Now my computer doesnt detect it anymore, the led stays shut when i power it and it gets ridicolously hot. I think the board got too hot from running uninterruptedly and something broke. Is there someway i can fix that? What should i test to pin down the problem? Me too kwagyeman Apr 21 Hi, no, what likely happened is that something was overvolt...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-9",
+          "title": "OpenMV Cam H7 Plus Apriltag detection / crashes? · Issue #3268 · openmv/openmv",
+          "url": "https://github.com/openmv/openmv/issues/3268",
+          "snippet": "OpenMV Cam H7 Plus Apriltag detection / crashes? · Issue #3268 · openmv/openmv GitHub。 Test F: is AprilTags involved at all? (one line, five minutes) Worth running whether or not you get to Test E, because it costs nothing and either answer is valuable. This is your normal loop with find_apriltags() replaced by a plain delay of roughly the same duration. You can run it on the stock firmware. Test F: same loop shape and timing, but NO AprilTags. import csi, time csi0 = csi.CSI() csi0.reset() csi0.pixformat(csi.RGB565) csi0.framesize(csi.QQVGA) csi0.snapshot(time=2000) csi0.auto_gain(False) csi0.auto_whitebal(False) clock = time.clock() n = 0 try: while True: clock.tick() img = csi0.snapshot() time.sleep_ms(25) # stands in for find_apriltags() n += 1 print(n, clock.fps()) except BaseExceptio...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测",
+          "relation": "unverified_lead"
+        }
+      ],
+      "evidence_ids": [
+        "rt1062-official-hardware",
+        "rt1062-official-availability",
+        "rt1062-official-image-api"
+      ],
+      "suitability": {
+        "source": "user_reported",
+        "owned": false,
+        "adjustment": -9,
+        "risks": [
+          "需要新购，停产/欠货与交期不明会影响交付。",
+          "仅有 C 基础，需验证 MicroPython/MaixPy 的示例修改能力。"
+        ],
+        "advantages": [],
+        "missing_inputs": [],
+        "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+      },
+      "ranking_score": 78
+    },
+    {
+      "hardware": {
+        "id": "openmv-h7-plus",
+        "name": "OpenMV Cam H7 Plus",
+        "vendor": "OpenMV",
+        "summary": "自带 OV5640 摄像头、用 MicroPython 编程的视觉板；适合作为已有设备的颜色、巡线与 AprilTag 原型候选。官方已停止常规生产。",
+        "interfaces": [
+          "UART",
+          "I2C",
+          "SPI",
+          "USB"
+        ],
+        "logic_voltage_v": 3.3,
+        "power_w": null,
+        "price_cny": null,
+        "price_kind": "unknown",
+        "capabilities": [
+          "color_tracking",
+          "line_tracking",
+          "apriltag",
+          "offline_inference"
+        ],
+        "skill_level": 2,
+        "docs_quality": 5,
+        "evidence": [
+          {
+            "id": "openmv-official-hardware",
+            "kind": "official",
+            "title": "OpenMV Cam H7 Plus 官方产品与电气说明",
+            "url": "https://openmv.io/products/openmv-cam-h7-plus",
+            "claim": "官方列出 USB、SPI、I2C、异步串行接口，I/O 输出为 3.3V；随板为 OV5640 摄像头。",
+            "field": "interfaces,logic_voltage_v,summary,io_input_max_v",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "All I/O pins output 3.3V"
+          },
+          {
+            "id": "openmv-official-image-api",
+            "kind": "official",
+            "title": "OpenMV Image API：颜色、直线与 AprilTag",
+            "url": "https://docs.openmv.io/v5.0.0/library/omv.image.Image.html",
+            "claim": "官方本地图像 API 提供颜色阈值连通域、阈值像素直线回归与 AprilTag 检测；这是软件能力证据，未保证本赛题帧率或精度。",
+            "field": "capabilities",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "find_blobs; get_regression; find_apriltags"
+          },
+          {
+            "id": "openmv-official-lifecycle",
+            "kind": "official",
+            "title": "OpenMV H7 Plus 产品生命周期说明",
+            "url": "https://openmv.io/products/openmv-cam-h7-plus",
+            "claim": "官方称该版本已不再生产，仍接受定制批量订单；页面保留作资料用途。采购前必须确认库存与供货。",
+            "field": "caveats",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "We are no longer producing this version"
+          },
+          {
+            "id": "openmv-community-apriltag-pipeline",
+            "kind": "community",
+            "title": "Higher fps from OpenMV Cam H7 plus and MT9V034（第一人称工程记录）",
+            "url": "https://forums.openmv.io/t/higher-fps-from-openmv-cam-h7-plus-and-mt9v034/5585",
+            "claim": "作者 Priyanka 描述加入 AprilTag 计算和 ROS 发布后帧率下降；讨论涉及分辨率、传感器与 readout control。可生成验证清单，不能作为统一规格或本项目实测。",
+            "field": "engineering_experience",
+            "accessed_at": "2026-10-24",
+            "status": "needs_verification",
+            "excerpt": "the fps drops down to ~30 fps"
+          }
+        ],
+        "caveats": [
+          "官方已停止常规生产；如需新购，先确认供货、具体板型及是否原厂。",
+          "logic_voltage_v 表示 I/O 输出电平，不能当作 VIN；部分引脚模式的耐压另有例外。",
+          "官方给出的不同工况电流不能压成全套硬件统一功耗，power_w 保留未知。",
+          "算法 API 可用不等于达成指定帧率、距离、光照、运动速度或识别精度；需用实际赛场条件验证。",
+          "本地视觉运行前需预装固件与脚本；offline_inference 只表示运行时有本地处理路径。",
+          "skill_level 与 docs_quality 是项目人工评审分，不是制造商指标。"
+        ],
+        "availability_status": "discontinued",
+        "io_input_max_v": 5.0
+      },
+      "verdict": "pass",
+      "checks": [
+        {
+          "constraint": "预算上限（板卡，不含完整系统）",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "功耗上限",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "通信接口",
+          "expected": [
+            "UART"
+          ],
+          "actual": [
+            "UART",
+            "I2C",
+            "SPI",
+            "USB"
+          ],
+          "status": "pass",
+          "reason": "官方接口证据覆盖需求"
+        },
+        {
+          "constraint": "逻辑电平 V",
+          "expected": null,
+          "actual": 3.3,
+          "status": "not_requested",
+          "reason": "未限定逻辑电平"
+        },
+        {
+          "constraint": "颜色识别 / 色块跟踪",
+          "expected": true,
+          "actual": true,
+          "status": "pass",
+          "reason": "存在官方示例/文档；未承诺比赛环境帧率"
+        },
+        {
+          "constraint": "视觉巡线",
+          "expected": true,
+          "actual": true,
+          "status": "pass",
+          "reason": "存在官方示例/文档；未承诺比赛环境帧率"
+        },
+        {
+          "constraint": "离线运行",
+          "expected": true,
+          "actual": true,
+          "status": "pass",
+          "reason": "官方文档支持设备本地执行；依赖安装可需联网"
+        },
+        {
+          "constraint": "禁用器件",
+          "expected": [],
+          "actual": "OpenMV Cam H7 Plus",
+          "status": "pass",
+          "reason": "未命中用户列出的禁用器件（仍须复核原题）"
+        },
+        {
+          "constraint": "实时检索覆盖",
+          "expected": "查询完成且发现对应官方站点线索",
+          "actual": 30,
+          "status": "pass",
+          "reason": "已检索到候选官方域线索；具体参数仍以固定库逐条官方证据为准"
+        }
+      ],
+      "score": 81,
+      "score_breakdown": [
+        {
+          "name": "任务资料覆盖",
+          "points": 40,
+          "max_points": 40,
+          "reason": "官方示例覆盖已识别任务的比例"
+        },
+        {
+          "name": "文档可用性",
+          "points": 20,
+          "max_points": 20,
+          "reason": "人工维护的文档完整度评分，非客观性能"
+        },
+        {
+          "name": "新生上手",
+          "points": 16,
+          "max_points": 20,
+          "reason": "人工维护的学习难度评分，需结合团队经验"
+        },
+        {
+          "name": "证据覆盖",
+          "points": 15,
+          "max_points": 20,
+          "reason": "已核验官方资料条目数，最高 20 分"
+        },
+        {
+          "name": "供货风险扣分",
+          "points": -10,
+          "max_points": 0,
+          "reason": "官方停产 -10、欠货订购 -4；未核验库存不等于现货，无额外加分"
+        }
+      ],
+      "reasons": [
+        "通信接口：官方接口证据覆盖需求",
+        "颜色识别 / 色块跟踪：存在官方示例/文档；未承诺比赛环境帧率",
+        "视觉巡线：存在官方示例/文档；未承诺比赛环境帧率",
+        "离线运行：官方文档支持设备本地执行；依赖安装可需联网",
+        "禁用器件：未命中用户列出的禁用器件（仍须复核原题）",
+        "实时检索覆盖：已检索到候选官方域线索；具体参数仍以固定库逐条官方证据为准"
+      ],
+      "risks": [
+        "官方已停止常规生产；如需新购，先确认供货、具体板型及是否原厂。",
+        "logic_voltage_v 表示 I/O 输出电平，不能当作 VIN；部分引脚模式的耐压另有例外。",
+        "官方给出的不同工况电流不能压成全套硬件统一功耗，power_w 保留未知。",
+        "算法 API 可用不等于达成指定帧率、距离、光照、运动速度或识别精度；需用实际赛场条件验证。",
+        "本地视觉运行前需预装固件与脚本；offline_inference 只表示运行时有本地处理路径。",
+        "skill_level 与 docs_quality 是项目人工评审分，不是制造商指标。"
+      ],
+      "live_leads": [
+        {
+          "id": "search-0-0",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://openmv.io/products/openmv-cam-h7-plus?srsltid=AfmBOoq0XC6rMqBfLJyto0uqxKdck9jlG5apIein5rfq9Ti17uy2-NgP",
+          "snippet": "OpenMV Cam H7 Plus OpenMV。OpenMV Cam H7 Plus $135.00 USD We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. See our successor to the OpenMV Cam H7 Plus, the OpenMV Cam N6 here. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily impleme... Read more We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. See our successor to the OpenMV Cam H7 Plus, the OpenMV Cam N6...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-0-1",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://openmv.io/products/openmv-cam-h7-plus?srsltid=AfmBOoowvf_y7KS3v6Jh7RhFzodklQcA7tSvqDmb5UEGV5DU_Jx8yajo",
+          "snippet": "OpenMV Cam H7 Plus OpenMV。View in space View in space View in space View in space OpenMV Cam H7 Plus We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. See our successor to the OpenMV Cam H7 Plus, the OpenMV Cam N6 here. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily impleme... Read more Specs Processor: ARM® 32-bit Cortex®-M7 CPU w/ Double Precision FPU 480 MHz (1027 DMIPS) Core Mark Score: 2400 (compare w/ Raspberry Pi 2: 2340) Supported Image Formats: Grayscale RGB565 JPEG (and BAYER/YUV422) Maximum Supported Resolutions: Grayscale: 2952x1944 (5MP) a...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-0-2",
+          "title": "v4.4.0",
+          "url": "https://docs.openmv.io/dev/ro/changelog/ide/v4.4.0.html",
+          "snippet": "v4.4.0 OpenMV文档。 OpenMV cameras migrate to vendor ID 37C5 with new product and DFU bootloader IDs; boards on the old 1209:ABD1 VID are now labeled “Legacy”. The IDE supports both old and new firmware simultaneously, but Linux users must reinstall the updated udev rules for the new IDs to be recognized. Legacy board entries hidden. Legacy variants of the OpenMV Cam M4/M7/H7/H7 Plus/Pure Thermal boards are now suppressed from the firmware/board selection list via a new legacy board flag (distinct from the pre-existing hidden flag), so users who specifically need a legacy board entry will no longer see it in the dropdown (6d78d6571). Shorter serial timeouts. The default response read timeout drops from 10000 ms to 5000 ms and the write timeout from 6000 ms to 3000 ms (the -override_read_timeo...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-0-3",
+          "title": "H7 plus Firmware warning / out of date / SOLVED - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/t/h7-plus-firmware-warning-out-of-date-solved/2194",
+          "snippet": "H7 plus Firmware warning / out of date / SOLVED - OpenMV Boards - OpenMV Forums OpenMV Forums。H7 plus Firmware warning / out of date / SOLVED Belgium-47 Hlo, all. H7 Plus just worsk fine. Did the first steps. Used the examples… Nice. I did the OpenMv Ide update vers 2.6.9 When connecting the board in the script i get the message : your OpenMv Cam’s firmware is out of date. Do you want to upgrade ?. Click OK, nothing happens. On OpenMv or Github pages i dont find a firmware. Can u direct me to correct firmware or explain how to update H7 Plus. Best regards, Peter OK I FOUND IT… NICE PLACE TO implement the update in the IDE. IN the right down corner border of the IDE. There u get information about your Board, Sensor, Firmware version and so on. With this message : Firmware Version: Out of da...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-0-4",
+          "title": "OpenMV Cam H7 Plus Production Update",
+          "url": "https://openmv.io/blogs/news?page=57",
+          "snippet": "OpenMV Cam H7 Plus Production Update OpenMV。OpenMV Cam H7 Plus Production Update Hey folks! We're still hard at work trying to get the OpenMV Cam H7 Plus into production even though the Coronavirus has definitely slowed things down... Anyway, we'd like to share status updates: OpenMV Cam H7 Plus Status Assembly for the OpenMV Cam H7 Plus main board finished last week! Here are some pics: We expect to finish production of the OV5640 sensor board in about 2 weeks which will put us in April to begin shipping... assuming China is operational in April. Geometric Image Transform Improvements Continuing on performance improvements this year we've speed up all of our geometric image transform algorithms! linear_polar(), log_polar(), lens_correction(), and rotation_correction() are now 2X or more f...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-0-5",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://docs.openmv.io/dev/de/openmvcam/quickref/openmv-cam-h7-plus.html",
+          "snippet": "OpenMV Cam H7 Plus OpenMV。txt by default; created on the very first boot. microSD card — if a card is inserted it is mounted at /sdcard. ROMFS — read‑only, memory‑mapped filesystem at /rom used to ship large data assets (e.g. AI models) that benefit from zero‑copy access. Mounted automatically by MicroPython at startup, before any user Python runs. After mounting, the working directory is set to /sdcard when the card is present, otherwise /flash. The interpreter then runs scripts from that directory: boot.py is executed on every soft reset (cold boot, Ctrl‑D from the REPL, or whenever the running script returns). main.py is executed only on cold boot, immediately after boot.py. Subsequent soft resets re‑run boot.py but drop straight to the REPL — to re‑run main.py you have to fully reset t...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-0-6",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://core-electronics.com.au/openmv-cam-h7-plus-48703.html",
+          "snippet": "OpenMV Cam H7 Plus Core Electronics。OpenMV Cam H7 Plus SKU: DFR0833 Brand: DFRobot Retired Product Replaced by: SEN-16989 This product has been replaced by: SEN-16989 This product is no longer available. This page is only for reference. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. You program the OpenMV Cam in high level Python scripts(courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and its I/O pins in Python. You can easily trigger taking pictures and video on external events or execute mac...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-0-7",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://www.proe.vn/openmv-cam-h7-plus",
+          "snippet": "OpenMV Cam H7 Plus ProE Electronics。 Template Matching You can use template matching with your OpenMV Cam to detect when a translated pre-saved image is in view. For example, template matching can be used to find fiducials on a PCB or read known digits on a display. Image Capture You can use the OpenMV Cam to capture Grayscale/RGB565 BMP/JPG/PPM/PGM images. You directly control how images are captured in your Python script. Best of all, you can preform machine vision functions and/or draw on frames before saving them. Video Recording You can use the OpenMV Cam to record up to Grayscale/RGB565 MJPEG video or GIF images (or RAW video). You directly control how each frame of video is recorded in your Python script and have total control on how video recording starts and finishes. And, like ca...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-0-8",
+          "title": "OpenMV Cam RT1062, H7 Plus, and more!",
+          "url": "https://openmv.io/blogs/news/openmv-cam-rt1062-h7-plus-ide-firmware-updates-and-more",
+          "snippet": "OpenMV Cam RT1062, H7 Plus, and more! OpenMV。Hi all, We finally shipped out half of our order backlog! OpenMV Cam RT1062's are on their way now! Hopefully, we should be able to clear out the remainder of our backlog over next week. Also, the OpenMV Cam RT1062 is now in stock on the online store and available to purchase! As mentioned before, we are sampling second-revision versions of shields for the OpenMV Cam RT1062, which we will be able to roll out next year. Anyway, please buy your OpenMV Cam RT1062 now! OpenMV Cam H7 Plus Production Status As for the 5000 OpenMV Cam H7 Plus units we are building, the factory has completed about 20% of the order so far and will start making partial shipments to our shipping warehouse soon. We expect to be able to start shipping OpenMV Cam H7 Plus unit...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-0-9",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://openmv.io/products/openmv-cam-h7-plus",
+          "snippet": "OpenMV Cam H7 Plus。For full functionality of this site it is necessary to enable JavaScript. Click here for the instructions on how to enable JavaScript in your web browser. Skip to content Search for products Call us for support 1800 123 456 1800 123 456 $0.00 USD Login Home Products All Cams Shields Sensors Lenses Accessories AE3 Accessories Retired Products All Cams Shields Accessories Applications Drones Industrial Sites Manufacturing and Warehouses Agriculture and Construction Security and Smart Cities OEM Vehicles Robotics National Security Education and Research Partners Distributors Engineering Service Firms Licensees Silicon Vendors Trade Groups Download OpenMV IDE OpenMV Viewer Python Calibration Tools Python Library and CLI RPC Library for Arduino Shield Templates Sensor Templat...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-1-0",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://openmv.io/products/openmv-cam-h7-plus?srsltid=AfmBOoq0XC6rMqBfLJyto0uqxKdck9jlG5apIein5rfq9Ti17uy2-NgP",
+          "snippet": "OpenMV Cam H7 Plus OpenMV。OpenMV Cam H7 Plus $135.00 USD We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. See our successor to the OpenMV Cam H7 Plus, the OpenMV Cam N6 here. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily impleme... Read more We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. See our successor to the OpenMV Cam H7 Plus, the OpenMV Cam N6...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-1-1",
+          "title": "别只用来巡线了!OpenMV H7 Plus的‘跨界’玩法:用一套代码同时搞定地面数字和手持卡牌识别",
+          "url": "https://blog.csdn.net/weixin_30439067/article/details/97943719",
+          "snippet": "别只用来巡线了!OpenMV H7 Plus的‘跨界’玩法:用一套代码同时搞定地面数字和手持卡牌识别 CSDN博客。此外,两者的处理帧率、曝光设置和图像预处理流程也存在显著差异。 核心解决策略 可归纳为三个层面: 硬件层优化 :充分利用H7 Plus的双核架构(Cortex-M7+M4),将图像采集与识别任务分配到不同核心 算法层设计 :采用ROI(感兴趣区域)分割技术,在单帧图像中划分不同处理区域 系统层调度 :实现轻量级状态机管理,通过串口指令动态切换工作模式 # 硬件配置示例(双核协作基础)import pyb# M7核心处理高负载任务def m7_task(): while True: process_heavy_algorithm()# M4核心处理实时控制def m4_task(): while True: handle_uart_commands()# 启动双核任务pyb.bootloader() # 确保运行在M7核心_thread.start_new_thread(m4_task, ()) 2. 动态视觉管道的构建方法 传统视觉处理流程是线性的:采集→预处理→特征提取→决策。但在多任务场景下,我们需要更智能的管道管理。以下是经过实战验证的管道设计方案: 处理阶段 巡线模式配置 数字识别模式配置 混合模式优化方案 图像采集 RGB565 QVGA Grayscale QVGA 双缓冲区并行采集 预处理 镜头校正+色彩阈值 直方图均衡化 动态切换预处理链 特征提取 find_blobs() CNN推理 区域隔离处理 决策输出 坐标+角度 分类结果 协议封装融合 关键突破点 在于ROI的动态划分技术。...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-2",
+          "title": "OpenMV4 H7 Plus的摄像头,可以设置成8-bit 灰度图模式吗?",
+          "url": "https://forum.singtown.com/topic/4972/openmv4-h7-plus%E7%9A%84%E6%91%84%E5%83%8F%E5%A4%B4-%E5%8F%AF%E4%BB%A5%E8%AE%BE%E7%BD%AE%E6%88%908-bit-%E7%81%B0%E5%BA%A6%E5%9B%BE%E6%A8%A1%E5%BC%8F%E5%90%97/1",
+          "snippet": "OpenMV4 H7 Plus的摄像头,可以设置成8-bit 灰度图模式吗? 星瞳科技论坛。OpenMV4 H7 Plus的摄像头,可以设置成8-bit 灰度图模式吗? imaz 类似OpenMV4上的sensor.set_pixformat(sensor.GRAYSCALE),分辨率可以达到多少? 2020年5月11日12:21 可以设置8-bit 灰度图,OpenMV4 Plus是5640,500万像素,可以设置WQXGA2(2592x1944),帧率比较低。...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-3",
+          "title": "OPENMV CAM H7 PLUS",
+          "url": "https://www.digikey.in/en/products/detail/sparkfun-electronics/SEN-16989/1568-SEN-16989-ND/13148771",
+          "snippet": "OPENMV CAM H7 PLUS Digi-Key。Image shown is a representation only. Exact specifications should be obtained from the product data sheet. 16989 DigiKey Part Number 1568-16989-ND Manufacturer SparkFun Electronics Manufacturer Product Number 16989 Description OPENMV CAM H7 PLUS Customer Reference Detailed Description OV5640 - Image Sensor Sensor Evaluation Board Product Attributes Category Development Boards, Kits, Programmers Evaluation Boards Sensor Evaluation Boards Interface I2C, Serial, SPI Manufacturer SparkFun Electronics Voltage - Supply 3.3V ~ 5V Packaging Bulk Embedded Yes, MCU, 32-Bit Part Status Obsolete Contents Board(s), Accessories Sensor Type Image Sensor Utilized IC / Part OV5640 Documents & Media PCN Obsolescence/ EOL 16989 obs 15/Jun/2026 Projects LEGO Brick Finder with OpenM...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-4",
+          "title": "H7 plus Firmware warning / out of date / SOLVED - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/t/h7-plus-firmware-warning-out-of-date-solved/2194",
+          "snippet": "H7 plus Firmware warning / out of date / SOLVED - OpenMV Boards - OpenMV Forums OpenMV Forums。H7 plus Firmware warning / out of date / SOLVED Belgium-47 Hlo, all. H7 Plus just worsk fine. Did the first steps. Used the examples… Nice. I did the OpenMv Ide update vers 2.6.9 When connecting the board in the script i get the message : your OpenMv Cam’s firmware is out of date. Do you want to upgrade ?. Click OK, nothing happens. On OpenMv or Github pages i dont find a firmware. Can u direct me to correct firmware or explain how to update H7 Plus. Best regards, Peter OK I FOUND IT… NICE PLACE TO implement the update in the IDE. IN the right down corner border of the IDE. There u get information about your Board, Sensor, Firmware version and so on. With this message : Firmware Version: Out of da...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-5",
+          "title": "OpenMV Cam H7 Files Disappeared (Auto Reset to Factory Settings?) - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/t/openmv-cam-h7-files-disappeared-auto-reset-to-factory-settings/11338",
+          "snippet": "OpenMV Cam H7 Files Disappeared (Auto Reset to Factory Settings?) - OpenMV Boards - OpenMV Forums。OpenMV Cam H7 Files Disappeared (Auto Reset to Factory Settings?) nelson Hello, I would like to ask if there is any mechanism that could cause the internal files on OpenMV to be automatically erased. Environment: Devices: OpenMV Cam H7 Plus (4.5.8 firmware), OpenMV Cam H7 R2(4.7.0 firmware) IDE: OpenMV IDE 4.7.0 Issue description: While I was in the middle of development, I connected the OpenMV to my computer and opened main.py. To my surprise, its contents had been replaced with the default startup code: main.py -- put your code here! import pyb, time led = pyb.LED(3) usb = pyb.USB_VCP() while(usb.isconnected()==False): led.on() time.sleep_ms(150) led.off() time.sleep_ms(100) led.on() time.sl...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-6",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://core-electronics.com.au/openmv-cam-h7-plus-retired.html",
+          "snippet": "OpenMV Cam H7 Plus Core Electronics。OpenMV Cam H7 Plus SKU: SEN-16989 Brand: Sparkfun Tools Product Markdown AI/LLM Markdown Ask a question Retired Product Replaced by: SEN-19728 Description This product has been replaced by: SEN-19728 This product is no longer available. This page is only for reference. The OpenMV H7 Plus Camera is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. The Plus variation adds 32 MB of external 32-bit SDRAM and 32 MB of external quad SPI flash. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data str...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-7",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://openmv.io/products/openmv-cam-h7-plus?srsltid=AfmBOoowvf_y7KS3v6Jh7RhFzodklQcA7tSvqDmb5UEGV5DU_Jx8yajo",
+          "snippet": "OpenMV Cam H7 Plus OpenMV。View in space View in space View in space View in space OpenMV Cam H7 Plus We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. See our successor to the OpenMV Cam H7 Plus, the OpenMV Cam N6 here. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily impleme... Read more Specs Processor: ARM® 32-bit Cortex®-M7 CPU w/ Double Precision FPU 480 MHz (1027 DMIPS) Core Mark Score: 2400 (compare w/ Raspberry Pi 2: 2340) Supported Image Formats: Grayscale RGB565 JPEG (and BAYER/YUV422) Maximum Supported Resolutions: Grayscale: 2952x1944 (5MP) a...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-1-8",
+          "title": "OpenMV cam H7 plus not detected - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/t/openmv-cam-h7-plus-not-detected/6089/2",
+          "snippet": "OpenMV cam H7 plus not detected - OpenMV Boards - OpenMV Forums。OpenMV cam H7 plus not detected jaimeolvera Hello everybody. I am using an OpenMV cam H7 plus for the first time and the IDE does not recognize it. When connecting it to usb it flashes green and then it flashes blue and it stays that way. I followed all the instructions and it is still not detected. Me too post by iabdalkader on Jul 11, 2021 iabdalkader Jul 2021 Try a different USB cable. post by kwagyeman on Jul 11, 2021 kwagyeman Jul 2021 Your cable is probably power only. Use a different cable with data support. post by jaimeolvera on Jul 11, 2021 jaimeolvera Jul 2021 Thank you. Now it is working fine. Muchas gracias....",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-9",
+          "title": "OpenMV Cam H7 Plus Apriltag detection / crashes? · Issue #3268 · openmv/openmv",
+          "url": "https://github.com/openmv/openmv/issues/3268",
+          "snippet": "OpenMV Cam H7 Plus Apriltag detection / crashes? · Issue #3268 · openmv/openmv GitHub。 Test F: is AprilTags involved at all? (one line, five minutes) Worth running whether or not you get to Test E, because it costs nothing and either answer is valuable. This is your normal loop with find_apriltags() replaced by a plain delay of roughly the same duration. You can run it on the stock firmware. Test F: same loop shape and timing, but NO AprilTags. import csi, time csi0 = csi.CSI() csi0.reset() csi0.pixformat(csi.RGB565) csi0.framesize(csi.QQVGA) csi0.snapshot(time=2000) csi0.auto_gain(False) csi0.auto_whitebal(False) clock = time.clock() n = 0 try: while True: clock.tick() img = csi0.snapshot() time.sleep_ms(25) # stands in for find_apriltags() n += 1 print(n, clock.fps()) except BaseExceptio...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-0",
+          "title": "H7 plus Firmware warning / out of date / SOLVED - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/t/h7-plus-firmware-warning-out-of-date-solved/2194",
+          "snippet": "H7 plus Firmware warning / out of date / SOLVED - OpenMV Boards - OpenMV Forums OpenMV Forums。H7 plus Firmware warning / out of date / SOLVED Belgium-47 Hlo, all. H7 Plus just worsk fine. Did the first steps. Used the examples… Nice. I did the OpenMv Ide update vers 2.6.9 When connecting the board in the script i get the message : your OpenMv Cam’s firmware is out of date. Do you want to upgrade ?. Click OK, nothing happens. On OpenMv or Github pages i dont find a firmware. Can u direct me to correct firmware or explain how to update H7 Plus. Best regards, Peter OK I FOUND IT… NICE PLACE TO implement the update in the IDE. IN the right down corner border of the IDE. There u get information about your Board, Sensor, Firmware version and so on. With this message : Firmware Version: Out of da...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-1",
+          "title": "H7 Plus bricked and IDE won't fix it - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/t/h7-plus-bricked-and-ide-wont-fix-it/2103/3",
+          "snippet": "H7 Plus bricked and IDE won't fix it - OpenMV Boards - OpenMV Forums OpenMV Forums。H7 Plus bricked and IDE won’t fix it post by glubad55 on Jan 2, 2021 glubad55 Plugged in my OpenMV Cam H7 Plus today (not new; have used several times). It flashes green 7 times, then white once, waits 2 seconds and then flashes red 3x, and stops flashing. Will not connect in IDE. Steps so far: IDE asked if it was bricked,I said yes, did the disconnect/reconnect step (it would not leave that step on its own so I hit cancel to skip to DFU programming), disconnected H7, added jumper from RST to BOOT, reconnected, and waited. Device Mgr shows an unknown USB device (which is this) instead of a COM device. DFU device does not appear like it did in this other OpenMV post: OpenMV doesnt recognise my CAM H7 - OpenMV...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-2",
+          "title": "Dead OpenMV H7 Plus - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/t/dead-openmv-h7-plus/11607/1",
+          "snippet": "Dead OpenMV H7 Plus - OpenMV Boards - OpenMV Forums。Dead OpenMV H7 Plus lightofshadow Apr 20 I had my openmv board connected to my robot running a FOMO AI model to detect objects and i also needed it to detect colors using find_blobs function. So that is a pretty heavy task to run. After more than an hour of continously testing the robot, the OpenMV board unexpectedly powered off. It was powered through a powerbank and the pins where not shorted. Now my computer doesnt detect it anymore, the led stays shut when i power it and it gets ridicolously hot. I think the board got too hot from running uninterruptedly and something broke. Is there someway i can fix that? What should i test to pin down the problem? post by kwagyeman on Apr 21 kwagyeman Apr 21 Hi, no, what likely happened is that som...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-3",
+          "title": "OpenMV Cam H7 Files Disappeared (Auto Reset to Factory Settings?) - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/t/openmv-cam-h7-files-disappeared-auto-reset-to-factory-settings/11338",
+          "snippet": "OpenMV Cam H7 Files Disappeared (Auto Reset to Factory Settings?) - OpenMV Boards - OpenMV Forums。OpenMV Cam H7 Files Disappeared (Auto Reset to Factory Settings?) nelson Hello, I would like to ask if there is any mechanism that could cause the internal files on OpenMV to be automatically erased. Environment: Devices: OpenMV Cam H7 Plus (4.5.8 firmware), OpenMV Cam H7 R2(4.7.0 firmware) IDE: OpenMV IDE 4.7.0 Issue description: While I was in the middle of development, I connected the OpenMV to my computer and opened main.py. To my surprise, its contents had been replaced with the default startup code: main.py -- put your code here! import pyb, time led = pyb.LED(3) usb = pyb.USB_VCP() while(usb.isconnected()==False): led.on() time.sleep_ms(150) led.off() time.sleep_ms(100) led.on() time.sl...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-4",
+          "title": "Bricked OpenMv Cam H7 Plus - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/t/bricked-openmv-cam-h7-plus/5800/1",
+          "snippet": "Bricked OpenMv Cam H7 Plus - OpenMV Boards - OpenMV Forums。Bricked OpenMv Cam H7 Plus Leyvonne May 2021 I’m having an issue with my H7 plus. When I power the cam, I get a rapid flashing green light. I’ve tried to un-brick it multiple times with no results. Even without the sd card. Any help would be appreciated. Thank you. post by kwagyeman on May 2, 2021 May 2021 The green light is the boot loader. Please click connect in the ide and follow the prompts. post by Leyvonne on May 9, 2021 May 2021 I’m still getting the green boot loader light. I’ve gone through the prompt multiple times in the ide. When I connect the cam, it only stays connected for two seconds then it disconnects on its own. post by iabdalkader on May 9, 2021 May 2021 It sounds like it’s stuck in a boot loop, are you sure yo...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-5",
+          "title": "Cant save openmv script to openmv H7 Plus - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/t/cant-save-openmv-script-to-openmv-h7-plus/11408",
+          "snippet": "Cant save openmv script to openmv H7 Plus - OpenMV Boards - OpenMV Forums OpenMV论坛。Cant save openmv script to openmv H7 Plus OPSLeoGong Oct 2025 Im on MacOS and when i go to tools and try to click save open script to cam its blacked out and cant click it. Can anyone help me? Me too post by kwagyeman on Oct 31, 2025 kwagyeman Oct 2025 It’s because the disk is not found in OpenMV IDE, either it’s not mounted by your PC or the IDE didn’t discover it. Try disconnecting and reconnecting via the button in the IDE. post by OPSLeoGong on Nov 1, 2025 OPSLeoGong Nov 2025 ive tried it but its still blacked out i can run code on it but it doesnt save post by kwagyeman on Nov 1, 2025 kwagyeman Nov 2025 Does a disk appear when the camera is plugged into USB? post by OPSLeoGong on Nov 2, 2025 OPSLeoGong ...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-6",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://openmv.io/products/openmv-cam-h7-plus?srsltid=AfmBOoq0XC6rMqBfLJyto0uqxKdck9jlG5apIein5rfq9Ti17uy2-NgP",
+          "snippet": "OpenMV Cam H7 Plus OpenMV。OpenMV Cam H7 Plus $135.00 USD We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. See our successor to the OpenMV Cam H7 Plus, the OpenMV Cam N6 here. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily impleme... Read more We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. See our successor to the OpenMV Cam H7 Plus, the OpenMV Cam N6...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-2-7",
+          "title": "OpenMV not connecting to IDE. green light keeps blinking",
+          "url": "https://forums.openmv.io/t/openmv-not-connecting-to-ide-green-light-keeps-blinking/11803/4",
+          "snippet": "OpenMV not connecting to IDE. green light keeps blinking OpenMV Forums。OpenMV not connecting to IDE. green light keeps blinking post by HMT on Jul 4 HMT Jul 4 When i connect openMV H7 plus cam to the PC. the green light contineusly keeps blinking and the cam becomes hot after a couple of mins. but the IDE doesnt detect any usb, neither my computer ports detect anything. i tried it with multiple computer and multiple USB cables. same problem persists. I have also tried force boot by connecting jumper wires at boot to reset pins, the ide temporeryly resets and downloads the latest firmware, but while downloading, it again disconnects from the pc. and the problem persists please let me know how i can fix it. Thank you. post by kwagyeman on Jul 5 kwagyeman Jul 5 Hi, it sounds like the board is...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-8",
+          "title": "Dead OpenMV H7 Plus - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/t/dead-openmv-h7-plus/11607",
+          "snippet": "Dead OpenMV H7 Plus - OpenMV Boards - OpenMV Forums OpenMV论坛。Dead OpenMV H7 Plus lightofshadow I had my openmv board connected to my robot running a FOMO AI model to detect objects and i also needed it to detect colors using find_blobs function. So that is a pretty heavy task to run. After more than an hour of continously testing the robot, the OpenMV board unexpectedly powered off. It was powered through a powerbank and the pins where not shorted. Now my computer doesnt detect it anymore, the led stays shut when i power it and it gets ridicolously hot. I think the board got too hot from running uninterruptedly and something broke. Is there someway i can fix that? What should i test to pin down the problem? Me too kwagyeman Apr 21 Hi, no, what likely happened is that something was overvolt...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-9",
+          "title": "OpenMV Cam H7 Plus Apriltag detection / crashes? · Issue #3268 · openmv/openmv",
+          "url": "https://github.com/openmv/openmv/issues/3268",
+          "snippet": "OpenMV Cam H7 Plus Apriltag detection / crashes? · Issue #3268 · openmv/openmv GitHub。 Test F: is AprilTags involved at all? (one line, five minutes) Worth running whether or not you get to Test E, because it costs nothing and either answer is valuable. This is your normal loop with find_apriltags() replaced by a plain delay of roughly the same duration. You can run it on the stock firmware. Test F: same loop shape and timing, but NO AprilTags. import csi, time csi0 = csi.CSI() csi0.reset() csi0.pixformat(csi.RGB565) csi0.framesize(csi.QQVGA) csi0.snapshot(time=2000) csi0.auto_gain(False) csi0.auto_whitebal(False) clock = time.clock() n = 0 try: while True: clock.tick() img = csi0.snapshot() time.sleep_ms(25) # stands in for find_apriltags() n += 1 print(n, clock.fps()) except BaseExceptio...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued forums engineering experience 实测",
+          "relation": "unverified_lead"
+        }
+      ],
+      "evidence_ids": [
+        "openmv-official-hardware",
+        "openmv-official-image-api",
+        "openmv-official-lifecycle",
+        "openmv-community-apriltag-pipeline"
+      ],
+      "suitability": {
+        "source": "user_reported",
+        "owned": false,
+        "adjustment": -9,
+        "risks": [
+          "需要新购，停产/欠货与交期不明会影响交付。",
+          "仅有 C 基础，需验证 MicroPython/MaixPy 的示例修改能力。"
+        ],
+        "advantages": [],
+        "missing_inputs": [],
+        "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+      },
+      "ranking_score": 72
+    },
+    {
+      "hardware": {
+        "id": "maix-bit-k210",
+        "name": "Sipeed Maix Bit（K210）",
+        "vendor": "Sipeed",
+        "summary": "K210 双核 RISC-V 视觉开发板；官方旧版 MaixPy 文档提供本地颜色处理与 KPU 检测路径。相机和屏幕取决于购买套装。",
+        "interfaces": [
+          "UART",
+          "I2C",
+          "SPI",
+          "USB"
+        ],
+        "logic_voltage_v": null,
+        "power_w": null,
+        "price_cny": null,
+        "price_kind": "unknown",
+        "capabilities": [
+          "color_tracking",
+          "object_detection",
+          "offline_inference"
+        ],
+        "skill_level": 3,
+        "docs_quality": 3,
+        "evidence": [
+          {
+            "id": "maix-official-board",
+            "kind": "official",
+            "title": "Sipeed Maix Bit 官方板卡介绍",
+            "url": "https://wiki.sipeed.com/soft/maixpy/en/develop_kit_board/maix_bit.html",
+            "claim": "官方板卡页确认双核 RISC-V、板载存储以及套装摄像头信息。",
+            "field": "summary",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "Dual-core 64bit RISC-V / 400MHz"
+          },
+          {
+            "id": "maix-official-usb",
+            "kind": "official",
+            "title": "Sipeed Maix-Bit Specifications v2.0",
+            "url": "https://dl.sipeed.com/fileList/MAIX/HDK/Sipeed-Maix-Bit/Specifications/Sipeed%20Maix-Bit%20Specifications_EN%20V2.0.pdf",
+            "claim": "官方 PDF 首页说明 USB Type-C 下载电路；此处 USB 指板级下载连接，不表示 K210 原生 USB 外设。首次读取成功，后续分页请求超时，未据此填入 GPIO 电压。",
+            "field": "interfaces",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "Download circuit"
+          },
+          {
+            "id": "maix-official-peripherals",
+            "kind": "official",
+            "title": "MaixPy v1 K210 外设文档入口与 UART API",
+            "url": "https://wiki.sipeed.com/soft/maixpy/en/api_reference/machine/uart.html",
+            "claim": "K210 的 MaixPy v1 文档提供 UART，并在同一文档树列出 I2C 与 SPI；引脚需经 FPIOA 配置，不能把可映射等同同时无冲突。",
+            "field": "interfaces",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "There are 3 uarts in k210"
+          },
+          {
+            "id": "maix-official-color",
+            "kind": "official",
+            "title": "MaixPy v1 image 机器视觉 API",
+            "url": "https://wiki.sipeed.com/soft/maixpy/en/api_reference/machine_vision/image/image.html",
+            "claim": "旧版官方 API 给出板上摄像头循环和绿色色块检测例程。未以新版 MaixCAM 文档替代 K210 证据。",
+            "field": "capabilities",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "Routine 1: Find green"
+          },
+          {
+            "id": "maix-official-kpu",
+            "kind": "official",
+            "title": "MaixPy v1 KPU API",
+            "url": "https://wiki.sipeed.com/soft/maixpy/en/api_reference/Maix/kpu.html",
+            "claim": "官方文档给出从 Flash 加载模型与 YOLO2 推理接口；需要兼容模型、内存与固件，未核验任意目标或帧率。",
+            "field": "capabilities",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "Run face detection"
+          }
+        ],
+        "caveats": [
+          "K210 使用 MaixPy v1；新版 MaixPy / MaixCAM 示例不能直接视为本板可运行。",
+          "K210 本体无原生 USB 外设，板级 USB 用于下载与串口桥；不应推荐其作为通用 USB 主机。",
+          "GPIO 电压未在本轮完整读取并交叉核验，logic_voltage_v 为未知；连接前查具体修订版原理图。",
+          "颜色等视觉函数依赖固件功能集，minimum 固件可能缺失；相机需与引脚映射匹配。",
+          "采购成本必须核对相机、屏幕、电源、线材的完整 BOM。",
+          "本地运行前需预置模型/固件；未核验 AprilTag 与巡线能力，不将其列入已核验能力。",
+          "skill_level 与 docs_quality 是人工评审分。"
+        ],
+        "availability_status": "unknown"
+      },
+      "verdict": "unknown",
+      "checks": [
+        {
+          "constraint": "预算上限（板卡，不含完整系统）",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "功耗上限",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "通信接口",
+          "expected": [
+            "UART"
+          ],
+          "actual": [
+            "UART",
+            "I2C",
+            "SPI",
+            "USB"
+          ],
+          "status": "pass",
+          "reason": "官方接口证据覆盖需求"
+        },
+        {
+          "constraint": "逻辑电平 V",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未限定逻辑电平"
+        },
+        {
+          "constraint": "颜色识别 / 色块跟踪",
+          "expected": true,
+          "actual": true,
+          "status": "pass",
+          "reason": "存在官方示例/文档；未承诺比赛环境帧率"
+        },
+        {
+          "constraint": "视觉巡线",
+          "expected": true,
+          "actual": false,
+          "status": "unknown",
+          "reason": "资料未覆盖该任务，需样机实测"
+        },
+        {
+          "constraint": "离线运行",
+          "expected": true,
+          "actual": true,
+          "status": "pass",
+          "reason": "官方文档支持设备本地执行；依赖安装可需联网"
+        },
+        {
+          "constraint": "禁用器件",
+          "expected": [],
+          "actual": "Sipeed Maix Bit（K210）",
+          "status": "pass",
+          "reason": "未命中用户列出的禁用器件（仍须复核原题）"
+        },
+        {
+          "constraint": "实时检索覆盖",
+          "expected": "查询完成且发现对应官方站点线索",
+          "actual": 0,
+          "status": "unknown",
+          "reason": "实时搜索未完整完成或未找到该候选的官方域线索；不作完整联网推荐"
+        }
+      ],
+      "score": 64,
+      "score_breakdown": [
+        {
+          "name": "任务资料覆盖",
+          "points": 20,
+          "max_points": 40,
+          "reason": "官方示例覆盖已识别任务的比例"
+        },
+        {
+          "name": "文档可用性",
+          "points": 12,
+          "max_points": 20,
+          "reason": "人工维护的文档完整度评分，非客观性能"
+        },
+        {
+          "name": "新生上手",
+          "points": 12,
+          "max_points": 20,
+          "reason": "人工维护的学习难度评分，需结合团队经验"
+        },
+        {
+          "name": "证据覆盖",
+          "points": 20,
+          "max_points": 20,
+          "reason": "已核验官方资料条目数，最高 20 分"
+        },
+        {
+          "name": "供货风险扣分",
+          "points": 0,
+          "max_points": 0,
+          "reason": "官方停产 -10、欠货订购 -4；未核验库存不等于现货，无额外加分"
+        }
+      ],
+      "reasons": [
+        "通信接口：官方接口证据覆盖需求",
+        "颜色识别 / 色块跟踪：存在官方示例/文档；未承诺比赛环境帧率",
+        "离线运行：官方文档支持设备本地执行；依赖安装可需联网",
+        "禁用器件：未命中用户列出的禁用器件（仍须复核原题）"
+      ],
+      "risks": [
+        "K210 使用 MaixPy v1；新版 MaixPy / MaixCAM 示例不能直接视为本板可运行。",
+        "K210 本体无原生 USB 外设，板级 USB 用于下载与串口桥；不应推荐其作为通用 USB 主机。",
+        "GPIO 电压未在本轮完整读取并交叉核验，logic_voltage_v 为未知；连接前查具体修订版原理图。",
+        "颜色等视觉函数依赖固件功能集，minimum 固件可能缺失；相机需与引脚映射匹配。",
+        "采购成本必须核对相机、屏幕、电源、线材的完整 BOM。",
+        "本地运行前需预置模型/固件；未核验 AprilTag 与巡线能力，不将其列入已核验能力。",
+        "skill_level 与 docs_quality 是人工评审分。",
+        "视觉巡线：资料未覆盖该任务，需样机实测",
+        "实时检索覆盖：实时搜索未完整完成或未找到该候选的官方域线索；不作完整联网推荐"
+      ],
+      "live_leads": [],
+      "evidence_ids": [
+        "maix-official-board",
+        "maix-official-usb",
+        "maix-official-peripherals",
+        "maix-official-color",
+        "maix-official-kpu"
+      ],
+      "suitability": {
+        "source": "user_reported",
+        "owned": false,
+        "adjustment": -3,
+        "risks": [
+          "仅有 C 基础，需验证 MicroPython/MaixPy 的示例修改能力。"
+        ],
+        "advantages": [],
+        "missing_inputs": [],
+        "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+      },
+      "ranking_score": 61
+    },
+    {
+      "hardware": {
+        "id": "esp32-s3-eye",
+        "name": "ESP32-S3-EYE v2.2",
+        "vendor": "Espressif",
+        "summary": "带 OV2640 摄像头、LCD 和麦克风的 ESP32-S3 视觉开发板，官方 ESP-WHO 教程提供板上检测示例。",
+        "interfaces": [
+          "USB"
+        ],
+        "logic_voltage_v": null,
+        "power_w": null,
+        "price_cny": null,
+        "price_kind": "unknown",
+        "capabilities": [
+          "object_detection",
+          "offline_inference"
+        ],
+        "skill_level": 4,
+        "docs_quality": 4,
+        "evidence": [
+          {
+            "id": "esp-eye-official-hardware",
+            "kind": "official",
+            "title": "Espressif ESP32-S3-EYE v2.2 官方指南",
+            "url": "https://docs.espressif.com/projects/esp-board-manager/en/latest/references/boards/esp32_s3_eye.html",
+            "claim": "指南确认 OV2640、LCD、Micro-USB 供电及芯片通信；板上 SPI LCD 等内部连接不视为可自由外接的接口。",
+            "field": "summary,interfaces",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "A Micro-USB port used for 5 V power supply"
+          },
+          {
+            "id": "esp-eye-official-local-ai",
+            "kind": "official",
+            "title": "Espressif Developer Portal：ESP-WHO Get started（2026-05-28）",
+            "url": "https://developer.espressif.com/blog/2026/05/esp-who-get-started/",
+            "claim": "官方教程在 ESP32-S3-EYE 上运行 ESP-WHO，并说明视觉处理在 SoC 本地执行。object_detection 此处是已有检测框架路径，不保证任意赛题目标。",
+            "field": "capabilities",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "run image processing workloads directly on Espressif SoCs"
+          },
+          {
+            "id": "esp-eye-community-windows-flash",
+            "kind": "community",
+            "title": "ESP-WHO issue #288：恢复固件后 Windows USB 识别异常",
+            "url": "https://github.com/espressif/esp-who/issues/288",
+            "claim": "SamHall 第一人称报告刷写后 Windows USB 连续连接/断开；讨论最后仅怀疑其板卡硬件问题。可提示准备恢复步骤与备用线材，不能推断所有板卡有此缺陷。",
+            "field": "engineering_experience",
+            "accessed_at": "2026-10-24",
+            "status": "needs_verification",
+            "excerpt": "the board is no longer recognized as a USB device"
+          }
+        ],
+        "caveats": [
+          "只将本轮确认可用于外部连接的 USB 写入 interfaces；SoC 自带 UART/I2C/SPI 不代表此板已引出可用接口。",
+          "模块供电 3.3V 不能自动证明全部可连接信号的逻辑电平，logic_voltage_v 保留未知。",
+          "官方教程要求匹配 ESP-IDF / ESP-WHO 版本；本项目尚未执行板卡刷写。",
+          "检测模型、固件与依赖需预先安装，推理可在本地执行；网络传输是可选能力。",
+          "未核验颜色追踪、AprilTag 或巡线的具体板卡示例，因此不列为已核验能力。",
+          "skill_level 与 docs_quality 是人工评审分。"
+        ],
+        "availability_status": "unknown"
+      },
+      "verdict": "unknown",
+      "checks": [
+        {
+          "constraint": "预算上限（板卡，不含完整系统）",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "功耗上限",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "通信接口",
+          "expected": [
+            "UART"
+          ],
+          "actual": [
+            "USB"
+          ],
+          "status": "unknown",
+          "reason": "缺少所需接口的已核验证据：UART"
+        },
+        {
+          "constraint": "逻辑电平 V",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未限定逻辑电平"
+        },
+        {
+          "constraint": "颜色识别 / 色块跟踪",
+          "expected": true,
+          "actual": false,
+          "status": "unknown",
+          "reason": "资料未覆盖该任务，需样机实测"
+        },
+        {
+          "constraint": "视觉巡线",
+          "expected": true,
+          "actual": false,
+          "status": "unknown",
+          "reason": "资料未覆盖该任务，需样机实测"
+        },
+        {
+          "constraint": "离线运行",
+          "expected": true,
+          "actual": true,
+          "status": "pass",
+          "reason": "官方文档支持设备本地执行；依赖安装可需联网"
+        },
+        {
+          "constraint": "禁用器件",
+          "expected": [],
+          "actual": "ESP32-S3-EYE v2.2",
+          "status": "pass",
+          "reason": "未命中用户列出的禁用器件（仍须复核原题）"
+        },
+        {
+          "constraint": "实时检索覆盖",
+          "expected": "查询完成且发现对应官方站点线索",
+          "actual": 0,
+          "status": "unknown",
+          "reason": "实时搜索未完整完成或未找到该候选的官方域线索；不作完整联网推荐"
+        }
+      ],
+      "score": 34,
+      "score_breakdown": [
+        {
+          "name": "任务资料覆盖",
+          "points": 0,
+          "max_points": 40,
+          "reason": "官方示例覆盖已识别任务的比例"
+        },
+        {
+          "name": "文档可用性",
+          "points": 16,
+          "max_points": 20,
+          "reason": "人工维护的文档完整度评分，非客观性能"
+        },
+        {
+          "name": "新生上手",
+          "points": 8,
+          "max_points": 20,
+          "reason": "人工维护的学习难度评分，需结合团队经验"
+        },
+        {
+          "name": "证据覆盖",
+          "points": 10,
+          "max_points": 20,
+          "reason": "已核验官方资料条目数，最高 20 分"
+        },
+        {
+          "name": "供货风险扣分",
+          "points": 0,
+          "max_points": 0,
+          "reason": "官方停产 -10、欠货订购 -4；未核验库存不等于现货，无额外加分"
+        }
+      ],
+      "reasons": [
+        "离线运行：官方文档支持设备本地执行；依赖安装可需联网",
+        "禁用器件：未命中用户列出的禁用器件（仍须复核原题）"
+      ],
+      "risks": [
+        "只将本轮确认可用于外部连接的 USB 写入 interfaces；SoC 自带 UART/I2C/SPI 不代表此板已引出可用接口。",
+        "模块供电 3.3V 不能自动证明全部可连接信号的逻辑电平，logic_voltage_v 保留未知。",
+        "官方教程要求匹配 ESP-IDF / ESP-WHO 版本；本项目尚未执行板卡刷写。",
+        "检测模型、固件与依赖需预先安装，推理可在本地执行；网络传输是可选能力。",
+        "未核验颜色追踪、AprilTag 或巡线的具体板卡示例，因此不列为已核验能力。",
+        "skill_level 与 docs_quality 是人工评审分。",
+        "通信接口：缺少所需接口的已核验证据：UART",
+        "颜色识别 / 色块跟踪：资料未覆盖该任务，需样机实测",
+        "视觉巡线：资料未覆盖该任务，需样机实测",
+        "实时检索覆盖：实时搜索未完整完成或未找到该候选的官方域线索；不作完整联网推荐"
+      ],
+      "live_leads": [],
+      "evidence_ids": [
+        "esp-eye-official-hardware",
+        "esp-eye-official-local-ai",
+        "esp-eye-community-windows-flash"
+      ],
+      "suitability": {
+        "source": "user_reported",
+        "owned": false,
+        "adjustment": 0,
+        "risks": [],
+        "advantages": [],
+        "missing_inputs": [],
+        "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+      },
+      "ranking_score": 34
+    },
+    {
+      "hardware": {
+        "id": "raspberry-pi-5",
+        "name": "Raspberry Pi 5（需另配摄像头）",
+        "vendor": "Raspberry Pi",
+        "summary": "Linux 单板计算机；官方支持相机软件与 TensorFlow Lite 检测路径，摄像头、电源、存储与散热应单独纳入整机 BOM。",
+        "interfaces": [
+          "UART",
+          "I2C",
+          "SPI",
+          "USB",
+          "CSI"
+        ],
+        "logic_voltage_v": 3.3,
+        "power_w": null,
+        "price_cny": null,
+        "price_kind": "unknown",
+        "capabilities": [
+          "object_detection",
+          "offline_inference"
+        ],
+        "skill_level": 4,
+        "docs_quality": 5,
+        "evidence": [
+          {
+            "id": "pi5-official-product",
+            "kind": "official",
+            "title": "Raspberry Pi 5 官方产品规格",
+            "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+            "claim": "产品页列出 USB、双 MIPI 相机/显示连接器、40-pin 排针与 UART 调试口。电源供给能力不能用作算法实耗。",
+            "field": "summary,interfaces",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "2 × 4-lane MIPI camera/display transceivers"
+          },
+          {
+            "id": "pi5-official-gpio",
+            "kind": "official",
+            "title": "Raspberry Pi 官方 GPIO 文档源",
+            "url": "https://github.com/raspberrypi/documentation/blob/master/documentation/asciidoc/computers/raspberry-pi/gpio-on-raspberry-pi.adoc",
+            "claim": "官方文档确认 GPIO 输出高电平为 3.3V，并列出 SPI、I2C 与串行功能；外设需启用并检查引脚复用。",
+            "field": "logic_voltage_v,interfaces",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "high (3.3V) or low (0V)"
+          },
+          {
+            "id": "pi5-official-camera-detection",
+            "kind": "official",
+            "title": "Raspberry Pi 官方 Camera software 文档",
+            "url": "https://www.raspberrypi.com/documentation/computers/camera_software.html",
+            "claim": "官方介绍在 Raspberry Pi 上构建带 TensorFlow Lite 的 rpicam-detect 并运行相机检测，属于本地软件路径。需要摄像头、兼容模型及依赖，不代表预装即用或已实测 Pi 5 性能。",
+            "field": "capabilities",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "rpicam-detect: Not built by default"
+          }
+        ],
+        "caveats": [
+          "此候选为开发平台而非带摄像头完整视觉套件，价格不能引用裸板价当整机价。",
+          "需另配兼容摄像头和 Pi 5 相机排线、microSD/存储、电源及合适散热。",
+          "官方 5V/5A 供电规格表示供电要求，不能写成恒定 25W 算法功耗。",
+          "3.3V 为 GPIO 逻辑电平，不等于 USB-C 输入电压；严禁把 5V 电源引脚当作 GPIO。",
+          "本地检测前需要安装/构建依赖和下载模型；未验证任务帧率及准确率。",
+          "未核验本板颜色/巡线/AprilTag 的端到端示例，因此本轮能力表保守只列目标检测。",
+          "skill_level 与 docs_quality 是人工评审分。"
+        ],
+        "availability_status": "unknown"
+      },
+      "verdict": "unknown",
+      "checks": [
+        {
+          "constraint": "预算上限（板卡，不含完整系统）",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "功耗上限",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "通信接口",
+          "expected": [
+            "UART"
+          ],
+          "actual": [
+            "UART",
+            "I2C",
+            "SPI",
+            "USB",
+            "CSI"
+          ],
+          "status": "pass",
+          "reason": "官方接口证据覆盖需求"
+        },
+        {
+          "constraint": "逻辑电平 V",
+          "expected": null,
+          "actual": 3.3,
+          "status": "not_requested",
+          "reason": "未限定逻辑电平"
+        },
+        {
+          "constraint": "颜色识别 / 色块跟踪",
+          "expected": true,
+          "actual": false,
+          "status": "unknown",
+          "reason": "资料未覆盖该任务，需样机实测"
+        },
+        {
+          "constraint": "视觉巡线",
+          "expected": true,
+          "actual": false,
+          "status": "unknown",
+          "reason": "资料未覆盖该任务，需样机实测"
+        },
+        {
+          "constraint": "离线运行",
+          "expected": true,
+          "actual": true,
+          "status": "pass",
+          "reason": "官方文档支持设备本地执行；依赖安装可需联网"
+        },
+        {
+          "constraint": "禁用器件",
+          "expected": [],
+          "actual": "Raspberry Pi 5（需另配摄像头）",
+          "status": "pass",
+          "reason": "未命中用户列出的禁用器件（仍须复核原题）"
+        },
+        {
+          "constraint": "实时检索覆盖",
+          "expected": "查询完成且发现对应官方站点线索",
+          "actual": 2,
+          "status": "unknown",
+          "reason": "实时搜索未完整完成或未找到该候选的官方域线索；不作完整联网推荐"
+        }
+      ],
+      "score": 43,
+      "score_breakdown": [
+        {
+          "name": "任务资料覆盖",
+          "points": 0,
+          "max_points": 40,
+          "reason": "官方示例覆盖已识别任务的比例"
+        },
+        {
+          "name": "文档可用性",
+          "points": 20,
+          "max_points": 20,
+          "reason": "人工维护的文档完整度评分，非客观性能"
+        },
+        {
+          "name": "新生上手",
+          "points": 8,
+          "max_points": 20,
+          "reason": "人工维护的学习难度评分，需结合团队经验"
+        },
+        {
+          "name": "证据覆盖",
+          "points": 15,
+          "max_points": 20,
+          "reason": "已核验官方资料条目数，最高 20 分"
+        },
+        {
+          "name": "供货风险扣分",
+          "points": 0,
+          "max_points": 0,
+          "reason": "官方停产 -10、欠货订购 -4；未核验库存不等于现货，无额外加分"
+        }
+      ],
+      "reasons": [
+        "通信接口：官方接口证据覆盖需求",
+        "离线运行：官方文档支持设备本地执行；依赖安装可需联网",
+        "禁用器件：未命中用户列出的禁用器件（仍须复核原题）"
+      ],
+      "risks": [
+        "此候选为开发平台而非带摄像头完整视觉套件，价格不能引用裸板价当整机价。",
+        "需另配兼容摄像头和 Pi 5 相机排线、microSD/存储、电源及合适散热。",
+        "官方 5V/5A 供电规格表示供电要求，不能写成恒定 25W 算法功耗。",
+        "3.3V 为 GPIO 逻辑电平，不等于 USB-C 输入电压；严禁把 5V 电源引脚当作 GPIO。",
+        "本地检测前需要安装/构建依赖和下载模型；未验证任务帧率及准确率。",
+        "未核验本板颜色/巡线/AprilTag 的端到端示例，因此本轮能力表保守只列目标检测。",
+        "skill_level 与 docs_quality 是人工评审分。",
+        "颜色识别 / 色块跟踪：资料未覆盖该任务，需样机实测",
+        "视觉巡线：资料未覆盖该任务，需样机实测",
+        "实时检索覆盖：实时搜索未完整完成或未找到该候选的官方域线索；不作完整联网推荐"
+      ],
+      "live_leads": [
+        {
+          "id": "search-0-1",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://openmv.io/products/openmv-cam-h7-plus?srsltid=AfmBOoowvf_y7KS3v6Jh7RhFzodklQcA7tSvqDmb5UEGV5DU_Jx8yajo",
+          "snippet": "OpenMV Cam H7 Plus OpenMV。View in space View in space View in space View in space OpenMV Cam H7 Plus We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. See our successor to the OpenMV Cam H7 Plus, the OpenMV Cam N6 here. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily impleme... Read more Specs Processor: ARM® 32-bit Cortex®-M7 CPU w/ Double Precision FPU 480 MHz (1027 DMIPS) Core Mark Score: 2400 (compare w/ Raspberry Pi 2: 2340) Supported Image Formats: Grayscale RGB565 JPEG (and BAYER/YUV422) Maximum Supported Resolutions: Grayscale: 2952x1944 (5MP) a...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-7",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://openmv.io/products/openmv-cam-h7-plus?srsltid=AfmBOoowvf_y7KS3v6Jh7RhFzodklQcA7tSvqDmb5UEGV5DU_Jx8yajo",
+          "snippet": "OpenMV Cam H7 Plus OpenMV。View in space View in space View in space View in space OpenMV Cam H7 Plus We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. See our successor to the OpenMV Cam H7 Plus, the OpenMV Cam N6 here. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily impleme... Read more Specs Processor: ARM® 32-bit Cortex®-M7 CPU w/ Double Precision FPU 480 MHz (1027 DMIPS) Core Mark Score: 2400 (compare w/ Raspberry Pi 2: 2340) Supported Image Formats: Grayscale RGB565 JPEG (and BAYER/YUV422) Maximum Supported Resolutions: Grayscale: 2952x1944 (5MP) a...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus no longer producing lifecycle discontinued  适用条件",
+          "relation": "unverified_lead"
+        }
+      ],
+      "evidence_ids": [
+        "pi5-official-product",
+        "pi5-official-gpio",
+        "pi5-official-camera-detection"
+      ],
+      "suitability": {
+        "source": "user_reported",
+        "owned": false,
+        "adjustment": -10,
+        "risks": [
+          "用户自述无 Linux 经验，需先验证系统、相机和依赖安装。",
+          "剩余时间小于产品规则阈值8小时，先做工具链冒烟；这不是实测工时预测。"
+        ],
+        "advantages": [],
+        "missing_inputs": [],
+        "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+      },
+      "ranking_score": 33
+    }
+  ],
+  "claim": {
+    "text": "OpenMV Cam H7 Plus 已停止常规生产，仍可定制批量订单。",
+    "hardware_id": "openmv-h7-plus",
+    "field": "lifecycle",
+    "source_url": "https://openmv.io/products/openmv-cam-h7-plus",
+    "sensor": "OV5640",
+    "firmware": ""
+  },
+  "claim_checks": [
+    {
+      "claim": {
+        "text": "OpenMV Cam H7 Plus 已停止常规生产，仍可定制批量订单。",
+        "hardware_id": "openmv-h7-plus",
+        "field": "lifecycle",
+        "source_url": "https://openmv.io/products/openmv-cam-h7-plus",
+        "sensor": "OV5640",
+        "firmware": ""
+      },
+      "status": "supported",
+      "reason": "官方原文说明停止该版本常规生产，仍可定制批量订单；持有设备不改变生命周期事实。",
+      "matching_conditions": [
+        "精确型号：OpenMV Cam H7 Plus",
+        "已匹配原文摘句，未进行硬件实验"
+      ],
+      "differing_conditions": [],
+      "evidence_ids": [
+        "openmv-official-lifecycle"
+      ],
+      "missing": [],
+      "hardware_reproduced": false
+    }
+  ],
+  "source_reviews": [
+    {
+      "evidence_id": "openmv-official-hardware",
+      "hardware_id": "openmv-h7-plus",
+      "exact_model": "OpenMV Cam H7 Plus",
+      "url": "https://openmv.io/products/openmv-cam-h7-plus",
+      "kind": "official",
+      "fields": [
+        "interfaces",
+        "logic_voltage_v",
+        "io_input_max_v"
+      ],
+      "status": "matched",
+      "excerpt": "All I/O pins output 3.3V and are 5V tolerant",
+      "locator": "产品页 Features / 生命周期段落",
+      "retrieved_at": "2026-10-24T18:46:19.374412+08:00",
+      "sha256": "8e1661c5f7397acdb5b5564383734d3e859fcf08f4daa7a9ad532ba2f9ce1b5c",
+      "review_method": "exact_catalog_url_and_bounded_phrase_match",
+      "reviewer": "RaceChip deterministic source checker v1",
+      "hardware_reproduced": false,
+      "error": null
+    },
+    {
+      "evidence_id": "openmv-official-lifecycle",
+      "hardware_id": "openmv-h7-plus",
+      "exact_model": "OpenMV Cam H7 Plus",
+      "url": "https://openmv.io/products/openmv-cam-h7-plus",
+      "kind": "official",
+      "fields": [
+        "caveats"
+      ],
+      "status": "matched",
+      "excerpt": "We are no longer producing this version",
+      "locator": "产品页 Features / 生命周期段落",
+      "retrieved_at": "2026-10-24T18:46:19.374412+08:00",
+      "sha256": "8e1661c5f7397acdb5b5564383734d3e859fcf08f4daa7a9ad532ba2f9ce1b5c",
+      "review_method": "exact_catalog_url_and_bounded_phrase_match",
+      "reviewer": "RaceChip deterministic source checker v1",
+      "hardware_reproduced": false,
+      "error": null
+    },
+    {
+      "evidence_id": "openmv-community-apriltag-pipeline",
+      "hardware_id": "openmv-h7-plus",
+      "exact_model": "OpenMV Cam H7 Plus",
+      "url": "https://forums.openmv.io/t/higher-fps-from-openmv-cam-h7-plus-and-mt9v034/5585",
+      "kind": "community",
+      "fields": [
+        "engineering_experience"
+      ],
+      "status": "matched",
+      "excerpt": "The higher fps example only works for the MT9V034",
+      "locator": "论坛完整讨论末尾，2021-06-15回复",
+      "retrieved_at": "2026-10-24T18:46:19.374412+08:00",
+      "sha256": "60f42e6d231fd62147b37e22b9250598c4c3929a2f285f9067d51c9130408ffe",
+      "review_method": "exact_catalog_url_and_bounded_phrase_match",
+      "reviewer": "RaceChip deterministic source checker v1",
+      "hardware_reproduced": false,
+      "error": null
+    }
+  ],
+  "profile": {
+    "programming": "c",
+    "linux_experience": "none",
+    "available_hours": 6.0,
+    "existing_hardware": [],
+    "tools": [
+      "万用表"
+    ]
+  },
+  "signal_context": {
+    "direction": "unspecified",
+    "voltage_v": null,
+    "pin": "",
+    "level_shifter": null
+  },
+  "suitability": [
+    {
+      "hardware_id": "openmv-rt1062",
+      "source": "user_reported",
+      "owned": false,
+      "adjustment": -9,
+      "risks": [
+        "需要新购，停产/欠货与交期不明会影响交付。",
+        "仅有 C 基础，需验证 MicroPython/MaixPy 的示例修改能力。"
+      ],
+      "advantages": [],
+      "missing_inputs": [],
+      "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+    },
+    {
+      "hardware_id": "openmv-h7-plus",
+      "source": "user_reported",
+      "owned": false,
+      "adjustment": -9,
+      "risks": [
+        "需要新购，停产/欠货与交期不明会影响交付。",
+        "仅有 C 基础，需验证 MicroPython/MaixPy 的示例修改能力。"
+      ],
+      "advantages": [],
+      "missing_inputs": [],
+      "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+    },
+    {
+      "hardware_id": "maix-bit-k210",
+      "source": "user_reported",
+      "owned": false,
+      "adjustment": -3,
+      "risks": [
+        "仅有 C 基础，需验证 MicroPython/MaixPy 的示例修改能力。"
+      ],
+      "advantages": [],
+      "missing_inputs": [],
+      "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+    },
+    {
+      "hardware_id": "esp32-s3-eye",
+      "source": "user_reported",
+      "owned": false,
+      "adjustment": 0,
+      "risks": [],
+      "advantages": [],
+      "missing_inputs": [],
+      "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+    },
+    {
+      "hardware_id": "raspberry-pi-5",
+      "source": "user_reported",
+      "owned": false,
+      "adjustment": -10,
+      "risks": [
+        "用户自述无 Linux 经验，需先验证系统、相机和依赖安装。",
+        "剩余时间小于产品规则阈值8小时，先做工具链冒烟；这不是实测工时预测。"
+      ],
+      "advantages": [],
+      "missing_inputs": [],
+      "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+    }
+  ],
+  "verification_actions": [
+    {
+      "hardware_id": "openmv-h7-plus",
+      "title": "先核对电气条件，再运行最小视觉示例",
+      "prerequisites": [
+        "精确板型与修订版",
+        "与信号方向对应的引脚图",
+        "可用电平转换/测量工具"
+      ],
+      "steps": [
+        "核对供电输入、信号输出和输入耐压；方向或引脚不明时不直接接线。",
+        "先用厂商示例读取一帧图像，再启用所需算法。",
+        "记录传感器、固件、分辨率、曝光和目标条件，测完整算法与通信链路。"
+      ],
+      "pass_condition": "电气条件有对应原文，示例可运行，完整链路达到本人赛题的已录入阈值。",
+      "failure_next_step": "停止不兼容接线；补转换电路或更换候选，降低分辨率后重新测量而非沿用他人FPS。",
+      "source_url": "https://openmv.io/products/openmv-cam-h7-plus",
+      "suggested_timebox_minutes": 30,
+      "timebox_note": "建议验证时间预算，不是交付耗时保证。",
+      "executed": false
+    }
+  ],
+  "summary": "2 项通过已录入条件，3 项待核验，0 项存在冲突。 可优先验证通过项的样机。",
+  "warnings": [
+    "实时搜索结果是待核验线索，P0 不用网页摘要覆盖已核验的硬件参数；社区经验不构成规格保证。",
+    "评分为人工权重的解释性排序，不是成功概率、竞赛成绩或实时性能评测。",
+    "推荐仅覆盖已建库的视觉板卡；原题合规性、供货状态、完整系统成本与样机性能需用户核验。"
+  ],
+  "change_summary": {
+    "changes": [],
+    "reason": "未提供上次输入，无前后比较。",
+    "reused_evidence": false,
+    "new_search_requests": 3
+  },
+  "follow_up_questions": []
+}
+
+```

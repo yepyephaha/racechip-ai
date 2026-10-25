@@ -1,0 +1,119 @@
+{
+  "provider": "tencent-searchpro",
+  "mode": "live",
+  "status": "ok",
+  "queries": [
+    "OpenMV Cam RT1062 official I/O pins 3.3V tolerant"
+  ],
+  "results": [
+    {
+      "id": "search-0-0",
+      "title": "OpenMV Cam RT1062",
+      "url": "https://openmv.io/products/openmv-cam-rt?srsltid=AfmBOoqxRbENlMkDcdq0AryvOct1sUXDmFgKrifUNLAfwiAjPS1cL6O2",
+      "snippet": "OpenMV Cam RT1062 OpenMV。View in space View in space View in space OpenMV Cam RT1062 Revision R4 R5 R4 R5 24 In stock The OpenMV Cam headers do not come pre-soldered. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and its I/O pins in Python. You can easily trigger taking pictures and video on external events or execute machine vision algorithms to figure out h... Read more Specs PLEASE NOTE...",
+      "kind": "search_lead",
+      "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+      "query": "OpenMV Cam RT1062 official I/O pins 3.3V tolerant"
+    },
+    {
+      "id": "search-0-1",
+      "title": "OpenMV Cam RT1062",
+      "url": "https://openmv.io/products/openmv-cam-rt?srsltid=AfmBOorMjCmNBP1AZA_3V53JQMS-8N7Mg5ljP10ljHe4SLFoCauGWzZN",
+      "snippet": "OpenMV Cam RT1062 OpenMV。 Or you can use one of the many sensor modules in our sensor portfolio. A LiPo battery connector compatible with 3.7V LiPo batteries commonly sold online for hobbyist robotic applications with battery charging support via USB. 100 mA Fast Charge Current With TVS Protection. An ARM 10-pin JTAG Header Compatible with SEGGER J-Link Devices for debugging and programming. With EMI Filtering and TVS protection. External 5V VIN with reverse supply protection. With TVS Protection. For more information, see our documentation. Read less Specs PLEASE NOTE THAT THE I/O PINS OF THE RT1062 ARE NOT 5V TOLERANT! DO NOT CONNECT THE DEVICE DIRECTLY TO A 5V MCU LIKE THE ARDUINO MEGA. You must power the RT1062 using VIN. The 3.3V pins are outputs only. VIN has a max voltage input of 5...",
+      "kind": "search_lead",
+      "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+      "query": "OpenMV Cam RT1062 official I/O pins 3.3V tolerant"
+    },
+    {
+      "id": "search-0-2",
+      "title": "OpenMV Cam RT1062 Industrial Smart AI Camera",
+      "url": "https://openelab.io/it/products/openmv-cam-rt1062-industrial-smart",
+      "snippet": "OpenMV Cam RT1062 Industrial Smart AI Camera OpenELAB。OpenMV Cam RT1062 Industrial Smart AI Camera SKU: OpenMV-CamRT1062 Regular price 168,30 € Sale price 179,95 € incl. VAT excl. VAT The OpenMV Cam is a small, low-power microcontroller board designed to simplify the implementation of machine vision applications in real-world scenarios. Rather than using C/C++, the board is programmed using high-level Python scripts via the MicroPython Operating System. This approach significantly eases the management of complex machine vision algorithm outputs and the handling of high-level data structures. Despite the simplified programming interface, users maintain total control over the hardware and its I/O pins. The platform allows you to trigger internal image and video capture based on external even...",
+      "kind": "search_lead",
+      "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+      "query": "OpenMV Cam RT1062 official I/O pins 3.3V tolerant"
+    },
+    {
+      "id": "search-0-3",
+      "title": "OpenMV Cam RT1062",
+      "url": "https://openmv.io/zh/collections/products/products/openmv-cam-rt",
+      "snippet": "OpenMV Cam RT1062 OpenMV。My cart Price $165.00 USD Shipping calculated at checkout. OpenMV does not pay for import taxes and duties. You are expected pay for customs clearance on all orders you purchase. Available for Backorder Quantity Couldn't load pickup availability Refresh Add to cart The OpenMV Cam headers do not come pre-soldered. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and it...",
+      "kind": "search_lead",
+      "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+      "query": "OpenMV Cam RT1062 official I/O pins 3.3V tolerant"
+    },
+    {
+      "id": "search-0-4",
+      "title": "OpenMV Cam RT1062",
+      "url": "https://singtown.com/eg/store/openmv-cam-rt1062",
+      "snippet": "OpenMV Cam RT1062。 It can also find non-infinite-length line segments. Watch our video here: /learn/50009 Circle Detection You can easily detect circles in the image using OpenMV. Rectangle Detection OpenMV can also detect rectangles, using the square detection code from the AprilTag library. Template Matching You can use OpenMV template matching to detect whether there are template-like images in the field of view. For example, template matching can be used to find marks on PCBs or read known numbers on displays. Image Capture You can use OpenMV to capture RGB565/grayscale BMP/JPG/PPM/PGM images. You can directly control how to capture images in Python scripts. Most importantly, using machine vision algorithms, you can draw lines, draw characters, and then save them. Video Recording You c...",
+      "kind": "search_lead",
+      "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+      "query": "OpenMV Cam RT1062 official I/O pins 3.3V tolerant"
+    },
+    {
+      "id": "search-0-5",
+      "title": "OpenMV Cam RT1062 Camera for Machine Vision",
+      "url": "https://www.dfrobot.com/product-2804.html?srsltid=AfmBOopTGc4NN5TWwHN2EtY7de0dZwkyV9OV4TMitJwYwKErXOyQzlWA",
+      "snippet": "OpenMV Cam RT1062 Camera for Machine Vision DFRobot。OpenMV Cam RT1062 Camera for Machine Vision $140.00 SKU: DFR1082 A compact microcontroller board with a camera, supporting machine vision applications via Python scripts. Features include USB, WiFi, Bluetooth, and various I/O interfaces. Introduction OpenMV Cam RT1062 is a compact, low-power microcontroller board with camera, facilitates the seamless implementation of real-world applications using machine vision. Programming of the OpenMV Cam is accomplished through high-level Python scripts, courtesy of the MicroPython Operating System, as opposed to C/C++. This approach simplifies the handling of complex outputs from machine vision algorithms and the manipulation of high-level data structures. Despite this, total control over the OpenMV...",
+      "kind": "search_lead",
+      "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+      "query": "OpenMV Cam RT1062 official I/O pins 3.3V tolerant"
+    },
+    {
+      "id": "search-0-6",
+      "title": "OpenMV Cam RT1062",
+      "url": "https://www.electropi.in/drone-ebike-3d-printer/cameras/openmv-cam-rt1062?limit=100",
+      "snippet": "OpenMV Cam RT1062 Electropi。OpenMV Cam RT1062 Product Code: EPI24997 Availability: 10 0 reviews Write a review The OpenMV Cam RT1062 is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and its I/O pins in Python. You can easily trigger taking pictures and video on external events or execute machine vision algorithms to figure out how to control your I/O pins. The RT1062 ARM Cortex M7 processor runs at 600 MHz ...",
+      "kind": "search_lead",
+      "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+      "query": "OpenMV Cam RT1062 official I/O pins 3.3V tolerant"
+    },
+    {
+      "id": "search-0-7",
+      "title": "OpenMV - Cam RT1062 - r6",
+      "url": "http://groupgets.com/products/openmv-cam-rt1062",
+      "snippet": "OpenMV - Cam RT1062 - r6。Skip to product information Open media 1 in modal Open media 2 in modal Open media 3 in modal Open media 4 in modal 1 / of 4 OpenMV OpenMV - Cam RT1062 - r6 OpenMV - Cam RT1062 - r6 The OpenMV Cam is a low-power microcontroller for machine vision. Program it in Python via MicroPython, making complex vision tasks easier. Control I/O pins, capture images/videos, and run vision algorithms with ease. SKU: SKU:OMV-CAM-RT1062 Only 15 left in stock! The OpenMV Cam is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of ...",
+      "kind": "search_lead",
+      "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+      "query": "OpenMV Cam RT1062 official I/O pins 3.3V tolerant"
+    },
+    {
+      "id": "search-0-8",
+      "title": "OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython",
+      "url": "https://www.cnx-software.com/?p=120027/",
+      "snippet": "OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython CNX Software。OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython Following the success of the OpenMV Cam H7 and the original OpenMV VGA Camera, OpenMV recently launched the OpenMV CAM RT1062 powered by NXP’s RT1060 processor. This new camera module integrates a range of features, including a high-speed USB-C (480Mbps) interface, an accelerometer, and a LiPo connector for portability. Similar to its predecessor, this camera module also features a removable camera system, and it is built around the OV5640 image sensor which is more powerful in terms of resolution and versatility. However, the previous Omnivision OV7725 sensor, used in the OpenMV Cam H7 has a far superior frame rate and low-l...",
+      "kind": "search_lead",
+      "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+      "query": "OpenMV Cam RT1062 official I/O pins 3.3V tolerant"
+    },
+    {
+      "id": "search-0-9",
+      "title": "OpenMV Cam RT1062: Affordable Innovation in Machine Vision Now Available for 130",
+      "url": "https://www.electronics-lab.com/openmv-cam-rt1062-affordable-innovation-in-machine-vision-now-available-for-130/",
+      "snippet": "OpenMV Cam RT1062: Affordable Innovation in Machine Vision Now Available for $130 Electronics-Lab。The OpenMV CAM RT1062 is a new camera from OpenMV that uses the powerful NXP RT1060 processor. You can write programs for it using MicroPython, a beginner-friendly version of Python. The OpenMV CAM RT1062 is a new camera from OpenMV that uses the powerful NXP RT1060 processor. You can write programs for it using MicroPython, a beginner-friendly version of Python. It has a fast USB-C connection, making it easy to connect to other devices. It also comes with an accelerometer, a sensor that can detect movement or tilting, which can be useful for keeping pictures steady. Another feature is the LiPo connector, allowing it to be powered by a rechargeable battery for portability. Overall, it’s a hand...",
+      "kind": "search_lead",
+      "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+      "query": "OpenMV Cam RT1062 official I/O pins 3.3V tolerant"
+    }
+  ],
+  "warnings": [
+    "实时搜索结果是待核验线索，P0 不用网页摘要覆盖已核验的硬件参数；社区经验不构成规格保证。"
+  ],
+  "error": null,
+  "request_count": 1,
+  "request_ids": [
+    "d6f4001c-d083-4a0a-8565-635257939902"
+  ],
+  "query_records": [
+    {
+      "query": "OpenMV Cam RT1062 official I/O pins 3.3V tolerant",
+      "status": "ok",
+      "request_id": "d6f4001c-d083-4a0a-8565-635257939902",
+      "result_count": 10,
+      "version": "standard",
+      "message": ""
+    }
+  ],
+  "auth_mode": "tc3"
+}

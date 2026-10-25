@@ -1,0 +1,2509 @@
+# RaceChip AI 真实查询 B
+
+执行时间：2026-10-24T18:46:11.424039+08:00
+
+模式：LIVE / 元宝 SearchPro TC3；这是已保存实录，打开文件不重新搜索。
+
+## 原问题
+
+机器人使用 OpenMV Cam H7 Plus 和 OV5640 做离线 AprilTag 检测，希望达到100 FPS。论坛高帧率经验是否能保证我的方案也达到？请检查完整讨论中的传感器和示例条件。
+
+## 原说法与结论
+
+论坛高帧率例程能保证我的 H7 Plus 加 OV5640 在 AprilTag 完整处理链路达到100 FPS。
+
+条件不同
+
+原帖后续回复限定高 FPS 示例适用于 MT9V034；当前 OV5640、分辨率、AprilTag/传输处理不能直接迁移。没有判定作者造假，也没有本项目实测 FPS。
+
+## 完整结构化结果
+
+```json
+
+{
+  "case_id": "cb07ce1c-3e6f-410b-b4e7-f37f4f8497a3",
+  "created_at": "2026-10-24T18:46:11.424039+08:00",
+  "mode": "live",
+  "input_text": "机器人使用 OpenMV Cam H7 Plus 和 OV5640 做离线 AprilTag 检测，希望达到100 FPS。论坛高帧率经验是否能保证我的方案也达到？请检查完整讨论中的传感器和示例条件。",
+  "problem": {
+    "title": "AprilTag 定位识别 · 选型调查",
+    "tasks": [
+      "apriltag"
+    ],
+    "requirements": [
+      {
+        "text": "AprilTag 定位识别",
+        "kind": "task",
+        "source_quote": "AprilTag"
+      },
+      {
+        "text": "需额外验证：机器人使用 OpenMV Cam H7 Plus 和 OV5640 做离线 AprilTag 检测，希望达到100 FPS",
+        "kind": "hard_unmodeled",
+        "source_quote": "机器人使用 OpenMV Cam H7 Plus 和 OV5640 做离线 AprilTag 检测，希望达到100 FPS"
+      }
+    ],
+    "ambiguities": [
+      "P0 使用关键词与单位规则解析；原题限定器件、测量条件、评分细则须逐条人工复核。",
+      "存在 P0 尚不能自动核验的性能或限制条件；候选标记待核验。"
+    ],
+    "parser": "deterministic-rules-v1",
+    "unmodeled_constraints": [
+      "机器人使用 OpenMV Cam H7 Plus 和 OV5640 做离线 AprilTag 检测，希望达到100 FPS"
+    ],
+    "voltage_conflict": false
+  },
+  "constraints": {
+    "budget_cny": null,
+    "max_power_w": null,
+    "required_interfaces": [
+      "UART"
+    ],
+    "logic_voltage_v": null,
+    "offline_required": true,
+    "banned_hardware": [],
+    "only_existing_hardware": false
+  },
+  "search": {
+    "provider": "tencent-searchpro",
+    "mode": "live",
+    "status": "ok",
+    "queries": [
+      "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation",
+      "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件",
+      "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测"
+    ],
+    "results": [
+      {
+        "id": "search-0-0",
+        "title": "OV5640 FPC Camera Module",
+        "url": "https://docs.openmv.io/v5.0.0/openmvcam/sensors/ov5640.html",
+        "snippet": "OV5640 FPC Camera Module OpenMV文档。OV5640 FPC Camera Module¶ The OV5640 FPC Camera Module is a compact 5MP rolling-shutter colour sensor with autofocus. It mounts to OpenMV Cam base boards through the board-to-board connector for low-profile builds. For full datasheet, photos, and ordering see the OV5640 product page. Note Not supported on the OpenMV N6 at this time. Highlights¶ 5MP (2592x1944) rolling-shutter sensor Autofocus, F2.0 aperture, variable focal length Usage¶ Stream QVGA (320x240) RGB565 video — the OV5640 works as a regular camera module for any image-processing pipeline: import csi import time csi0 = csi.CSI() csi0.reset() csi0.pixformat(csi.RGB565) csi0.framesize(csi.QVGA) clock = time.clock() while True: clock.tick() img = csi0.snapshot() print(clock.fps()) The OV5640 also h...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation"
+      },
+      {
+        "id": "search-0-1",
+        "title": "OpenMV Cam H7 Plus",
+        "url": "https://hitechchain.se/en/iot/openmv-cam-h7-plus",
+        "snippet": "OpenMV Cam H7 Plus。 Person Detection You can detect if there's a person in the field of view using our built-in person detector TensorFlow Lite model. Optical Flow You can use Optical Flow to detect translation of what your OpenMV Cam is looking at. For example, you can use Optical Flow on a quad-copter to determine how stable it is in the air. QR Code Detection/Decoding You can use the OpenMV Cam to read QR Codes in it's field of view. With QR Code Detection/Decoding you can make smart robots which can read labels in the environment. Data Matrix Detection/Decoding The OpenMV Cam H7 can also detect and decode data matrix 2D barcodes too. Linear Barcode Decoding The OpenMV Cam H7 can also decode 1D linear bar codes. In particular, it can decode EAN2, EAN5, EAN8, UPCE, ISBN10, UPCA, EAN13, I...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation"
+      },
+      {
+        "id": "search-0-2",
+        "title": "OpenMV Cam H7 Plus",
+        "url": "https://compoindia.com?p=14067/",
+        "snippet": "OpenMV Cam H7 Plus。OpenMV Cam H7 Plus The OpenMV Cam is a small, low power, microcontroller board featuring an STM32H743II Arm® Cortex® M7 processor running at 480MHz, which allows you to easily implement applications using machine vision in the real world. It is equipped with 32MB of SDRAM, 1MB of RAM, and 2MB of flash. Features: STM32H743II processor to realize machine vision applications Compact size for easy deployment in robotics projects Low power consumption for prolonged use Micropython support with easy-to-use OpenMV IDE for quick and convenient project integration High resolution OV5640 image sensor (2592×1944/ 5MP) for better image processing Removable camera module system to realize advanced applications Supports various shields for further expansion of projects Full speed USB ...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation"
+      },
+      {
+        "id": "search-0-3",
+        "title": "OpenMV H7 Plus Camera",
+        "url": "https://www.arduitronics.com/product/4122/openmv-h7-plus-camera",
+        "snippet": "OpenMV H7 Plus Camera Arduelectronics。OpenMV H7 Plus Camera รหัสสินค้า SG60315 หมวดหมู่ OpenMV ราคา 5,780.00 บาท สถานะสินค้า พร้อมส่ง จำนวน ชิ้น รายละเอียดสินค้า Description: The OpenMV H7 Plus Camera is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. The Plus variation adds 32 MB of external 32-bit SDRAM and 32 MB of external quad SPI flash. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and its I/O pins in Python. You can easily trigger taking pictures and video on ex...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation"
+      },
+      {
+        "id": "search-0-4",
+        "title": "OpenMV Cam H7 Plus",
+        "url": "https://www.electan.com/openmv-amp-10338.html",
+        "snippet": "OpenMV Cam H7 Plus Electan。SD Card socket capable of 100Mbs reads/writes which allows your OpenMV Cam to take pictures and easily pull machine vision assets off of the ?SD card. A SPI bus that can run up to 80Mbs allowing you to easily stream image data off the system to either the LCD Shield, the WiFi Shield, or another microcontroller. An I2C Bus (up to 1Mb/s), CAN Bus (up to 1Mb/s), and an Asynchronous Serial Bus (TX/RX, up to 7.5Mb/s) for interfacing with other microcontrollers and sensors. A 12-bit ADC and a 12-bit DAC. Two I/O pins for servo control. Interrupts and PWM on all I/O pins (there are 10 I/O pins on the board). And, an RGB LED and two high power 850nm IR LEDs. 32 MB of external 32-bit SDRAM clocked at 100 MHz for 400 MB/s of bandwidth. 32 MB of external quadspi flash clock...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation"
+      },
+      {
+        "id": "search-0-5",
+        "title": "OV5640 FPC Camera Module",
+        "url": "https://openmv.io/products/ov5640-fpc-camera-module?variant=39893457862750",
+        "snippet": "OV5640 FPC Camera Module OpenMV。View in space View in space OV5640 FPC Camera Module About The module is compatible with all modular OpenMV Cam base boards. The OV5640 FPC Camera Module gives you the same high-resolution JPEG-taking capabilities as the OpenMV Cam H7 Plus and RT1062's OV5640 camera module in a low-profile form factor with autofocus support. The OV5640 image sensor can capture 2592x1944 (5MP) images. The sensor supports Grayscale, RGB565, JPEG, YUV422, and Bayer image formats. For more information, see our documentation. Applications Use this module if you want a low-profile form factor for your OpenMV Cam instead of the default M12 lens. Specs Focal Length: Variable Aperture: F2.0 Format: 1/4\" IR Cut Filter: 650nm Horizontal Resolution: 1944 pixels (2.7384mm) 1.4um pixel pi...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation"
+      },
+      {
+        "id": "search-0-6",
+        "title": "Unlock Machine Vision with OpenMV Cam H7 Plus!",
+        "url": "https://www.dfrobot.com/product-2263.html?srsltid=AfmBOoqIKcJj18bw4XsbrLcRcNhj6wL4nM4EPY4ueHrnUibL9KbpTnnl",
+        "snippet": "Unlock Machine Vision with OpenMV Cam H7 Plus! DFRobot。 Your OpenMV Cam can process Haar Cascades to do generic object detection and comes with a built-in Frontal Face Cascade and Eye Haar Cascade to detect faces and eyes. Eye Tracking You can use Eye Tracking with your OpenMV Cam to detect someone's gaze. You can then, for example, use that to control a robot. Eye Tracking detects where the pupil is looking versus detecting if there's an eye in the image. Person Detection You can detect if there's a person in the field of view using our built-in person detector TensorFlow Lite model. Optical Flow You can use Optical Flow to detect translation of what your OpenMV Cam is looking at. For example, you can use Optical Flow on a quad-copter to determine how stable it is in the air. QR Code Dete...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation"
+      },
+      {
+        "id": "search-0-7",
+        "title": "SparkFun OpenMV Cam H7 Plus",
+        "url": "https://tanotis.com/products/sparkfun-openmv-cam-h7-plus",
+        "snippet": "SparkFun OpenMV Cam H7 Plus Tanotis。SD Card socket capable of 100Mbs reads/writes which allows your OpenMV Cam to take pictures and easily pull machine vision assets off of the ?SD card. A SPI bus that can run up to 80Mbs allowing you to easily stream image data off the system to either the LCD Shield, the WiFi Shield, or another microcontroller. An I2C Bus (up to 1Mb/s), CAN Bus (up to 1Mb/s), and an Asynchronous Serial Bus (TX/RX, up to 7.5Mb/s) for interfacing with other microcontrollers and sensors. A 12-bit ADC and a 12-bit DAC. Two I/O pins for servo control. Interrupts and PWM on all I/O pins (there are 10 I/O pins on the board). And, an RGB LED and two high power 850nm IR LEDs. 32 MB of external 32-bit SDRAM clocked at 100 MHz for 400 MB/s of bandwidth. 32 MB of external quadspi fl...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation"
+      },
+      {
+        "id": "search-0-8",
+        "title": "OpenMV Cam H7 Plus",
+        "url": "http://openmv.io/collections/cams/products/openmv-cam-h7-plus",
+        "snippet": "OpenMV Cam H7 Plus OpenMV。View in space View in space View in space View in space OpenMV Cam H7 Plus We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily impleme... Specs Processor: ARM® 32-bit Cortex®-M7 CPU w/ Double Precision FPU 480 MHz (1027 DMIPS) Core Mark Score: 2400 (compare w/ Raspberry Pi 2: 2340) Supported Image Formats: Grayscale RGB565 JPEG (and BAYER/YUV422) Maximum Supported Resolutions: Grayscale: 2952x1944 (5MP) and under RGB565: 2952x1944 (5MP) and under Grayscale JPEG: 2952x1944 (5MP) and ...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation"
+      },
+      {
+        "id": "search-0-9",
+        "title": "OpenMV Cam H7 Plus 機器視覺攝像頭模組 – 5MP OV5640 / 32MB SDRAM / 支援 MicroPython",
+        "url": "https://www.taiwaniot.com.tw/?p=62780",
+        "snippet": "OpenMV Cam H7 Plus 機器視覺攝像頭模組 – 5MP OV5640 / 32MB SDRAM / 支援 MicroPython 台灣物聯科技。例如,您可以使用四通道上的光流來確定它在空氣中的穩定性。 QR碼檢測/解碼您可以使用OpenMV Cam在其視野中閱讀QR碼。通過QR碼檢測/解碼,您可以製作可以在環境中讀取標籤的智能機器人。您可以在此處查看我們的視頻。 AprilTag跟踪甚至比上述的QR碼更好,OpenMV Cam M7也可以追溯到160×120的FourTags,高達12 FPS。AprilTags是旋轉,縮放,剪切和照明不變的最先進的流感標記。我們在這裡有一個視頻。 邊緣/線路檢測您可以通過Canny Edge Detector算法或簡單的高通濾波進行邊緣檢測,然後進行閾值處理。在您擁有二進製圖像後,您可以使用霍夫檢測器查找圖像中的所有行。通過邊緣/線檢測,您可以使用OpenMV Cam輕鬆檢測物體的方向。 模板匹配您可以使用與OpenMV Cam模板匹配來檢測翻譯的預先保存的圖像何時被視圖。例如,模板匹配可用於在PCB上查找基准或讀取顯示屏上的已知數字。 圖像捕獲您可以使用OpenMV攝像頭捕獲多達320×240 RGB565(或640×480灰度)BMP / JPG / PPM / PGM圖像。您可以直接控制如何在Python腳本中捕獲圖像。最重要的是,您可以在保存機器視覺功能和/或繪製框架之前進行預設。 視頻錄製您可以使用OpenMV Cam記錄多達320×240 RGB565(或640×480灰度)MJPEG視頻或GIF圖像。您可以直接控制每個視頻幀在Python腳本中的記錄,並對視頻錄製的開始和結束進行全面控制。而且,像拍攝圖像一樣,您可以在保存機器視覺功能和/或繪製視頻幀之前進行預覽。 最後,所有上述功能可以在您自己的自定義應用程序...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation"
+      },
+      {
+        "id": "search-1-0",
+        "title": "openMV摄像头入门指南-1.介绍",
+        "url": "http://rosrobot.cn/?id=371",
+        "snippet": "openMV摄像头入门指南-1.介绍 智能佳ROS殿堂。OpenMV Cam 是一款小型、低功耗的微控制器板,可让您在现实世界中使用机器视觉轻松实现应用程序。您可以使用高级 Python 脚本(由 MicroPython 操作系统提供 )而不是 C/C++ 对 OpenMV Cam 进行编程。这使得处理机器视觉算法的复杂输出和使用高级数据结构变得更加容易。但是,您仍然可以在 Python 中完全控制 OpenMV Cam 及其 I/O 引脚。您可以轻松触发外部事件拍照和视频,或执行机器视觉算法来找出如何控制 I/O 引脚。...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件"
+      },
+      {
+        "id": "search-1-1",
+        "title": "dac_write.py",
+        "url": "https://book.openmv.cc/example/50-Arduino-Boards/Portenta-H7/50-Board-Control/dac_write.html",
+        "snippet": "dac_write.py OpenMV文档。Home Change Languages 序言 视频教程 OpenMV详细参数 10分钟快速上手 图像处理背景知识 Python背景知识 OpenMV图像处理的方法 感光元件 基本方法 使用统计信息 画图 寻找色块 AprilTag标记跟踪 模板匹配 多模板匹配 特征点检测 测距 扫码识别 颜色形状同时识别 颜色模板匹配同时识别 分辨不同人脸 高级特征 OpenMV也是个单片机 文件系统 模块的使用 pyb各种外设 字符串/json/正则 串口通信上 串口通信下 wifi通信 手动写一个模块 第一个类 手动写一个温度传感器模块 OpenMV固件 升级固件 编译固件 正版激活 debug 常见错误提示 常见故障 显示耗费时间 优化 OpenMV配件 LCD WIFI 洞洞板 sd卡 长脚排母 直角固定板 常见问题 项目实例 自行训练AI神经网络模型 追小球的小车 追小球的云台 巡线小车 Mnist数字识别 目标检测 实际道路环境交通标志识别 口罩检测 垃圾分类 三子棋机器人 2024电赛 视觉测距 2025电赛C题 追踪标靶 2025电赛E题 电动显微镜 0.0001mm精度 拼图识别 平衡滚球图传录制 OpenMV机械臂-项目实例 硬件概述 基础教程 物体分拣码垛 自动三子棋对战 24年电赛E题教程 垃圾分类-自行训练AI模型目标检测 按键示教和txt文件控制机械臂 例程解析 00-HelloWorld blinky.py helloworld.py 01-Camera 00-Snapshot emboss_snapshot.py snapshot.py snapshot_on_face_detection.py snapshot_on_movement.py time_lapse_photos.py 01-Video-Reco...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件"
+      },
+      {
+        "id": "search-1-2",
+        "title": "OpenMV Cam H7 Plus",
+        "url": "https://www.electan.com/openmv-amp-10338.html",
+        "snippet": "OpenMV Cam H7 Plus Electan。SD Card socket capable of 100Mbs reads/writes which allows your OpenMV Cam to take pictures and easily pull machine vision assets off of the ?SD card. A SPI bus that can run up to 80Mbs allowing you to easily stream image data off the system to either the LCD Shield, the WiFi Shield, or another microcontroller. An I2C Bus (up to 1Mb/s), CAN Bus (up to 1Mb/s), and an Asynchronous Serial Bus (TX/RX, up to 7.5Mb/s) for interfacing with other microcontrollers and sensors. A 12-bit ADC and a 12-bit DAC. Two I/O pins for servo control. Interrupts and PWM on all I/O pins (there are 10 I/O pins on the board). And, an RGB LED and two high power 850nm IR LEDs. 32 MB of external 32-bit SDRAM clocked at 100 MHz for 400 MB/s of bandwidth. 32 MB of external quadspi flash clock...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件"
+      },
+      {
+        "id": "search-1-3",
+        "title": "OpenMV Cam & STM32H7 Machine Vision Architecture",
+        "url": "https://embeddedroad.com/branches/embedded-systems-roadmap/embedded-systems-openmv-cam-machine-vision-on-stm32h7",
+        "snippet": "OpenMV Cam & STM32H7 Machine Vision Architecture EmbeddedRoad。 the \"Plus\" variant adds external SDRAM (typically 32 MB) via the FMC bus, because a single 5 MP RGB565 frame (~10 MB) or even a QVGA RGB565 frame (~150 KB) plus multiple working buffers for a CNN quickly exceeds on-chip SRAM. microSD — for storing captured datasets, logging, or loading models at boot. The key architectural fact for everything downstream: the DCMI peripheral streams pixel data into memory via DMA with no CPU involvement per pixel, but the CPU must still process every frame buffer through the vision pipeline (color conversion, filtering, feature extraction) at the clock rate of a general-purpose Cortex-M7 — there is no dedicated ISP or NPU on standard H7 parts. All the \"vision\" is software running on the M7 core ...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件"
+      },
+      {
+        "id": "search-1-4",
+        "title": "OpenMV Cam H7 Plus",
+        "url": "https://mgsl.in/products/dfr0833",
+        "snippet": "OpenMV Cam H7 Plus MG Super Labs。 Optical Flow You can use Optical Flow to detect translation of what your OpenMV Cam is looking at. For example, you can use Optical Flow on a quad-copter to determine how stable it is in the air. QR Code Detection/Decoding You can use the OpenMV Cam to read QR Codes in it's field of view. With QR Code Detection/Decoding you can make smart robots which can read labels in the environment. Data Matrix Detection/Decoding The OpenMV Cam H7 can also detect and decode data matrix 2D barcodes too. Linear Barcode Decoding The OpenMV Cam H7 can also decode 1D linear bar codes. In particular, it can decode EAN2, EAN5, EAN8, UPCE, ISBN10, UPCA, EAN13, ISBN13, I25, DATABAR, DARABAR_EXP, CODABAR, CODE39, CODE93, and CODE128 barcodes. AprilTag Tracking Even better than Q...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件"
+      },
+      {
+        "id": "search-1-5",
+        "title": "OpenMV学习笔记",
+        "url": "https://blog.csdn.net/2302_80938179/article/details/144164497",
+        "snippet": "OpenMV学习笔记 CSDN博客。 2个 I/O 引脚用于舵机控制. 所有的IO口都可以用于,中断和PWM(板子上有10个I/O引脚)。 一个RGB LED(三色), 两个高亮的 850nm IR LED(红外)。 32 MB 外置的 32-bit SDRAM ,100 MHz的时钟,达到 400 MB/s 的带宽。 32 MB 外置的 quadspi flash, 100 MHz的时钟,4-bit DDR模式达到 100 MB/s 的带宽。 可拆卸的摄像头模块系统,允许OpenMV Cam H7 Plus与不同的感光元件模组连接: OpenMV4 H7 Plus默认配置的OV5640 感光元件处理2592×1944 (5MP)图像。在QVGA (320×240)及以下的分辨率时,大多数简单的算法可以运行(25~50)FPS。OpenMV 摄像头有一个2.8mm焦距镜头在一个标准M12镜头底座上。 3.7V 锂离子电池接口 3.功能 滤波 颜色追踪 AptilTag 二维码 条形码 人脸识别 人眼追踪(瞳孔识别) 直线识别 圆形识别 矩形识别 数字识别 线性回归-巡线 模板匹配 特征点追踪 光流 边缘检测 录制视频 mavlink 使用 供电:USB口供电或者外部电源供电(3.7-5V)。注意,不要接3.3V 图像处理 1.LAB亮度-对比度 Lab颜色空间中,L亮度;a的正数代表红色,负端代表绿色;b的正数代表黄色,负端代表兰色。不像RGB和CMYK色彩空间,Lab颜色被设计来接近人类视觉。 因此L分量可以调整亮度对,修改a和b分量的输出色阶来做精确的颜色平衡。 2.镜头的畸变:OpenMV中使用image.lens_corr(1.8)来矫正2.8mm焦距的镜头 3.滤光片:通过波长650nm以内的滤光片,把红外光截止了 python REPL和串口 OpenMV的ID...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件"
+      },
+      {
+        "id": "search-1-6",
+        "title": "OpenMV4 H7 Plus 智能攝影機(具有AI機器學習)",
+        "url": "https://zanrobot.com?p=3881/",
+        "snippet": "OpenMV4 H7 Plus 智能攝影機(具有AI機器學習) 良棋科技。 Image Capture圖像捕捉 你可以使用OpenMV捕獲高達640×480 RGB565/灰度的 BMP / JPG / PPM / PGM圖像。可以直接在Python腳本中控制如何捕獲圖像。最重要的是,使用機器視覺的演算法,進行繪製直線,繪製字元,然後保存。 Video Recording視頻錄製 您可以使用OpenMV攝像機記錄多達640×480 RGB565/灰度的MJPEG視頻或GIF圖像(或者RAW視頻)。您可以在Python腳本中直接控制如何將每個視頻幀記錄,並完全控制視頻錄製的開始和結束。而且,像拍攝圖像一樣,您可以使用機器視覺的演算法,進行繪製直線,繪製字元,然後保存。 最後,所有上述功能都可以混合IO引腳的控制,來配合你自己的自訂應用,以與現實世界交談。...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件"
+      },
+      {
+        "id": "search-1-7",
+        "title": "OpenMV H7 Plus Camera",
+        "url": "https://www.arduitronics.com/product/4122/openmv-h7-plus-camera",
+        "snippet": "OpenMV H7 Plus Camera Arduelectronics。OpenMV H7 Plus Camera รหัสสินค้า SG60315 หมวดหมู่ OpenMV ราคา 5,780.00 บาท สถานะสินค้า พร้อมส่ง จำนวน ชิ้น รายละเอียดสินค้า Description: The OpenMV H7 Plus Camera is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. The Plus variation adds 32 MB of external 32-bit SDRAM and 32 MB of external quad SPI flash. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and its I/O pins in Python. You can easily trigger taking pictures and video on ex...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件"
+      },
+      {
+        "id": "search-1-8",
+        "title": "OpenMV4 H7 Plus 是什么?2026年视觉开发入门为什么更倾向选它而非K210?",
+        "url": "https://bk.taobao.com/k/shexiangtoumokuai_15079/7b9c17027a72be3c898e9b8e1f50d508",
+        "snippet": "OpenMV4 H7 Plus 是什么?2026年视觉开发入门为什么更倾向选它而非K210? 淘宝百科。OpenMV4 H7 Plus 是什么?2026年视觉开发入门为什么更倾向选它而非K210? 想让小车自动寻迹、机械臂精准抓取、竞赛项目快速出效果,却卡在“图像看不清”“代码调不通”“云台抖得没法追踪”?OpenMV4 H7 Plus 凭借500万像素OV5640传感器与内置MicroPython生态,在科研、电子竞赛与DIY场景中正成为新入门首选——它不依赖PC调试,开箱即跑视觉算法,还天然适配二自由度舵机云台。本文帮你厘清它和K210的本质差异、哪种配置真正匹配你的项目节奏。🔍 OpenMV4 H7 Plus 是一款面向嵌入式视觉开发的国产智能摄像头模块,关键在于它把高分辨率成像、实时图像处理和云台协同控制集成在单板上,无需外接主控即可独立运行视觉任务;相比K210,它更侧重开箱即用的算法落地能力,尤其适合需要快速验证、低调试门槛的科研与竞赛场景。 OpenMV4 H7 Plus 的核心构成是什么?哪些要素决定它能否胜任视觉任务? 一台真正可用的智能视觉摄像头模块,必须同时满足成像质量、处理能力、开发友好性与执行接口这四组要素,缺一不可。 成像质量由传感器直接决定:OpenMV4 H7 Plus 采用 OV5640 芯片,原生支持 500 万像素静态图像与 1080p@30fps 视频流,这个指标对识别二维码、色块定位或简单目标追踪已属充裕;而 K210 虽算力更强,但需额外搭配模组,成像链路更长、延迟更高。 处理能力方面,H7 Plus 基于 ARM Cortex-M7 内核,主频 480MHz,配合专用图像协处理器,能稳定运行色彩追踪、边缘检测、AprilTag 识别等典型算法,这类任务在当前主流平台规范中属于轻量级视觉闭环范畴。 开发友好性是它的差异化优势:原生...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件"
+      },
+      {
+        "id": "search-1-9",
+        "title": "Merge pull request #843 from kwagyeman/kwabena/apriltag_readout_control",
+        "url": "https://github.com/openmv/openmv/commit/7b90ca19cc3f4d76e2aa733a6a6c04b081bbc372",
+        "snippet": "Merge pull request #843 from kwagyeman/kwabena/apriltag_readout_control。Commit This commit does not belong to any branch on this repository, and may belong to a fork outside of the repository. Browse files Merge pull request #843 from kwagyeman/kwabena/apriltag_readout_control Add readout control for apriltag tracking Showing 1 changed file with 151 additions and 0 deletions. 151 changes: 151 additions & 0 deletions 151 scripts/examples/35-Readout-Control/apriltag_tracking.py Original file line number Diff line number Diff line change @@ -0,0 +1,151 @@ # This example shows off how to use readout window control to readout a small part of a camera # sensor pixel array at a very high speed and move that readout window around. # This example is was designed and tested on the OpenMV Cam H7 Plus...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件"
+      },
+      {
+        "id": "search-2-0",
+        "title": "Where is the 100fps IR tracker script?",
+        "url": "https://forums.openmv.io/t/where-is-the-100fps-ir-tracker-script/7934/1",
+        "snippet": "Where is the 100fps IR tracker script? OpenMV Forums。post by JHS on Feb 8, 2023 in reference to the following youtube video from OpenMV: Is this script posted somewhere or available in the OpenMV IDE? Thanks, Me too 394 views 1 link post by JHS on Feb 8, 2023 Found it - it is under Examples → Camera → Readout Control I am using an H7 Plus and the OV5640 but no luck hitting 100fps yet. post by kwagyeman on Feb 9, 2023 Hi, you should easily be able to get 100 FPS. Just use your phones LED light and wave it in front around the camera. post by JHS on Feb 10, 2023 kwagyeman, Thanks, I did eventually get > 100fps - It was a matter of playing with the area parameters and the search vs. tracking resolution. I was tracking a laser spot on a distant wall. Thank you so much for your excellent product...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测"
+      },
+      {
+        "id": "search-2-1",
+        "title": "Fastest possible video recording",
+        "url": "https://forums.openmv.io/t/fastest-possible-video-recording/5657",
+        "snippet": "Fastest possible video recording OpenMV Forums。Fastest possible video recording post by henrypinkard on Apr 4, 2021 henrypinkard Apr 2021 Hi, first of all, congratulations and thank you for this incredible project. I find it really easy to work with and incredibly powerful. I have an OpenMV H7 plus, and I’m wondering how to get the best performance for recording high quality video (though I do realize this isn’t exactly what this project was designed for). Is there any way to get something close to HD resolution at close to 30 fps? Using the example script for saving MJPGs, it seems like writing the data causes a big slowdown on the framerate (which I guess is unsurprising if its all single threaded). Is there any way to do this asynchronously, or is the best bet streaming to a computer ov...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测"
+      },
+      {
+        "id": "search-2-2",
+        "title": "Fastest possible video recording - OpenMV Boards - OpenMV Forums",
+        "url": "https://forums.openmv.io/t/fastest-possible-video-recording/5657/4",
+        "snippet": "Fastest possible video recording - OpenMV Boards - OpenMV Forums OpenMV Forums。Fastest possible video recording henrypinkard Hi, first of all, congratulations and thank you for this incredible project. I find it really easy to work with and incredibly powerful. I have an OpenMV H7 plus, and I’m wondering how to get the best performance for recording high quality video (though I do realize this isn’t exactly what this project was designed for). Is there any way to get something close to HD resolution at close to 30 fps? Using the example script for saving MJPGs, it seems like writing the data causes a big slowdown on the framerate (which I guess is unsurprising if its all single threaded). Is there any way to do this asynchronously, or is the best bet streaming to a computer over usb and wr...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测"
+      },
+      {
+        "id": "search-2-3",
+        "title": "Higher fps from OpenMV Cam H7 plus and MT9V034",
+        "url": "https://forums.openmv.io/t/higher-fps-from-openmv-cam-h7-plus-and-mt9v034/5585/8",
+        "snippet": "Higher fps from OpenMV Cam H7 plus and MT9V034。Higher fps from OpenMV Cam H7 plus and MT9V034 Higher fps from OpenMV Cam H7 plus and MT9V034 post by Priyanka on Mar 20, 2021 Priyanka Mar 2021 Hey! I am working with OpenMV Cam h7 plus and MT9V034 to detect April Tags. I have tried the built-in examples of OpenMV IDE (find_apriltags.py), the fps remains good till the moment I am not doing any processing and simply grabbing and displaying frames. When the code does processing in terms of calling the April Tag library functions and collecting the (x, y, and theta), the fps drops down to ~30 fps. This happens even in the case of QQQVGA mode. Is there any fix for it? Also, taking the data from the sensor and publishing it in ROS was also performed. The fps was still low i.e. ~43fps (in QQQVGA mo...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测"
+      },
+      {
+        "id": "search-2-4",
+        "title": "How to read A5 sheet with 7mm QR codes? - OpenMV Boards - OpenMV Forums",
+        "url": "https://forums.openmv.io/viewtopic.php?f=6&t=1880&p=11269",
+        "snippet": "How to read A5 sheet with 7mm QR codes? - OpenMV Boards - OpenMV Forums OpenMV Forums。How to read A5 sheet with 7mm QR codes? TedTrippin Hi, First off, loving the OpenMV. Installed IDE, plugged in, tried some code → worked first time! I’m trying to scan QR codes on an A5 sheet. They are about 7mm x 7mm. Hoping to detect version 1 and 2. So far I’ve tried these settings… sensor.set_pixformat(sensor.RGB565) sensor.set_framesize(sensor.VGA) → OSError: Image is not mutable! sensor.set_pixformat(sensor.GRAYSCALE) sensor.set_framesize(sensor.VGA) → MemoryError: Out of fast Frame Buffer Stack Memory! Please reduce the resolution of the image you are running this algorithm on to bypass this issue! I’ve got to… sensor.set_pixformat(sensor.GRAYSCALE) sensor.set_framesize(sensor.CIF) Unfortunately, t...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测"
+      },
+      {
+        "id": "search-2-5",
+        "title": "OpenMV学习笔记",
+        "url": "https://blog.csdn.net/2302_80938179/article/details/144164497",
+        "snippet": "OpenMV学习笔记 CSDN博客。 2个 I/O 引脚用于舵机控制. 所有的IO口都可以用于,中断和PWM(板子上有10个I/O引脚)。 一个RGB LED(三色), 两个高亮的 850nm IR LED(红外)。 32 MB 外置的 32-bit SDRAM ,100 MHz的时钟,达到 400 MB/s 的带宽。 32 MB 外置的 quadspi flash, 100 MHz的时钟,4-bit DDR模式达到 100 MB/s 的带宽。 可拆卸的摄像头模块系统,允许OpenMV Cam H7 Plus与不同的感光元件模组连接: OpenMV4 H7 Plus默认配置的OV5640 感光元件处理2592×1944 (5MP)图像。在QVGA (320×240)及以下的分辨率时,大多数简单的算法可以运行(25~50)FPS。OpenMV 摄像头有一个2.8mm焦距镜头在一个标准M12镜头底座上。 3.7V 锂离子电池接口 3.功能 滤波 颜色追踪 AptilTag 二维码 条形码 人脸识别 人眼追踪(瞳孔识别) 直线识别 圆形识别 矩形识别 数字识别 线性回归-巡线 模板匹配 特征点追踪 光流 边缘检测 录制视频 mavlink 使用 供电:USB口供电或者外部电源供电(3.7-5V)。注意,不要接3.3V 图像处理 1.LAB亮度-对比度 Lab颜色空间中,L亮度;a的正数代表红色,负端代表绿色;b的正数代表黄色,负端代表兰色。不像RGB和CMYK色彩空间,Lab颜色被设计来接近人类视觉。 因此L分量可以调整亮度对,修改a和b分量的输出色阶来做精确的颜色平衡。 2.镜头的畸变:OpenMV中使用image.lens_corr(1.8)来矫正2.8mm焦距的镜头 3.滤光片:通过波长650nm以内的滤光片,把红外光截止了 python REPL和串口 OpenMV的ID...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测"
+      },
+      {
+        "id": "search-2-6",
+        "title": "OpenMV云台自动追踪:AprilTag识别与PID控制实战",
+        "url": "https://www.sheratonhq.com/news/162743",
+        "snippet": "OpenMV云台自动追踪:AprilTag识别与PID控制实战。解决先把 D 项调到接近 0确认抖动消失后再小幅加回再把控制周期从 20ms 改成 50ms给舵机足够时间响应。多数情况下问题出在像素噪声而不是 PID 参数本身可以在计算导数前对dx做一次滑动平均滤波窗口取 3 帧即可窗口太大会引入明显滞后。5.3 目标丢失后云台猛冲重新出现时剧烈震荡现象靶标被遮挡 2 秒后重新出现云台先向一个方向猛冲然后反向弹回来回好几次才稳定。原因这是积分饱和的典型表现。目标丢失期间PID 的err一直保持较大值积分项持续累积到限幅边缘目标重新出现时输出被饱和值主导。解决在目标丢失的每一帧都调用pid.integral 0同时把last_err也清零。更稳妥的做法是让追踪状态机只在STATE_TRACK下更新 PID 参数STATE_SEARCH模式下完全冻结 PID 内部状态。我后来把积分限幅从 ±5 缩到 ±2发现目标重新出现后的恢复时间缩短了一半。5.4 帧率只有十几帧整个追踪像慢动作现象代码在 IDE 里单步跑正常但实机运行时帧率掉到 15fps 以下云台反应迟钝。原因分辨率或像素格式选得过高或者在同一帧里重复执行了多次耗时操作。有人在主循环里先find_blobs再find_apriltags检查代码发现每帧做了两次完整扫描。另一个隐蔽因素是 IDE 打开的同时占用了部分 USB 带宽。解决确认sensor.set_framesize()是否真的设成了 QQVGA。OpenMV 在切换分辨率后要重新skip_frames否则传感器可能仍然工作在上一次分辨率。帧率测试要断开 IDE 单独跑实测 QQVGA 灰度下稳定在 40fps 左右这个帧率对舵机控制已经足够。识别和解算代码别在draw_*方法上浪费太多时间可视化只在调试时打开。5.5 暗光下标签识别率骤降现象室内光线正常时识...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测"
+      },
+      {
+        "id": "search-2-7",
+        "title": "OpenMV Cam & STM32H7 Machine Vision Architecture",
+        "url": "https://embeddedroad.com/branches/embedded-systems-roadmap/embedded-systems-openmv-cam-machine-vision-on-stm32h7",
+        "snippet": "OpenMV Cam & STM32H7 Machine Vision Architecture EmbeddedRoad。 the \"Plus\" variant adds external SDRAM (typically 32 MB) via the FMC bus, because a single 5 MP RGB565 frame (~10 MB) or even a QVGA RGB565 frame (~150 KB) plus multiple working buffers for a CNN quickly exceeds on-chip SRAM. microSD — for storing captured datasets, logging, or loading models at boot. The key architectural fact for everything downstream: the DCMI peripheral streams pixel data into memory via DMA with no CPU involvement per pixel, but the CPU must still process every frame buffer through the vision pipeline (color conversion, filtering, feature extraction) at the clock rate of a general-purpose Cortex-M7 — there is no dedicated ISP or NPU on standard H7 parts. All the \"vision\" is software running on the M7 core ...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测"
+      },
+      {
+        "id": "search-2-8",
+        "title": "Merge pull request #843 from kwagyeman/kwabena/apriltag_readout_control",
+        "url": "https://github.com/openmv/openmv/commit/7b90ca19cc3f4d76e2aa733a6a6c04b081bbc372",
+        "snippet": "Merge pull request #843 from kwagyeman/kwabena/apriltag_readout_control。Commit This commit does not belong to any branch on this repository, and may belong to a fork outside of the repository. Browse files Merge pull request #843 from kwagyeman/kwabena/apriltag_readout_control Add readout control for apriltag tracking Showing 1 changed file with 151 additions and 0 deletions. 151 changes: 151 additions & 0 deletions 151 scripts/examples/35-Readout-Control/apriltag_tracking.py Original file line number Diff line number Diff line change @@ -0,0 +1,151 @@ # This example shows off how to use readout window control to readout a small part of a camera # sensor pixel array at a very high speed and move that readout window around. # This example is was designed and tested on the OpenMV Cam H7 Plus...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测"
+      },
+      {
+        "id": "search-2-9",
+        "title": "Apriltag tracking - OpenMV Boards - OpenMV Forums",
+        "url": "https://forums.openmv.io/t/apriltag-tracking/6520/3",
+        "snippet": "Apriltag tracking - OpenMV Boards - OpenMV Forums。Apriltag tracking Hello everybody, How i have to change the code of apriltag_tracking_1 to get the removal from abritag too. So the Z component. This example shows off how to use readout window control to readout a small part of a camera sensor pixel array at a very high speed and move that readout window around. This example is was designed and tested on the OpenMV Cam H7 Plus using the OV5640 sensor. Could someone please help me. Thank you for the support. Open MV H7 Plus is a brilliant device! post by Philipp on Nov 10, 2021 So i would like to have the mapped z because zooming in changes the value of z =) post by kwagyeman on Nov 10, 2021 Nov 2021 There’s an example that literally outputs these values. To note, you have to convert the di...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测"
+      }
+    ],
+    "warnings": [
+      "实时搜索结果是待核验线索，P0 不用网页摘要覆盖已核验的硬件参数；社区经验不构成规格保证。"
+    ],
+    "error": null,
+    "request_count": 3,
+    "request_ids": [
+      "89aa4887-24e9-4437-97c0-24822ab4bda5",
+      "45645322-88ee-49d7-b0a5-cb49c93a4830",
+      "a5ce46d7-20ba-4261-965d-3febb4433651"
+    ],
+    "query_records": [
+      {
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation",
+        "status": "ok",
+        "request_id": "89aa4887-24e9-4437-97c0-24822ab4bda5",
+        "result_count": 10,
+        "version": "standard",
+        "message": ""
+      },
+      {
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件",
+        "status": "ok",
+        "request_id": "45645322-88ee-49d7-b0a5-cb49c93a4830",
+        "result_count": 10,
+        "version": "standard",
+        "message": ""
+      },
+      {
+        "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测",
+        "status": "ok",
+        "request_id": "a5ce46d7-20ba-4261-965d-3febb4433651",
+        "result_count": 10,
+        "version": "standard",
+        "message": ""
+      }
+    ],
+    "auth_mode": "tc3",
+    "new_request_count": 3
+  },
+  "evidence": [
+    {
+      "id": "rt1062-official-hardware",
+      "kind": "official",
+      "title": "OpenMV Cam RT1062 官方产品与电气说明",
+      "url": "https://openmv.io/products/openmv-cam-rt",
+      "claim": "官方列出 USB-C、SPI、I2C、异步串行接口、3.3V I/O 与 OV5640 摄像头；I/O 不耐 5V。",
+      "field": "interfaces,logic_voltage_v,summary,io_input_max_v",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "All I/O pins output 3.3V"
+    },
+    {
+      "id": "rt1062-official-availability",
+      "kind": "official",
+      "title": "OpenMV Cam RT1062 官网订购状态",
+      "url": "https://openmv.io/products/openmv-cam-rt",
+      "claim": "核验时官方产品正文显示可欠货订购。没有确认现货或送达日期，搜索缓存中的库存数字不能代替本次状态。",
+      "field": "caveats",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "Available for Backorder"
+    },
+    {
+      "id": "rt1062-official-image-api",
+      "kind": "official",
+      "title": "OpenMV Image API：颜色、直线与 AprilTag",
+      "url": "https://docs.openmv.io/v5.0.0/library/omv.image.Image.html",
+      "claim": "官方本地图像 API 提供颜色连通域、阈值直线回归与 AprilTag 检测；需要匹配固件并验证实际任务，不据此保证帧率。",
+      "field": "capabilities",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "find_blobs; get_regression; find_apriltags"
+    },
+    {
+      "id": "openmv-official-hardware",
+      "kind": "official",
+      "title": "OpenMV Cam H7 Plus 官方产品与电气说明",
+      "url": "https://openmv.io/products/openmv-cam-h7-plus",
+      "claim": "官方列出 USB、SPI、I2C、异步串行接口，I/O 输出为 3.3V；随板为 OV5640 摄像头。",
+      "field": "interfaces,logic_voltage_v,summary,io_input_max_v",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "All I/O pins output 3.3V"
+    },
+    {
+      "id": "openmv-official-image-api",
+      "kind": "official",
+      "title": "OpenMV Image API：颜色、直线与 AprilTag",
+      "url": "https://docs.openmv.io/v5.0.0/library/omv.image.Image.html",
+      "claim": "官方本地图像 API 提供颜色阈值连通域、阈值像素直线回归与 AprilTag 检测；这是软件能力证据，未保证本赛题帧率或精度。",
+      "field": "capabilities",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "find_blobs; get_regression; find_apriltags"
+    },
+    {
+      "id": "openmv-official-lifecycle",
+      "kind": "official",
+      "title": "OpenMV H7 Plus 产品生命周期说明",
+      "url": "https://openmv.io/products/openmv-cam-h7-plus",
+      "claim": "官方称该版本已不再生产，仍接受定制批量订单；页面保留作资料用途。采购前必须确认库存与供货。",
+      "field": "caveats",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "We are no longer producing this version"
+    },
+    {
+      "id": "openmv-community-apriltag-pipeline",
+      "kind": "community",
+      "title": "Higher fps from OpenMV Cam H7 plus and MT9V034（第一人称工程记录）",
+      "url": "https://forums.openmv.io/t/higher-fps-from-openmv-cam-h7-plus-and-mt9v034/5585",
+      "claim": "作者 Priyanka 描述加入 AprilTag 计算和 ROS 发布后帧率下降；讨论涉及分辨率、传感器与 readout control。可生成验证清单，不能作为统一规格或本项目实测。",
+      "field": "engineering_experience",
+      "accessed_at": "2026-10-24",
+      "status": "needs_verification",
+      "excerpt": "the fps drops down to ~30 fps"
+    },
+    {
+      "id": "maix-official-board",
+      "kind": "official",
+      "title": "Sipeed Maix Bit 官方板卡介绍",
+      "url": "https://wiki.sipeed.com/soft/maixpy/en/develop_kit_board/maix_bit.html",
+      "claim": "官方板卡页确认双核 RISC-V、板载存储以及套装摄像头信息。",
+      "field": "summary",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "Dual-core 64bit RISC-V / 400MHz"
+    },
+    {
+      "id": "maix-official-usb",
+      "kind": "official",
+      "title": "Sipeed Maix-Bit Specifications v2.0",
+      "url": "https://dl.sipeed.com/fileList/MAIX/HDK/Sipeed-Maix-Bit/Specifications/Sipeed%20Maix-Bit%20Specifications_EN%20V2.0.pdf",
+      "claim": "官方 PDF 首页说明 USB Type-C 下载电路；此处 USB 指板级下载连接，不表示 K210 原生 USB 外设。首次读取成功，后续分页请求超时，未据此填入 GPIO 电压。",
+      "field": "interfaces",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "Download circuit"
+    },
+    {
+      "id": "maix-official-peripherals",
+      "kind": "official",
+      "title": "MaixPy v1 K210 外设文档入口与 UART API",
+      "url": "https://wiki.sipeed.com/soft/maixpy/en/api_reference/machine/uart.html",
+      "claim": "K210 的 MaixPy v1 文档提供 UART，并在同一文档树列出 I2C 与 SPI；引脚需经 FPIOA 配置，不能把可映射等同同时无冲突。",
+      "field": "interfaces",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "There are 3 uarts in k210"
+    },
+    {
+      "id": "maix-official-color",
+      "kind": "official",
+      "title": "MaixPy v1 image 机器视觉 API",
+      "url": "https://wiki.sipeed.com/soft/maixpy/en/api_reference/machine_vision/image/image.html",
+      "claim": "旧版官方 API 给出板上摄像头循环和绿色色块检测例程。未以新版 MaixCAM 文档替代 K210 证据。",
+      "field": "capabilities",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "Routine 1: Find green"
+    },
+    {
+      "id": "maix-official-kpu",
+      "kind": "official",
+      "title": "MaixPy v1 KPU API",
+      "url": "https://wiki.sipeed.com/soft/maixpy/en/api_reference/Maix/kpu.html",
+      "claim": "官方文档给出从 Flash 加载模型与 YOLO2 推理接口；需要兼容模型、内存与固件，未核验任意目标或帧率。",
+      "field": "capabilities",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "Run face detection"
+    },
+    {
+      "id": "esp-eye-official-hardware",
+      "kind": "official",
+      "title": "Espressif ESP32-S3-EYE v2.2 官方指南",
+      "url": "https://docs.espressif.com/projects/esp-board-manager/en/latest/references/boards/esp32_s3_eye.html",
+      "claim": "指南确认 OV2640、LCD、Micro-USB 供电及芯片通信；板上 SPI LCD 等内部连接不视为可自由外接的接口。",
+      "field": "summary,interfaces",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "A Micro-USB port used for 5 V power supply"
+    },
+    {
+      "id": "esp-eye-official-local-ai",
+      "kind": "official",
+      "title": "Espressif Developer Portal：ESP-WHO Get started（2026-05-28）",
+      "url": "https://developer.espressif.com/blog/2026/05/esp-who-get-started/",
+      "claim": "官方教程在 ESP32-S3-EYE 上运行 ESP-WHO，并说明视觉处理在 SoC 本地执行。object_detection 此处是已有检测框架路径，不保证任意赛题目标。",
+      "field": "capabilities",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "run image processing workloads directly on Espressif SoCs"
+    },
+    {
+      "id": "esp-eye-community-windows-flash",
+      "kind": "community",
+      "title": "ESP-WHO issue #288：恢复固件后 Windows USB 识别异常",
+      "url": "https://github.com/espressif/esp-who/issues/288",
+      "claim": "SamHall 第一人称报告刷写后 Windows USB 连续连接/断开；讨论最后仅怀疑其板卡硬件问题。可提示准备恢复步骤与备用线材，不能推断所有板卡有此缺陷。",
+      "field": "engineering_experience",
+      "accessed_at": "2026-10-24",
+      "status": "needs_verification",
+      "excerpt": "the board is no longer recognized as a USB device"
+    },
+    {
+      "id": "pi5-official-product",
+      "kind": "official",
+      "title": "Raspberry Pi 5 官方产品规格",
+      "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+      "claim": "产品页列出 USB、双 MIPI 相机/显示连接器、40-pin 排针与 UART 调试口。电源供给能力不能用作算法实耗。",
+      "field": "summary,interfaces",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "2 × 4-lane MIPI camera/display transceivers"
+    },
+    {
+      "id": "pi5-official-gpio",
+      "kind": "official",
+      "title": "Raspberry Pi 官方 GPIO 文档源",
+      "url": "https://github.com/raspberrypi/documentation/blob/master/documentation/asciidoc/computers/raspberry-pi/gpio-on-raspberry-pi.adoc",
+      "claim": "官方文档确认 GPIO 输出高电平为 3.3V，并列出 SPI、I2C 与串行功能；外设需启用并检查引脚复用。",
+      "field": "logic_voltage_v,interfaces",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "high (3.3V) or low (0V)"
+    },
+    {
+      "id": "pi5-official-camera-detection",
+      "kind": "official",
+      "title": "Raspberry Pi 官方 Camera software 文档",
+      "url": "https://www.raspberrypi.com/documentation/computers/camera_software.html",
+      "claim": "官方介绍在 Raspberry Pi 上构建带 TensorFlow Lite 的 rpicam-detect 并运行相机检测，属于本地软件路径。需要摄像头、兼容模型及依赖，不代表预装即用或已实测 Pi 5 性能。",
+      "field": "capabilities",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "rpicam-detect: Not built by default"
+    }
+  ],
+  "recommendations": [
+    {
+      "hardware": {
+        "id": "openmv-rt1062",
+        "name": "OpenMV Cam RT1062（欠货可订购）",
+        "vendor": "OpenMV",
+        "summary": "带 OV5640 摄像头、可用 MicroPython 开发的视觉板，适合颜色、巡线与 AprilTag 原型；核验时官网可欠货订购，交期与现货待确认。",
+        "interfaces": [
+          "UART",
+          "I2C",
+          "SPI",
+          "USB"
+        ],
+        "logic_voltage_v": 3.3,
+        "power_w": null,
+        "price_cny": null,
+        "price_kind": "unknown",
+        "capabilities": [
+          "color_tracking",
+          "line_tracking",
+          "apriltag",
+          "offline_inference"
+        ],
+        "skill_level": 2,
+        "docs_quality": 5,
+        "evidence": [
+          {
+            "id": "rt1062-official-hardware",
+            "kind": "official",
+            "title": "OpenMV Cam RT1062 官方产品与电气说明",
+            "url": "https://openmv.io/products/openmv-cam-rt",
+            "claim": "官方列出 USB-C、SPI、I2C、异步串行接口、3.3V I/O 与 OV5640 摄像头；I/O 不耐 5V。",
+            "field": "interfaces,logic_voltage_v,summary,io_input_max_v",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "All I/O pins output 3.3V"
+          },
+          {
+            "id": "rt1062-official-availability",
+            "kind": "official",
+            "title": "OpenMV Cam RT1062 官网订购状态",
+            "url": "https://openmv.io/products/openmv-cam-rt",
+            "claim": "核验时官方产品正文显示可欠货订购。没有确认现货或送达日期，搜索缓存中的库存数字不能代替本次状态。",
+            "field": "caveats",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "Available for Backorder"
+          },
+          {
+            "id": "rt1062-official-image-api",
+            "kind": "official",
+            "title": "OpenMV Image API：颜色、直线与 AprilTag",
+            "url": "https://docs.openmv.io/v5.0.0/library/omv.image.Image.html",
+            "claim": "官方本地图像 API 提供颜色连通域、阈值直线回归与 AprilTag 检测；需要匹配固件并验证实际任务，不据此保证帧率。",
+            "field": "capabilities",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "find_blobs; get_regression; find_apriltags"
+          }
+        ],
+        "caveats": [
+          "2026-10-24 官网为欠货可订购状态；新购前必须确认现货、修订版、交期与到手成本，不能承诺比赛前送达。",
+          "RT1062 I/O 为 3.3V 且不耐 5V；3.3V 引脚为输出，不能当作供电输入。",
+          "官方说明排针未预焊，新生应将焊接或代焊、接线时间计入准备计划。",
+          "支持本地图像处理不代表已达成赛题帧率、定位精度或运动速度；需测完整处理和通信链路。",
+          "官方分工况电流不代表包含所有附件的统一功耗，power_w 保留未知。",
+          "人民币完整 BOM 未核验，price_cny 保留未知；不把美元板价换算当作现货套件报价。",
+          "skill_level 与 docs_quality 是人工评审分。"
+        ],
+        "availability_status": "backorder",
+        "io_input_max_v": 3.3
+      },
+      "verdict": "unknown",
+      "checks": [
+        {
+          "constraint": "预算上限（板卡，不含完整系统）",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "功耗上限",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "通信接口",
+          "expected": [
+            "UART"
+          ],
+          "actual": [
+            "UART",
+            "I2C",
+            "SPI",
+            "USB"
+          ],
+          "status": "pass",
+          "reason": "官方接口证据覆盖需求"
+        },
+        {
+          "constraint": "逻辑电平 V",
+          "expected": null,
+          "actual": 3.3,
+          "status": "not_requested",
+          "reason": "未限定逻辑电平"
+        },
+        {
+          "constraint": "AprilTag 定位识别",
+          "expected": true,
+          "actual": true,
+          "status": "pass",
+          "reason": "存在官方示例/文档；未承诺比赛环境帧率"
+        },
+        {
+          "constraint": "离线运行",
+          "expected": true,
+          "actual": true,
+          "status": "pass",
+          "reason": "官方文档支持设备本地执行；依赖安装可需联网"
+        },
+        {
+          "constraint": "禁用器件",
+          "expected": [],
+          "actual": "OpenMV Cam RT1062（欠货可订购）",
+          "status": "pass",
+          "reason": "未命中用户列出的禁用器件（仍须复核原题）"
+        },
+        {
+          "constraint": "额外硬性条件",
+          "expected": "机器人使用 OpenMV Cam H7 Plus 和 OV5640 做离线 AprilTag 检测，希望达到100 FPS",
+          "actual": null,
+          "status": "unknown",
+          "reason": "P0 尚未核验该条件，不能据规格直接推定实际性能"
+        },
+        {
+          "constraint": "实时检索覆盖",
+          "expected": "查询完成且发现对应官方站点线索",
+          "actual": 30,
+          "status": "pass",
+          "reason": "已检索到候选官方域线索；具体参数仍以固定库逐条官方证据为准"
+        }
+      ],
+      "score": 87,
+      "score_breakdown": [
+        {
+          "name": "任务资料覆盖",
+          "points": 40,
+          "max_points": 40,
+          "reason": "官方示例覆盖已识别任务的比例"
+        },
+        {
+          "name": "文档可用性",
+          "points": 20,
+          "max_points": 20,
+          "reason": "人工维护的文档完整度评分，非客观性能"
+        },
+        {
+          "name": "新生上手",
+          "points": 16,
+          "max_points": 20,
+          "reason": "人工维护的学习难度评分，需结合团队经验"
+        },
+        {
+          "name": "证据覆盖",
+          "points": 15,
+          "max_points": 20,
+          "reason": "已核验官方资料条目数，最高 20 分"
+        },
+        {
+          "name": "供货风险扣分",
+          "points": -4,
+          "max_points": 0,
+          "reason": "官方停产 -10、欠货订购 -4；未核验库存不等于现货，无额外加分"
+        }
+      ],
+      "reasons": [
+        "通信接口：官方接口证据覆盖需求",
+        "AprilTag 定位识别：存在官方示例/文档；未承诺比赛环境帧率",
+        "离线运行：官方文档支持设备本地执行；依赖安装可需联网",
+        "禁用器件：未命中用户列出的禁用器件（仍须复核原题）",
+        "实时检索覆盖：已检索到候选官方域线索；具体参数仍以固定库逐条官方证据为准"
+      ],
+      "risks": [
+        "2026-10-24 官网为欠货可订购状态；新购前必须确认现货、修订版、交期与到手成本，不能承诺比赛前送达。",
+        "RT1062 I/O 为 3.3V 且不耐 5V；3.3V 引脚为输出，不能当作供电输入。",
+        "官方说明排针未预焊，新生应将焊接或代焊、接线时间计入准备计划。",
+        "支持本地图像处理不代表已达成赛题帧率、定位精度或运动速度；需测完整处理和通信链路。",
+        "官方分工况电流不代表包含所有附件的统一功耗，power_w 保留未知。",
+        "人民币完整 BOM 未核验，price_cny 保留未知；不把美元板价换算当作现货套件报价。",
+        "skill_level 与 docs_quality 是人工评审分。",
+        "额外硬性条件：P0 尚未核验该条件，不能据规格直接推定实际性能"
+      ],
+      "live_leads": [
+        {
+          "id": "search-0-0",
+          "title": "OV5640 FPC Camera Module",
+          "url": "https://docs.openmv.io/v5.0.0/openmvcam/sensors/ov5640.html",
+          "snippet": "OV5640 FPC Camera Module OpenMV文档。OV5640 FPC Camera Module¶ The OV5640 FPC Camera Module is a compact 5MP rolling-shutter colour sensor with autofocus. It mounts to OpenMV Cam base boards through the board-to-board connector for low-profile builds. For full datasheet, photos, and ordering see the OV5640 product page. Note Not supported on the OpenMV N6 at this time. Highlights¶ 5MP (2592x1944) rolling-shutter sensor Autofocus, F2.0 aperture, variable focal length Usage¶ Stream QVGA (320x240) RGB565 video — the OV5640 works as a regular camera module for any image-processing pipeline: import csi import time csi0 = csi.CSI() csi0.reset() csi0.pixformat(csi.RGB565) csi0.framesize(csi.QVGA) clock = time.clock() while True: clock.tick() img = csi0.snapshot() print(clock.fps()) The OV5640 also h...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-0-1",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://hitechchain.se/en/iot/openmv-cam-h7-plus",
+          "snippet": "OpenMV Cam H7 Plus。 Person Detection You can detect if there's a person in the field of view using our built-in person detector TensorFlow Lite model. Optical Flow You can use Optical Flow to detect translation of what your OpenMV Cam is looking at. For example, you can use Optical Flow on a quad-copter to determine how stable it is in the air. QR Code Detection/Decoding You can use the OpenMV Cam to read QR Codes in it's field of view. With QR Code Detection/Decoding you can make smart robots which can read labels in the environment. Data Matrix Detection/Decoding The OpenMV Cam H7 can also detect and decode data matrix 2D barcodes too. Linear Barcode Decoding The OpenMV Cam H7 can also decode 1D linear bar codes. In particular, it can decode EAN2, EAN5, EAN8, UPCE, ISBN10, UPCA, EAN13, I...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-0-2",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://compoindia.com?p=14067/",
+          "snippet": "OpenMV Cam H7 Plus。OpenMV Cam H7 Plus The OpenMV Cam is a small, low power, microcontroller board featuring an STM32H743II Arm® Cortex® M7 processor running at 480MHz, which allows you to easily implement applications using machine vision in the real world. It is equipped with 32MB of SDRAM, 1MB of RAM, and 2MB of flash. Features: STM32H743II processor to realize machine vision applications Compact size for easy deployment in robotics projects Low power consumption for prolonged use Micropython support with easy-to-use OpenMV IDE for quick and convenient project integration High resolution OV5640 image sensor (2592×1944/ 5MP) for better image processing Removable camera module system to realize advanced applications Supports various shields for further expansion of projects Full speed USB ...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-0-3",
+          "title": "OpenMV H7 Plus Camera",
+          "url": "https://www.arduitronics.com/product/4122/openmv-h7-plus-camera",
+          "snippet": "OpenMV H7 Plus Camera Arduelectronics。OpenMV H7 Plus Camera รหัสสินค้า SG60315 หมวดหมู่ OpenMV ราคา 5,780.00 บาท สถานะสินค้า พร้อมส่ง จำนวน ชิ้น รายละเอียดสินค้า Description: The OpenMV H7 Plus Camera is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. The Plus variation adds 32 MB of external 32-bit SDRAM and 32 MB of external quad SPI flash. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and its I/O pins in Python. You can easily trigger taking pictures and video on ex...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-0-4",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://www.electan.com/openmv-amp-10338.html",
+          "snippet": "OpenMV Cam H7 Plus Electan。SD Card socket capable of 100Mbs reads/writes which allows your OpenMV Cam to take pictures and easily pull machine vision assets off of the ?SD card. A SPI bus that can run up to 80Mbs allowing you to easily stream image data off the system to either the LCD Shield, the WiFi Shield, or another microcontroller. An I2C Bus (up to 1Mb/s), CAN Bus (up to 1Mb/s), and an Asynchronous Serial Bus (TX/RX, up to 7.5Mb/s) for interfacing with other microcontrollers and sensors. A 12-bit ADC and a 12-bit DAC. Two I/O pins for servo control. Interrupts and PWM on all I/O pins (there are 10 I/O pins on the board). And, an RGB LED and two high power 850nm IR LEDs. 32 MB of external 32-bit SDRAM clocked at 100 MHz for 400 MB/s of bandwidth. 32 MB of external quadspi flash clock...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-0-5",
+          "title": "OV5640 FPC Camera Module",
+          "url": "https://openmv.io/products/ov5640-fpc-camera-module?variant=39893457862750",
+          "snippet": "OV5640 FPC Camera Module OpenMV。View in space View in space OV5640 FPC Camera Module About The module is compatible with all modular OpenMV Cam base boards. The OV5640 FPC Camera Module gives you the same high-resolution JPEG-taking capabilities as the OpenMV Cam H7 Plus and RT1062's OV5640 camera module in a low-profile form factor with autofocus support. The OV5640 image sensor can capture 2592x1944 (5MP) images. The sensor supports Grayscale, RGB565, JPEG, YUV422, and Bayer image formats. For more information, see our documentation. Applications Use this module if you want a low-profile form factor for your OpenMV Cam instead of the default M12 lens. Specs Focal Length: Variable Aperture: F2.0 Format: 1/4\" IR Cut Filter: 650nm Horizontal Resolution: 1944 pixels (2.7384mm) 1.4um pixel pi...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-0-6",
+          "title": "Unlock Machine Vision with OpenMV Cam H7 Plus!",
+          "url": "https://www.dfrobot.com/product-2263.html?srsltid=AfmBOoqIKcJj18bw4XsbrLcRcNhj6wL4nM4EPY4ueHrnUibL9KbpTnnl",
+          "snippet": "Unlock Machine Vision with OpenMV Cam H7 Plus! DFRobot。 Your OpenMV Cam can process Haar Cascades to do generic object detection and comes with a built-in Frontal Face Cascade and Eye Haar Cascade to detect faces and eyes. Eye Tracking You can use Eye Tracking with your OpenMV Cam to detect someone's gaze. You can then, for example, use that to control a robot. Eye Tracking detects where the pupil is looking versus detecting if there's an eye in the image. Person Detection You can detect if there's a person in the field of view using our built-in person detector TensorFlow Lite model. Optical Flow You can use Optical Flow to detect translation of what your OpenMV Cam is looking at. For example, you can use Optical Flow on a quad-copter to determine how stable it is in the air. QR Code Dete...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-0-7",
+          "title": "SparkFun OpenMV Cam H7 Plus",
+          "url": "https://tanotis.com/products/sparkfun-openmv-cam-h7-plus",
+          "snippet": "SparkFun OpenMV Cam H7 Plus Tanotis。SD Card socket capable of 100Mbs reads/writes which allows your OpenMV Cam to take pictures and easily pull machine vision assets off of the ?SD card. A SPI bus that can run up to 80Mbs allowing you to easily stream image data off the system to either the LCD Shield, the WiFi Shield, or another microcontroller. An I2C Bus (up to 1Mb/s), CAN Bus (up to 1Mb/s), and an Asynchronous Serial Bus (TX/RX, up to 7.5Mb/s) for interfacing with other microcontrollers and sensors. A 12-bit ADC and a 12-bit DAC. Two I/O pins for servo control. Interrupts and PWM on all I/O pins (there are 10 I/O pins on the board). And, an RGB LED and two high power 850nm IR LEDs. 32 MB of external 32-bit SDRAM clocked at 100 MHz for 400 MB/s of bandwidth. 32 MB of external quadspi fl...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-0-8",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "http://openmv.io/collections/cams/products/openmv-cam-h7-plus",
+          "snippet": "OpenMV Cam H7 Plus OpenMV。View in space View in space View in space View in space OpenMV Cam H7 Plus We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily impleme... Specs Processor: ARM® 32-bit Cortex®-M7 CPU w/ Double Precision FPU 480 MHz (1027 DMIPS) Core Mark Score: 2400 (compare w/ Raspberry Pi 2: 2340) Supported Image Formats: Grayscale RGB565 JPEG (and BAYER/YUV422) Maximum Supported Resolutions: Grayscale: 2952x1944 (5MP) and under RGB565: 2952x1944 (5MP) and under Grayscale JPEG: 2952x1944 (5MP) and ...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-0-9",
+          "title": "OpenMV Cam H7 Plus 機器視覺攝像頭模組 – 5MP OV5640 / 32MB SDRAM / 支援 MicroPython",
+          "url": "https://www.taiwaniot.com.tw/?p=62780",
+          "snippet": "OpenMV Cam H7 Plus 機器視覺攝像頭模組 – 5MP OV5640 / 32MB SDRAM / 支援 MicroPython 台灣物聯科技。例如,您可以使用四通道上的光流來確定它在空氣中的穩定性。 QR碼檢測/解碼您可以使用OpenMV Cam在其視野中閱讀QR碼。通過QR碼檢測/解碼,您可以製作可以在環境中讀取標籤的智能機器人。您可以在此處查看我們的視頻。 AprilTag跟踪甚至比上述的QR碼更好,OpenMV Cam M7也可以追溯到160×120的FourTags,高達12 FPS。AprilTags是旋轉,縮放,剪切和照明不變的最先進的流感標記。我們在這裡有一個視頻。 邊緣/線路檢測您可以通過Canny Edge Detector算法或簡單的高通濾波進行邊緣檢測,然後進行閾值處理。在您擁有二進製圖像後,您可以使用霍夫檢測器查找圖像中的所有行。通過邊緣/線檢測,您可以使用OpenMV Cam輕鬆檢測物體的方向。 模板匹配您可以使用與OpenMV Cam模板匹配來檢測翻譯的預先保存的圖像何時被視圖。例如,模板匹配可用於在PCB上查找基准或讀取顯示屏上的已知數字。 圖像捕獲您可以使用OpenMV攝像頭捕獲多達320×240 RGB565(或640×480灰度)BMP / JPG / PPM / PGM圖像。您可以直接控制如何在Python腳本中捕獲圖像。最重要的是,您可以在保存機器視覺功能和/或繪製框架之前進行預設。 視頻錄製您可以使用OpenMV Cam記錄多達320×240 RGB565(或640×480灰度)MJPEG視頻或GIF圖像。您可以直接控制每個視頻幀在Python腳本中的記錄,並對視頻錄製的開始和結束進行全面控制。而且,像拍攝圖像一樣,您可以在保存機器視覺功能和/或繪製視頻幀之前進行預覽。 最後,所有上述功能可以在您自己的自定義應用程序...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-0",
+          "title": "openMV摄像头入门指南-1.介绍",
+          "url": "http://rosrobot.cn/?id=371",
+          "snippet": "openMV摄像头入门指南-1.介绍 智能佳ROS殿堂。OpenMV Cam 是一款小型、低功耗的微控制器板,可让您在现实世界中使用机器视觉轻松实现应用程序。您可以使用高级 Python 脚本(由 MicroPython 操作系统提供 )而不是 C/C++ 对 OpenMV Cam 进行编程。这使得处理机器视觉算法的复杂输出和使用高级数据结构变得更加容易。但是,您仍然可以在 Python 中完全控制 OpenMV Cam 及其 I/O 引脚。您可以轻松触发外部事件拍照和视频,或执行机器视觉算法来找出如何控制 I/O 引脚。...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-1",
+          "title": "dac_write.py",
+          "url": "https://book.openmv.cc/example/50-Arduino-Boards/Portenta-H7/50-Board-Control/dac_write.html",
+          "snippet": "dac_write.py OpenMV文档。Home Change Languages 序言 视频教程 OpenMV详细参数 10分钟快速上手 图像处理背景知识 Python背景知识 OpenMV图像处理的方法 感光元件 基本方法 使用统计信息 画图 寻找色块 AprilTag标记跟踪 模板匹配 多模板匹配 特征点检测 测距 扫码识别 颜色形状同时识别 颜色模板匹配同时识别 分辨不同人脸 高级特征 OpenMV也是个单片机 文件系统 模块的使用 pyb各种外设 字符串/json/正则 串口通信上 串口通信下 wifi通信 手动写一个模块 第一个类 手动写一个温度传感器模块 OpenMV固件 升级固件 编译固件 正版激活 debug 常见错误提示 常见故障 显示耗费时间 优化 OpenMV配件 LCD WIFI 洞洞板 sd卡 长脚排母 直角固定板 常见问题 项目实例 自行训练AI神经网络模型 追小球的小车 追小球的云台 巡线小车 Mnist数字识别 目标检测 实际道路环境交通标志识别 口罩检测 垃圾分类 三子棋机器人 2024电赛 视觉测距 2025电赛C题 追踪标靶 2025电赛E题 电动显微镜 0.0001mm精度 拼图识别 平衡滚球图传录制 OpenMV机械臂-项目实例 硬件概述 基础教程 物体分拣码垛 自动三子棋对战 24年电赛E题教程 垃圾分类-自行训练AI模型目标检测 按键示教和txt文件控制机械臂 例程解析 00-HelloWorld blinky.py helloworld.py 01-Camera 00-Snapshot emboss_snapshot.py snapshot.py snapshot_on_face_detection.py snapshot_on_movement.py time_lapse_photos.py 01-Video-Reco...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-2",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://www.electan.com/openmv-amp-10338.html",
+          "snippet": "OpenMV Cam H7 Plus Electan。SD Card socket capable of 100Mbs reads/writes which allows your OpenMV Cam to take pictures and easily pull machine vision assets off of the ?SD card. A SPI bus that can run up to 80Mbs allowing you to easily stream image data off the system to either the LCD Shield, the WiFi Shield, or another microcontroller. An I2C Bus (up to 1Mb/s), CAN Bus (up to 1Mb/s), and an Asynchronous Serial Bus (TX/RX, up to 7.5Mb/s) for interfacing with other microcontrollers and sensors. A 12-bit ADC and a 12-bit DAC. Two I/O pins for servo control. Interrupts and PWM on all I/O pins (there are 10 I/O pins on the board). And, an RGB LED and two high power 850nm IR LEDs. 32 MB of external 32-bit SDRAM clocked at 100 MHz for 400 MB/s of bandwidth. 32 MB of external quadspi flash clock...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-3",
+          "title": "OpenMV Cam & STM32H7 Machine Vision Architecture",
+          "url": "https://embeddedroad.com/branches/embedded-systems-roadmap/embedded-systems-openmv-cam-machine-vision-on-stm32h7",
+          "snippet": "OpenMV Cam & STM32H7 Machine Vision Architecture EmbeddedRoad。 the \"Plus\" variant adds external SDRAM (typically 32 MB) via the FMC bus, because a single 5 MP RGB565 frame (~10 MB) or even a QVGA RGB565 frame (~150 KB) plus multiple working buffers for a CNN quickly exceeds on-chip SRAM. microSD — for storing captured datasets, logging, or loading models at boot. The key architectural fact for everything downstream: the DCMI peripheral streams pixel data into memory via DMA with no CPU involvement per pixel, but the CPU must still process every frame buffer through the vision pipeline (color conversion, filtering, feature extraction) at the clock rate of a general-purpose Cortex-M7 — there is no dedicated ISP or NPU on standard H7 parts. All the \"vision\" is software running on the M7 core ...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-4",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://mgsl.in/products/dfr0833",
+          "snippet": "OpenMV Cam H7 Plus MG Super Labs。 Optical Flow You can use Optical Flow to detect translation of what your OpenMV Cam is looking at. For example, you can use Optical Flow on a quad-copter to determine how stable it is in the air. QR Code Detection/Decoding You can use the OpenMV Cam to read QR Codes in it's field of view. With QR Code Detection/Decoding you can make smart robots which can read labels in the environment. Data Matrix Detection/Decoding The OpenMV Cam H7 can also detect and decode data matrix 2D barcodes too. Linear Barcode Decoding The OpenMV Cam H7 can also decode 1D linear bar codes. In particular, it can decode EAN2, EAN5, EAN8, UPCE, ISBN10, UPCA, EAN13, ISBN13, I25, DATABAR, DARABAR_EXP, CODABAR, CODE39, CODE93, and CODE128 barcodes. AprilTag Tracking Even better than Q...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-5",
+          "title": "OpenMV学习笔记",
+          "url": "https://blog.csdn.net/2302_80938179/article/details/144164497",
+          "snippet": "OpenMV学习笔记 CSDN博客。 2个 I/O 引脚用于舵机控制. 所有的IO口都可以用于,中断和PWM(板子上有10个I/O引脚)。 一个RGB LED(三色), 两个高亮的 850nm IR LED(红外)。 32 MB 外置的 32-bit SDRAM ,100 MHz的时钟,达到 400 MB/s 的带宽。 32 MB 外置的 quadspi flash, 100 MHz的时钟,4-bit DDR模式达到 100 MB/s 的带宽。 可拆卸的摄像头模块系统,允许OpenMV Cam H7 Plus与不同的感光元件模组连接: OpenMV4 H7 Plus默认配置的OV5640 感光元件处理2592×1944 (5MP)图像。在QVGA (320×240)及以下的分辨率时,大多数简单的算法可以运行(25~50)FPS。OpenMV 摄像头有一个2.8mm焦距镜头在一个标准M12镜头底座上。 3.7V 锂离子电池接口 3.功能 滤波 颜色追踪 AptilTag 二维码 条形码 人脸识别 人眼追踪(瞳孔识别) 直线识别 圆形识别 矩形识别 数字识别 线性回归-巡线 模板匹配 特征点追踪 光流 边缘检测 录制视频 mavlink 使用 供电:USB口供电或者外部电源供电(3.7-5V)。注意,不要接3.3V 图像处理 1.LAB亮度-对比度 Lab颜色空间中,L亮度;a的正数代表红色,负端代表绿色;b的正数代表黄色,负端代表兰色。不像RGB和CMYK色彩空间,Lab颜色被设计来接近人类视觉。 因此L分量可以调整亮度对,修改a和b分量的输出色阶来做精确的颜色平衡。 2.镜头的畸变:OpenMV中使用image.lens_corr(1.8)来矫正2.8mm焦距的镜头 3.滤光片:通过波长650nm以内的滤光片,把红外光截止了 python REPL和串口 OpenMV的ID...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-6",
+          "title": "OpenMV4 H7 Plus 智能攝影機(具有AI機器學習)",
+          "url": "https://zanrobot.com?p=3881/",
+          "snippet": "OpenMV4 H7 Plus 智能攝影機(具有AI機器學習) 良棋科技。 Image Capture圖像捕捉 你可以使用OpenMV捕獲高達640×480 RGB565/灰度的 BMP / JPG / PPM / PGM圖像。可以直接在Python腳本中控制如何捕獲圖像。最重要的是,使用機器視覺的演算法,進行繪製直線,繪製字元,然後保存。 Video Recording視頻錄製 您可以使用OpenMV攝像機記錄多達640×480 RGB565/灰度的MJPEG視頻或GIF圖像(或者RAW視頻)。您可以在Python腳本中直接控制如何將每個視頻幀記錄,並完全控制視頻錄製的開始和結束。而且,像拍攝圖像一樣,您可以使用機器視覺的演算法,進行繪製直線,繪製字元,然後保存。 最後,所有上述功能都可以混合IO引腳的控制,來配合你自己的自訂應用,以與現實世界交談。...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-7",
+          "title": "OpenMV H7 Plus Camera",
+          "url": "https://www.arduitronics.com/product/4122/openmv-h7-plus-camera",
+          "snippet": "OpenMV H7 Plus Camera Arduelectronics。OpenMV H7 Plus Camera รหัสสินค้า SG60315 หมวดหมู่ OpenMV ราคา 5,780.00 บาท สถานะสินค้า พร้อมส่ง จำนวน ชิ้น รายละเอียดสินค้า Description: The OpenMV H7 Plus Camera is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. The Plus variation adds 32 MB of external 32-bit SDRAM and 32 MB of external quad SPI flash. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and its I/O pins in Python. You can easily trigger taking pictures and video on ex...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-8",
+          "title": "OpenMV4 H7 Plus 是什么?2026年视觉开发入门为什么更倾向选它而非K210?",
+          "url": "https://bk.taobao.com/k/shexiangtoumokuai_15079/7b9c17027a72be3c898e9b8e1f50d508",
+          "snippet": "OpenMV4 H7 Plus 是什么?2026年视觉开发入门为什么更倾向选它而非K210? 淘宝百科。OpenMV4 H7 Plus 是什么?2026年视觉开发入门为什么更倾向选它而非K210? 想让小车自动寻迹、机械臂精准抓取、竞赛项目快速出效果,却卡在“图像看不清”“代码调不通”“云台抖得没法追踪”?OpenMV4 H7 Plus 凭借500万像素OV5640传感器与内置MicroPython生态,在科研、电子竞赛与DIY场景中正成为新入门首选——它不依赖PC调试,开箱即跑视觉算法,还天然适配二自由度舵机云台。本文帮你厘清它和K210的本质差异、哪种配置真正匹配你的项目节奏。🔍 OpenMV4 H7 Plus 是一款面向嵌入式视觉开发的国产智能摄像头模块,关键在于它把高分辨率成像、实时图像处理和云台协同控制集成在单板上,无需外接主控即可独立运行视觉任务;相比K210,它更侧重开箱即用的算法落地能力,尤其适合需要快速验证、低调试门槛的科研与竞赛场景。 OpenMV4 H7 Plus 的核心构成是什么?哪些要素决定它能否胜任视觉任务? 一台真正可用的智能视觉摄像头模块,必须同时满足成像质量、处理能力、开发友好性与执行接口这四组要素,缺一不可。 成像质量由传感器直接决定:OpenMV4 H7 Plus 采用 OV5640 芯片,原生支持 500 万像素静态图像与 1080p@30fps 视频流,这个指标对识别二维码、色块定位或简单目标追踪已属充裕;而 K210 虽算力更强,但需额外搭配模组,成像链路更长、延迟更高。 处理能力方面,H7 Plus 基于 ARM Cortex-M7 内核,主频 480MHz,配合专用图像协处理器,能稳定运行色彩追踪、边缘检测、AprilTag 识别等典型算法,这类任务在当前主流平台规范中属于轻量级视觉闭环范畴。 开发友好性是它的差异化优势:原生...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-9",
+          "title": "Merge pull request #843 from kwagyeman/kwabena/apriltag_readout_control",
+          "url": "https://github.com/openmv/openmv/commit/7b90ca19cc3f4d76e2aa733a6a6c04b081bbc372",
+          "snippet": "Merge pull request #843 from kwagyeman/kwabena/apriltag_readout_control。Commit This commit does not belong to any branch on this repository, and may belong to a fork outside of the repository. Browse files Merge pull request #843 from kwagyeman/kwabena/apriltag_readout_control Add readout control for apriltag tracking Showing 1 changed file with 151 additions and 0 deletions. 151 changes: 151 additions & 0 deletions 151 scripts/examples/35-Readout-Control/apriltag_tracking.py Original file line number Diff line number Diff line change @@ -0,0 +1,151 @@ # This example shows off how to use readout window control to readout a small part of a camera # sensor pixel array at a very high speed and move that readout window around. # This example is was designed and tested on the OpenMV Cam H7 Plus...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-0",
+          "title": "Where is the 100fps IR tracker script?",
+          "url": "https://forums.openmv.io/t/where-is-the-100fps-ir-tracker-script/7934/1",
+          "snippet": "Where is the 100fps IR tracker script? OpenMV Forums。post by JHS on Feb 8, 2023 in reference to the following youtube video from OpenMV: Is this script posted somewhere or available in the OpenMV IDE? Thanks, Me too 394 views 1 link post by JHS on Feb 8, 2023 Found it - it is under Examples → Camera → Readout Control I am using an H7 Plus and the OV5640 but no luck hitting 100fps yet. post by kwagyeman on Feb 9, 2023 Hi, you should easily be able to get 100 FPS. Just use your phones LED light and wave it in front around the camera. post by JHS on Feb 10, 2023 kwagyeman, Thanks, I did eventually get > 100fps - It was a matter of playing with the area parameters and the search vs. tracking resolution. I was tracking a laser spot on a distant wall. Thank you so much for your excellent product...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-1",
+          "title": "Fastest possible video recording",
+          "url": "https://forums.openmv.io/t/fastest-possible-video-recording/5657",
+          "snippet": "Fastest possible video recording OpenMV Forums。Fastest possible video recording post by henrypinkard on Apr 4, 2021 henrypinkard Apr 2021 Hi, first of all, congratulations and thank you for this incredible project. I find it really easy to work with and incredibly powerful. I have an OpenMV H7 plus, and I’m wondering how to get the best performance for recording high quality video (though I do realize this isn’t exactly what this project was designed for). Is there any way to get something close to HD resolution at close to 30 fps? Using the example script for saving MJPGs, it seems like writing the data causes a big slowdown on the framerate (which I guess is unsurprising if its all single threaded). Is there any way to do this asynchronously, or is the best bet streaming to a computer ov...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-2",
+          "title": "Fastest possible video recording - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/t/fastest-possible-video-recording/5657/4",
+          "snippet": "Fastest possible video recording - OpenMV Boards - OpenMV Forums OpenMV Forums。Fastest possible video recording henrypinkard Hi, first of all, congratulations and thank you for this incredible project. I find it really easy to work with and incredibly powerful. I have an OpenMV H7 plus, and I’m wondering how to get the best performance for recording high quality video (though I do realize this isn’t exactly what this project was designed for). Is there any way to get something close to HD resolution at close to 30 fps? Using the example script for saving MJPGs, it seems like writing the data causes a big slowdown on the framerate (which I guess is unsurprising if its all single threaded). Is there any way to do this asynchronously, or is the best bet streaming to a computer over usb and wr...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-3",
+          "title": "Higher fps from OpenMV Cam H7 plus and MT9V034",
+          "url": "https://forums.openmv.io/t/higher-fps-from-openmv-cam-h7-plus-and-mt9v034/5585/8",
+          "snippet": "Higher fps from OpenMV Cam H7 plus and MT9V034。Higher fps from OpenMV Cam H7 plus and MT9V034 Higher fps from OpenMV Cam H7 plus and MT9V034 post by Priyanka on Mar 20, 2021 Priyanka Mar 2021 Hey! I am working with OpenMV Cam h7 plus and MT9V034 to detect April Tags. I have tried the built-in examples of OpenMV IDE (find_apriltags.py), the fps remains good till the moment I am not doing any processing and simply grabbing and displaying frames. When the code does processing in terms of calling the April Tag library functions and collecting the (x, y, and theta), the fps drops down to ~30 fps. This happens even in the case of QQQVGA mode. Is there any fix for it? Also, taking the data from the sensor and publishing it in ROS was also performed. The fps was still low i.e. ~43fps (in QQQVGA mo...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-4",
+          "title": "How to read A5 sheet with 7mm QR codes? - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/viewtopic.php?f=6&t=1880&p=11269",
+          "snippet": "How to read A5 sheet with 7mm QR codes? - OpenMV Boards - OpenMV Forums OpenMV Forums。How to read A5 sheet with 7mm QR codes? TedTrippin Hi, First off, loving the OpenMV. Installed IDE, plugged in, tried some code → worked first time! I’m trying to scan QR codes on an A5 sheet. They are about 7mm x 7mm. Hoping to detect version 1 and 2. So far I’ve tried these settings… sensor.set_pixformat(sensor.RGB565) sensor.set_framesize(sensor.VGA) → OSError: Image is not mutable! sensor.set_pixformat(sensor.GRAYSCALE) sensor.set_framesize(sensor.VGA) → MemoryError: Out of fast Frame Buffer Stack Memory! Please reduce the resolution of the image you are running this algorithm on to bypass this issue! I’ve got to… sensor.set_pixformat(sensor.GRAYSCALE) sensor.set_framesize(sensor.CIF) Unfortunately, t...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-5",
+          "title": "OpenMV学习笔记",
+          "url": "https://blog.csdn.net/2302_80938179/article/details/144164497",
+          "snippet": "OpenMV学习笔记 CSDN博客。 2个 I/O 引脚用于舵机控制. 所有的IO口都可以用于,中断和PWM(板子上有10个I/O引脚)。 一个RGB LED(三色), 两个高亮的 850nm IR LED(红外)。 32 MB 外置的 32-bit SDRAM ,100 MHz的时钟,达到 400 MB/s 的带宽。 32 MB 外置的 quadspi flash, 100 MHz的时钟,4-bit DDR模式达到 100 MB/s 的带宽。 可拆卸的摄像头模块系统,允许OpenMV Cam H7 Plus与不同的感光元件模组连接: OpenMV4 H7 Plus默认配置的OV5640 感光元件处理2592×1944 (5MP)图像。在QVGA (320×240)及以下的分辨率时,大多数简单的算法可以运行(25~50)FPS。OpenMV 摄像头有一个2.8mm焦距镜头在一个标准M12镜头底座上。 3.7V 锂离子电池接口 3.功能 滤波 颜色追踪 AptilTag 二维码 条形码 人脸识别 人眼追踪(瞳孔识别) 直线识别 圆形识别 矩形识别 数字识别 线性回归-巡线 模板匹配 特征点追踪 光流 边缘检测 录制视频 mavlink 使用 供电:USB口供电或者外部电源供电(3.7-5V)。注意,不要接3.3V 图像处理 1.LAB亮度-对比度 Lab颜色空间中,L亮度;a的正数代表红色,负端代表绿色;b的正数代表黄色,负端代表兰色。不像RGB和CMYK色彩空间,Lab颜色被设计来接近人类视觉。 因此L分量可以调整亮度对,修改a和b分量的输出色阶来做精确的颜色平衡。 2.镜头的畸变:OpenMV中使用image.lens_corr(1.8)来矫正2.8mm焦距的镜头 3.滤光片:通过波长650nm以内的滤光片,把红外光截止了 python REPL和串口 OpenMV的ID...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-6",
+          "title": "OpenMV云台自动追踪:AprilTag识别与PID控制实战",
+          "url": "https://www.sheratonhq.com/news/162743",
+          "snippet": "OpenMV云台自动追踪:AprilTag识别与PID控制实战。解决先把 D 项调到接近 0确认抖动消失后再小幅加回再把控制周期从 20ms 改成 50ms给舵机足够时间响应。多数情况下问题出在像素噪声而不是 PID 参数本身可以在计算导数前对dx做一次滑动平均滤波窗口取 3 帧即可窗口太大会引入明显滞后。5.3 目标丢失后云台猛冲重新出现时剧烈震荡现象靶标被遮挡 2 秒后重新出现云台先向一个方向猛冲然后反向弹回来回好几次才稳定。原因这是积分饱和的典型表现。目标丢失期间PID 的err一直保持较大值积分项持续累积到限幅边缘目标重新出现时输出被饱和值主导。解决在目标丢失的每一帧都调用pid.integral 0同时把last_err也清零。更稳妥的做法是让追踪状态机只在STATE_TRACK下更新 PID 参数STATE_SEARCH模式下完全冻结 PID 内部状态。我后来把积分限幅从 ±5 缩到 ±2发现目标重新出现后的恢复时间缩短了一半。5.4 帧率只有十几帧整个追踪像慢动作现象代码在 IDE 里单步跑正常但实机运行时帧率掉到 15fps 以下云台反应迟钝。原因分辨率或像素格式选得过高或者在同一帧里重复执行了多次耗时操作。有人在主循环里先find_blobs再find_apriltags检查代码发现每帧做了两次完整扫描。另一个隐蔽因素是 IDE 打开的同时占用了部分 USB 带宽。解决确认sensor.set_framesize()是否真的设成了 QQVGA。OpenMV 在切换分辨率后要重新skip_frames否则传感器可能仍然工作在上一次分辨率。帧率测试要断开 IDE 单独跑实测 QQVGA 灰度下稳定在 40fps 左右这个帧率对舵机控制已经足够。识别和解算代码别在draw_*方法上浪费太多时间可视化只在调试时打开。5.5 暗光下标签识别率骤降现象室内光线正常时识...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-7",
+          "title": "OpenMV Cam & STM32H7 Machine Vision Architecture",
+          "url": "https://embeddedroad.com/branches/embedded-systems-roadmap/embedded-systems-openmv-cam-machine-vision-on-stm32h7",
+          "snippet": "OpenMV Cam & STM32H7 Machine Vision Architecture EmbeddedRoad。 the \"Plus\" variant adds external SDRAM (typically 32 MB) via the FMC bus, because a single 5 MP RGB565 frame (~10 MB) or even a QVGA RGB565 frame (~150 KB) plus multiple working buffers for a CNN quickly exceeds on-chip SRAM. microSD — for storing captured datasets, logging, or loading models at boot. The key architectural fact for everything downstream: the DCMI peripheral streams pixel data into memory via DMA with no CPU involvement per pixel, but the CPU must still process every frame buffer through the vision pipeline (color conversion, filtering, feature extraction) at the clock rate of a general-purpose Cortex-M7 — there is no dedicated ISP or NPU on standard H7 parts. All the \"vision\" is software running on the M7 core ...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-8",
+          "title": "Merge pull request #843 from kwagyeman/kwabena/apriltag_readout_control",
+          "url": "https://github.com/openmv/openmv/commit/7b90ca19cc3f4d76e2aa733a6a6c04b081bbc372",
+          "snippet": "Merge pull request #843 from kwagyeman/kwabena/apriltag_readout_control。Commit This commit does not belong to any branch on this repository, and may belong to a fork outside of the repository. Browse files Merge pull request #843 from kwagyeman/kwabena/apriltag_readout_control Add readout control for apriltag tracking Showing 1 changed file with 151 additions and 0 deletions. 151 changes: 151 additions & 0 deletions 151 scripts/examples/35-Readout-Control/apriltag_tracking.py Original file line number Diff line number Diff line change @@ -0,0 +1,151 @@ # This example shows off how to use readout window control to readout a small part of a camera # sensor pixel array at a very high speed and move that readout window around. # This example is was designed and tested on the OpenMV Cam H7 Plus...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-9",
+          "title": "Apriltag tracking - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/t/apriltag-tracking/6520/3",
+          "snippet": "Apriltag tracking - OpenMV Boards - OpenMV Forums。Apriltag tracking Hello everybody, How i have to change the code of apriltag_tracking_1 to get the removal from abritag too. So the Z component. This example shows off how to use readout window control to readout a small part of a camera sensor pixel array at a very high speed and move that readout window around. This example is was designed and tested on the OpenMV Cam H7 Plus using the OV5640 sensor. Could someone please help me. Thank you for the support. Open MV H7 Plus is a brilliant device! post by Philipp on Nov 10, 2021 So i would like to have the mapped z because zooming in changes the value of z =) post by kwagyeman on Nov 10, 2021 Nov 2021 There’s an example that literally outputs these values. To note, you have to convert the di...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测",
+          "relation": "unverified_lead"
+        }
+      ],
+      "evidence_ids": [
+        "rt1062-official-hardware",
+        "rt1062-official-availability",
+        "rt1062-official-image-api"
+      ],
+      "suitability": {
+        "source": "user_reported",
+        "owned": false,
+        "adjustment": -6,
+        "risks": [
+          "需要新购，停产/欠货与交期不明会影响交付。"
+        ],
+        "advantages": [],
+        "missing_inputs": [
+          "调试工具未知；不能声称已测电平和时延"
+        ],
+        "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+      },
+      "ranking_score": 81
+    },
+    {
+      "hardware": {
+        "id": "openmv-h7-plus",
+        "name": "OpenMV Cam H7 Plus",
+        "vendor": "OpenMV",
+        "summary": "自带 OV5640 摄像头、用 MicroPython 编程的视觉板；适合作为已有设备的颜色、巡线与 AprilTag 原型候选。官方已停止常规生产。",
+        "interfaces": [
+          "UART",
+          "I2C",
+          "SPI",
+          "USB"
+        ],
+        "logic_voltage_v": 3.3,
+        "power_w": null,
+        "price_cny": null,
+        "price_kind": "unknown",
+        "capabilities": [
+          "color_tracking",
+          "line_tracking",
+          "apriltag",
+          "offline_inference"
+        ],
+        "skill_level": 2,
+        "docs_quality": 5,
+        "evidence": [
+          {
+            "id": "openmv-official-hardware",
+            "kind": "official",
+            "title": "OpenMV Cam H7 Plus 官方产品与电气说明",
+            "url": "https://openmv.io/products/openmv-cam-h7-plus",
+            "claim": "官方列出 USB、SPI、I2C、异步串行接口，I/O 输出为 3.3V；随板为 OV5640 摄像头。",
+            "field": "interfaces,logic_voltage_v,summary,io_input_max_v",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "All I/O pins output 3.3V"
+          },
+          {
+            "id": "openmv-official-image-api",
+            "kind": "official",
+            "title": "OpenMV Image API：颜色、直线与 AprilTag",
+            "url": "https://docs.openmv.io/v5.0.0/library/omv.image.Image.html",
+            "claim": "官方本地图像 API 提供颜色阈值连通域、阈值像素直线回归与 AprilTag 检测；这是软件能力证据，未保证本赛题帧率或精度。",
+            "field": "capabilities",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "find_blobs; get_regression; find_apriltags"
+          },
+          {
+            "id": "openmv-official-lifecycle",
+            "kind": "official",
+            "title": "OpenMV H7 Plus 产品生命周期说明",
+            "url": "https://openmv.io/products/openmv-cam-h7-plus",
+            "claim": "官方称该版本已不再生产，仍接受定制批量订单；页面保留作资料用途。采购前必须确认库存与供货。",
+            "field": "caveats",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "We are no longer producing this version"
+          },
+          {
+            "id": "openmv-community-apriltag-pipeline",
+            "kind": "community",
+            "title": "Higher fps from OpenMV Cam H7 plus and MT9V034（第一人称工程记录）",
+            "url": "https://forums.openmv.io/t/higher-fps-from-openmv-cam-h7-plus-and-mt9v034/5585",
+            "claim": "作者 Priyanka 描述加入 AprilTag 计算和 ROS 发布后帧率下降；讨论涉及分辨率、传感器与 readout control。可生成验证清单，不能作为统一规格或本项目实测。",
+            "field": "engineering_experience",
+            "accessed_at": "2026-10-24",
+            "status": "needs_verification",
+            "excerpt": "the fps drops down to ~30 fps"
+          }
+        ],
+        "caveats": [
+          "官方已停止常规生产；如需新购，先确认供货、具体板型及是否原厂。",
+          "logic_voltage_v 表示 I/O 输出电平，不能当作 VIN；部分引脚模式的耐压另有例外。",
+          "官方给出的不同工况电流不能压成全套硬件统一功耗，power_w 保留未知。",
+          "算法 API 可用不等于达成指定帧率、距离、光照、运动速度或识别精度；需用实际赛场条件验证。",
+          "本地视觉运行前需预装固件与脚本；offline_inference 只表示运行时有本地处理路径。",
+          "skill_level 与 docs_quality 是项目人工评审分，不是制造商指标。"
+        ],
+        "availability_status": "discontinued",
+        "io_input_max_v": 5.0
+      },
+      "verdict": "unknown",
+      "checks": [
+        {
+          "constraint": "预算上限（板卡，不含完整系统）",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "功耗上限",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "通信接口",
+          "expected": [
+            "UART"
+          ],
+          "actual": [
+            "UART",
+            "I2C",
+            "SPI",
+            "USB"
+          ],
+          "status": "pass",
+          "reason": "官方接口证据覆盖需求"
+        },
+        {
+          "constraint": "逻辑电平 V",
+          "expected": null,
+          "actual": 3.3,
+          "status": "not_requested",
+          "reason": "未限定逻辑电平"
+        },
+        {
+          "constraint": "AprilTag 定位识别",
+          "expected": true,
+          "actual": true,
+          "status": "pass",
+          "reason": "存在官方示例/文档；未承诺比赛环境帧率"
+        },
+        {
+          "constraint": "离线运行",
+          "expected": true,
+          "actual": true,
+          "status": "pass",
+          "reason": "官方文档支持设备本地执行；依赖安装可需联网"
+        },
+        {
+          "constraint": "禁用器件",
+          "expected": [],
+          "actual": "OpenMV Cam H7 Plus",
+          "status": "pass",
+          "reason": "未命中用户列出的禁用器件（仍须复核原题）"
+        },
+        {
+          "constraint": "额外硬性条件",
+          "expected": "机器人使用 OpenMV Cam H7 Plus 和 OV5640 做离线 AprilTag 检测，希望达到100 FPS",
+          "actual": null,
+          "status": "unknown",
+          "reason": "P0 尚未核验该条件，不能据规格直接推定实际性能"
+        },
+        {
+          "constraint": "实时检索覆盖",
+          "expected": "查询完成且发现对应官方站点线索",
+          "actual": 30,
+          "status": "pass",
+          "reason": "已检索到候选官方域线索；具体参数仍以固定库逐条官方证据为准"
+        }
+      ],
+      "score": 81,
+      "score_breakdown": [
+        {
+          "name": "任务资料覆盖",
+          "points": 40,
+          "max_points": 40,
+          "reason": "官方示例覆盖已识别任务的比例"
+        },
+        {
+          "name": "文档可用性",
+          "points": 20,
+          "max_points": 20,
+          "reason": "人工维护的文档完整度评分，非客观性能"
+        },
+        {
+          "name": "新生上手",
+          "points": 16,
+          "max_points": 20,
+          "reason": "人工维护的学习难度评分，需结合团队经验"
+        },
+        {
+          "name": "证据覆盖",
+          "points": 15,
+          "max_points": 20,
+          "reason": "已核验官方资料条目数，最高 20 分"
+        },
+        {
+          "name": "供货风险扣分",
+          "points": -10,
+          "max_points": 0,
+          "reason": "官方停产 -10、欠货订购 -4；未核验库存不等于现货，无额外加分"
+        }
+      ],
+      "reasons": [
+        "通信接口：官方接口证据覆盖需求",
+        "AprilTag 定位识别：存在官方示例/文档；未承诺比赛环境帧率",
+        "离线运行：官方文档支持设备本地执行；依赖安装可需联网",
+        "禁用器件：未命中用户列出的禁用器件（仍须复核原题）",
+        "实时检索覆盖：已检索到候选官方域线索；具体参数仍以固定库逐条官方证据为准"
+      ],
+      "risks": [
+        "官方已停止常规生产；如需新购，先确认供货、具体板型及是否原厂。",
+        "logic_voltage_v 表示 I/O 输出电平，不能当作 VIN；部分引脚模式的耐压另有例外。",
+        "官方给出的不同工况电流不能压成全套硬件统一功耗，power_w 保留未知。",
+        "算法 API 可用不等于达成指定帧率、距离、光照、运动速度或识别精度；需用实际赛场条件验证。",
+        "本地视觉运行前需预装固件与脚本；offline_inference 只表示运行时有本地处理路径。",
+        "skill_level 与 docs_quality 是项目人工评审分，不是制造商指标。",
+        "额外硬性条件：P0 尚未核验该条件，不能据规格直接推定实际性能"
+      ],
+      "live_leads": [
+        {
+          "id": "search-0-0",
+          "title": "OV5640 FPC Camera Module",
+          "url": "https://docs.openmv.io/v5.0.0/openmvcam/sensors/ov5640.html",
+          "snippet": "OV5640 FPC Camera Module OpenMV文档。OV5640 FPC Camera Module¶ The OV5640 FPC Camera Module is a compact 5MP rolling-shutter colour sensor with autofocus. It mounts to OpenMV Cam base boards through the board-to-board connector for low-profile builds. For full datasheet, photos, and ordering see the OV5640 product page. Note Not supported on the OpenMV N6 at this time. Highlights¶ 5MP (2592x1944) rolling-shutter sensor Autofocus, F2.0 aperture, variable focal length Usage¶ Stream QVGA (320x240) RGB565 video — the OV5640 works as a regular camera module for any image-processing pipeline: import csi import time csi0 = csi.CSI() csi0.reset() csi0.pixformat(csi.RGB565) csi0.framesize(csi.QVGA) clock = time.clock() while True: clock.tick() img = csi0.snapshot() print(clock.fps()) The OV5640 also h...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-0-1",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://hitechchain.se/en/iot/openmv-cam-h7-plus",
+          "snippet": "OpenMV Cam H7 Plus。 Person Detection You can detect if there's a person in the field of view using our built-in person detector TensorFlow Lite model. Optical Flow You can use Optical Flow to detect translation of what your OpenMV Cam is looking at. For example, you can use Optical Flow on a quad-copter to determine how stable it is in the air. QR Code Detection/Decoding You can use the OpenMV Cam to read QR Codes in it's field of view. With QR Code Detection/Decoding you can make smart robots which can read labels in the environment. Data Matrix Detection/Decoding The OpenMV Cam H7 can also detect and decode data matrix 2D barcodes too. Linear Barcode Decoding The OpenMV Cam H7 can also decode 1D linear bar codes. In particular, it can decode EAN2, EAN5, EAN8, UPCE, ISBN10, UPCA, EAN13, I...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-0-2",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://compoindia.com?p=14067/",
+          "snippet": "OpenMV Cam H7 Plus。OpenMV Cam H7 Plus The OpenMV Cam is a small, low power, microcontroller board featuring an STM32H743II Arm® Cortex® M7 processor running at 480MHz, which allows you to easily implement applications using machine vision in the real world. It is equipped with 32MB of SDRAM, 1MB of RAM, and 2MB of flash. Features: STM32H743II processor to realize machine vision applications Compact size for easy deployment in robotics projects Low power consumption for prolonged use Micropython support with easy-to-use OpenMV IDE for quick and convenient project integration High resolution OV5640 image sensor (2592×1944/ 5MP) for better image processing Removable camera module system to realize advanced applications Supports various shields for further expansion of projects Full speed USB ...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-0-3",
+          "title": "OpenMV H7 Plus Camera",
+          "url": "https://www.arduitronics.com/product/4122/openmv-h7-plus-camera",
+          "snippet": "OpenMV H7 Plus Camera Arduelectronics。OpenMV H7 Plus Camera รหัสสินค้า SG60315 หมวดหมู่ OpenMV ราคา 5,780.00 บาท สถานะสินค้า พร้อมส่ง จำนวน ชิ้น รายละเอียดสินค้า Description: The OpenMV H7 Plus Camera is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. The Plus variation adds 32 MB of external 32-bit SDRAM and 32 MB of external quad SPI flash. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and its I/O pins in Python. You can easily trigger taking pictures and video on ex...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-0-4",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://www.electan.com/openmv-amp-10338.html",
+          "snippet": "OpenMV Cam H7 Plus Electan。SD Card socket capable of 100Mbs reads/writes which allows your OpenMV Cam to take pictures and easily pull machine vision assets off of the ?SD card. A SPI bus that can run up to 80Mbs allowing you to easily stream image data off the system to either the LCD Shield, the WiFi Shield, or another microcontroller. An I2C Bus (up to 1Mb/s), CAN Bus (up to 1Mb/s), and an Asynchronous Serial Bus (TX/RX, up to 7.5Mb/s) for interfacing with other microcontrollers and sensors. A 12-bit ADC and a 12-bit DAC. Two I/O pins for servo control. Interrupts and PWM on all I/O pins (there are 10 I/O pins on the board). And, an RGB LED and two high power 850nm IR LEDs. 32 MB of external 32-bit SDRAM clocked at 100 MHz for 400 MB/s of bandwidth. 32 MB of external quadspi flash clock...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-0-5",
+          "title": "OV5640 FPC Camera Module",
+          "url": "https://openmv.io/products/ov5640-fpc-camera-module?variant=39893457862750",
+          "snippet": "OV5640 FPC Camera Module OpenMV。View in space View in space OV5640 FPC Camera Module About The module is compatible with all modular OpenMV Cam base boards. The OV5640 FPC Camera Module gives you the same high-resolution JPEG-taking capabilities as the OpenMV Cam H7 Plus and RT1062's OV5640 camera module in a low-profile form factor with autofocus support. The OV5640 image sensor can capture 2592x1944 (5MP) images. The sensor supports Grayscale, RGB565, JPEG, YUV422, and Bayer image formats. For more information, see our documentation. Applications Use this module if you want a low-profile form factor for your OpenMV Cam instead of the default M12 lens. Specs Focal Length: Variable Aperture: F2.0 Format: 1/4\" IR Cut Filter: 650nm Horizontal Resolution: 1944 pixels (2.7384mm) 1.4um pixel pi...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-0-6",
+          "title": "Unlock Machine Vision with OpenMV Cam H7 Plus!",
+          "url": "https://www.dfrobot.com/product-2263.html?srsltid=AfmBOoqIKcJj18bw4XsbrLcRcNhj6wL4nM4EPY4ueHrnUibL9KbpTnnl",
+          "snippet": "Unlock Machine Vision with OpenMV Cam H7 Plus! DFRobot。 Your OpenMV Cam can process Haar Cascades to do generic object detection and comes with a built-in Frontal Face Cascade and Eye Haar Cascade to detect faces and eyes. Eye Tracking You can use Eye Tracking with your OpenMV Cam to detect someone's gaze. You can then, for example, use that to control a robot. Eye Tracking detects where the pupil is looking versus detecting if there's an eye in the image. Person Detection You can detect if there's a person in the field of view using our built-in person detector TensorFlow Lite model. Optical Flow You can use Optical Flow to detect translation of what your OpenMV Cam is looking at. For example, you can use Optical Flow on a quad-copter to determine how stable it is in the air. QR Code Dete...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-0-7",
+          "title": "SparkFun OpenMV Cam H7 Plus",
+          "url": "https://tanotis.com/products/sparkfun-openmv-cam-h7-plus",
+          "snippet": "SparkFun OpenMV Cam H7 Plus Tanotis。SD Card socket capable of 100Mbs reads/writes which allows your OpenMV Cam to take pictures and easily pull machine vision assets off of the ?SD card. A SPI bus that can run up to 80Mbs allowing you to easily stream image data off the system to either the LCD Shield, the WiFi Shield, or another microcontroller. An I2C Bus (up to 1Mb/s), CAN Bus (up to 1Mb/s), and an Asynchronous Serial Bus (TX/RX, up to 7.5Mb/s) for interfacing with other microcontrollers and sensors. A 12-bit ADC and a 12-bit DAC. Two I/O pins for servo control. Interrupts and PWM on all I/O pins (there are 10 I/O pins on the board). And, an RGB LED and two high power 850nm IR LEDs. 32 MB of external 32-bit SDRAM clocked at 100 MHz for 400 MB/s of bandwidth. 32 MB of external quadspi fl...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-0-8",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "http://openmv.io/collections/cams/products/openmv-cam-h7-plus",
+          "snippet": "OpenMV Cam H7 Plus OpenMV。View in space View in space View in space View in space OpenMV Cam H7 Plus We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily impleme... Specs Processor: ARM® 32-bit Cortex®-M7 CPU w/ Double Precision FPU 480 MHz (1027 DMIPS) Core Mark Score: 2400 (compare w/ Raspberry Pi 2: 2340) Supported Image Formats: Grayscale RGB565 JPEG (and BAYER/YUV422) Maximum Supported Resolutions: Grayscale: 2952x1944 (5MP) and under RGB565: 2952x1944 (5MP) and under Grayscale JPEG: 2952x1944 (5MP) and ...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-0-9",
+          "title": "OpenMV Cam H7 Plus 機器視覺攝像頭模組 – 5MP OV5640 / 32MB SDRAM / 支援 MicroPython",
+          "url": "https://www.taiwaniot.com.tw/?p=62780",
+          "snippet": "OpenMV Cam H7 Plus 機器視覺攝像頭模組 – 5MP OV5640 / 32MB SDRAM / 支援 MicroPython 台灣物聯科技。例如,您可以使用四通道上的光流來確定它在空氣中的穩定性。 QR碼檢測/解碼您可以使用OpenMV Cam在其視野中閱讀QR碼。通過QR碼檢測/解碼,您可以製作可以在環境中讀取標籤的智能機器人。您可以在此處查看我們的視頻。 AprilTag跟踪甚至比上述的QR碼更好,OpenMV Cam M7也可以追溯到160×120的FourTags,高達12 FPS。AprilTags是旋轉,縮放,剪切和照明不變的最先進的流感標記。我們在這裡有一個視頻。 邊緣/線路檢測您可以通過Canny Edge Detector算法或簡單的高通濾波進行邊緣檢測,然後進行閾值處理。在您擁有二進製圖像後,您可以使用霍夫檢測器查找圖像中的所有行。通過邊緣/線檢測,您可以使用OpenMV Cam輕鬆檢測物體的方向。 模板匹配您可以使用與OpenMV Cam模板匹配來檢測翻譯的預先保存的圖像何時被視圖。例如,模板匹配可用於在PCB上查找基准或讀取顯示屏上的已知數字。 圖像捕獲您可以使用OpenMV攝像頭捕獲多達320×240 RGB565(或640×480灰度)BMP / JPG / PPM / PGM圖像。您可以直接控制如何在Python腳本中捕獲圖像。最重要的是,您可以在保存機器視覺功能和/或繪製框架之前進行預設。 視頻錄製您可以使用OpenMV Cam記錄多達320×240 RGB565(或640×480灰度)MJPEG視頻或GIF圖像。您可以直接控制每個視頻幀在Python腳本中的記錄,並對視頻錄製的開始和結束進行全面控制。而且,像拍攝圖像一樣,您可以在保存機器視覺功能和/或繪製視頻幀之前進行預覽。 最後,所有上述功能可以在您自己的自定義應用程序...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-0",
+          "title": "openMV摄像头入门指南-1.介绍",
+          "url": "http://rosrobot.cn/?id=371",
+          "snippet": "openMV摄像头入门指南-1.介绍 智能佳ROS殿堂。OpenMV Cam 是一款小型、低功耗的微控制器板,可让您在现实世界中使用机器视觉轻松实现应用程序。您可以使用高级 Python 脚本(由 MicroPython 操作系统提供 )而不是 C/C++ 对 OpenMV Cam 进行编程。这使得处理机器视觉算法的复杂输出和使用高级数据结构变得更加容易。但是,您仍然可以在 Python 中完全控制 OpenMV Cam 及其 I/O 引脚。您可以轻松触发外部事件拍照和视频,或执行机器视觉算法来找出如何控制 I/O 引脚。...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-1",
+          "title": "dac_write.py",
+          "url": "https://book.openmv.cc/example/50-Arduino-Boards/Portenta-H7/50-Board-Control/dac_write.html",
+          "snippet": "dac_write.py OpenMV文档。Home Change Languages 序言 视频教程 OpenMV详细参数 10分钟快速上手 图像处理背景知识 Python背景知识 OpenMV图像处理的方法 感光元件 基本方法 使用统计信息 画图 寻找色块 AprilTag标记跟踪 模板匹配 多模板匹配 特征点检测 测距 扫码识别 颜色形状同时识别 颜色模板匹配同时识别 分辨不同人脸 高级特征 OpenMV也是个单片机 文件系统 模块的使用 pyb各种外设 字符串/json/正则 串口通信上 串口通信下 wifi通信 手动写一个模块 第一个类 手动写一个温度传感器模块 OpenMV固件 升级固件 编译固件 正版激活 debug 常见错误提示 常见故障 显示耗费时间 优化 OpenMV配件 LCD WIFI 洞洞板 sd卡 长脚排母 直角固定板 常见问题 项目实例 自行训练AI神经网络模型 追小球的小车 追小球的云台 巡线小车 Mnist数字识别 目标检测 实际道路环境交通标志识别 口罩检测 垃圾分类 三子棋机器人 2024电赛 视觉测距 2025电赛C题 追踪标靶 2025电赛E题 电动显微镜 0.0001mm精度 拼图识别 平衡滚球图传录制 OpenMV机械臂-项目实例 硬件概述 基础教程 物体分拣码垛 自动三子棋对战 24年电赛E题教程 垃圾分类-自行训练AI模型目标检测 按键示教和txt文件控制机械臂 例程解析 00-HelloWorld blinky.py helloworld.py 01-Camera 00-Snapshot emboss_snapshot.py snapshot.py snapshot_on_face_detection.py snapshot_on_movement.py time_lapse_photos.py 01-Video-Reco...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-2",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://www.electan.com/openmv-amp-10338.html",
+          "snippet": "OpenMV Cam H7 Plus Electan。SD Card socket capable of 100Mbs reads/writes which allows your OpenMV Cam to take pictures and easily pull machine vision assets off of the ?SD card. A SPI bus that can run up to 80Mbs allowing you to easily stream image data off the system to either the LCD Shield, the WiFi Shield, or another microcontroller. An I2C Bus (up to 1Mb/s), CAN Bus (up to 1Mb/s), and an Asynchronous Serial Bus (TX/RX, up to 7.5Mb/s) for interfacing with other microcontrollers and sensors. A 12-bit ADC and a 12-bit DAC. Two I/O pins for servo control. Interrupts and PWM on all I/O pins (there are 10 I/O pins on the board). And, an RGB LED and two high power 850nm IR LEDs. 32 MB of external 32-bit SDRAM clocked at 100 MHz for 400 MB/s of bandwidth. 32 MB of external quadspi flash clock...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-3",
+          "title": "OpenMV Cam & STM32H7 Machine Vision Architecture",
+          "url": "https://embeddedroad.com/branches/embedded-systems-roadmap/embedded-systems-openmv-cam-machine-vision-on-stm32h7",
+          "snippet": "OpenMV Cam & STM32H7 Machine Vision Architecture EmbeddedRoad。 the \"Plus\" variant adds external SDRAM (typically 32 MB) via the FMC bus, because a single 5 MP RGB565 frame (~10 MB) or even a QVGA RGB565 frame (~150 KB) plus multiple working buffers for a CNN quickly exceeds on-chip SRAM. microSD — for storing captured datasets, logging, or loading models at boot. The key architectural fact for everything downstream: the DCMI peripheral streams pixel data into memory via DMA with no CPU involvement per pixel, but the CPU must still process every frame buffer through the vision pipeline (color conversion, filtering, feature extraction) at the clock rate of a general-purpose Cortex-M7 — there is no dedicated ISP or NPU on standard H7 parts. All the \"vision\" is software running on the M7 core ...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-4",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "https://mgsl.in/products/dfr0833",
+          "snippet": "OpenMV Cam H7 Plus MG Super Labs。 Optical Flow You can use Optical Flow to detect translation of what your OpenMV Cam is looking at. For example, you can use Optical Flow on a quad-copter to determine how stable it is in the air. QR Code Detection/Decoding You can use the OpenMV Cam to read QR Codes in it's field of view. With QR Code Detection/Decoding you can make smart robots which can read labels in the environment. Data Matrix Detection/Decoding The OpenMV Cam H7 can also detect and decode data matrix 2D barcodes too. Linear Barcode Decoding The OpenMV Cam H7 can also decode 1D linear bar codes. In particular, it can decode EAN2, EAN5, EAN8, UPCE, ISBN10, UPCA, EAN13, ISBN13, I25, DATABAR, DARABAR_EXP, CODABAR, CODE39, CODE93, and CODE128 barcodes. AprilTag Tracking Even better than Q...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-5",
+          "title": "OpenMV学习笔记",
+          "url": "https://blog.csdn.net/2302_80938179/article/details/144164497",
+          "snippet": "OpenMV学习笔记 CSDN博客。 2个 I/O 引脚用于舵机控制. 所有的IO口都可以用于,中断和PWM(板子上有10个I/O引脚)。 一个RGB LED(三色), 两个高亮的 850nm IR LED(红外)。 32 MB 外置的 32-bit SDRAM ,100 MHz的时钟,达到 400 MB/s 的带宽。 32 MB 外置的 quadspi flash, 100 MHz的时钟,4-bit DDR模式达到 100 MB/s 的带宽。 可拆卸的摄像头模块系统,允许OpenMV Cam H7 Plus与不同的感光元件模组连接: OpenMV4 H7 Plus默认配置的OV5640 感光元件处理2592×1944 (5MP)图像。在QVGA (320×240)及以下的分辨率时,大多数简单的算法可以运行(25~50)FPS。OpenMV 摄像头有一个2.8mm焦距镜头在一个标准M12镜头底座上。 3.7V 锂离子电池接口 3.功能 滤波 颜色追踪 AptilTag 二维码 条形码 人脸识别 人眼追踪(瞳孔识别) 直线识别 圆形识别 矩形识别 数字识别 线性回归-巡线 模板匹配 特征点追踪 光流 边缘检测 录制视频 mavlink 使用 供电:USB口供电或者外部电源供电(3.7-5V)。注意,不要接3.3V 图像处理 1.LAB亮度-对比度 Lab颜色空间中,L亮度;a的正数代表红色,负端代表绿色;b的正数代表黄色,负端代表兰色。不像RGB和CMYK色彩空间,Lab颜色被设计来接近人类视觉。 因此L分量可以调整亮度对,修改a和b分量的输出色阶来做精确的颜色平衡。 2.镜头的畸变:OpenMV中使用image.lens_corr(1.8)来矫正2.8mm焦距的镜头 3.滤光片:通过波长650nm以内的滤光片,把红外光截止了 python REPL和串口 OpenMV的ID...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-6",
+          "title": "OpenMV4 H7 Plus 智能攝影機(具有AI機器學習)",
+          "url": "https://zanrobot.com?p=3881/",
+          "snippet": "OpenMV4 H7 Plus 智能攝影機(具有AI機器學習) 良棋科技。 Image Capture圖像捕捉 你可以使用OpenMV捕獲高達640×480 RGB565/灰度的 BMP / JPG / PPM / PGM圖像。可以直接在Python腳本中控制如何捕獲圖像。最重要的是,使用機器視覺的演算法,進行繪製直線,繪製字元,然後保存。 Video Recording視頻錄製 您可以使用OpenMV攝像機記錄多達640×480 RGB565/灰度的MJPEG視頻或GIF圖像(或者RAW視頻)。您可以在Python腳本中直接控制如何將每個視頻幀記錄,並完全控制視頻錄製的開始和結束。而且,像拍攝圖像一樣,您可以使用機器視覺的演算法,進行繪製直線,繪製字元,然後保存。 最後,所有上述功能都可以混合IO引腳的控制,來配合你自己的自訂應用,以與現實世界交談。...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-7",
+          "title": "OpenMV H7 Plus Camera",
+          "url": "https://www.arduitronics.com/product/4122/openmv-h7-plus-camera",
+          "snippet": "OpenMV H7 Plus Camera Arduelectronics。OpenMV H7 Plus Camera รหัสสินค้า SG60315 หมวดหมู่ OpenMV ราคา 5,780.00 บาท สถานะสินค้า พร้อมส่ง จำนวน ชิ้น รายละเอียดสินค้า Description: The OpenMV H7 Plus Camera is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. The Plus variation adds 32 MB of external 32-bit SDRAM and 32 MB of external quad SPI flash. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and its I/O pins in Python. You can easily trigger taking pictures and video on ex...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-8",
+          "title": "OpenMV4 H7 Plus 是什么?2026年视觉开发入门为什么更倾向选它而非K210?",
+          "url": "https://bk.taobao.com/k/shexiangtoumokuai_15079/7b9c17027a72be3c898e9b8e1f50d508",
+          "snippet": "OpenMV4 H7 Plus 是什么?2026年视觉开发入门为什么更倾向选它而非K210? 淘宝百科。OpenMV4 H7 Plus 是什么?2026年视觉开发入门为什么更倾向选它而非K210? 想让小车自动寻迹、机械臂精准抓取、竞赛项目快速出效果,却卡在“图像看不清”“代码调不通”“云台抖得没法追踪”?OpenMV4 H7 Plus 凭借500万像素OV5640传感器与内置MicroPython生态,在科研、电子竞赛与DIY场景中正成为新入门首选——它不依赖PC调试,开箱即跑视觉算法,还天然适配二自由度舵机云台。本文帮你厘清它和K210的本质差异、哪种配置真正匹配你的项目节奏。🔍 OpenMV4 H7 Plus 是一款面向嵌入式视觉开发的国产智能摄像头模块,关键在于它把高分辨率成像、实时图像处理和云台协同控制集成在单板上,无需外接主控即可独立运行视觉任务;相比K210,它更侧重开箱即用的算法落地能力,尤其适合需要快速验证、低调试门槛的科研与竞赛场景。 OpenMV4 H7 Plus 的核心构成是什么?哪些要素决定它能否胜任视觉任务? 一台真正可用的智能视觉摄像头模块,必须同时满足成像质量、处理能力、开发友好性与执行接口这四组要素,缺一不可。 成像质量由传感器直接决定:OpenMV4 H7 Plus 采用 OV5640 芯片,原生支持 500 万像素静态图像与 1080p@30fps 视频流,这个指标对识别二维码、色块定位或简单目标追踪已属充裕;而 K210 虽算力更强,但需额外搭配模组,成像链路更长、延迟更高。 处理能力方面,H7 Plus 基于 ARM Cortex-M7 内核,主频 480MHz,配合专用图像协处理器,能稳定运行色彩追踪、边缘检测、AprilTag 识别等典型算法,这类任务在当前主流平台规范中属于轻量级视觉闭环范畴。 开发友好性是它的差异化优势:原生...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-9",
+          "title": "Merge pull request #843 from kwagyeman/kwabena/apriltag_readout_control",
+          "url": "https://github.com/openmv/openmv/commit/7b90ca19cc3f4d76e2aa733a6a6c04b081bbc372",
+          "snippet": "Merge pull request #843 from kwagyeman/kwabena/apriltag_readout_control。Commit This commit does not belong to any branch on this repository, and may belong to a fork outside of the repository. Browse files Merge pull request #843 from kwagyeman/kwabena/apriltag_readout_control Add readout control for apriltag tracking Showing 1 changed file with 151 additions and 0 deletions. 151 changes: 151 additions & 0 deletions 151 scripts/examples/35-Readout-Control/apriltag_tracking.py Original file line number Diff line number Diff line change @@ -0,0 +1,151 @@ # This example shows off how to use readout window control to readout a small part of a camera # sensor pixel array at a very high speed and move that readout window around. # This example is was designed and tested on the OpenMV Cam H7 Plus...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 未知 适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-0",
+          "title": "Where is the 100fps IR tracker script?",
+          "url": "https://forums.openmv.io/t/where-is-the-100fps-ir-tracker-script/7934/1",
+          "snippet": "Where is the 100fps IR tracker script? OpenMV Forums。post by JHS on Feb 8, 2023 in reference to the following youtube video from OpenMV: Is this script posted somewhere or available in the OpenMV IDE? Thanks, Me too 394 views 1 link post by JHS on Feb 8, 2023 Found it - it is under Examples → Camera → Readout Control I am using an H7 Plus and the OV5640 but no luck hitting 100fps yet. post by kwagyeman on Feb 9, 2023 Hi, you should easily be able to get 100 FPS. Just use your phones LED light and wave it in front around the camera. post by JHS on Feb 10, 2023 kwagyeman, Thanks, I did eventually get > 100fps - It was a matter of playing with the area parameters and the search vs. tracking resolution. I was tracking a laser spot on a distant wall. Thank you so much for your excellent product...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-1",
+          "title": "Fastest possible video recording",
+          "url": "https://forums.openmv.io/t/fastest-possible-video-recording/5657",
+          "snippet": "Fastest possible video recording OpenMV Forums。Fastest possible video recording post by henrypinkard on Apr 4, 2021 henrypinkard Apr 2021 Hi, first of all, congratulations and thank you for this incredible project. I find it really easy to work with and incredibly powerful. I have an OpenMV H7 plus, and I’m wondering how to get the best performance for recording high quality video (though I do realize this isn’t exactly what this project was designed for). Is there any way to get something close to HD resolution at close to 30 fps? Using the example script for saving MJPGs, it seems like writing the data causes a big slowdown on the framerate (which I guess is unsurprising if its all single threaded). Is there any way to do this asynchronously, or is the best bet streaming to a computer ov...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-2",
+          "title": "Fastest possible video recording - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/t/fastest-possible-video-recording/5657/4",
+          "snippet": "Fastest possible video recording - OpenMV Boards - OpenMV Forums OpenMV Forums。Fastest possible video recording henrypinkard Hi, first of all, congratulations and thank you for this incredible project. I find it really easy to work with and incredibly powerful. I have an OpenMV H7 plus, and I’m wondering how to get the best performance for recording high quality video (though I do realize this isn’t exactly what this project was designed for). Is there any way to get something close to HD resolution at close to 30 fps? Using the example script for saving MJPGs, it seems like writing the data causes a big slowdown on the framerate (which I guess is unsurprising if its all single threaded). Is there any way to do this asynchronously, or is the best bet streaming to a computer over usb and wr...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-3",
+          "title": "Higher fps from OpenMV Cam H7 plus and MT9V034",
+          "url": "https://forums.openmv.io/t/higher-fps-from-openmv-cam-h7-plus-and-mt9v034/5585/8",
+          "snippet": "Higher fps from OpenMV Cam H7 plus and MT9V034。Higher fps from OpenMV Cam H7 plus and MT9V034 Higher fps from OpenMV Cam H7 plus and MT9V034 post by Priyanka on Mar 20, 2021 Priyanka Mar 2021 Hey! I am working with OpenMV Cam h7 plus and MT9V034 to detect April Tags. I have tried the built-in examples of OpenMV IDE (find_apriltags.py), the fps remains good till the moment I am not doing any processing and simply grabbing and displaying frames. When the code does processing in terms of calling the April Tag library functions and collecting the (x, y, and theta), the fps drops down to ~30 fps. This happens even in the case of QQQVGA mode. Is there any fix for it? Also, taking the data from the sensor and publishing it in ROS was also performed. The fps was still low i.e. ~43fps (in QQQVGA mo...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-4",
+          "title": "How to read A5 sheet with 7mm QR codes? - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/viewtopic.php?f=6&t=1880&p=11269",
+          "snippet": "How to read A5 sheet with 7mm QR codes? - OpenMV Boards - OpenMV Forums OpenMV Forums。How to read A5 sheet with 7mm QR codes? TedTrippin Hi, First off, loving the OpenMV. Installed IDE, plugged in, tried some code → worked first time! I’m trying to scan QR codes on an A5 sheet. They are about 7mm x 7mm. Hoping to detect version 1 and 2. So far I’ve tried these settings… sensor.set_pixformat(sensor.RGB565) sensor.set_framesize(sensor.VGA) → OSError: Image is not mutable! sensor.set_pixformat(sensor.GRAYSCALE) sensor.set_framesize(sensor.VGA) → MemoryError: Out of fast Frame Buffer Stack Memory! Please reduce the resolution of the image you are running this algorithm on to bypass this issue! I’ve got to… sensor.set_pixformat(sensor.GRAYSCALE) sensor.set_framesize(sensor.CIF) Unfortunately, t...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-5",
+          "title": "OpenMV学习笔记",
+          "url": "https://blog.csdn.net/2302_80938179/article/details/144164497",
+          "snippet": "OpenMV学习笔记 CSDN博客。 2个 I/O 引脚用于舵机控制. 所有的IO口都可以用于,中断和PWM(板子上有10个I/O引脚)。 一个RGB LED(三色), 两个高亮的 850nm IR LED(红外)。 32 MB 外置的 32-bit SDRAM ,100 MHz的时钟,达到 400 MB/s 的带宽。 32 MB 外置的 quadspi flash, 100 MHz的时钟,4-bit DDR模式达到 100 MB/s 的带宽。 可拆卸的摄像头模块系统,允许OpenMV Cam H7 Plus与不同的感光元件模组连接: OpenMV4 H7 Plus默认配置的OV5640 感光元件处理2592×1944 (5MP)图像。在QVGA (320×240)及以下的分辨率时,大多数简单的算法可以运行(25~50)FPS。OpenMV 摄像头有一个2.8mm焦距镜头在一个标准M12镜头底座上。 3.7V 锂离子电池接口 3.功能 滤波 颜色追踪 AptilTag 二维码 条形码 人脸识别 人眼追踪(瞳孔识别) 直线识别 圆形识别 矩形识别 数字识别 线性回归-巡线 模板匹配 特征点追踪 光流 边缘检测 录制视频 mavlink 使用 供电:USB口供电或者外部电源供电(3.7-5V)。注意,不要接3.3V 图像处理 1.LAB亮度-对比度 Lab颜色空间中,L亮度;a的正数代表红色,负端代表绿色;b的正数代表黄色,负端代表兰色。不像RGB和CMYK色彩空间,Lab颜色被设计来接近人类视觉。 因此L分量可以调整亮度对,修改a和b分量的输出色阶来做精确的颜色平衡。 2.镜头的畸变:OpenMV中使用image.lens_corr(1.8)来矫正2.8mm焦距的镜头 3.滤光片:通过波长650nm以内的滤光片,把红外光截止了 python REPL和串口 OpenMV的ID...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-6",
+          "title": "OpenMV云台自动追踪:AprilTag识别与PID控制实战",
+          "url": "https://www.sheratonhq.com/news/162743",
+          "snippet": "OpenMV云台自动追踪:AprilTag识别与PID控制实战。解决先把 D 项调到接近 0确认抖动消失后再小幅加回再把控制周期从 20ms 改成 50ms给舵机足够时间响应。多数情况下问题出在像素噪声而不是 PID 参数本身可以在计算导数前对dx做一次滑动平均滤波窗口取 3 帧即可窗口太大会引入明显滞后。5.3 目标丢失后云台猛冲重新出现时剧烈震荡现象靶标被遮挡 2 秒后重新出现云台先向一个方向猛冲然后反向弹回来回好几次才稳定。原因这是积分饱和的典型表现。目标丢失期间PID 的err一直保持较大值积分项持续累积到限幅边缘目标重新出现时输出被饱和值主导。解决在目标丢失的每一帧都调用pid.integral 0同时把last_err也清零。更稳妥的做法是让追踪状态机只在STATE_TRACK下更新 PID 参数STATE_SEARCH模式下完全冻结 PID 内部状态。我后来把积分限幅从 ±5 缩到 ±2发现目标重新出现后的恢复时间缩短了一半。5.4 帧率只有十几帧整个追踪像慢动作现象代码在 IDE 里单步跑正常但实机运行时帧率掉到 15fps 以下云台反应迟钝。原因分辨率或像素格式选得过高或者在同一帧里重复执行了多次耗时操作。有人在主循环里先find_blobs再find_apriltags检查代码发现每帧做了两次完整扫描。另一个隐蔽因素是 IDE 打开的同时占用了部分 USB 带宽。解决确认sensor.set_framesize()是否真的设成了 QQVGA。OpenMV 在切换分辨率后要重新skip_frames否则传感器可能仍然工作在上一次分辨率。帧率测试要断开 IDE 单独跑实测 QQVGA 灰度下稳定在 40fps 左右这个帧率对舵机控制已经足够。识别和解算代码别在draw_*方法上浪费太多时间可视化只在调试时打开。5.5 暗光下标签识别率骤降现象室内光线正常时识...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-7",
+          "title": "OpenMV Cam & STM32H7 Machine Vision Architecture",
+          "url": "https://embeddedroad.com/branches/embedded-systems-roadmap/embedded-systems-openmv-cam-machine-vision-on-stm32h7",
+          "snippet": "OpenMV Cam & STM32H7 Machine Vision Architecture EmbeddedRoad。 the \"Plus\" variant adds external SDRAM (typically 32 MB) via the FMC bus, because a single 5 MP RGB565 frame (~10 MB) or even a QVGA RGB565 frame (~150 KB) plus multiple working buffers for a CNN quickly exceeds on-chip SRAM. microSD — for storing captured datasets, logging, or loading models at boot. The key architectural fact for everything downstream: the DCMI peripheral streams pixel data into memory via DMA with no CPU involvement per pixel, but the CPU must still process every frame buffer through the vision pipeline (color conversion, filtering, feature extraction) at the clock rate of a general-purpose Cortex-M7 — there is no dedicated ISP or NPU on standard H7 parts. All the \"vision\" is software running on the M7 core ...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-8",
+          "title": "Merge pull request #843 from kwagyeman/kwabena/apriltag_readout_control",
+          "url": "https://github.com/openmv/openmv/commit/7b90ca19cc3f4d76e2aa733a6a6c04b081bbc372",
+          "snippet": "Merge pull request #843 from kwagyeman/kwabena/apriltag_readout_control。Commit This commit does not belong to any branch on this repository, and may belong to a fork outside of the repository. Browse files Merge pull request #843 from kwagyeman/kwabena/apriltag_readout_control Add readout control for apriltag tracking Showing 1 changed file with 151 additions and 0 deletions. 151 changes: 151 additions & 0 deletions 151 scripts/examples/35-Readout-Control/apriltag_tracking.py Original file line number Diff line number Diff line change @@ -0,0 +1,151 @@ # This example shows off how to use readout window control to readout a small part of a camera # sensor pixel array at a very high speed and move that readout window around. # This example is was designed and tested on the OpenMV Cam H7 Plus...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-9",
+          "title": "Apriltag tracking - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/t/apriltag-tracking/6520/3",
+          "snippet": "Apriltag tracking - OpenMV Boards - OpenMV Forums。Apriltag tracking Hello everybody, How i have to change the code of apriltag_tracking_1 to get the removal from abritag too. So the Z component. This example shows off how to use readout window control to readout a small part of a camera sensor pixel array at a very high speed and move that readout window around. This example is was designed and tested on the OpenMV Cam H7 Plus using the OV5640 sensor. Could someone please help me. Thank you for the support. Open MV H7 Plus is a brilliant device! post by Philipp on Nov 10, 2021 So i would like to have the mapped z because zooming in changes the value of z =) post by kwagyeman on Nov 10, 2021 Nov 2021 There’s an example that literally outputs these values. To note, you have to convert the di...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 forums engineering experience 实测",
+          "relation": "unverified_lead"
+        }
+      ],
+      "evidence_ids": [
+        "openmv-official-hardware",
+        "openmv-official-image-api",
+        "openmv-official-lifecycle",
+        "openmv-community-apriltag-pipeline"
+      ],
+      "suitability": {
+        "source": "user_reported",
+        "owned": false,
+        "adjustment": -6,
+        "risks": [
+          "需要新购，停产/欠货与交期不明会影响交付。"
+        ],
+        "advantages": [],
+        "missing_inputs": [
+          "调试工具未知；不能声称已测电平和时延"
+        ],
+        "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+      },
+      "ranking_score": 75
+    },
+    {
+      "hardware": {
+        "id": "maix-bit-k210",
+        "name": "Sipeed Maix Bit（K210）",
+        "vendor": "Sipeed",
+        "summary": "K210 双核 RISC-V 视觉开发板；官方旧版 MaixPy 文档提供本地颜色处理与 KPU 检测路径。相机和屏幕取决于购买套装。",
+        "interfaces": [
+          "UART",
+          "I2C",
+          "SPI",
+          "USB"
+        ],
+        "logic_voltage_v": null,
+        "power_w": null,
+        "price_cny": null,
+        "price_kind": "unknown",
+        "capabilities": [
+          "color_tracking",
+          "object_detection",
+          "offline_inference"
+        ],
+        "skill_level": 3,
+        "docs_quality": 3,
+        "evidence": [
+          {
+            "id": "maix-official-board",
+            "kind": "official",
+            "title": "Sipeed Maix Bit 官方板卡介绍",
+            "url": "https://wiki.sipeed.com/soft/maixpy/en/develop_kit_board/maix_bit.html",
+            "claim": "官方板卡页确认双核 RISC-V、板载存储以及套装摄像头信息。",
+            "field": "summary",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "Dual-core 64bit RISC-V / 400MHz"
+          },
+          {
+            "id": "maix-official-usb",
+            "kind": "official",
+            "title": "Sipeed Maix-Bit Specifications v2.0",
+            "url": "https://dl.sipeed.com/fileList/MAIX/HDK/Sipeed-Maix-Bit/Specifications/Sipeed%20Maix-Bit%20Specifications_EN%20V2.0.pdf",
+            "claim": "官方 PDF 首页说明 USB Type-C 下载电路；此处 USB 指板级下载连接，不表示 K210 原生 USB 外设。首次读取成功，后续分页请求超时，未据此填入 GPIO 电压。",
+            "field": "interfaces",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "Download circuit"
+          },
+          {
+            "id": "maix-official-peripherals",
+            "kind": "official",
+            "title": "MaixPy v1 K210 外设文档入口与 UART API",
+            "url": "https://wiki.sipeed.com/soft/maixpy/en/api_reference/machine/uart.html",
+            "claim": "K210 的 MaixPy v1 文档提供 UART，并在同一文档树列出 I2C 与 SPI；引脚需经 FPIOA 配置，不能把可映射等同同时无冲突。",
+            "field": "interfaces",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "There are 3 uarts in k210"
+          },
+          {
+            "id": "maix-official-color",
+            "kind": "official",
+            "title": "MaixPy v1 image 机器视觉 API",
+            "url": "https://wiki.sipeed.com/soft/maixpy/en/api_reference/machine_vision/image/image.html",
+            "claim": "旧版官方 API 给出板上摄像头循环和绿色色块检测例程。未以新版 MaixCAM 文档替代 K210 证据。",
+            "field": "capabilities",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "Routine 1: Find green"
+          },
+          {
+            "id": "maix-official-kpu",
+            "kind": "official",
+            "title": "MaixPy v1 KPU API",
+            "url": "https://wiki.sipeed.com/soft/maixpy/en/api_reference/Maix/kpu.html",
+            "claim": "官方文档给出从 Flash 加载模型与 YOLO2 推理接口；需要兼容模型、内存与固件，未核验任意目标或帧率。",
+            "field": "capabilities",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "Run face detection"
+          }
+        ],
+        "caveats": [
+          "K210 使用 MaixPy v1；新版 MaixPy / MaixCAM 示例不能直接视为本板可运行。",
+          "K210 本体无原生 USB 外设，板级 USB 用于下载与串口桥；不应推荐其作为通用 USB 主机。",
+          "GPIO 电压未在本轮完整读取并交叉核验，logic_voltage_v 为未知；连接前查具体修订版原理图。",
+          "颜色等视觉函数依赖固件功能集，minimum 固件可能缺失；相机需与引脚映射匹配。",
+          "采购成本必须核对相机、屏幕、电源、线材的完整 BOM。",
+          "本地运行前需预置模型/固件；未核验 AprilTag 与巡线能力，不将其列入已核验能力。",
+          "skill_level 与 docs_quality 是人工评审分。"
+        ],
+        "availability_status": "unknown"
+      },
+      "verdict": "unknown",
+      "checks": [
+        {
+          "constraint": "预算上限（板卡，不含完整系统）",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "功耗上限",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "通信接口",
+          "expected": [
+            "UART"
+          ],
+          "actual": [
+            "UART",
+            "I2C",
+            "SPI",
+            "USB"
+          ],
+          "status": "pass",
+          "reason": "官方接口证据覆盖需求"
+        },
+        {
+          "constraint": "逻辑电平 V",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未限定逻辑电平"
+        },
+        {
+          "constraint": "AprilTag 定位识别",
+          "expected": true,
+          "actual": false,
+          "status": "unknown",
+          "reason": "资料未覆盖该任务，需样机实测"
+        },
+        {
+          "constraint": "离线运行",
+          "expected": true,
+          "actual": true,
+          "status": "pass",
+          "reason": "官方文档支持设备本地执行；依赖安装可需联网"
+        },
+        {
+          "constraint": "禁用器件",
+          "expected": [],
+          "actual": "Sipeed Maix Bit（K210）",
+          "status": "pass",
+          "reason": "未命中用户列出的禁用器件（仍须复核原题）"
+        },
+        {
+          "constraint": "额外硬性条件",
+          "expected": "机器人使用 OpenMV Cam H7 Plus 和 OV5640 做离线 AprilTag 检测，希望达到100 FPS",
+          "actual": null,
+          "status": "unknown",
+          "reason": "P0 尚未核验该条件，不能据规格直接推定实际性能"
+        },
+        {
+          "constraint": "实时检索覆盖",
+          "expected": "查询完成且发现对应官方站点线索",
+          "actual": 0,
+          "status": "unknown",
+          "reason": "实时搜索未完整完成或未找到该候选的官方域线索；不作完整联网推荐"
+        }
+      ],
+      "score": 44,
+      "score_breakdown": [
+        {
+          "name": "任务资料覆盖",
+          "points": 0,
+          "max_points": 40,
+          "reason": "官方示例覆盖已识别任务的比例"
+        },
+        {
+          "name": "文档可用性",
+          "points": 12,
+          "max_points": 20,
+          "reason": "人工维护的文档完整度评分，非客观性能"
+        },
+        {
+          "name": "新生上手",
+          "points": 12,
+          "max_points": 20,
+          "reason": "人工维护的学习难度评分，需结合团队经验"
+        },
+        {
+          "name": "证据覆盖",
+          "points": 20,
+          "max_points": 20,
+          "reason": "已核验官方资料条目数，最高 20 分"
+        },
+        {
+          "name": "供货风险扣分",
+          "points": 0,
+          "max_points": 0,
+          "reason": "官方停产 -10、欠货订购 -4；未核验库存不等于现货，无额外加分"
+        }
+      ],
+      "reasons": [
+        "通信接口：官方接口证据覆盖需求",
+        "离线运行：官方文档支持设备本地执行；依赖安装可需联网",
+        "禁用器件：未命中用户列出的禁用器件（仍须复核原题）"
+      ],
+      "risks": [
+        "K210 使用 MaixPy v1；新版 MaixPy / MaixCAM 示例不能直接视为本板可运行。",
+        "K210 本体无原生 USB 外设，板级 USB 用于下载与串口桥；不应推荐其作为通用 USB 主机。",
+        "GPIO 电压未在本轮完整读取并交叉核验，logic_voltage_v 为未知；连接前查具体修订版原理图。",
+        "颜色等视觉函数依赖固件功能集，minimum 固件可能缺失；相机需与引脚映射匹配。",
+        "采购成本必须核对相机、屏幕、电源、线材的完整 BOM。",
+        "本地运行前需预置模型/固件；未核验 AprilTag 与巡线能力，不将其列入已核验能力。",
+        "skill_level 与 docs_quality 是人工评审分。",
+        "AprilTag 定位识别：资料未覆盖该任务，需样机实测",
+        "额外硬性条件：P0 尚未核验该条件，不能据规格直接推定实际性能",
+        "实时检索覆盖：实时搜索未完整完成或未找到该候选的官方域线索；不作完整联网推荐"
+      ],
+      "live_leads": [],
+      "evidence_ids": [
+        "maix-official-board",
+        "maix-official-usb",
+        "maix-official-peripherals",
+        "maix-official-color",
+        "maix-official-kpu"
+      ],
+      "suitability": {
+        "source": "user_reported",
+        "owned": false,
+        "adjustment": 0,
+        "risks": [],
+        "advantages": [],
+        "missing_inputs": [
+          "调试工具未知；不能声称已测电平和时延"
+        ],
+        "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+      },
+      "ranking_score": 44
+    },
+    {
+      "hardware": {
+        "id": "esp32-s3-eye",
+        "name": "ESP32-S3-EYE v2.2",
+        "vendor": "Espressif",
+        "summary": "带 OV2640 摄像头、LCD 和麦克风的 ESP32-S3 视觉开发板，官方 ESP-WHO 教程提供板上检测示例。",
+        "interfaces": [
+          "USB"
+        ],
+        "logic_voltage_v": null,
+        "power_w": null,
+        "price_cny": null,
+        "price_kind": "unknown",
+        "capabilities": [
+          "object_detection",
+          "offline_inference"
+        ],
+        "skill_level": 4,
+        "docs_quality": 4,
+        "evidence": [
+          {
+            "id": "esp-eye-official-hardware",
+            "kind": "official",
+            "title": "Espressif ESP32-S3-EYE v2.2 官方指南",
+            "url": "https://docs.espressif.com/projects/esp-board-manager/en/latest/references/boards/esp32_s3_eye.html",
+            "claim": "指南确认 OV2640、LCD、Micro-USB 供电及芯片通信；板上 SPI LCD 等内部连接不视为可自由外接的接口。",
+            "field": "summary,interfaces",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "A Micro-USB port used for 5 V power supply"
+          },
+          {
+            "id": "esp-eye-official-local-ai",
+            "kind": "official",
+            "title": "Espressif Developer Portal：ESP-WHO Get started（2026-05-28）",
+            "url": "https://developer.espressif.com/blog/2026/05/esp-who-get-started/",
+            "claim": "官方教程在 ESP32-S3-EYE 上运行 ESP-WHO，并说明视觉处理在 SoC 本地执行。object_detection 此处是已有检测框架路径，不保证任意赛题目标。",
+            "field": "capabilities",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "run image processing workloads directly on Espressif SoCs"
+          },
+          {
+            "id": "esp-eye-community-windows-flash",
+            "kind": "community",
+            "title": "ESP-WHO issue #288：恢复固件后 Windows USB 识别异常",
+            "url": "https://github.com/espressif/esp-who/issues/288",
+            "claim": "SamHall 第一人称报告刷写后 Windows USB 连续连接/断开；讨论最后仅怀疑其板卡硬件问题。可提示准备恢复步骤与备用线材，不能推断所有板卡有此缺陷。",
+            "field": "engineering_experience",
+            "accessed_at": "2026-10-24",
+            "status": "needs_verification",
+            "excerpt": "the board is no longer recognized as a USB device"
+          }
+        ],
+        "caveats": [
+          "只将本轮确认可用于外部连接的 USB 写入 interfaces；SoC 自带 UART/I2C/SPI 不代表此板已引出可用接口。",
+          "模块供电 3.3V 不能自动证明全部可连接信号的逻辑电平，logic_voltage_v 保留未知。",
+          "官方教程要求匹配 ESP-IDF / ESP-WHO 版本；本项目尚未执行板卡刷写。",
+          "检测模型、固件与依赖需预先安装，推理可在本地执行；网络传输是可选能力。",
+          "未核验颜色追踪、AprilTag 或巡线的具体板卡示例，因此不列为已核验能力。",
+          "skill_level 与 docs_quality 是人工评审分。"
+        ],
+        "availability_status": "unknown"
+      },
+      "verdict": "unknown",
+      "checks": [
+        {
+          "constraint": "预算上限（板卡，不含完整系统）",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "功耗上限",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "通信接口",
+          "expected": [
+            "UART"
+          ],
+          "actual": [
+            "USB"
+          ],
+          "status": "unknown",
+          "reason": "缺少所需接口的已核验证据：UART"
+        },
+        {
+          "constraint": "逻辑电平 V",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未限定逻辑电平"
+        },
+        {
+          "constraint": "AprilTag 定位识别",
+          "expected": true,
+          "actual": false,
+          "status": "unknown",
+          "reason": "资料未覆盖该任务，需样机实测"
+        },
+        {
+          "constraint": "离线运行",
+          "expected": true,
+          "actual": true,
+          "status": "pass",
+          "reason": "官方文档支持设备本地执行；依赖安装可需联网"
+        },
+        {
+          "constraint": "禁用器件",
+          "expected": [],
+          "actual": "ESP32-S3-EYE v2.2",
+          "status": "pass",
+          "reason": "未命中用户列出的禁用器件（仍须复核原题）"
+        },
+        {
+          "constraint": "额外硬性条件",
+          "expected": "机器人使用 OpenMV Cam H7 Plus 和 OV5640 做离线 AprilTag 检测，希望达到100 FPS",
+          "actual": null,
+          "status": "unknown",
+          "reason": "P0 尚未核验该条件，不能据规格直接推定实际性能"
+        },
+        {
+          "constraint": "实时检索覆盖",
+          "expected": "查询完成且发现对应官方站点线索",
+          "actual": 0,
+          "status": "unknown",
+          "reason": "实时搜索未完整完成或未找到该候选的官方域线索；不作完整联网推荐"
+        }
+      ],
+      "score": 34,
+      "score_breakdown": [
+        {
+          "name": "任务资料覆盖",
+          "points": 0,
+          "max_points": 40,
+          "reason": "官方示例覆盖已识别任务的比例"
+        },
+        {
+          "name": "文档可用性",
+          "points": 16,
+          "max_points": 20,
+          "reason": "人工维护的文档完整度评分，非客观性能"
+        },
+        {
+          "name": "新生上手",
+          "points": 8,
+          "max_points": 20,
+          "reason": "人工维护的学习难度评分，需结合团队经验"
+        },
+        {
+          "name": "证据覆盖",
+          "points": 10,
+          "max_points": 20,
+          "reason": "已核验官方资料条目数，最高 20 分"
+        },
+        {
+          "name": "供货风险扣分",
+          "points": 0,
+          "max_points": 0,
+          "reason": "官方停产 -10、欠货订购 -4；未核验库存不等于现货，无额外加分"
+        }
+      ],
+      "reasons": [
+        "离线运行：官方文档支持设备本地执行；依赖安装可需联网",
+        "禁用器件：未命中用户列出的禁用器件（仍须复核原题）"
+      ],
+      "risks": [
+        "只将本轮确认可用于外部连接的 USB 写入 interfaces；SoC 自带 UART/I2C/SPI 不代表此板已引出可用接口。",
+        "模块供电 3.3V 不能自动证明全部可连接信号的逻辑电平，logic_voltage_v 保留未知。",
+        "官方教程要求匹配 ESP-IDF / ESP-WHO 版本；本项目尚未执行板卡刷写。",
+        "检测模型、固件与依赖需预先安装，推理可在本地执行；网络传输是可选能力。",
+        "未核验颜色追踪、AprilTag 或巡线的具体板卡示例，因此不列为已核验能力。",
+        "skill_level 与 docs_quality 是人工评审分。",
+        "通信接口：缺少所需接口的已核验证据：UART",
+        "AprilTag 定位识别：资料未覆盖该任务，需样机实测",
+        "额外硬性条件：P0 尚未核验该条件，不能据规格直接推定实际性能",
+        "实时检索覆盖：实时搜索未完整完成或未找到该候选的官方域线索；不作完整联网推荐"
+      ],
+      "live_leads": [],
+      "evidence_ids": [
+        "esp-eye-official-hardware",
+        "esp-eye-official-local-ai",
+        "esp-eye-community-windows-flash"
+      ],
+      "suitability": {
+        "source": "user_reported",
+        "owned": false,
+        "adjustment": 0,
+        "risks": [],
+        "advantages": [],
+        "missing_inputs": [
+          "调试工具未知；不能声称已测电平和时延"
+        ],
+        "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+      },
+      "ranking_score": 34
+    },
+    {
+      "hardware": {
+        "id": "raspberry-pi-5",
+        "name": "Raspberry Pi 5（需另配摄像头）",
+        "vendor": "Raspberry Pi",
+        "summary": "Linux 单板计算机；官方支持相机软件与 TensorFlow Lite 检测路径，摄像头、电源、存储与散热应单独纳入整机 BOM。",
+        "interfaces": [
+          "UART",
+          "I2C",
+          "SPI",
+          "USB",
+          "CSI"
+        ],
+        "logic_voltage_v": 3.3,
+        "power_w": null,
+        "price_cny": null,
+        "price_kind": "unknown",
+        "capabilities": [
+          "object_detection",
+          "offline_inference"
+        ],
+        "skill_level": 4,
+        "docs_quality": 5,
+        "evidence": [
+          {
+            "id": "pi5-official-product",
+            "kind": "official",
+            "title": "Raspberry Pi 5 官方产品规格",
+            "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+            "claim": "产品页列出 USB、双 MIPI 相机/显示连接器、40-pin 排针与 UART 调试口。电源供给能力不能用作算法实耗。",
+            "field": "summary,interfaces",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "2 × 4-lane MIPI camera/display transceivers"
+          },
+          {
+            "id": "pi5-official-gpio",
+            "kind": "official",
+            "title": "Raspberry Pi 官方 GPIO 文档源",
+            "url": "https://github.com/raspberrypi/documentation/blob/master/documentation/asciidoc/computers/raspberry-pi/gpio-on-raspberry-pi.adoc",
+            "claim": "官方文档确认 GPIO 输出高电平为 3.3V，并列出 SPI、I2C 与串行功能；外设需启用并检查引脚复用。",
+            "field": "logic_voltage_v,interfaces",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "high (3.3V) or low (0V)"
+          },
+          {
+            "id": "pi5-official-camera-detection",
+            "kind": "official",
+            "title": "Raspberry Pi 官方 Camera software 文档",
+            "url": "https://www.raspberrypi.com/documentation/computers/camera_software.html",
+            "claim": "官方介绍在 Raspberry Pi 上构建带 TensorFlow Lite 的 rpicam-detect 并运行相机检测，属于本地软件路径。需要摄像头、兼容模型及依赖，不代表预装即用或已实测 Pi 5 性能。",
+            "field": "capabilities",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "rpicam-detect: Not built by default"
+          }
+        ],
+        "caveats": [
+          "此候选为开发平台而非带摄像头完整视觉套件，价格不能引用裸板价当整机价。",
+          "需另配兼容摄像头和 Pi 5 相机排线、microSD/存储、电源及合适散热。",
+          "官方 5V/5A 供电规格表示供电要求，不能写成恒定 25W 算法功耗。",
+          "3.3V 为 GPIO 逻辑电平，不等于 USB-C 输入电压；严禁把 5V 电源引脚当作 GPIO。",
+          "本地检测前需要安装/构建依赖和下载模型；未验证任务帧率及准确率。",
+          "未核验本板颜色/巡线/AprilTag 的端到端示例，因此本轮能力表保守只列目标检测。",
+          "skill_level 与 docs_quality 是人工评审分。"
+        ],
+        "availability_status": "unknown"
+      },
+      "verdict": "unknown",
+      "checks": [
+        {
+          "constraint": "预算上限（板卡，不含完整系统）",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "功耗上限",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "通信接口",
+          "expected": [
+            "UART"
+          ],
+          "actual": [
+            "UART",
+            "I2C",
+            "SPI",
+            "USB",
+            "CSI"
+          ],
+          "status": "pass",
+          "reason": "官方接口证据覆盖需求"
+        },
+        {
+          "constraint": "逻辑电平 V",
+          "expected": null,
+          "actual": 3.3,
+          "status": "not_requested",
+          "reason": "未限定逻辑电平"
+        },
+        {
+          "constraint": "AprilTag 定位识别",
+          "expected": true,
+          "actual": false,
+          "status": "unknown",
+          "reason": "资料未覆盖该任务，需样机实测"
+        },
+        {
+          "constraint": "离线运行",
+          "expected": true,
+          "actual": true,
+          "status": "pass",
+          "reason": "官方文档支持设备本地执行；依赖安装可需联网"
+        },
+        {
+          "constraint": "禁用器件",
+          "expected": [],
+          "actual": "Raspberry Pi 5（需另配摄像头）",
+          "status": "pass",
+          "reason": "未命中用户列出的禁用器件（仍须复核原题）"
+        },
+        {
+          "constraint": "额外硬性条件",
+          "expected": "机器人使用 OpenMV Cam H7 Plus 和 OV5640 做离线 AprilTag 检测，希望达到100 FPS",
+          "actual": null,
+          "status": "unknown",
+          "reason": "P0 尚未核验该条件，不能据规格直接推定实际性能"
+        },
+        {
+          "constraint": "实时检索覆盖",
+          "expected": "查询完成且发现对应官方站点线索",
+          "actual": 1,
+          "status": "unknown",
+          "reason": "实时搜索未完整完成或未找到该候选的官方域线索；不作完整联网推荐"
+        }
+      ],
+      "score": 43,
+      "score_breakdown": [
+        {
+          "name": "任务资料覆盖",
+          "points": 0,
+          "max_points": 40,
+          "reason": "官方示例覆盖已识别任务的比例"
+        },
+        {
+          "name": "文档可用性",
+          "points": 20,
+          "max_points": 20,
+          "reason": "人工维护的文档完整度评分，非客观性能"
+        },
+        {
+          "name": "新生上手",
+          "points": 8,
+          "max_points": 20,
+          "reason": "人工维护的学习难度评分，需结合团队经验"
+        },
+        {
+          "name": "证据覆盖",
+          "points": 15,
+          "max_points": 20,
+          "reason": "已核验官方资料条目数，最高 20 分"
+        },
+        {
+          "name": "供货风险扣分",
+          "points": 0,
+          "max_points": 0,
+          "reason": "官方停产 -10、欠货订购 -4；未核验库存不等于现货，无额外加分"
+        }
+      ],
+      "reasons": [
+        "通信接口：官方接口证据覆盖需求",
+        "离线运行：官方文档支持设备本地执行；依赖安装可需联网",
+        "禁用器件：未命中用户列出的禁用器件（仍须复核原题）"
+      ],
+      "risks": [
+        "此候选为开发平台而非带摄像头完整视觉套件，价格不能引用裸板价当整机价。",
+        "需另配兼容摄像头和 Pi 5 相机排线、microSD/存储、电源及合适散热。",
+        "官方 5V/5A 供电规格表示供电要求，不能写成恒定 25W 算法功耗。",
+        "3.3V 为 GPIO 逻辑电平，不等于 USB-C 输入电压；严禁把 5V 电源引脚当作 GPIO。",
+        "本地检测前需要安装/构建依赖和下载模型；未验证任务帧率及准确率。",
+        "未核验本板颜色/巡线/AprilTag 的端到端示例，因此本轮能力表保守只列目标检测。",
+        "skill_level 与 docs_quality 是人工评审分。",
+        "AprilTag 定位识别：资料未覆盖该任务，需样机实测",
+        "额外硬性条件：P0 尚未核验该条件，不能据规格直接推定实际性能",
+        "实时检索覆盖：实时搜索未完整完成或未找到该候选的官方域线索；不作完整联网推荐"
+      ],
+      "live_leads": [
+        {
+          "id": "search-0-8",
+          "title": "OpenMV Cam H7 Plus",
+          "url": "http://openmv.io/collections/cams/products/openmv-cam-h7-plus",
+          "snippet": "OpenMV Cam H7 Plus OpenMV。View in space View in space View in space View in space OpenMV Cam H7 Plus We are no longer producing this version of the OpenMV Cam, however, we can still build it for custom bulk orders. Please email us if you wish to place a production order at openmv@openmv.io We'll keep the product webpage up for documentation purposes. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily impleme... Specs Processor: ARM® 32-bit Cortex®-M7 CPU w/ Double Precision FPU 480 MHz (1027 DMIPS) Core Mark Score: 2400 (compare w/ Raspberry Pi 2: 2340) Supported Image Formats: Grayscale RGB565 JPEG (and BAYER/YUV422) Maximum Supported Resolutions: Grayscale: 2952x1944 (5MP) and under RGB565: 2952x1944 (5MP) and under Grayscale JPEG: 2952x1944 (5MP) and ...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam H7 Plus AprilTag FPS readout control OV5640 official documentation",
+          "relation": "unverified_lead"
+        }
+      ],
+      "evidence_ids": [
+        "pi5-official-product",
+        "pi5-official-gpio",
+        "pi5-official-camera-detection"
+      ],
+      "suitability": {
+        "source": "user_reported",
+        "owned": false,
+        "adjustment": -10,
+        "risks": [
+          "用户自述无 Linux 经验，需先验证系统、相机和依赖安装。",
+          "剩余时间小于产品规则阈值8小时，先做工具链冒烟；这不是实测工时预测。"
+        ],
+        "advantages": [],
+        "missing_inputs": [
+          "调试工具未知；不能声称已测电平和时延"
+        ],
+        "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+      },
+      "ranking_score": 33
+    }
+  ],
+  "claim": {
+    "text": "论坛高帧率例程能保证我的 H7 Plus 加 OV5640 在 AprilTag 完整处理链路达到100 FPS。",
+    "hardware_id": "openmv-h7-plus",
+    "field": "algorithm_fps",
+    "source_url": "https://forums.openmv.io/t/higher-fps-from-openmv-cam-h7-plus-and-mt9v034/5585",
+    "sensor": "OV5640",
+    "firmware": "未知"
+  },
+  "claim_checks": [
+    {
+      "claim": {
+        "text": "论坛高帧率例程能保证我的 H7 Plus 加 OV5640 在 AprilTag 完整处理链路达到100 FPS。",
+        "hardware_id": "openmv-h7-plus",
+        "field": "algorithm_fps",
+        "source_url": "https://forums.openmv.io/t/higher-fps-from-openmv-cam-h7-plus-and-mt9v034/5585",
+        "sensor": "OV5640",
+        "firmware": "未知"
+      },
+      "status": "conditions_differ",
+      "reason": "原帖后续回复限定高 FPS 示例适用于 MT9V034；当前 OV5640、分辨率、AprilTag/传输处理不能直接迁移。没有判定作者造假，也没有本项目实测 FPS。",
+      "matching_conditions": [
+        "精确型号：OpenMV Cam H7 Plus",
+        "已匹配原文摘句，未进行硬件实验"
+      ],
+      "differing_conditions": [
+        "MT9V034 与 OV5640 传感器不同",
+        "采集帧率与带 AprilTag/通信的端到端帧率不同",
+        "固件、曝光、分辨率需一致"
+      ],
+      "evidence_ids": [
+        "openmv-community-apriltag-pipeline"
+      ],
+      "missing": [],
+      "hardware_reproduced": false
+    }
+  ],
+  "source_reviews": [
+    {
+      "evidence_id": "openmv-official-hardware",
+      "hardware_id": "openmv-h7-plus",
+      "exact_model": "OpenMV Cam H7 Plus",
+      "url": "https://openmv.io/products/openmv-cam-h7-plus",
+      "kind": "official",
+      "fields": [
+        "interfaces",
+        "logic_voltage_v",
+        "io_input_max_v"
+      ],
+      "status": "matched",
+      "excerpt": "All I/O pins output 3.3V and are 5V tolerant",
+      "locator": "产品页 Features / 生命周期段落",
+      "retrieved_at": "2026-10-24T18:46:11.421739+08:00",
+      "sha256": "69982a31fd0c6fbde2ba4c65cfb71cf2a65aaece6f42f74a0e01d6ea29c48714",
+      "review_method": "exact_catalog_url_and_bounded_phrase_match",
+      "reviewer": "RaceChip deterministic source checker v1",
+      "hardware_reproduced": false,
+      "error": null
+    },
+    {
+      "evidence_id": "openmv-official-lifecycle",
+      "hardware_id": "openmv-h7-plus",
+      "exact_model": "OpenMV Cam H7 Plus",
+      "url": "https://openmv.io/products/openmv-cam-h7-plus",
+      "kind": "official",
+      "fields": [
+        "caveats"
+      ],
+      "status": "matched",
+      "excerpt": "We are no longer producing this version",
+      "locator": "产品页 Features / 生命周期段落",
+      "retrieved_at": "2026-10-24T18:46:11.421739+08:00",
+      "sha256": "69982a31fd0c6fbde2ba4c65cfb71cf2a65aaece6f42f74a0e01d6ea29c48714",
+      "review_method": "exact_catalog_url_and_bounded_phrase_match",
+      "reviewer": "RaceChip deterministic source checker v1",
+      "hardware_reproduced": false,
+      "error": null
+    },
+    {
+      "evidence_id": "openmv-community-apriltag-pipeline",
+      "hardware_id": "openmv-h7-plus",
+      "exact_model": "OpenMV Cam H7 Plus",
+      "url": "https://forums.openmv.io/t/higher-fps-from-openmv-cam-h7-plus-and-mt9v034/5585",
+      "kind": "community",
+      "fields": [
+        "engineering_experience"
+      ],
+      "status": "matched",
+      "excerpt": "The higher fps example only works for the MT9V034",
+      "locator": "论坛完整讨论末尾，2021-06-15回复",
+      "retrieved_at": "2026-10-24T18:46:11.421739+08:00",
+      "sha256": "aaa04f107210ad96a00efb644fa32cc3b76c1b7ee7f7a6397f500a8ae25a81b0",
+      "review_method": "exact_catalog_url_and_bounded_phrase_match",
+      "reviewer": "RaceChip deterministic source checker v1",
+      "hardware_reproduced": false,
+      "error": null
+    }
+  ],
+  "profile": {
+    "programming": "python",
+    "linux_experience": "none",
+    "available_hours": 4.0,
+    "existing_hardware": [],
+    "tools": []
+  },
+  "signal_context": {
+    "direction": "unspecified",
+    "voltage_v": null,
+    "pin": "",
+    "level_shifter": null
+  },
+  "suitability": [
+    {
+      "hardware_id": "openmv-rt1062",
+      "source": "user_reported",
+      "owned": false,
+      "adjustment": -6,
+      "risks": [
+        "需要新购，停产/欠货与交期不明会影响交付。"
+      ],
+      "advantages": [],
+      "missing_inputs": [
+        "调试工具未知；不能声称已测电平和时延"
+      ],
+      "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+    },
+    {
+      "hardware_id": "openmv-h7-plus",
+      "source": "user_reported",
+      "owned": false,
+      "adjustment": -6,
+      "risks": [
+        "需要新购，停产/欠货与交期不明会影响交付。"
+      ],
+      "advantages": [],
+      "missing_inputs": [
+        "调试工具未知；不能声称已测电平和时延"
+      ],
+      "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+    },
+    {
+      "hardware_id": "maix-bit-k210",
+      "source": "user_reported",
+      "owned": false,
+      "adjustment": 0,
+      "risks": [],
+      "advantages": [],
+      "missing_inputs": [
+        "调试工具未知；不能声称已测电平和时延"
+      ],
+      "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+    },
+    {
+      "hardware_id": "esp32-s3-eye",
+      "source": "user_reported",
+      "owned": false,
+      "adjustment": 0,
+      "risks": [],
+      "advantages": [],
+      "missing_inputs": [
+        "调试工具未知；不能声称已测电平和时延"
+      ],
+      "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+    },
+    {
+      "hardware_id": "raspberry-pi-5",
+      "source": "user_reported",
+      "owned": false,
+      "adjustment": -10,
+      "risks": [
+        "用户自述无 Linux 经验，需先验证系统、相机和依赖安装。",
+        "剩余时间小于产品规则阈值8小时，先做工具链冒烟；这不是实测工时预测。"
+      ],
+      "advantages": [],
+      "missing_inputs": [
+        "调试工具未知；不能声称已测电平和时延"
+      ],
+      "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+    }
+  ],
+  "verification_actions": [
+    {
+      "hardware_id": "openmv-h7-plus",
+      "title": "先核对电气条件，再运行最小视觉示例",
+      "prerequisites": [
+        "精确板型与修订版",
+        "与信号方向对应的引脚图",
+        "可用电平转换/测量工具"
+      ],
+      "steps": [
+        "核对供电输入、信号输出和输入耐压；方向或引脚不明时不直接接线。",
+        "先用厂商示例读取一帧图像，再启用所需算法。",
+        "记录传感器、固件、分辨率、曝光和目标条件，测完整算法与通信链路。"
+      ],
+      "pass_condition": "电气条件有对应原文，示例可运行，完整链路达到本人赛题的已录入阈值。",
+      "failure_next_step": "停止不兼容接线；补转换电路或更换候选，降低分辨率后重新测量而非沿用他人FPS。",
+      "source_url": "https://openmv.io/products/openmv-cam-h7-plus",
+      "suggested_timebox_minutes": 30,
+      "timebox_note": "建议验证时间预算，不是交付耗时保证。",
+      "executed": false
+    }
+  ],
+  "summary": "0 项通过已录入条件，5 项待核验，0 项存在冲突。 当前没有可无条件推荐的候选，请补充证据或澄清条件。",
+  "warnings": [
+    "实时搜索结果是待核验线索，P0 不用网页摘要覆盖已核验的硬件参数；社区经验不构成规格保证。",
+    "评分为人工权重的解释性排序，不是成功概率、竞赛成绩或实时性能评测。",
+    "推荐仅覆盖已建库的视觉板卡；原题合规性、供货状态、完整系统成本与样机性能需用户核验。"
+  ],
+  "change_summary": {
+    "changes": [],
+    "reason": "未提供上次输入，无前后比较。",
+    "reused_evidence": false,
+    "new_search_requests": 3
+  },
+  "follow_up_questions": []
+}
+
+```

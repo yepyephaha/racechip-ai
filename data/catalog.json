@@ -1,0 +1,373 @@
+[
+  {
+    "id": "openmv-rt1062",
+    "name": "OpenMV Cam RT1062（欠货可订购）",
+    "vendor": "OpenMV",
+    "summary": "带 OV5640 摄像头、可用 MicroPython 开发的视觉板，适合颜色、巡线与 AprilTag 原型；核验时官网可欠货订购，交期与现货待确认。",
+    "interfaces": [
+      "UART",
+      "I2C",
+      "SPI",
+      "USB"
+    ],
+    "logic_voltage_v": 3.3,
+    "power_w": null,
+    "price_cny": null,
+    "price_kind": "unknown",
+    "capabilities": [
+      "color_tracking",
+      "line_tracking",
+      "apriltag",
+      "offline_inference"
+    ],
+    "skill_level": 2,
+    "docs_quality": 5,
+    "evidence": [
+      {
+        "id": "rt1062-official-hardware",
+        "kind": "official",
+        "title": "OpenMV Cam RT1062 官方产品与电气说明",
+        "url": "https://openmv.io/products/openmv-cam-rt",
+        "claim": "官方列出 USB-C、SPI、I2C、异步串行接口、3.3V I/O 与 OV5640 摄像头；I/O 不耐 5V。",
+        "field": "interfaces,logic_voltage_v,summary,io_input_max_v",
+        "accessed_at": "2026-10-24",
+        "status": "verified",
+        "excerpt": "All I/O pins output 3.3V"
+      },
+      {
+        "id": "rt1062-official-availability",
+        "kind": "official",
+        "title": "OpenMV Cam RT1062 官网订购状态",
+        "url": "https://openmv.io/products/openmv-cam-rt",
+        "claim": "核验时官方产品正文显示可欠货订购。没有确认现货或送达日期，搜索缓存中的库存数字不能代替本次状态。",
+        "field": "caveats",
+        "accessed_at": "2026-10-24",
+        "status": "verified",
+        "excerpt": "Available for Backorder"
+      },
+      {
+        "id": "rt1062-official-image-api",
+        "kind": "official",
+        "title": "OpenMV Image API：颜色、直线与 AprilTag",
+        "url": "https://docs.openmv.io/v5.0.0/library/omv.image.Image.html",
+        "claim": "官方本地图像 API 提供颜色连通域、阈值直线回归与 AprilTag 检测；需要匹配固件并验证实际任务，不据此保证帧率。",
+        "field": "capabilities",
+        "accessed_at": "2026-10-24",
+        "status": "verified",
+        "excerpt": "find_blobs; get_regression; find_apriltags"
+      }
+    ],
+    "caveats": [
+      "2026-10-24 官网为欠货可订购状态；新购前必须确认现货、修订版、交期与到手成本，不能承诺比赛前送达。",
+      "RT1062 I/O 为 3.3V 且不耐 5V；3.3V 引脚为输出，不能当作供电输入。",
+      "官方说明排针未预焊，新生应将焊接或代焊、接线时间计入准备计划。",
+      "支持本地图像处理不代表已达成赛题帧率、定位精度或运动速度；需测完整处理和通信链路。",
+      "官方分工况电流不代表包含所有附件的统一功耗，power_w 保留未知。",
+      "人民币完整 BOM 未核验，price_cny 保留未知；不把美元板价换算当作现货套件报价。",
+      "skill_level 与 docs_quality 是人工评审分。"
+    ],
+    "availability_status": "backorder",
+    "io_input_max_v": 3.3
+  },
+  {
+    "id": "openmv-h7-plus",
+    "name": "OpenMV Cam H7 Plus",
+    "vendor": "OpenMV",
+    "summary": "自带 OV5640 摄像头、用 MicroPython 编程的视觉板；适合作为已有设备的颜色、巡线与 AprilTag 原型候选。官方已停止常规生产。",
+    "interfaces": [
+      "UART",
+      "I2C",
+      "SPI",
+      "USB"
+    ],
+    "logic_voltage_v": 3.3,
+    "power_w": null,
+    "price_cny": null,
+    "price_kind": "unknown",
+    "capabilities": [
+      "color_tracking",
+      "line_tracking",
+      "apriltag",
+      "offline_inference"
+    ],
+    "skill_level": 2,
+    "docs_quality": 5,
+    "evidence": [
+      {
+        "id": "openmv-official-hardware",
+        "kind": "official",
+        "title": "OpenMV Cam H7 Plus 官方产品与电气说明",
+        "url": "https://openmv.io/products/openmv-cam-h7-plus",
+        "claim": "官方列出 USB、SPI、I2C、异步串行接口，I/O 输出为 3.3V；随板为 OV5640 摄像头。",
+        "field": "interfaces,logic_voltage_v,summary,io_input_max_v",
+        "accessed_at": "2026-10-24",
+        "status": "verified",
+        "excerpt": "All I/O pins output 3.3V"
+      },
+      {
+        "id": "openmv-official-image-api",
+        "kind": "official",
+        "title": "OpenMV Image API：颜色、直线与 AprilTag",
+        "url": "https://docs.openmv.io/v5.0.0/library/omv.image.Image.html",
+        "claim": "官方本地图像 API 提供颜色阈值连通域、阈值像素直线回归与 AprilTag 检测；这是软件能力证据，未保证本赛题帧率或精度。",
+        "field": "capabilities",
+        "accessed_at": "2026-10-24",
+        "status": "verified",
+        "excerpt": "find_blobs; get_regression; find_apriltags"
+      },
+      {
+        "id": "openmv-official-lifecycle",
+        "kind": "official",
+        "title": "OpenMV H7 Plus 产品生命周期说明",
+        "url": "https://openmv.io/products/openmv-cam-h7-plus",
+        "claim": "官方称该版本已不再生产，仍接受定制批量订单；页面保留作资料用途。采购前必须确认库存与供货。",
+        "field": "caveats",
+        "accessed_at": "2026-10-24",
+        "status": "verified",
+        "excerpt": "We are no longer producing this version"
+      },
+      {
+        "id": "openmv-community-apriltag-pipeline",
+        "kind": "community",
+        "title": "Higher fps from OpenMV Cam H7 plus and MT9V034（第一人称工程记录）",
+        "url": "https://forums.openmv.io/t/higher-fps-from-openmv-cam-h7-plus-and-mt9v034/5585",
+        "claim": "作者 Priyanka 描述加入 AprilTag 计算和 ROS 发布后帧率下降；讨论涉及分辨率、传感器与 readout control。可生成验证清单，不能作为统一规格或本项目实测。",
+        "field": "engineering_experience",
+        "accessed_at": "2026-10-24",
+        "status": "needs_verification",
+        "excerpt": "the fps drops down to ~30 fps"
+      }
+    ],
+    "caveats": [
+      "官方已停止常规生产；如需新购，先确认供货、具体板型及是否原厂。",
+      "logic_voltage_v 表示 I/O 输出电平，不能当作 VIN；部分引脚模式的耐压另有例外。",
+      "官方给出的不同工况电流不能压成全套硬件统一功耗，power_w 保留未知。",
+      "算法 API 可用不等于达成指定帧率、距离、光照、运动速度或识别精度；需用实际赛场条件验证。",
+      "本地视觉运行前需预装固件与脚本；offline_inference 只表示运行时有本地处理路径。",
+      "skill_level 与 docs_quality 是项目人工评审分，不是制造商指标。"
+    ],
+    "availability_status": "discontinued",
+    "io_input_max_v": 5.0
+  },
+  {
+    "id": "maix-bit-k210",
+    "name": "Sipeed Maix Bit（K210）",
+    "vendor": "Sipeed",
+    "summary": "K210 双核 RISC-V 视觉开发板；官方旧版 MaixPy 文档提供本地颜色处理与 KPU 检测路径。相机和屏幕取决于购买套装。",
+    "interfaces": [
+      "UART",
+      "I2C",
+      "SPI",
+      "USB"
+    ],
+    "logic_voltage_v": null,
+    "power_w": null,
+    "price_cny": null,
+    "price_kind": "unknown",
+    "capabilities": [
+      "color_tracking",
+      "object_detection",
+      "offline_inference"
+    ],
+    "skill_level": 3,
+    "docs_quality": 3,
+    "evidence": [
+      {
+        "id": "maix-official-board",
+        "kind": "official",
+        "title": "Sipeed Maix Bit 官方板卡介绍",
+        "url": "https://wiki.sipeed.com/soft/maixpy/en/develop_kit_board/maix_bit.html",
+        "claim": "官方板卡页确认双核 RISC-V、板载存储以及套装摄像头信息。",
+        "field": "summary",
+        "accessed_at": "2026-10-24",
+        "status": "verified",
+        "excerpt": "Dual-core 64bit RISC-V / 400MHz"
+      },
+      {
+        "id": "maix-official-usb",
+        "kind": "official",
+        "title": "Sipeed Maix-Bit Specifications v2.0",
+        "url": "https://dl.sipeed.com/fileList/MAIX/HDK/Sipeed-Maix-Bit/Specifications/Sipeed%20Maix-Bit%20Specifications_EN%20V2.0.pdf",
+        "claim": "官方 PDF 首页说明 USB Type-C 下载电路；此处 USB 指板级下载连接，不表示 K210 原生 USB 外设。首次读取成功，后续分页请求超时，未据此填入 GPIO 电压。",
+        "field": "interfaces",
+        "accessed_at": "2026-10-24",
+        "status": "verified",
+        "excerpt": "Download circuit"
+      },
+      {
+        "id": "maix-official-peripherals",
+        "kind": "official",
+        "title": "MaixPy v1 K210 外设文档入口与 UART API",
+        "url": "https://wiki.sipeed.com/soft/maixpy/en/api_reference/machine/uart.html",
+        "claim": "K210 的 MaixPy v1 文档提供 UART，并在同一文档树列出 I2C 与 SPI；引脚需经 FPIOA 配置，不能把可映射等同同时无冲突。",
+        "field": "interfaces",
+        "accessed_at": "2026-10-24",
+        "status": "verified",
+        "excerpt": "There are 3 uarts in k210"
+      },
+      {
+        "id": "maix-official-color",
+        "kind": "official",
+        "title": "MaixPy v1 image 机器视觉 API",
+        "url": "https://wiki.sipeed.com/soft/maixpy/en/api_reference/machine_vision/image/image.html",
+        "claim": "旧版官方 API 给出板上摄像头循环和绿色色块检测例程。未以新版 MaixCAM 文档替代 K210 证据。",
+        "field": "capabilities",
+        "accessed_at": "2026-10-24",
+        "status": "verified",
+        "excerpt": "Routine 1: Find green"
+      },
+      {
+        "id": "maix-official-kpu",
+        "kind": "official",
+        "title": "MaixPy v1 KPU API",
+        "url": "https://wiki.sipeed.com/soft/maixpy/en/api_reference/Maix/kpu.html",
+        "claim": "官方文档给出从 Flash 加载模型与 YOLO2 推理接口；需要兼容模型、内存与固件，未核验任意目标或帧率。",
+        "field": "capabilities",
+        "accessed_at": "2026-10-24",
+        "status": "verified",
+        "excerpt": "Run face detection"
+      }
+    ],
+    "caveats": [
+      "K210 使用 MaixPy v1；新版 MaixPy / MaixCAM 示例不能直接视为本板可运行。",
+      "K210 本体无原生 USB 外设，板级 USB 用于下载与串口桥；不应推荐其作为通用 USB 主机。",
+      "GPIO 电压未在本轮完整读取并交叉核验，logic_voltage_v 为未知；连接前查具体修订版原理图。",
+      "颜色等视觉函数依赖固件功能集，minimum 固件可能缺失；相机需与引脚映射匹配。",
+      "采购成本必须核对相机、屏幕、电源、线材的完整 BOM。",
+      "本地运行前需预置模型/固件；未核验 AprilTag 与巡线能力，不将其列入已核验能力。",
+      "skill_level 与 docs_quality 是人工评审分。"
+    ],
+    "availability_status": "unknown"
+  },
+  {
+    "id": "esp32-s3-eye",
+    "name": "ESP32-S3-EYE v2.2",
+    "vendor": "Espressif",
+    "summary": "带 OV2640 摄像头、LCD 和麦克风的 ESP32-S3 视觉开发板，官方 ESP-WHO 教程提供板上检测示例。",
+    "interfaces": [
+      "USB"
+    ],
+    "logic_voltage_v": null,
+    "power_w": null,
+    "price_cny": null,
+    "price_kind": "unknown",
+    "capabilities": [
+      "object_detection",
+      "offline_inference"
+    ],
+    "skill_level": 4,
+    "docs_quality": 4,
+    "evidence": [
+      {
+        "id": "esp-eye-official-hardware",
+        "kind": "official",
+        "title": "Espressif ESP32-S3-EYE v2.2 官方指南",
+        "url": "https://docs.espressif.com/projects/esp-board-manager/en/latest/references/boards/esp32_s3_eye.html",
+        "claim": "指南确认 OV2640、LCD、Micro-USB 供电及芯片通信；板上 SPI LCD 等内部连接不视为可自由外接的接口。",
+        "field": "summary,interfaces",
+        "accessed_at": "2026-10-24",
+        "status": "verified",
+        "excerpt": "A Micro-USB port used for 5 V power supply"
+      },
+      {
+        "id": "esp-eye-official-local-ai",
+        "kind": "official",
+        "title": "Espressif Developer Portal：ESP-WHO Get started（2026-05-28）",
+        "url": "https://developer.espressif.com/blog/2026/05/esp-who-get-started/",
+        "claim": "官方教程在 ESP32-S3-EYE 上运行 ESP-WHO，并说明视觉处理在 SoC 本地执行。object_detection 此处是已有检测框架路径，不保证任意赛题目标。",
+        "field": "capabilities",
+        "accessed_at": "2026-10-24",
+        "status": "verified",
+        "excerpt": "run image processing workloads directly on Espressif SoCs"
+      },
+      {
+        "id": "esp-eye-community-windows-flash",
+        "kind": "community",
+        "title": "ESP-WHO issue #288：恢复固件后 Windows USB 识别异常",
+        "url": "https://github.com/espressif/esp-who/issues/288",
+        "claim": "SamHall 第一人称报告刷写后 Windows USB 连续连接/断开；讨论最后仅怀疑其板卡硬件问题。可提示准备恢复步骤与备用线材，不能推断所有板卡有此缺陷。",
+        "field": "engineering_experience",
+        "accessed_at": "2026-10-24",
+        "status": "needs_verification",
+        "excerpt": "the board is no longer recognized as a USB device"
+      }
+    ],
+    "caveats": [
+      "只将本轮确认可用于外部连接的 USB 写入 interfaces；SoC 自带 UART/I2C/SPI 不代表此板已引出可用接口。",
+      "模块供电 3.3V 不能自动证明全部可连接信号的逻辑电平，logic_voltage_v 保留未知。",
+      "官方教程要求匹配 ESP-IDF / ESP-WHO 版本；本项目尚未执行板卡刷写。",
+      "检测模型、固件与依赖需预先安装，推理可在本地执行；网络传输是可选能力。",
+      "未核验颜色追踪、AprilTag 或巡线的具体板卡示例，因此不列为已核验能力。",
+      "skill_level 与 docs_quality 是人工评审分。"
+    ],
+    "availability_status": "unknown"
+  },
+  {
+    "id": "raspberry-pi-5",
+    "name": "Raspberry Pi 5（需另配摄像头）",
+    "vendor": "Raspberry Pi",
+    "summary": "Linux 单板计算机；官方支持相机软件与 TensorFlow Lite 检测路径，摄像头、电源、存储与散热应单独纳入整机 BOM。",
+    "interfaces": [
+      "UART",
+      "I2C",
+      "SPI",
+      "USB",
+      "CSI"
+    ],
+    "logic_voltage_v": 3.3,
+    "power_w": null,
+    "price_cny": null,
+    "price_kind": "unknown",
+    "capabilities": [
+      "object_detection",
+      "offline_inference"
+    ],
+    "skill_level": 4,
+    "docs_quality": 5,
+    "evidence": [
+      {
+        "id": "pi5-official-product",
+        "kind": "official",
+        "title": "Raspberry Pi 5 官方产品规格",
+        "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+        "claim": "产品页列出 USB、双 MIPI 相机/显示连接器、40-pin 排针与 UART 调试口。电源供给能力不能用作算法实耗。",
+        "field": "summary,interfaces",
+        "accessed_at": "2026-10-24",
+        "status": "verified",
+        "excerpt": "2 × 4-lane MIPI camera/display transceivers"
+      },
+      {
+        "id": "pi5-official-gpio",
+        "kind": "official",
+        "title": "Raspberry Pi 官方 GPIO 文档源",
+        "url": "https://github.com/raspberrypi/documentation/blob/master/documentation/asciidoc/computers/raspberry-pi/gpio-on-raspberry-pi.adoc",
+        "claim": "官方文档确认 GPIO 输出高电平为 3.3V，并列出 SPI、I2C 与串行功能；外设需启用并检查引脚复用。",
+        "field": "logic_voltage_v,interfaces",
+        "accessed_at": "2026-10-24",
+        "status": "verified",
+        "excerpt": "high (3.3V) or low (0V)"
+      },
+      {
+        "id": "pi5-official-camera-detection",
+        "kind": "official",
+        "title": "Raspberry Pi 官方 Camera software 文档",
+        "url": "https://www.raspberrypi.com/documentation/computers/camera_software.html",
+        "claim": "官方介绍在 Raspberry Pi 上构建带 TensorFlow Lite 的 rpicam-detect 并运行相机检测，属于本地软件路径。需要摄像头、兼容模型及依赖，不代表预装即用或已实测 Pi 5 性能。",
+        "field": "capabilities",
+        "accessed_at": "2026-10-24",
+        "status": "verified",
+        "excerpt": "rpicam-detect: Not built by default"
+      }
+    ],
+    "caveats": [
+      "此候选为开发平台而非带摄像头完整视觉套件，价格不能引用裸板价当整机价。",
+      "需另配兼容摄像头和 Pi 5 相机排线、microSD/存储、电源及合适散热。",
+      "官方 5V/5A 供电规格表示供电要求，不能写成恒定 25W 算法功耗。",
+      "3.3V 为 GPIO 逻辑电平，不等于 USB-C 输入电压；严禁把 5V 电源引脚当作 GPIO。",
+      "本地检测前需要安装/构建依赖和下载模型；未验证任务帧率及准确率。",
+      "未核验本板颜色/巡线/AprilTag 的端到端示例，因此本轮能力表保守只列目标检测。",
+      "skill_level 与 docs_quality 是人工评审分。"
+    ],
+    "availability_status": "unknown"
+  }
+]

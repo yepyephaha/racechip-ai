@@ -1,0 +1,80 @@
+{
+  "executed_at": "2026-10-24T18:45:55.308804+08:00",
+  "type": "actual_searchpro_queries",
+  "cases": [
+    {
+      "id": "case-a-electrical",
+      "case_id": "c0526b30-cb99-4484-a885-41740ba35577",
+      "created_at": "2026-10-24T18:46:02.028192+08:00",
+      "search_status": "ok",
+      "request_ids": [
+        "79f146c5-9ddf-49b8-be6e-907b79634029",
+        "6046b276-7b46-465b-88ee-30e045a24878",
+        "7fb2677b-aec0-49b1-9ab4-a197a954c1c3"
+      ],
+      "request_count": 3,
+      "result_count": 30,
+      "claim_status": [
+        "contradicted"
+      ],
+      "matched_originals": 2,
+      "error": null
+    },
+    {
+      "id": "case-b-experience",
+      "case_id": "cb07ce1c-3e6f-410b-b4e7-f37f4f8497a3",
+      "created_at": "2026-10-24T18:46:11.424039+08:00",
+      "search_status": "ok",
+      "request_ids": [
+        "89aa4887-24e9-4437-97c0-24822ab4bda5",
+        "45645322-88ee-49d7-b0a5-cb49c93a4830",
+        "a5ce46d7-20ba-4261-965d-3febb4433651"
+      ],
+      "request_count": 3,
+      "result_count": 30,
+      "claim_status": [
+        "conditions_differ"
+      ],
+      "matched_originals": 3,
+      "error": null
+    },
+    {
+      "id": "case-c-lifecycle",
+      "case_id": "357051ca-5404-41a9-b2ca-7f8c6c81a2c2",
+      "created_at": "2026-10-24T18:46:19.375975+08:00",
+      "search_status": "ok",
+      "request_ids": [
+        "c13de63f-9b05-442d-a8a8-6eb23e750fb7",
+        "dd764ae7-27ca-46e7-8f48-3ba21da5b04c",
+        "ff0b46eb-aa98-45a6-983b-152b708e4788"
+      ],
+      "request_count": 3,
+      "result_count": 30,
+      "claim_status": [
+        "supported"
+      ],
+      "matched_originals": 3,
+      "error": null
+    }
+  ],
+  "new_request_count": 9,
+  "recalculation": {
+    "new_requests": 0,
+    "changes": [
+      {
+        "field": "profile.available_hours",
+        "before": 6.0,
+        "after": 12.0
+      },
+      {
+        "field": "profile.existing_hardware",
+        "before": [],
+        "after": [
+          "openmv-h7-plus"
+        ]
+      }
+    ],
+    "claim_status_unchanged": true
+  },
+  "successful_question_count": 3
+}

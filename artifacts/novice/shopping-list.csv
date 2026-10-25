@@ -1,0 +1,10 @@
+﻿建议采购项,数量,单位,规格,已有,用途,商品来源,SKU状态
+Arduino UNO R3 开发板（已焊排针，配USB-B下载线）,1,个,Arduino UNO R3，ATmega328P，已焊接排针，自带USB-B口，配USB-A转USB-B下载线,False,运行C循迹例程，读红外DO并输出电机控制信号,https://item.jd.com/10036464520664.html | https://thinkrobotics.com/es/products/arduino-uno-r3-compatible-board-with-cable,待核对
+4路TCRT5000数字红外循迹传感器模块,1,个,4路TCRT5000红外反射传感器，5V供电，数字量DO输出，排针，带电位器调节,False,检测白纸黑胶带并输出高低电平给UNO,https://item.jd.com/10124277800959.html,待核对
+L298N双H桥电机驱动模块,1,个,L298N双H桥模块，逻辑5V，驱动端接6V，带端子/排针，断开板载5V跳线、由移动电源另供UNO,False,接收UNO信号驱动二驱6V TT电机正反转,https://www.theengineerstore.in/products/l298-motor-driver-module | https://item.jd.com/10215351836748.html,待核对
+二驱智能小车底盘套装（2个6V TT减速电机、65mm轮、万向轮、亚克力板、螺丝）,1,套,二驱亚克力底盘，2个TT/130类6V直流减速电机，2个橡胶轮直径65mm且轴孔匹配电机轴，1个万向轮，固定螺丝柱与螺母,False,机械载体，二驱带动轮子沿线走,https://shop.roboorion.com/products/1331-2wd-smart-robot-car-chassis-kit-robo-orion-bangladesh.html | https://probots.co.in/2wd-clear-acrylic-smart-robot-chassis-car-kit.html,待核对
+4节5号AA电池盒（带开关与输出导线，6V）,1,个,4节AA（5号）电池盒，输出6V，一体拨动开关，带正负极输出导线，不含电池本体时需另买4节AA电池,False,给L298N驱动端供匹配6V电机的电源，带开关可断电,https://item.jd.com/100118039592.html | https://item.jd.com/10127410248944.html,待核对
+4节5号AA碱性电池（1.5V每节）,4,节,4节AA 1.5V碱性电池，用于电池盒组成6V,False,作为AA电池盒的电池本体实际供电给电机,https://item.jd.com/10033378872321.html,待核对
+成品5V USB移动电源（≥1A输出，带锂电保护）,1,个,成品USB移动电源，USB-A口5V输出≥1A，自带锂电池保护，配USB-A转USB-B线给UNO,False,独立运行时给UNO与红外模块供稳定5V，不靠电脑USB作最终供电,https://item.jd.com/1194512.html | https://item.jd.com/10034203233104.html,待核对
+40P杜邦线套装（公对公、公对母、母对母各一排）,1,套,40根杜邦线，公对公、公对母、母对母各≥10根，彩虹排线,False,连接UNO、红外DO、L298N与电源信号，免焊接插好即用,https://item.jd.com/10045315413462.html | https://www.ebuy7.com/zh/yuxian-40p-dupont-wire-female-to-bus-pin-plug-male-connecting-rehearsal-10-20cm.html,待核对
+迷你十字螺丝刀与尖嘴钳工具套,1,套,迷你十字螺丝刀、尖嘴钳，用于底盘电机传感器螺丝固定,False,完成用户要求的螺丝装配，不焊接,https://item.jd.com/100024641328.html | https://item.jd.com/10078020741376.html,待核对

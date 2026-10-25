@@ -1,0 +1,2462 @@
+# RaceChip AI 真实查询 A
+
+执行时间：2026-10-24T18:46:02.028192+08:00
+
+模式：LIVE / 元宝 SearchPro TC3；这是已保存实录，打开文件不重新搜索。
+
+## 原问题
+
+机器人做颜色识别，主控通过 UART 向 OpenMV Cam RT1062 的数字 UART RX 引脚输出 5V 信号，没有电平转换。有人说这块板可以安全直连5V，请核查官方资料并给出排除理由。
+
+## 原说法与结论
+
+OpenMV Cam RT1062 可以安全直接接收5V UART数字信号。
+
+证据冲突
+
+本型号官方标注 I/O 输入耐受上限 3.3V；直接输入 5V 超出声明范围，不能按安全兼容接线。
+
+## 完整结构化结果
+
+```json
+
+{
+  "case_id": "c0526b30-cb99-4484-a885-41740ba35577",
+  "created_at": "2026-10-24T18:46:02.028192+08:00",
+  "mode": "live",
+  "input_text": "机器人做颜色识别，主控通过 UART 向 OpenMV Cam RT1062 的数字 UART RX 引脚输出 5V 信号，没有电平转换。有人说这块板可以安全直连5V，请核查官方资料并给出排除理由。",
+  "problem": {
+    "title": "颜色识别 / 色块跟踪 · 选型调查",
+    "tasks": [
+      "color_tracking"
+    ],
+    "requirements": [
+      {
+        "text": "颜色识别 / 色块跟踪",
+        "kind": "task",
+        "source_quote": "颜色"
+      },
+      {
+        "text": "接口 UART",
+        "kind": "hard",
+        "source_quote": "通过 UART"
+      }
+    ],
+    "ambiguities": [
+      "P0 使用关键词与单位规则解析；原题限定器件、测量条件、评分细则须逐条人工复核。"
+    ],
+    "parser": "deterministic-rules-v1",
+    "unmodeled_constraints": [],
+    "voltage_conflict": false
+  },
+  "constraints": {
+    "budget_cny": null,
+    "max_power_w": null,
+    "required_interfaces": [
+      "UART"
+    ],
+    "logic_voltage_v": null,
+    "offline_required": true,
+    "banned_hardware": [],
+    "only_existing_hardware": false
+  },
+  "search": {
+    "provider": "tencent-searchpro",
+    "mode": "live",
+    "status": "ok",
+    "queries": [
+      "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation",
+      "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件",
+      "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测"
+    ],
+    "results": [
+      {
+        "id": "search-0-0",
+        "title": "OpenMV Cam RT1062",
+        "url": "https://openmv.io/products/openmv-cam-rt?srsltid=AfmBOorMjCmNBP1AZA_3V53JQMS-8N7Mg5ljP10ljHe4SLFoCauGWzZN",
+        "snippet": "OpenMV Cam RT1062 OpenMV。OpenMV Cam RT1062 $165.00 USD Shipping calculated at checkout. OpenMV does not pay for import taxes and duties. You are expected pay for customs clearance on all orders you purchase. The OpenMV Cam headers do not come pre-soldered. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and its I/O pins in Python. You can easily trigger taking pictures and video on external ...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation"
+      },
+      {
+        "id": "search-0-1",
+        "title": "OpenMV Cam RT1062",
+        "url": "https://openmv.io/products/openmv-cam-rt?utm_source=chatgpt.com",
+        "snippet": "OpenMV Cam RT1062 OpenMV。 Do not draw more than 250mA from your OpenMV Cam's 3.3V rail. Power Consumption Deep Sleep: 30µA @ 3.7V (Powered only via LiPo Battery) Deep Sleep: 1.6mA @ 5V Idle: 100mA @ 5V Active: 130mA @ 5V Dimensions Length: 45 mm Width: 36 mm Height: 29 mm Temperature Range Storage Temperature: -25°C to 85°C Operating Temperature: 0°C to 70°C Shipping Information Country of Origin: China HS Code: 8529.90.4200 Weight: 20 g UPC: 712179433410 (V4), 608275911122 (V5), 602772227168 (V6) SKU: OMV-CAM-RT1062-V1 (V4), OMV-CAM-RT1062-V2 (V5), OMV-CAM-RT1062-V3 (V6) ECCN: 5A992.C 3D Model OpenMV Cam RT1062 Model (.step) Case OpenMV Cam RT1062 V5/V6 3D Printable Case (.stl) OpenMV Cam RT1062 V4 3D Printable Case (.stl) Mount Tripod 1/4-20 Styled Board Mount (.stl/.step) Tripod 1/4-20 ...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation"
+      },
+      {
+        "id": "search-0-2",
+        "title": "OpenMV Cam RT1062 Camera for Machine Vision",
+        "url": "https://www.arduitronics.com/product/6172/openmv-cam-rt1062-camera-for-machine-vision",
+        "snippet": "OpenMV Cam RT1062 Camera for Machine Vision Ardui Tronics。 Most simple algorithms will run about 40 FPS on QVGA (320x240) resolutions and below. If you want to use more specialized lenses with your image sensor you can easily buy and attach them yourself A LiPo battery connector compatible with 3.7V LiPo batteries commonly sold online for hobbyist robotic applications with battery charging support via USB 100 mA Fast Charge Current With TVS Protection An ARM 10-pin JTAG Header Compatible with SEGGER J-Link Devices for debugging and programming With EMI Filtering and TVS protection External 5V VIN with reverse supply protection With TVS Protection Documents: OpenMV Cam RT1062 Model OpenMV Cam Base Schematic OpenMV Cam OV5640 Schematic Processor Datasheet: MIMXRT106FCVL5B Camera Datasheet: O...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation"
+      },
+      {
+        "id": "search-0-3",
+        "title": "OpenMV Cam RT1062",
+        "url": "https://singtown.com/eg/store/openmv-cam-rt1062",
+        "snippet": "OpenMV Cam RT1062。 It can also find non-infinite-length line segments. Watch our video here: /learn/50009 Circle Detection You can easily detect circles in the image using OpenMV. Rectangle Detection OpenMV can also detect rectangles, using the square detection code from the AprilTag library. Template Matching You can use OpenMV template matching to detect whether there are template-like images in the field of view. For example, template matching can be used to find marks on PCBs or read known numbers on displays. Image Capture You can use OpenMV to capture RGB565/grayscale BMP/JPG/PPM/PGM images. You can directly control how to capture images in Python scripts. Most importantly, using machine vision algorithms, you can draw lines, draw characters, and then save them. Video Recording You c...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation"
+      },
+      {
+        "id": "search-0-4",
+        "title": "OpenMV Cam RT1062",
+        "url": "https://openmv.io/zh/collections/products/products/openmv-cam-rt",
+        "snippet": "OpenMV Cam RT1062 OpenMV。My cart Price $165.00 USD Shipping calculated at checkout. OpenMV does not pay for import taxes and duties. You are expected pay for customs clearance on all orders you purchase. Available for Backorder Quantity Couldn't load pickup availability Refresh Add to cart The OpenMV Cam headers do not come pre-soldered. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and it...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation"
+      },
+      {
+        "id": "search-0-5",
+        "title": "OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython",
+        "url": "https://www.cnx-software.com/?p=120027/",
+        "snippet": "OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython CNX Software。OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython Following the success of the OpenMV Cam H7 and the original OpenMV VGA Camera, OpenMV recently launched the OpenMV CAM RT1062 powered by NXP’s RT1060 processor. This new camera module integrates a range of features, including a high-speed USB-C (480Mbps) interface, an accelerometer, and a LiPo connector for portability. Similar to its predecessor, this camera module also features a removable camera system, and it is built around the OV5640 image sensor which is more powerful in terms of resolution and versatility. However, the previous Omnivision OV7725 sensor, used in the OpenMV Cam H7 has a far superior frame rate and low-l...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation"
+      },
+      {
+        "id": "search-0-6",
+        "title": "OpenMV Cam RT1062: Projects, Specs & Setup",
+        "url": "https://rottenwifi.com/openmv-cam-rt1062-diy-projects-and-ideas-for-makers/?__v=PY-win",
+        "snippet": "OpenMV Cam RT1062: Projects, Specs & Setup RottenWiFi。 Random freezes, missing sound and display glitches usually trace back to one bad driver. Find and replace yours safely.Free scan · under a minuteFind the Right Drivers → Special offer. See more information about Outbyte and uninstall instructions. Please review EULA and Privacy policy. Choose the camera, lens, and mounting for the scene The RT1062’s OV5640 sensor is on a removable camera carrier. OpenMV lists other sensor modules and an M12 lens interface, giving a build some flexibility in sensor and optics choices. Compare field of view, resolution, rolling-shutter behavior, working distance, and lighting needs with the scene you need to capture before selecting a module or lens. The quick reference identifies the supplied OV5640 as ...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation"
+      },
+      {
+        "id": "search-0-7",
+        "title": "OpenMV Cam RT1062: Projects, Specs & Setup",
+        "url": "https://rottenwifi.com/openmv-cam-rt1062-diy-projects-and-ideas-for-makers",
+        "snippet": "OpenMV Cam RT1062: Projects, Specs & Setup RottenWiFi。 The quick reference identifies the supplied OV5640 as a rolling-shutter sensor; it does not establish that another module will have the same characteristics. OpenMV RT1062 quick reference OpenMV product page The board also has a microSD socket for projects that need removable storage. OpenMV links printable cases and tripod- or GoPro-style mounts. Treat these as optional, project-specific choices: a fixed robot installation and a portable camera build may need different enclosures and mounting hardware. Rank #4 Full HD 1080P 150° Wide View Rear Camera 20ft for AZDOME M550, M550 Max Dash Cam 【Compatibility】This 6 pin rear camera is only suitable for AZDOME M550 & M550 Max dash cam 【HD 1080P Recording】The rear car camera has excellent im...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation"
+      },
+      {
+        "id": "search-0-8",
+        "title": "3.4. 接腳與周邊裝置",
+        "url": "https://docs.openmv.io/dev/zh_TW/openmvcam/tutorial/hardware/foundations/pins-and-peripherals.html",
+        "snippet": "3.4. 接腳與周邊裝置 OpenMV文档。表格請見 OpenMV Cam 快速參考。 3.4.3. 板子差異# 有幾項細節因板而異,應始終對照快速參考查證,而不要從另一塊板子的情況去推測: 電壓耐受度。 有些 cam 具備 5 V 耐受的 I/O 接腳(可直接施加 5 V 訊號而不致損壞);其他則以 3.3 V 或 1.8 V 運作其 I/O,凡是高於該值的訊號都需要準位轉換器。把 5 V 來源接到不耐受的接腳上可能會損壞晶片。 ADC 參考電壓。 ADC 視為滿刻度的電壓取決於板子的 I/O 供電。read_u16() 一律回傳 0..65535,但 65535 所代表的電壓就是該板子的參考電壓。 驅動能力。 GPIO 接腳能提供或吸收的電流有限 —— 通常為數十毫安。足以透過電阻驅動一顆小 LED;但不足以驅動馬達、蜂鳴器或任何電感性負載。任何較重的負載請改用外部驅動元件(電晶體、MOSFET、H 橋)。 OpenMV Cam 快速參考 提供每塊板子的確切數值。...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation"
+      },
+      {
+        "id": "search-0-9",
+        "title": "OpenMV Cam RT1062: Affordable Innovation in Machine Vision Now Available for 130",
+        "url": "https://www.electronics-lab.com/openmv-cam-rt1062-affordable-innovation-in-machine-vision-now-available-for-130/",
+        "snippet": "OpenMV Cam RT1062: Affordable Innovation in Machine Vision Now Available for $130 Electronics-Lab。The OpenMV CAM RT1062 is a new camera from OpenMV that uses the powerful NXP RT1060 processor. You can write programs for it using MicroPython, a beginner-friendly version of Python. The OpenMV CAM RT1062 is a new camera from OpenMV that uses the powerful NXP RT1060 processor. You can write programs for it using MicroPython, a beginner-friendly version of Python. It has a fast USB-C connection, making it easy to connect to other devices. It also comes with an accelerometer, a sensor that can detect movement or tilting, which can be useful for keeping pictures steady. Another feature is the LiPo connector, allowing it to be powered by a rechargeable battery for portability. Overall, it’s a hand...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation"
+      },
+      {
+        "id": "search-1-0",
+        "title": "OpenMV Cam RT1062",
+        "url": "https://openmv.io/products/openmv-cam-rt?srsltid=AfmBOoqxRbENlMkDcdq0AryvOct1sUXDmFgKrifUNLAfwiAjPS1cL6O2",
+        "snippet": "OpenMV Cam RT1062 OpenMV。View in space View in space View in space OpenMV Cam RT1062 Revision R4 R5 R4 R5 24 In stock The OpenMV Cam headers do not come pre-soldered. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and its I/O pins in Python. You can easily trigger taking pictures and video on external events or execute machine vision algorithms to figure out h... Read more Specs PLEASE NOTE...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件"
+      },
+      {
+        "id": "search-1-1",
+        "title": "OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython",
+        "url": "https://www.cnx-software.com/?p=120027/",
+        "snippet": "OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython CNX Software。OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython Following the success of the OpenMV Cam H7 and the original OpenMV VGA Camera, OpenMV recently launched the OpenMV CAM RT1062 powered by NXP’s RT1060 processor. This new camera module integrates a range of features, including a high-speed USB-C (480Mbps) interface, an accelerometer, and a LiPo connector for portability. Similar to its predecessor, this camera module also features a removable camera system, and it is built around the OV5640 image sensor which is more powerful in terms of resolution and versatility. However, the previous Omnivision OV7725 sensor, used in the OpenMV Cam H7 has a far superior frame rate and low-l...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件"
+      },
+      {
+        "id": "search-1-2",
+        "title": "OpenMV Cam RT1062: Projects, Specs & Setup",
+        "url": "https://rottenwifi.com/openmv-cam-rt1062-diy-projects-and-ideas-for-makers",
+        "snippet": "OpenMV Cam RT1062: Projects, Specs & Setup RottenWiFi。 The quick reference identifies the supplied OV5640 as a rolling-shutter sensor; it does not establish that another module will have the same characteristics. OpenMV RT1062 quick reference OpenMV product page The board also has a microSD socket for projects that need removable storage. OpenMV links printable cases and tripod- or GoPro-style mounts. Treat these as optional, project-specific choices: a fixed robot installation and a portable camera build may need different enclosures and mounting hardware. Rank #4 Full HD 1080P 150° Wide View Rear Camera 20ft for AZDOME M550, M550 Max Dash Cam 【Compatibility】This 6 pin rear camera is only suitable for AZDOME M550 & M550 Max dash cam 【HD 1080P Recording】The rear car camera has excellent im...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件"
+      },
+      {
+        "id": "search-1-3",
+        "title": "OpenMV Cam RT1062: Projects, Specs & Setup",
+        "url": "https://rottenwifi.com/openmv-cam-rt1062-diy-projects-and-ideas-for-makers/?__v=PY-win",
+        "snippet": "OpenMV Cam RT1062: Projects, Specs & Setup RottenWiFi。 Random freezes, missing sound and display glitches usually trace back to one bad driver. Find and replace yours safely.Free scan · under a minuteFind the Right Drivers → Special offer. See more information about Outbyte and uninstall instructions. Please review EULA and Privacy policy. Choose the camera, lens, and mounting for the scene The RT1062’s OV5640 sensor is on a removable camera carrier. OpenMV lists other sensor modules and an M12 lens interface, giving a build some flexibility in sensor and optics choices. Compare field of view, resolution, rolling-shutter behavior, working distance, and lighting needs with the scene you need to capture before selecting a module or lens. The quick reference identifies the supplied OV5640 as ...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件"
+      },
+      {
+        "id": "search-1-4",
+        "title": "OpenMV Cam RT1062: Affordable Innovation in Machine Vision Now Available for 130",
+        "url": "https://www.electronics-lab.com/openmv-cam-rt1062-affordable-innovation-in-machine-vision-now-available-for-130/",
+        "snippet": "OpenMV Cam RT1062: Affordable Innovation in Machine Vision Now Available for $130 Electronics-Lab。The OpenMV CAM RT1062 is a new camera from OpenMV that uses the powerful NXP RT1060 processor. You can write programs for it using MicroPython, a beginner-friendly version of Python. The OpenMV CAM RT1062 is a new camera from OpenMV that uses the powerful NXP RT1060 processor. You can write programs for it using MicroPython, a beginner-friendly version of Python. It has a fast USB-C connection, making it easy to connect to other devices. It also comes with an accelerometer, a sensor that can detect movement or tilting, which can be useful for keeping pictures steady. Another feature is the LiPo connector, allowing it to be powered by a rechargeable battery for portability. Overall, it’s a hand...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件"
+      },
+      {
+        "id": "search-1-5",
+        "title": "OpenMV Cam RT1062 Camera for Machine Vision",
+        "url": "https://www.arduitronics.com/product/6172/openmv-cam-rt1062-camera-for-machine-vision",
+        "snippet": "OpenMV Cam RT1062 Camera for Machine Vision Ardui Tronics。 Most simple algorithms will run about 40 FPS on QVGA (320x240) resolutions and below. If you want to use more specialized lenses with your image sensor you can easily buy and attach them yourself A LiPo battery connector compatible with 3.7V LiPo batteries commonly sold online for hobbyist robotic applications with battery charging support via USB 100 mA Fast Charge Current With TVS Protection An ARM 10-pin JTAG Header Compatible with SEGGER J-Link Devices for debugging and programming With EMI Filtering and TVS protection External 5V VIN with reverse supply protection With TVS Protection Documents: OpenMV Cam RT1062 Model OpenMV Cam Base Schematic OpenMV Cam OV5640 Schematic Processor Datasheet: MIMXRT106FCVL5B Camera Datasheet: O...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件"
+      },
+      {
+        "id": "search-1-6",
+        "title": "OpenMV Cam RT1062 Industrial Smart AI Camera",
+        "url": "https://openelab.io/it/products/openmv-cam-rt1062-industrial-smart",
+        "snippet": "OpenMV Cam RT1062 Industrial Smart AI Camera OpenELAB。OpenMV Cam RT1062 Industrial Smart AI Camera SKU: OpenMV-CamRT1062 Regular price 168,30 € Sale price 179,95 € incl. VAT excl. VAT The OpenMV Cam is a small, low-power microcontroller board designed to simplify the implementation of machine vision applications in real-world scenarios. Rather than using C/C++, the board is programmed using high-level Python scripts via the MicroPython Operating System. This approach significantly eases the management of complex machine vision algorithm outputs and the handling of high-level data structures. Despite the simplified programming interface, users maintain total control over the hardware and its I/O pins. The platform allows you to trigger internal image and video capture based on external even...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件"
+      },
+      {
+        "id": "search-1-7",
+        "title": "OpenMV Cam RT1062",
+        "url": "https://www.electropi.in/drone-ebike-3d-printer/cameras/openmv-cam-rt1062?limit=100",
+        "snippet": "OpenMV Cam RT1062 Electropi。OpenMV Cam RT1062 Product Code: EPI24997 Availability: 10 0 reviews Write a review The OpenMV Cam RT1062 is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and its I/O pins in Python. You can easily trigger taking pictures and video on external events or execute machine vision algorithms to figure out how to control your I/O pins. The RT1062 ARM Cortex M7 processor runs at 600 MHz ...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件"
+      },
+      {
+        "id": "search-1-8",
+        "title": "OpenMV Cam RT1062 Camera for Machine Vision",
+        "url": "https://www.dfrobot.com/product-2804.html?srsltid=AfmBOopTGc4NN5TWwHN2EtY7de0dZwkyV9OV4TMitJwYwKErXOyQzlWA",
+        "snippet": "OpenMV Cam RT1062 Camera for Machine Vision DFRobot。OpenMV Cam RT1062 Camera for Machine Vision $140.00 SKU: DFR1082 A compact microcontroller board with a camera, supporting machine vision applications via Python scripts. Features include USB, WiFi, Bluetooth, and various I/O interfaces. Introduction OpenMV Cam RT1062 is a compact, low-power microcontroller board with camera, facilitates the seamless implementation of real-world applications using machine vision. Programming of the OpenMV Cam is accomplished through high-level Python scripts, courtesy of the MicroPython Operating System, as opposed to C/C++. This approach simplifies the handling of complex outputs from machine vision algorithms and the manipulation of high-level data structures. Despite this, total control over the OpenMV...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件"
+      },
+      {
+        "id": "search-1-9",
+        "title": "OpenMV Cam RT1062 SingTown 5MP High Definition Image Detection Industrial AI Camera",
+        "url": "https://www.duino.lk/?p=75542",
+        "snippet": "OpenMV Cam RT1062 SingTown 5MP High Definition Image Detection Industrial AI Camera。OpenMV Cam RT1062 SingTown 5MP High Definition Image Detection Industrial AI Camera SKU: ML2304 OpenMV Cam RT1062 SingTown 5MP High Definition Image Detection Industrial AI Camera * මෙම අයිතමය ඔබගේ අවශ්‍යතාවය අනුව දින 14-21 අතර ගෙන්වා දෙන බැවින් අපවෙත whatsapp පණිවිඩයක් යොමුකරන්න. features: The RT1062 ARM Cortex M7 processor running at 600 MHz with 32MBs SDRAM + 1MB of SRAM and 16 MB of program/storage flash. All I/O pins output 3.3V and are 3.3V tolerant. The processor has the following I/O interfaces: 1.5A current limited. With EMI Filtering and TVS protection. With EMI Filtering and TVS protection. One I/O pin for low power wakeup. There is also a pin for device power button ON/OFF support. With EMI Filtering and TVS protecti...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件"
+      },
+      {
+        "id": "search-2-0",
+        "title": "OpenMV Cam RT failing on multiple occasions",
+        "url": "https://forums.openmv.io/t/openmv-cam-rt-failing-on-multiple-occasions/10976",
+        "snippet": "OpenMV Cam RT failing on multiple occasions。OpenMV Cam RT failing on multiple occasions post by yshaalan on May 6, 2025 yshaalan May 2025 Hi, we are using OpenMV RT1062 Cameras in our robot. we have 2 of the R4 type. The first camera failed a week ago when it stopped detecting on our laptops and started heating up. With a voltmeter it outputs 1v on the 3v3 rail. It heats up from the bottom side and the led glows dimly green and red. The second camera failed yesterday when it would run any code that didn’t use the image sensor (eg.blink sketches). But any sketch that uses the sensor would fail with the error: RuntimeError: Frame capture has timed out. We tried replacing the image sensor with others we have from the other RT and previous H7 units. For Camera 1 we have tried: Isolating the sh...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测"
+      },
+      {
+        "id": "search-2-1",
+        "title": "Broken tool detection with machine vision",
+        "url": "https://forums.parallax.com/discussion/comment/1570000",
+        "snippet": "Broken tool detection with machine vision。 I have to buy one of those OpenMV cameras. I think I can get much better lighting conditions with an LED backlight tile reducing background noise and shadows. ManAtWork Posts: 2,262 2025-10-29 09:14 Errr, next question: which camera module would suit my application best? It would be good to have 3 IO-pins, two inputs for the commands \"learn\" and \"check\" and one output for \"good/bad\". This way I can interface it to the CNC controller without having to send serial data over USB. Most camera modules have the two IO pin headers JP1 and JP2. The description says the IO pins drive 3.3V and are 5V tolerant. I can connect optocouplers to interface to the 24V signals of the CNC controler. But which pins can I use as general purpose IOs? The RT1062 has a lo...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测"
+      },
+      {
+        "id": "search-2-2",
+        "title": "OpenMV Cam RT1062: Affordable Innovation in Machine Vision Now Available for 130",
+        "url": "https://www.electronics-lab.com/openmv-cam-rt1062-affordable-innovation-in-machine-vision-now-available-for-130/",
+        "snippet": "OpenMV Cam RT1062: Affordable Innovation in Machine Vision Now Available for $130 Electronics-Lab。The OpenMV CAM RT1062 is a new camera from OpenMV that uses the powerful NXP RT1060 processor. You can write programs for it using MicroPython, a beginner-friendly version of Python. The OpenMV CAM RT1062 is a new camera from OpenMV that uses the powerful NXP RT1060 processor. You can write programs for it using MicroPython, a beginner-friendly version of Python. It has a fast USB-C connection, making it easy to connect to other devices. It also comes with an accelerometer, a sensor that can detect movement or tilting, which can be useful for keeping pictures steady. Another feature is the LiPo connector, allowing it to be powered by a rechargeable battery for portability. Overall, it’s a hand...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测"
+      },
+      {
+        "id": "search-2-3",
+        "title": "OpenMV与STM32串口通信实战:USART配置､帧协议与调试技巧",
+        "url": "https://blog.csdn.net/weixin_28256233/article/details/165111306",
+        "snippet": "OpenMV与STM32串口通信实战:USART配置、帧协议与调试技巧 CSDN博客。 // 与 OpenMV 保持一致 huart3.Init.WordLength = UART_WORDLENGTH_8B; huart3.Init.StopBits = UART_STOPBITS_1; huart3.Init.Parity = UART_PARITY_NONE; // 帧协议里有校验字段,就不启用硬件校验 huart3.Init.Mode = UART_MODE_TX_RX; huart3.Init.HwFlowCtl = UART_HWCONTROL_NONE; c 运行 1 2 3 4 5 6 7 8 9 10 这里要强调一个很多人忽略的点: WordLength 在 HAL 库里的枚举值是 UART_WORDLENGTH_8B ,在旧版标准库里对应的是 USART_WordLength_8b ,拼写差异经常导致移植时报编译错误。波特率两端必须严格一致,误差超过 2% 就可能出现乱码——尤其是使用内部 RC 振荡器跑 115200 时,实测有时不但误码,还会出现偶发丢字节。 2.2 电平匹配与接线 OpenMV 的 UART 引脚是 3.3V TTL 电平,STM32 绝大多数型号的 GPIO 也是 3.3V 容忍或 3.3V 输出,直接互连没有问题。真正常见的坑是用户把 STM32 的板载 5V 引脚接到 OpenMV 的串口 RX 上,一次就烧。两边的 TX 与 RX 交叉连接——OpenMV_TX 接 STM32_RX,OpenMV_RX 接 STM32_TX,GND 必须共地,否则通信时好时坏。 项目 OpenMV 端 STM32 端 电平标准 3.3V TTL 3.3V TTL(FT 引脚兼容 5V) 默认波特率 115200 115200 数据格式 8N...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测"
+      },
+      {
+        "id": "search-2-4",
+        "title": "OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython",
+        "url": "https://www.cnx-software.com/?p=120027/",
+        "snippet": "OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython CNX Software。OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython Following the success of the OpenMV Cam H7 and the original OpenMV VGA Camera, OpenMV recently launched the OpenMV CAM RT1062 powered by NXP’s RT1060 processor. This new camera module integrates a range of features, including a high-speed USB-C (480Mbps) interface, an accelerometer, and a LiPo connector for portability. Similar to its predecessor, this camera module also features a removable camera system, and it is built around the OV5640 image sensor which is more powerful in terms of resolution and versatility. However, the previous Omnivision OV7725 sensor, used in the OpenMV Cam H7 has a far superior frame rate and low-l...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测"
+      },
+      {
+        "id": "search-2-5",
+        "title": "OpenMV Cam RT1062 SingTown 5MP High Definition Image Detection Industrial AI Camera",
+        "url": "https://www.duino.lk/?p=75542",
+        "snippet": "OpenMV Cam RT1062 SingTown 5MP High Definition Image Detection Industrial AI Camera。OpenMV Cam RT1062 SingTown 5MP High Definition Image Detection Industrial AI Camera SKU: ML2304 OpenMV Cam RT1062 SingTown 5MP High Definition Image Detection Industrial AI Camera * මෙම අයිතමය ඔබගේ අවශ්‍යතාවය අනුව දින 14-21 අතර ගෙන්වා දෙන බැවින් අපවෙත whatsapp පණිවිඩයක් යොමුකරන්න. features: The RT1062 ARM Cortex M7 processor running at 600 MHz with 32MBs SDRAM + 1MB of SRAM and 16 MB of program/storage flash. All I/O pins output 3.3V and are 3.3V tolerant. The processor has the following I/O interfaces: 1.5A current limited. With EMI Filtering and TVS protection. With EMI Filtering and TVS protection. One I/O pin for low power wakeup. There is also a pin for device power button ON/OFF support. With EMI Filtering and TVS protecti...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测"
+      },
+      {
+        "id": "search-2-6",
+        "title": "What are the connections between openmv cam rt1062 and arduino uno r3 - OpenMV Boards - OpenMV Forums",
+        "url": "https://forums.openmv.io/t/what-are-the-connections-between-openmv-cam-rt1062-and-arduino-uno-r3/10189/4",
+        "snippet": "What are the connections between openmv cam rt1062 and arduino uno r3 - OpenMV Boards - OpenMV Forums。What are the connections between openmv cam rt1062 and arduino uno r3 kkristofer Nov 2024 Currently I have it connected like this: 5v to 5v gnd to gnd rx to tx tx to rx Is that correct or not (complete novice here) also do I supply power to both or not (like connect them both to two different power sources) post by kwagyeman on Nov 11, 2024 kwagyeman Nov 2024 There’s no 5V pin on the RT1062. Why do you need the Arduino Uno in this picture? Note that the U3 has one uart which is used for programming. So, when you connect it to the OpenMV Cam it cannot be programmed. What’s your app? You might not need the Arduino Uno. post by kkristofer on Nov 11, 2024 kkristofer Nov 2024 Trying to make an ...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测"
+      },
+      {
+        "id": "search-2-7",
+        "title": "OpenMV Cam RT1062",
+        "url": "https://www.electropi.in/drone-ebike-3d-printer/cameras/openmv-cam-rt1062?limit=100",
+        "snippet": "OpenMV Cam RT1062 Electropi。OpenMV Cam RT1062 Product Code: EPI24997 Availability: 10 0 reviews Write a review The OpenMV Cam RT1062 is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and its I/O pins in Python. You can easily trigger taking pictures and video on external events or execute machine vision algorithms to figure out how to control your I/O pins. The RT1062 ARM Cortex M7 processor runs at 600 MHz ...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测"
+      },
+      {
+        "id": "search-2-8",
+        "title": "OpenMV Cam RT1062",
+        "url": "https://openmv.io/products/openmv-cam-rt?srsltid=AfmBOoqxRbENlMkDcdq0AryvOct1sUXDmFgKrifUNLAfwiAjPS1cL6O2",
+        "snippet": "OpenMV Cam RT1062 OpenMV。View in space View in space View in space OpenMV Cam RT1062 Revision R4 R5 R4 R5 24 In stock The OpenMV Cam headers do not come pre-soldered. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and its I/O pins in Python. You can easily trigger taking pictures and video on external events or execute machine vision algorithms to figure out h... Read more Specs PLEASE NOTE...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测"
+      },
+      {
+        "id": "search-2-9",
+        "title": "OpenMV Cam RT1062 Industrial Smart AI Camera",
+        "url": "https://openelab.io/nl/products/openmv-cam-rt1062-industrial-smart",
+        "snippet": "OpenMV Cam RT1062 Industrial Smart AI Camera。OpenMV Cam RT1062 Industrial Smart AI Camera Trustpilot SKU: OpenMV-CamRT1062 OpenMV Cam RT1062 Industrial Smart AI Camera The OpenMV Cam is a small, low-power microcontroller board designed to simplify the implementation of machine vision applications in real-world scenarios. Rather than using C/C++, the board is programmed using high-level Python scripts via the MicroPython Operating System. This approach significantly eases the management of complex machine vision algorithm outputs and the handling of high-level data structures. Despite the simplified programming interface, users maintain total control over the hardware and its I/O pins. The platform allows you to trigger internal image and video capture based on external events, or conversel...",
+        "kind": "search_lead",
+        "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测"
+      }
+    ],
+    "warnings": [
+      "实时搜索结果是待核验线索，P0 不用网页摘要覆盖已核验的硬件参数；社区经验不构成规格保证。"
+    ],
+    "error": null,
+    "request_count": 3,
+    "request_ids": [
+      "79f146c5-9ddf-49b8-be6e-907b79634029",
+      "6046b276-7b46-465b-88ee-30e045a24878",
+      "7fb2677b-aec0-49b1-9ab4-a197a954c1c3"
+    ],
+    "query_records": [
+      {
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation",
+        "status": "ok",
+        "request_id": "79f146c5-9ddf-49b8-be6e-907b79634029",
+        "result_count": 10,
+        "version": "standard",
+        "message": ""
+      },
+      {
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件",
+        "status": "ok",
+        "request_id": "6046b276-7b46-465b-88ee-30e045a24878",
+        "result_count": 10,
+        "version": "standard",
+        "message": ""
+      },
+      {
+        "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测",
+        "status": "ok",
+        "request_id": "7fb2677b-aec0-49b1-9ab4-a197a954c1c3",
+        "result_count": 10,
+        "version": "standard",
+        "message": ""
+      }
+    ],
+    "auth_mode": "tc3",
+    "new_request_count": 3
+  },
+  "evidence": [
+    {
+      "id": "rt1062-official-hardware",
+      "kind": "official",
+      "title": "OpenMV Cam RT1062 官方产品与电气说明",
+      "url": "https://openmv.io/products/openmv-cam-rt",
+      "claim": "官方列出 USB-C、SPI、I2C、异步串行接口、3.3V I/O 与 OV5640 摄像头；I/O 不耐 5V。",
+      "field": "interfaces,logic_voltage_v,summary,io_input_max_v",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "All I/O pins output 3.3V"
+    },
+    {
+      "id": "rt1062-official-availability",
+      "kind": "official",
+      "title": "OpenMV Cam RT1062 官网订购状态",
+      "url": "https://openmv.io/products/openmv-cam-rt",
+      "claim": "核验时官方产品正文显示可欠货订购。没有确认现货或送达日期，搜索缓存中的库存数字不能代替本次状态。",
+      "field": "caveats",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "Available for Backorder"
+    },
+    {
+      "id": "rt1062-official-image-api",
+      "kind": "official",
+      "title": "OpenMV Image API：颜色、直线与 AprilTag",
+      "url": "https://docs.openmv.io/v5.0.0/library/omv.image.Image.html",
+      "claim": "官方本地图像 API 提供颜色连通域、阈值直线回归与 AprilTag 检测；需要匹配固件并验证实际任务，不据此保证帧率。",
+      "field": "capabilities",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "find_blobs; get_regression; find_apriltags"
+    },
+    {
+      "id": "openmv-official-hardware",
+      "kind": "official",
+      "title": "OpenMV Cam H7 Plus 官方产品与电气说明",
+      "url": "https://openmv.io/products/openmv-cam-h7-plus",
+      "claim": "官方列出 USB、SPI、I2C、异步串行接口，I/O 输出为 3.3V；随板为 OV5640 摄像头。",
+      "field": "interfaces,logic_voltage_v,summary,io_input_max_v",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "All I/O pins output 3.3V"
+    },
+    {
+      "id": "openmv-official-image-api",
+      "kind": "official",
+      "title": "OpenMV Image API：颜色、直线与 AprilTag",
+      "url": "https://docs.openmv.io/v5.0.0/library/omv.image.Image.html",
+      "claim": "官方本地图像 API 提供颜色阈值连通域、阈值像素直线回归与 AprilTag 检测；这是软件能力证据，未保证本赛题帧率或精度。",
+      "field": "capabilities",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "find_blobs; get_regression; find_apriltags"
+    },
+    {
+      "id": "openmv-official-lifecycle",
+      "kind": "official",
+      "title": "OpenMV H7 Plus 产品生命周期说明",
+      "url": "https://openmv.io/products/openmv-cam-h7-plus",
+      "claim": "官方称该版本已不再生产，仍接受定制批量订单；页面保留作资料用途。采购前必须确认库存与供货。",
+      "field": "caveats",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "We are no longer producing this version"
+    },
+    {
+      "id": "openmv-community-apriltag-pipeline",
+      "kind": "community",
+      "title": "Higher fps from OpenMV Cam H7 plus and MT9V034（第一人称工程记录）",
+      "url": "https://forums.openmv.io/t/higher-fps-from-openmv-cam-h7-plus-and-mt9v034/5585",
+      "claim": "作者 Priyanka 描述加入 AprilTag 计算和 ROS 发布后帧率下降；讨论涉及分辨率、传感器与 readout control。可生成验证清单，不能作为统一规格或本项目实测。",
+      "field": "engineering_experience",
+      "accessed_at": "2026-10-24",
+      "status": "needs_verification",
+      "excerpt": "the fps drops down to ~30 fps"
+    },
+    {
+      "id": "maix-official-board",
+      "kind": "official",
+      "title": "Sipeed Maix Bit 官方板卡介绍",
+      "url": "https://wiki.sipeed.com/soft/maixpy/en/develop_kit_board/maix_bit.html",
+      "claim": "官方板卡页确认双核 RISC-V、板载存储以及套装摄像头信息。",
+      "field": "summary",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "Dual-core 64bit RISC-V / 400MHz"
+    },
+    {
+      "id": "maix-official-usb",
+      "kind": "official",
+      "title": "Sipeed Maix-Bit Specifications v2.0",
+      "url": "https://dl.sipeed.com/fileList/MAIX/HDK/Sipeed-Maix-Bit/Specifications/Sipeed%20Maix-Bit%20Specifications_EN%20V2.0.pdf",
+      "claim": "官方 PDF 首页说明 USB Type-C 下载电路；此处 USB 指板级下载连接，不表示 K210 原生 USB 外设。首次读取成功，后续分页请求超时，未据此填入 GPIO 电压。",
+      "field": "interfaces",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "Download circuit"
+    },
+    {
+      "id": "maix-official-peripherals",
+      "kind": "official",
+      "title": "MaixPy v1 K210 外设文档入口与 UART API",
+      "url": "https://wiki.sipeed.com/soft/maixpy/en/api_reference/machine/uart.html",
+      "claim": "K210 的 MaixPy v1 文档提供 UART，并在同一文档树列出 I2C 与 SPI；引脚需经 FPIOA 配置，不能把可映射等同同时无冲突。",
+      "field": "interfaces",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "There are 3 uarts in k210"
+    },
+    {
+      "id": "maix-official-color",
+      "kind": "official",
+      "title": "MaixPy v1 image 机器视觉 API",
+      "url": "https://wiki.sipeed.com/soft/maixpy/en/api_reference/machine_vision/image/image.html",
+      "claim": "旧版官方 API 给出板上摄像头循环和绿色色块检测例程。未以新版 MaixCAM 文档替代 K210 证据。",
+      "field": "capabilities",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "Routine 1: Find green"
+    },
+    {
+      "id": "maix-official-kpu",
+      "kind": "official",
+      "title": "MaixPy v1 KPU API",
+      "url": "https://wiki.sipeed.com/soft/maixpy/en/api_reference/Maix/kpu.html",
+      "claim": "官方文档给出从 Flash 加载模型与 YOLO2 推理接口；需要兼容模型、内存与固件，未核验任意目标或帧率。",
+      "field": "capabilities",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "Run face detection"
+    },
+    {
+      "id": "esp-eye-official-hardware",
+      "kind": "official",
+      "title": "Espressif ESP32-S3-EYE v2.2 官方指南",
+      "url": "https://docs.espressif.com/projects/esp-board-manager/en/latest/references/boards/esp32_s3_eye.html",
+      "claim": "指南确认 OV2640、LCD、Micro-USB 供电及芯片通信；板上 SPI LCD 等内部连接不视为可自由外接的接口。",
+      "field": "summary,interfaces",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "A Micro-USB port used for 5 V power supply"
+    },
+    {
+      "id": "esp-eye-official-local-ai",
+      "kind": "official",
+      "title": "Espressif Developer Portal：ESP-WHO Get started（2026-05-28）",
+      "url": "https://developer.espressif.com/blog/2026/05/esp-who-get-started/",
+      "claim": "官方教程在 ESP32-S3-EYE 上运行 ESP-WHO，并说明视觉处理在 SoC 本地执行。object_detection 此处是已有检测框架路径，不保证任意赛题目标。",
+      "field": "capabilities",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "run image processing workloads directly on Espressif SoCs"
+    },
+    {
+      "id": "esp-eye-community-windows-flash",
+      "kind": "community",
+      "title": "ESP-WHO issue #288：恢复固件后 Windows USB 识别异常",
+      "url": "https://github.com/espressif/esp-who/issues/288",
+      "claim": "SamHall 第一人称报告刷写后 Windows USB 连续连接/断开；讨论最后仅怀疑其板卡硬件问题。可提示准备恢复步骤与备用线材，不能推断所有板卡有此缺陷。",
+      "field": "engineering_experience",
+      "accessed_at": "2026-10-24",
+      "status": "needs_verification",
+      "excerpt": "the board is no longer recognized as a USB device"
+    },
+    {
+      "id": "pi5-official-product",
+      "kind": "official",
+      "title": "Raspberry Pi 5 官方产品规格",
+      "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+      "claim": "产品页列出 USB、双 MIPI 相机/显示连接器、40-pin 排针与 UART 调试口。电源供给能力不能用作算法实耗。",
+      "field": "summary,interfaces",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "2 × 4-lane MIPI camera/display transceivers"
+    },
+    {
+      "id": "pi5-official-gpio",
+      "kind": "official",
+      "title": "Raspberry Pi 官方 GPIO 文档源",
+      "url": "https://github.com/raspberrypi/documentation/blob/master/documentation/asciidoc/computers/raspberry-pi/gpio-on-raspberry-pi.adoc",
+      "claim": "官方文档确认 GPIO 输出高电平为 3.3V，并列出 SPI、I2C 与串行功能；外设需启用并检查引脚复用。",
+      "field": "logic_voltage_v,interfaces",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "high (3.3V) or low (0V)"
+    },
+    {
+      "id": "pi5-official-camera-detection",
+      "kind": "official",
+      "title": "Raspberry Pi 官方 Camera software 文档",
+      "url": "https://www.raspberrypi.com/documentation/computers/camera_software.html",
+      "claim": "官方介绍在 Raspberry Pi 上构建带 TensorFlow Lite 的 rpicam-detect 并运行相机检测，属于本地软件路径。需要摄像头、兼容模型及依赖，不代表预装即用或已实测 Pi 5 性能。",
+      "field": "capabilities",
+      "accessed_at": "2026-10-24",
+      "status": "verified",
+      "excerpt": "rpicam-detect: Not built by default"
+    }
+  ],
+  "recommendations": [
+    {
+      "hardware": {
+        "id": "openmv-h7-plus",
+        "name": "OpenMV Cam H7 Plus",
+        "vendor": "OpenMV",
+        "summary": "自带 OV5640 摄像头、用 MicroPython 编程的视觉板；适合作为已有设备的颜色、巡线与 AprilTag 原型候选。官方已停止常规生产。",
+        "interfaces": [
+          "UART",
+          "I2C",
+          "SPI",
+          "USB"
+        ],
+        "logic_voltage_v": 3.3,
+        "power_w": null,
+        "price_cny": null,
+        "price_kind": "unknown",
+        "capabilities": [
+          "color_tracking",
+          "line_tracking",
+          "apriltag",
+          "offline_inference"
+        ],
+        "skill_level": 2,
+        "docs_quality": 5,
+        "evidence": [
+          {
+            "id": "openmv-official-hardware",
+            "kind": "official",
+            "title": "OpenMV Cam H7 Plus 官方产品与电气说明",
+            "url": "https://openmv.io/products/openmv-cam-h7-plus",
+            "claim": "官方列出 USB、SPI、I2C、异步串行接口，I/O 输出为 3.3V；随板为 OV5640 摄像头。",
+            "field": "interfaces,logic_voltage_v,summary,io_input_max_v",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "All I/O pins output 3.3V"
+          },
+          {
+            "id": "openmv-official-image-api",
+            "kind": "official",
+            "title": "OpenMV Image API：颜色、直线与 AprilTag",
+            "url": "https://docs.openmv.io/v5.0.0/library/omv.image.Image.html",
+            "claim": "官方本地图像 API 提供颜色阈值连通域、阈值像素直线回归与 AprilTag 检测；这是软件能力证据，未保证本赛题帧率或精度。",
+            "field": "capabilities",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "find_blobs; get_regression; find_apriltags"
+          },
+          {
+            "id": "openmv-official-lifecycle",
+            "kind": "official",
+            "title": "OpenMV H7 Plus 产品生命周期说明",
+            "url": "https://openmv.io/products/openmv-cam-h7-plus",
+            "claim": "官方称该版本已不再生产，仍接受定制批量订单；页面保留作资料用途。采购前必须确认库存与供货。",
+            "field": "caveats",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "We are no longer producing this version"
+          },
+          {
+            "id": "openmv-community-apriltag-pipeline",
+            "kind": "community",
+            "title": "Higher fps from OpenMV Cam H7 plus and MT9V034（第一人称工程记录）",
+            "url": "https://forums.openmv.io/t/higher-fps-from-openmv-cam-h7-plus-and-mt9v034/5585",
+            "claim": "作者 Priyanka 描述加入 AprilTag 计算和 ROS 发布后帧率下降；讨论涉及分辨率、传感器与 readout control。可生成验证清单，不能作为统一规格或本项目实测。",
+            "field": "engineering_experience",
+            "accessed_at": "2026-10-24",
+            "status": "needs_verification",
+            "excerpt": "the fps drops down to ~30 fps"
+          }
+        ],
+        "caveats": [
+          "官方已停止常规生产；如需新购，先确认供货、具体板型及是否原厂。",
+          "logic_voltage_v 表示 I/O 输出电平，不能当作 VIN；部分引脚模式的耐压另有例外。",
+          "官方给出的不同工况电流不能压成全套硬件统一功耗，power_w 保留未知。",
+          "算法 API 可用不等于达成指定帧率、距离、光照、运动速度或识别精度；需用实际赛场条件验证。",
+          "本地视觉运行前需预装固件与脚本；offline_inference 只表示运行时有本地处理路径。",
+          "skill_level 与 docs_quality 是项目人工评审分，不是制造商指标。"
+        ],
+        "availability_status": "discontinued",
+        "io_input_max_v": 5.0
+      },
+      "verdict": "pass",
+      "checks": [
+        {
+          "constraint": "预算上限（板卡，不含完整系统）",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "功耗上限",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "通信接口",
+          "expected": [
+            "UART"
+          ],
+          "actual": [
+            "UART",
+            "I2C",
+            "SPI",
+            "USB"
+          ],
+          "status": "pass",
+          "reason": "官方接口证据覆盖需求"
+        },
+        {
+          "constraint": "逻辑电平 V",
+          "expected": null,
+          "actual": 3.3,
+          "status": "not_requested",
+          "reason": "未限定逻辑电平"
+        },
+        {
+          "constraint": "指定方向的输入耐压",
+          "expected": 5.0,
+          "actual": 5.0,
+          "status": "pass",
+          "reason": "仅输入耐压未超标；逻辑阈值、引脚复用、共地与时序还需按实际链路核对。"
+        },
+        {
+          "constraint": "颜色识别 / 色块跟踪",
+          "expected": true,
+          "actual": true,
+          "status": "pass",
+          "reason": "存在官方示例/文档；未承诺比赛环境帧率"
+        },
+        {
+          "constraint": "离线运行",
+          "expected": true,
+          "actual": true,
+          "status": "pass",
+          "reason": "官方文档支持设备本地执行；依赖安装可需联网"
+        },
+        {
+          "constraint": "禁用器件",
+          "expected": [],
+          "actual": "OpenMV Cam H7 Plus",
+          "status": "pass",
+          "reason": "未命中用户列出的禁用器件（仍须复核原题）"
+        },
+        {
+          "constraint": "实时检索覆盖",
+          "expected": "查询完成且发现对应官方站点线索",
+          "actual": 30,
+          "status": "pass",
+          "reason": "已检索到候选官方域线索；具体参数仍以固定库逐条官方证据为准"
+        }
+      ],
+      "score": 81,
+      "score_breakdown": [
+        {
+          "name": "任务资料覆盖",
+          "points": 40,
+          "max_points": 40,
+          "reason": "官方示例覆盖已识别任务的比例"
+        },
+        {
+          "name": "文档可用性",
+          "points": 20,
+          "max_points": 20,
+          "reason": "人工维护的文档完整度评分，非客观性能"
+        },
+        {
+          "name": "新生上手",
+          "points": 16,
+          "max_points": 20,
+          "reason": "人工维护的学习难度评分，需结合团队经验"
+        },
+        {
+          "name": "证据覆盖",
+          "points": 15,
+          "max_points": 20,
+          "reason": "已核验官方资料条目数，最高 20 分"
+        },
+        {
+          "name": "供货风险扣分",
+          "points": -10,
+          "max_points": 0,
+          "reason": "官方停产 -10、欠货订购 -4；未核验库存不等于现货，无额外加分"
+        }
+      ],
+      "reasons": [
+        "通信接口：官方接口证据覆盖需求",
+        "指定方向的输入耐压：仅输入耐压未超标；逻辑阈值、引脚复用、共地与时序还需按实际链路核对。",
+        "颜色识别 / 色块跟踪：存在官方示例/文档；未承诺比赛环境帧率",
+        "离线运行：官方文档支持设备本地执行；依赖安装可需联网",
+        "禁用器件：未命中用户列出的禁用器件（仍须复核原题）",
+        "实时检索覆盖：已检索到候选官方域线索；具体参数仍以固定库逐条官方证据为准"
+      ],
+      "risks": [
+        "官方已停止常规生产；如需新购，先确认供货、具体板型及是否原厂。",
+        "logic_voltage_v 表示 I/O 输出电平，不能当作 VIN；部分引脚模式的耐压另有例外。",
+        "官方给出的不同工况电流不能压成全套硬件统一功耗，power_w 保留未知。",
+        "算法 API 可用不等于达成指定帧率、距离、光照、运动速度或识别精度；需用实际赛场条件验证。",
+        "本地视觉运行前需预装固件与脚本；offline_inference 只表示运行时有本地处理路径。",
+        "skill_level 与 docs_quality 是项目人工评审分，不是制造商指标。"
+      ],
+      "live_leads": [
+        {
+          "id": "search-0-0",
+          "title": "OpenMV Cam RT1062",
+          "url": "https://openmv.io/products/openmv-cam-rt?srsltid=AfmBOorMjCmNBP1AZA_3V53JQMS-8N7Mg5ljP10ljHe4SLFoCauGWzZN",
+          "snippet": "OpenMV Cam RT1062 OpenMV。OpenMV Cam RT1062 $165.00 USD Shipping calculated at checkout. OpenMV does not pay for import taxes and duties. You are expected pay for customs clearance on all orders you purchase. The OpenMV Cam headers do not come pre-soldered. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and its I/O pins in Python. You can easily trigger taking pictures and video on external ...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-0-1",
+          "title": "OpenMV Cam RT1062",
+          "url": "https://openmv.io/products/openmv-cam-rt?utm_source=chatgpt.com",
+          "snippet": "OpenMV Cam RT1062 OpenMV。 Do not draw more than 250mA from your OpenMV Cam's 3.3V rail. Power Consumption Deep Sleep: 30µA @ 3.7V (Powered only via LiPo Battery) Deep Sleep: 1.6mA @ 5V Idle: 100mA @ 5V Active: 130mA @ 5V Dimensions Length: 45 mm Width: 36 mm Height: 29 mm Temperature Range Storage Temperature: -25°C to 85°C Operating Temperature: 0°C to 70°C Shipping Information Country of Origin: China HS Code: 8529.90.4200 Weight: 20 g UPC: 712179433410 (V4), 608275911122 (V5), 602772227168 (V6) SKU: OMV-CAM-RT1062-V1 (V4), OMV-CAM-RT1062-V2 (V5), OMV-CAM-RT1062-V3 (V6) ECCN: 5A992.C 3D Model OpenMV Cam RT1062 Model (.step) Case OpenMV Cam RT1062 V5/V6 3D Printable Case (.stl) OpenMV Cam RT1062 V4 3D Printable Case (.stl) Mount Tripod 1/4-20 Styled Board Mount (.stl/.step) Tripod 1/4-20 ...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-0-2",
+          "title": "OpenMV Cam RT1062 Camera for Machine Vision",
+          "url": "https://www.arduitronics.com/product/6172/openmv-cam-rt1062-camera-for-machine-vision",
+          "snippet": "OpenMV Cam RT1062 Camera for Machine Vision Ardui Tronics。 Most simple algorithms will run about 40 FPS on QVGA (320x240) resolutions and below. If you want to use more specialized lenses with your image sensor you can easily buy and attach them yourself A LiPo battery connector compatible with 3.7V LiPo batteries commonly sold online for hobbyist robotic applications with battery charging support via USB 100 mA Fast Charge Current With TVS Protection An ARM 10-pin JTAG Header Compatible with SEGGER J-Link Devices for debugging and programming With EMI Filtering and TVS protection External 5V VIN with reverse supply protection With TVS Protection Documents: OpenMV Cam RT1062 Model OpenMV Cam Base Schematic OpenMV Cam OV5640 Schematic Processor Datasheet: MIMXRT106FCVL5B Camera Datasheet: O...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-0-3",
+          "title": "OpenMV Cam RT1062",
+          "url": "https://singtown.com/eg/store/openmv-cam-rt1062",
+          "snippet": "OpenMV Cam RT1062。 It can also find non-infinite-length line segments. Watch our video here: /learn/50009 Circle Detection You can easily detect circles in the image using OpenMV. Rectangle Detection OpenMV can also detect rectangles, using the square detection code from the AprilTag library. Template Matching You can use OpenMV template matching to detect whether there are template-like images in the field of view. For example, template matching can be used to find marks on PCBs or read known numbers on displays. Image Capture You can use OpenMV to capture RGB565/grayscale BMP/JPG/PPM/PGM images. You can directly control how to capture images in Python scripts. Most importantly, using machine vision algorithms, you can draw lines, draw characters, and then save them. Video Recording You c...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-0-4",
+          "title": "OpenMV Cam RT1062",
+          "url": "https://openmv.io/zh/collections/products/products/openmv-cam-rt",
+          "snippet": "OpenMV Cam RT1062 OpenMV。My cart Price $165.00 USD Shipping calculated at checkout. OpenMV does not pay for import taxes and duties. You are expected pay for customs clearance on all orders you purchase. Available for Backorder Quantity Couldn't load pickup availability Refresh Add to cart The OpenMV Cam headers do not come pre-soldered. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and it...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-0-5",
+          "title": "OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython",
+          "url": "https://www.cnx-software.com/?p=120027/",
+          "snippet": "OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython CNX Software。OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython Following the success of the OpenMV Cam H7 and the original OpenMV VGA Camera, OpenMV recently launched the OpenMV CAM RT1062 powered by NXP’s RT1060 processor. This new camera module integrates a range of features, including a high-speed USB-C (480Mbps) interface, an accelerometer, and a LiPo connector for portability. Similar to its predecessor, this camera module also features a removable camera system, and it is built around the OV5640 image sensor which is more powerful in terms of resolution and versatility. However, the previous Omnivision OV7725 sensor, used in the OpenMV Cam H7 has a far superior frame rate and low-l...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-0-6",
+          "title": "OpenMV Cam RT1062: Projects, Specs & Setup",
+          "url": "https://rottenwifi.com/openmv-cam-rt1062-diy-projects-and-ideas-for-makers/?__v=PY-win",
+          "snippet": "OpenMV Cam RT1062: Projects, Specs & Setup RottenWiFi。 Random freezes, missing sound and display glitches usually trace back to one bad driver. Find and replace yours safely.Free scan · under a minuteFind the Right Drivers → Special offer. See more information about Outbyte and uninstall instructions. Please review EULA and Privacy policy. Choose the camera, lens, and mounting for the scene The RT1062’s OV5640 sensor is on a removable camera carrier. OpenMV lists other sensor modules and an M12 lens interface, giving a build some flexibility in sensor and optics choices. Compare field of view, resolution, rolling-shutter behavior, working distance, and lighting needs with the scene you need to capture before selecting a module or lens. The quick reference identifies the supplied OV5640 as ...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-0-7",
+          "title": "OpenMV Cam RT1062: Projects, Specs & Setup",
+          "url": "https://rottenwifi.com/openmv-cam-rt1062-diy-projects-and-ideas-for-makers",
+          "snippet": "OpenMV Cam RT1062: Projects, Specs & Setup RottenWiFi。 The quick reference identifies the supplied OV5640 as a rolling-shutter sensor; it does not establish that another module will have the same characteristics. OpenMV RT1062 quick reference OpenMV product page The board also has a microSD socket for projects that need removable storage. OpenMV links printable cases and tripod- or GoPro-style mounts. Treat these as optional, project-specific choices: a fixed robot installation and a portable camera build may need different enclosures and mounting hardware. Rank #4 Full HD 1080P 150° Wide View Rear Camera 20ft for AZDOME M550, M550 Max Dash Cam 【Compatibility】This 6 pin rear camera is only suitable for AZDOME M550 & M550 Max dash cam 【HD 1080P Recording】The rear car camera has excellent im...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-0-8",
+          "title": "3.4. 接腳與周邊裝置",
+          "url": "https://docs.openmv.io/dev/zh_TW/openmvcam/tutorial/hardware/foundations/pins-and-peripherals.html",
+          "snippet": "3.4. 接腳與周邊裝置 OpenMV文档。表格請見 OpenMV Cam 快速參考。 3.4.3. 板子差異# 有幾項細節因板而異,應始終對照快速參考查證,而不要從另一塊板子的情況去推測: 電壓耐受度。 有些 cam 具備 5 V 耐受的 I/O 接腳(可直接施加 5 V 訊號而不致損壞);其他則以 3.3 V 或 1.8 V 運作其 I/O,凡是高於該值的訊號都需要準位轉換器。把 5 V 來源接到不耐受的接腳上可能會損壞晶片。 ADC 參考電壓。 ADC 視為滿刻度的電壓取決於板子的 I/O 供電。read_u16() 一律回傳 0..65535,但 65535 所代表的電壓就是該板子的參考電壓。 驅動能力。 GPIO 接腳能提供或吸收的電流有限 —— 通常為數十毫安。足以透過電阻驅動一顆小 LED;但不足以驅動馬達、蜂鳴器或任何電感性負載。任何較重的負載請改用外部驅動元件(電晶體、MOSFET、H 橋)。 OpenMV Cam 快速參考 提供每塊板子的確切數值。...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-0-9",
+          "title": "OpenMV Cam RT1062: Affordable Innovation in Machine Vision Now Available for 130",
+          "url": "https://www.electronics-lab.com/openmv-cam-rt1062-affordable-innovation-in-machine-vision-now-available-for-130/",
+          "snippet": "OpenMV Cam RT1062: Affordable Innovation in Machine Vision Now Available for $130 Electronics-Lab。The OpenMV CAM RT1062 is a new camera from OpenMV that uses the powerful NXP RT1060 processor. You can write programs for it using MicroPython, a beginner-friendly version of Python. The OpenMV CAM RT1062 is a new camera from OpenMV that uses the powerful NXP RT1060 processor. You can write programs for it using MicroPython, a beginner-friendly version of Python. It has a fast USB-C connection, making it easy to connect to other devices. It also comes with an accelerometer, a sensor that can detect movement or tilting, which can be useful for keeping pictures steady. Another feature is the LiPo connector, allowing it to be powered by a rechargeable battery for portability. Overall, it’s a hand...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-0",
+          "title": "OpenMV Cam RT1062",
+          "url": "https://openmv.io/products/openmv-cam-rt?srsltid=AfmBOoqxRbENlMkDcdq0AryvOct1sUXDmFgKrifUNLAfwiAjPS1cL6O2",
+          "snippet": "OpenMV Cam RT1062 OpenMV。View in space View in space View in space OpenMV Cam RT1062 Revision R4 R5 R4 R5 24 In stock The OpenMV Cam headers do not come pre-soldered. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and its I/O pins in Python. You can easily trigger taking pictures and video on external events or execute machine vision algorithms to figure out h... Read more Specs PLEASE NOTE...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-1-1",
+          "title": "OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython",
+          "url": "https://www.cnx-software.com/?p=120027/",
+          "snippet": "OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython CNX Software。OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython Following the success of the OpenMV Cam H7 and the original OpenMV VGA Camera, OpenMV recently launched the OpenMV CAM RT1062 powered by NXP’s RT1060 processor. This new camera module integrates a range of features, including a high-speed USB-C (480Mbps) interface, an accelerometer, and a LiPo connector for portability. Similar to its predecessor, this camera module also features a removable camera system, and it is built around the OV5640 image sensor which is more powerful in terms of resolution and versatility. However, the previous Omnivision OV7725 sensor, used in the OpenMV Cam H7 has a far superior frame rate and low-l...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-2",
+          "title": "OpenMV Cam RT1062: Projects, Specs & Setup",
+          "url": "https://rottenwifi.com/openmv-cam-rt1062-diy-projects-and-ideas-for-makers",
+          "snippet": "OpenMV Cam RT1062: Projects, Specs & Setup RottenWiFi。 The quick reference identifies the supplied OV5640 as a rolling-shutter sensor; it does not establish that another module will have the same characteristics. OpenMV RT1062 quick reference OpenMV product page The board also has a microSD socket for projects that need removable storage. OpenMV links printable cases and tripod- or GoPro-style mounts. Treat these as optional, project-specific choices: a fixed robot installation and a portable camera build may need different enclosures and mounting hardware. Rank #4 Full HD 1080P 150° Wide View Rear Camera 20ft for AZDOME M550, M550 Max Dash Cam 【Compatibility】This 6 pin rear camera is only suitable for AZDOME M550 & M550 Max dash cam 【HD 1080P Recording】The rear car camera has excellent im...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-3",
+          "title": "OpenMV Cam RT1062: Projects, Specs & Setup",
+          "url": "https://rottenwifi.com/openmv-cam-rt1062-diy-projects-and-ideas-for-makers/?__v=PY-win",
+          "snippet": "OpenMV Cam RT1062: Projects, Specs & Setup RottenWiFi。 Random freezes, missing sound and display glitches usually trace back to one bad driver. Find and replace yours safely.Free scan · under a minuteFind the Right Drivers → Special offer. See more information about Outbyte and uninstall instructions. Please review EULA and Privacy policy. Choose the camera, lens, and mounting for the scene The RT1062’s OV5640 sensor is on a removable camera carrier. OpenMV lists other sensor modules and an M12 lens interface, giving a build some flexibility in sensor and optics choices. Compare field of view, resolution, rolling-shutter behavior, working distance, and lighting needs with the scene you need to capture before selecting a module or lens. The quick reference identifies the supplied OV5640 as ...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-4",
+          "title": "OpenMV Cam RT1062: Affordable Innovation in Machine Vision Now Available for 130",
+          "url": "https://www.electronics-lab.com/openmv-cam-rt1062-affordable-innovation-in-machine-vision-now-available-for-130/",
+          "snippet": "OpenMV Cam RT1062: Affordable Innovation in Machine Vision Now Available for $130 Electronics-Lab。The OpenMV CAM RT1062 is a new camera from OpenMV that uses the powerful NXP RT1060 processor. You can write programs for it using MicroPython, a beginner-friendly version of Python. The OpenMV CAM RT1062 is a new camera from OpenMV that uses the powerful NXP RT1060 processor. You can write programs for it using MicroPython, a beginner-friendly version of Python. It has a fast USB-C connection, making it easy to connect to other devices. It also comes with an accelerometer, a sensor that can detect movement or tilting, which can be useful for keeping pictures steady. Another feature is the LiPo connector, allowing it to be powered by a rechargeable battery for portability. Overall, it’s a hand...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-5",
+          "title": "OpenMV Cam RT1062 Camera for Machine Vision",
+          "url": "https://www.arduitronics.com/product/6172/openmv-cam-rt1062-camera-for-machine-vision",
+          "snippet": "OpenMV Cam RT1062 Camera for Machine Vision Ardui Tronics。 Most simple algorithms will run about 40 FPS on QVGA (320x240) resolutions and below. If you want to use more specialized lenses with your image sensor you can easily buy and attach them yourself A LiPo battery connector compatible with 3.7V LiPo batteries commonly sold online for hobbyist robotic applications with battery charging support via USB 100 mA Fast Charge Current With TVS Protection An ARM 10-pin JTAG Header Compatible with SEGGER J-Link Devices for debugging and programming With EMI Filtering and TVS protection External 5V VIN with reverse supply protection With TVS Protection Documents: OpenMV Cam RT1062 Model OpenMV Cam Base Schematic OpenMV Cam OV5640 Schematic Processor Datasheet: MIMXRT106FCVL5B Camera Datasheet: O...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-6",
+          "title": "OpenMV Cam RT1062 Industrial Smart AI Camera",
+          "url": "https://openelab.io/it/products/openmv-cam-rt1062-industrial-smart",
+          "snippet": "OpenMV Cam RT1062 Industrial Smart AI Camera OpenELAB。OpenMV Cam RT1062 Industrial Smart AI Camera SKU: OpenMV-CamRT1062 Regular price 168,30 € Sale price 179,95 € incl. VAT excl. VAT The OpenMV Cam is a small, low-power microcontroller board designed to simplify the implementation of machine vision applications in real-world scenarios. Rather than using C/C++, the board is programmed using high-level Python scripts via the MicroPython Operating System. This approach significantly eases the management of complex machine vision algorithm outputs and the handling of high-level data structures. Despite the simplified programming interface, users maintain total control over the hardware and its I/O pins. The platform allows you to trigger internal image and video capture based on external even...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-7",
+          "title": "OpenMV Cam RT1062",
+          "url": "https://www.electropi.in/drone-ebike-3d-printer/cameras/openmv-cam-rt1062?limit=100",
+          "snippet": "OpenMV Cam RT1062 Electropi。OpenMV Cam RT1062 Product Code: EPI24997 Availability: 10 0 reviews Write a review The OpenMV Cam RT1062 is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and its I/O pins in Python. You can easily trigger taking pictures and video on external events or execute machine vision algorithms to figure out how to control your I/O pins. The RT1062 ARM Cortex M7 processor runs at 600 MHz ...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-8",
+          "title": "OpenMV Cam RT1062 Camera for Machine Vision",
+          "url": "https://www.dfrobot.com/product-2804.html?srsltid=AfmBOopTGc4NN5TWwHN2EtY7de0dZwkyV9OV4TMitJwYwKErXOyQzlWA",
+          "snippet": "OpenMV Cam RT1062 Camera for Machine Vision DFRobot。OpenMV Cam RT1062 Camera for Machine Vision $140.00 SKU: DFR1082 A compact microcontroller board with a camera, supporting machine vision applications via Python scripts. Features include USB, WiFi, Bluetooth, and various I/O interfaces. Introduction OpenMV Cam RT1062 is a compact, low-power microcontroller board with camera, facilitates the seamless implementation of real-world applications using machine vision. Programming of the OpenMV Cam is accomplished through high-level Python scripts, courtesy of the MicroPython Operating System, as opposed to C/C++. This approach simplifies the handling of complex outputs from machine vision algorithms and the manipulation of high-level data structures. Despite this, total control over the OpenMV...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-9",
+          "title": "OpenMV Cam RT1062 SingTown 5MP High Definition Image Detection Industrial AI Camera",
+          "url": "https://www.duino.lk/?p=75542",
+          "snippet": "OpenMV Cam RT1062 SingTown 5MP High Definition Image Detection Industrial AI Camera。OpenMV Cam RT1062 SingTown 5MP High Definition Image Detection Industrial AI Camera SKU: ML2304 OpenMV Cam RT1062 SingTown 5MP High Definition Image Detection Industrial AI Camera * මෙම අයිතමය ඔබගේ අවශ්‍යතාවය අනුව දින 14-21 අතර ගෙන්වා දෙන බැවින් අපවෙත whatsapp පණිවිඩයක් යොමුකරන්න. features: The RT1062 ARM Cortex M7 processor running at 600 MHz with 32MBs SDRAM + 1MB of SRAM and 16 MB of program/storage flash. All I/O pins output 3.3V and are 3.3V tolerant. The processor has the following I/O interfaces: 1.5A current limited. With EMI Filtering and TVS protection. With EMI Filtering and TVS protection. One I/O pin for low power wakeup. There is also a pin for device power button ON/OFF support. With EMI Filtering and TVS protecti...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-0",
+          "title": "OpenMV Cam RT failing on multiple occasions",
+          "url": "https://forums.openmv.io/t/openmv-cam-rt-failing-on-multiple-occasions/10976",
+          "snippet": "OpenMV Cam RT failing on multiple occasions。OpenMV Cam RT failing on multiple occasions post by yshaalan on May 6, 2025 yshaalan May 2025 Hi, we are using OpenMV RT1062 Cameras in our robot. we have 2 of the R4 type. The first camera failed a week ago when it stopped detecting on our laptops and started heating up. With a voltmeter it outputs 1v on the 3v3 rail. It heats up from the bottom side and the led glows dimly green and red. The second camera failed yesterday when it would run any code that didn’t use the image sensor (eg.blink sketches). But any sketch that uses the sensor would fail with the error: RuntimeError: Frame capture has timed out. We tried replacing the image sensor with others we have from the other RT and previous H7 units. For Camera 1 we have tried: Isolating the sh...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-1",
+          "title": "Broken tool detection with machine vision",
+          "url": "https://forums.parallax.com/discussion/comment/1570000",
+          "snippet": "Broken tool detection with machine vision。 I have to buy one of those OpenMV cameras. I think I can get much better lighting conditions with an LED backlight tile reducing background noise and shadows. ManAtWork Posts: 2,262 2025-10-29 09:14 Errr, next question: which camera module would suit my application best? It would be good to have 3 IO-pins, two inputs for the commands \"learn\" and \"check\" and one output for \"good/bad\". This way I can interface it to the CNC controller without having to send serial data over USB. Most camera modules have the two IO pin headers JP1 and JP2. The description says the IO pins drive 3.3V and are 5V tolerant. I can connect optocouplers to interface to the 24V signals of the CNC controler. But which pins can I use as general purpose IOs? The RT1062 has a lo...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-2",
+          "title": "OpenMV Cam RT1062: Affordable Innovation in Machine Vision Now Available for 130",
+          "url": "https://www.electronics-lab.com/openmv-cam-rt1062-affordable-innovation-in-machine-vision-now-available-for-130/",
+          "snippet": "OpenMV Cam RT1062: Affordable Innovation in Machine Vision Now Available for $130 Electronics-Lab。The OpenMV CAM RT1062 is a new camera from OpenMV that uses the powerful NXP RT1060 processor. You can write programs for it using MicroPython, a beginner-friendly version of Python. The OpenMV CAM RT1062 is a new camera from OpenMV that uses the powerful NXP RT1060 processor. You can write programs for it using MicroPython, a beginner-friendly version of Python. It has a fast USB-C connection, making it easy to connect to other devices. It also comes with an accelerometer, a sensor that can detect movement or tilting, which can be useful for keeping pictures steady. Another feature is the LiPo connector, allowing it to be powered by a rechargeable battery for portability. Overall, it’s a hand...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-3",
+          "title": "OpenMV与STM32串口通信实战:USART配置､帧协议与调试技巧",
+          "url": "https://blog.csdn.net/weixin_28256233/article/details/165111306",
+          "snippet": "OpenMV与STM32串口通信实战:USART配置、帧协议与调试技巧 CSDN博客。 // 与 OpenMV 保持一致 huart3.Init.WordLength = UART_WORDLENGTH_8B; huart3.Init.StopBits = UART_STOPBITS_1; huart3.Init.Parity = UART_PARITY_NONE; // 帧协议里有校验字段,就不启用硬件校验 huart3.Init.Mode = UART_MODE_TX_RX; huart3.Init.HwFlowCtl = UART_HWCONTROL_NONE; c 运行 1 2 3 4 5 6 7 8 9 10 这里要强调一个很多人忽略的点: WordLength 在 HAL 库里的枚举值是 UART_WORDLENGTH_8B ,在旧版标准库里对应的是 USART_WordLength_8b ,拼写差异经常导致移植时报编译错误。波特率两端必须严格一致,误差超过 2% 就可能出现乱码——尤其是使用内部 RC 振荡器跑 115200 时,实测有时不但误码,还会出现偶发丢字节。 2.2 电平匹配与接线 OpenMV 的 UART 引脚是 3.3V TTL 电平,STM32 绝大多数型号的 GPIO 也是 3.3V 容忍或 3.3V 输出,直接互连没有问题。真正常见的坑是用户把 STM32 的板载 5V 引脚接到 OpenMV 的串口 RX 上,一次就烧。两边的 TX 与 RX 交叉连接——OpenMV_TX 接 STM32_RX,OpenMV_RX 接 STM32_TX,GND 必须共地,否则通信时好时坏。 项目 OpenMV 端 STM32 端 电平标准 3.3V TTL 3.3V TTL(FT 引脚兼容 5V) 默认波特率 115200 115200 数据格式 8N...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-4",
+          "title": "OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython",
+          "url": "https://www.cnx-software.com/?p=120027/",
+          "snippet": "OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython CNX Software。OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython Following the success of the OpenMV Cam H7 and the original OpenMV VGA Camera, OpenMV recently launched the OpenMV CAM RT1062 powered by NXP’s RT1060 processor. This new camera module integrates a range of features, including a high-speed USB-C (480Mbps) interface, an accelerometer, and a LiPo connector for portability. Similar to its predecessor, this camera module also features a removable camera system, and it is built around the OV5640 image sensor which is more powerful in terms of resolution and versatility. However, the previous Omnivision OV7725 sensor, used in the OpenMV Cam H7 has a far superior frame rate and low-l...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-5",
+          "title": "OpenMV Cam RT1062 SingTown 5MP High Definition Image Detection Industrial AI Camera",
+          "url": "https://www.duino.lk/?p=75542",
+          "snippet": "OpenMV Cam RT1062 SingTown 5MP High Definition Image Detection Industrial AI Camera。OpenMV Cam RT1062 SingTown 5MP High Definition Image Detection Industrial AI Camera SKU: ML2304 OpenMV Cam RT1062 SingTown 5MP High Definition Image Detection Industrial AI Camera * මෙම අයිතමය ඔබගේ අවශ්‍යතාවය අනුව දින 14-21 අතර ගෙන්වා දෙන බැවින් අපවෙත whatsapp පණිවිඩයක් යොමුකරන්න. features: The RT1062 ARM Cortex M7 processor running at 600 MHz with 32MBs SDRAM + 1MB of SRAM and 16 MB of program/storage flash. All I/O pins output 3.3V and are 3.3V tolerant. The processor has the following I/O interfaces: 1.5A current limited. With EMI Filtering and TVS protection. With EMI Filtering and TVS protection. One I/O pin for low power wakeup. There is also a pin for device power button ON/OFF support. With EMI Filtering and TVS protecti...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-6",
+          "title": "What are the connections between openmv cam rt1062 and arduino uno r3 - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/t/what-are-the-connections-between-openmv-cam-rt1062-and-arduino-uno-r3/10189/4",
+          "snippet": "What are the connections between openmv cam rt1062 and arduino uno r3 - OpenMV Boards - OpenMV Forums。What are the connections between openmv cam rt1062 and arduino uno r3 kkristofer Nov 2024 Currently I have it connected like this: 5v to 5v gnd to gnd rx to tx tx to rx Is that correct or not (complete novice here) also do I supply power to both or not (like connect them both to two different power sources) post by kwagyeman on Nov 11, 2024 kwagyeman Nov 2024 There’s no 5V pin on the RT1062. Why do you need the Arduino Uno in this picture? Note that the U3 has one uart which is used for programming. So, when you connect it to the OpenMV Cam it cannot be programmed. What’s your app? You might not need the Arduino Uno. post by kkristofer on Nov 11, 2024 kkristofer Nov 2024 Trying to make an ...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-7",
+          "title": "OpenMV Cam RT1062",
+          "url": "https://www.electropi.in/drone-ebike-3d-printer/cameras/openmv-cam-rt1062?limit=100",
+          "snippet": "OpenMV Cam RT1062 Electropi。OpenMV Cam RT1062 Product Code: EPI24997 Availability: 10 0 reviews Write a review The OpenMV Cam RT1062 is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and its I/O pins in Python. You can easily trigger taking pictures and video on external events or execute machine vision algorithms to figure out how to control your I/O pins. The RT1062 ARM Cortex M7 processor runs at 600 MHz ...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-8",
+          "title": "OpenMV Cam RT1062",
+          "url": "https://openmv.io/products/openmv-cam-rt?srsltid=AfmBOoqxRbENlMkDcdq0AryvOct1sUXDmFgKrifUNLAfwiAjPS1cL6O2",
+          "snippet": "OpenMV Cam RT1062 OpenMV。View in space View in space View in space OpenMV Cam RT1062 Revision R4 R5 R4 R5 24 In stock The OpenMV Cam headers do not come pre-soldered. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and its I/O pins in Python. You can easily trigger taking pictures and video on external events or execute machine vision algorithms to figure out h... Read more Specs PLEASE NOTE...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-2-9",
+          "title": "OpenMV Cam RT1062 Industrial Smart AI Camera",
+          "url": "https://openelab.io/nl/products/openmv-cam-rt1062-industrial-smart",
+          "snippet": "OpenMV Cam RT1062 Industrial Smart AI Camera。OpenMV Cam RT1062 Industrial Smart AI Camera Trustpilot SKU: OpenMV-CamRT1062 OpenMV Cam RT1062 Industrial Smart AI Camera The OpenMV Cam is a small, low-power microcontroller board designed to simplify the implementation of machine vision applications in real-world scenarios. Rather than using C/C++, the board is programmed using high-level Python scripts via the MicroPython Operating System. This approach significantly eases the management of complex machine vision algorithm outputs and the handling of high-level data structures. Despite the simplified programming interface, users maintain total control over the hardware and its I/O pins. The platform allows you to trigger internal image and video capture based on external events, or conversel...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测",
+          "relation": "unverified_lead"
+        }
+      ],
+      "evidence_ids": [
+        "openmv-official-hardware",
+        "openmv-official-image-api",
+        "openmv-official-lifecycle",
+        "openmv-community-apriltag-pipeline"
+      ],
+      "suitability": {
+        "source": "user_reported",
+        "owned": false,
+        "adjustment": -9,
+        "risks": [
+          "需要新购，停产/欠货与交期不明会影响交付。",
+          "仅有 C 基础，需验证 MicroPython/MaixPy 的示例修改能力。"
+        ],
+        "advantages": [],
+        "missing_inputs": [],
+        "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+      },
+      "ranking_score": 72
+    },
+    {
+      "hardware": {
+        "id": "maix-bit-k210",
+        "name": "Sipeed Maix Bit（K210）",
+        "vendor": "Sipeed",
+        "summary": "K210 双核 RISC-V 视觉开发板；官方旧版 MaixPy 文档提供本地颜色处理与 KPU 检测路径。相机和屏幕取决于购买套装。",
+        "interfaces": [
+          "UART",
+          "I2C",
+          "SPI",
+          "USB"
+        ],
+        "logic_voltage_v": null,
+        "power_w": null,
+        "price_cny": null,
+        "price_kind": "unknown",
+        "capabilities": [
+          "color_tracking",
+          "object_detection",
+          "offline_inference"
+        ],
+        "skill_level": 3,
+        "docs_quality": 3,
+        "evidence": [
+          {
+            "id": "maix-official-board",
+            "kind": "official",
+            "title": "Sipeed Maix Bit 官方板卡介绍",
+            "url": "https://wiki.sipeed.com/soft/maixpy/en/develop_kit_board/maix_bit.html",
+            "claim": "官方板卡页确认双核 RISC-V、板载存储以及套装摄像头信息。",
+            "field": "summary",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "Dual-core 64bit RISC-V / 400MHz"
+          },
+          {
+            "id": "maix-official-usb",
+            "kind": "official",
+            "title": "Sipeed Maix-Bit Specifications v2.0",
+            "url": "https://dl.sipeed.com/fileList/MAIX/HDK/Sipeed-Maix-Bit/Specifications/Sipeed%20Maix-Bit%20Specifications_EN%20V2.0.pdf",
+            "claim": "官方 PDF 首页说明 USB Type-C 下载电路；此处 USB 指板级下载连接，不表示 K210 原生 USB 外设。首次读取成功，后续分页请求超时，未据此填入 GPIO 电压。",
+            "field": "interfaces",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "Download circuit"
+          },
+          {
+            "id": "maix-official-peripherals",
+            "kind": "official",
+            "title": "MaixPy v1 K210 外设文档入口与 UART API",
+            "url": "https://wiki.sipeed.com/soft/maixpy/en/api_reference/machine/uart.html",
+            "claim": "K210 的 MaixPy v1 文档提供 UART，并在同一文档树列出 I2C 与 SPI；引脚需经 FPIOA 配置，不能把可映射等同同时无冲突。",
+            "field": "interfaces",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "There are 3 uarts in k210"
+          },
+          {
+            "id": "maix-official-color",
+            "kind": "official",
+            "title": "MaixPy v1 image 机器视觉 API",
+            "url": "https://wiki.sipeed.com/soft/maixpy/en/api_reference/machine_vision/image/image.html",
+            "claim": "旧版官方 API 给出板上摄像头循环和绿色色块检测例程。未以新版 MaixCAM 文档替代 K210 证据。",
+            "field": "capabilities",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "Routine 1: Find green"
+          },
+          {
+            "id": "maix-official-kpu",
+            "kind": "official",
+            "title": "MaixPy v1 KPU API",
+            "url": "https://wiki.sipeed.com/soft/maixpy/en/api_reference/Maix/kpu.html",
+            "claim": "官方文档给出从 Flash 加载模型与 YOLO2 推理接口；需要兼容模型、内存与固件，未核验任意目标或帧率。",
+            "field": "capabilities",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "Run face detection"
+          }
+        ],
+        "caveats": [
+          "K210 使用 MaixPy v1；新版 MaixPy / MaixCAM 示例不能直接视为本板可运行。",
+          "K210 本体无原生 USB 外设，板级 USB 用于下载与串口桥；不应推荐其作为通用 USB 主机。",
+          "GPIO 电压未在本轮完整读取并交叉核验，logic_voltage_v 为未知；连接前查具体修订版原理图。",
+          "颜色等视觉函数依赖固件功能集，minimum 固件可能缺失；相机需与引脚映射匹配。",
+          "采购成本必须核对相机、屏幕、电源、线材的完整 BOM。",
+          "本地运行前需预置模型/固件；未核验 AprilTag 与巡线能力，不将其列入已核验能力。",
+          "skill_level 与 docs_quality 是人工评审分。"
+        ],
+        "availability_status": "unknown"
+      },
+      "verdict": "unknown",
+      "checks": [
+        {
+          "constraint": "预算上限（板卡，不含完整系统）",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "功耗上限",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "通信接口",
+          "expected": [
+            "UART"
+          ],
+          "actual": [
+            "UART",
+            "I2C",
+            "SPI",
+            "USB"
+          ],
+          "status": "pass",
+          "reason": "官方接口证据覆盖需求"
+        },
+        {
+          "constraint": "逻辑电平 V",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未限定逻辑电平"
+        },
+        {
+          "constraint": "指定方向的输入耐压",
+          "expected": 5.0,
+          "actual": null,
+          "status": "unknown",
+          "reason": "缺少对应输入耐压或转换电路输出证据，不能推定接线安全。"
+        },
+        {
+          "constraint": "颜色识别 / 色块跟踪",
+          "expected": true,
+          "actual": true,
+          "status": "pass",
+          "reason": "存在官方示例/文档；未承诺比赛环境帧率"
+        },
+        {
+          "constraint": "离线运行",
+          "expected": true,
+          "actual": true,
+          "status": "pass",
+          "reason": "官方文档支持设备本地执行；依赖安装可需联网"
+        },
+        {
+          "constraint": "禁用器件",
+          "expected": [],
+          "actual": "Sipeed Maix Bit（K210）",
+          "status": "pass",
+          "reason": "未命中用户列出的禁用器件（仍须复核原题）"
+        },
+        {
+          "constraint": "实时检索覆盖",
+          "expected": "查询完成且发现对应官方站点线索",
+          "actual": 0,
+          "status": "unknown",
+          "reason": "实时搜索未完整完成或未找到该候选的官方域线索；不作完整联网推荐"
+        }
+      ],
+      "score": 84,
+      "score_breakdown": [
+        {
+          "name": "任务资料覆盖",
+          "points": 40,
+          "max_points": 40,
+          "reason": "官方示例覆盖已识别任务的比例"
+        },
+        {
+          "name": "文档可用性",
+          "points": 12,
+          "max_points": 20,
+          "reason": "人工维护的文档完整度评分，非客观性能"
+        },
+        {
+          "name": "新生上手",
+          "points": 12,
+          "max_points": 20,
+          "reason": "人工维护的学习难度评分，需结合团队经验"
+        },
+        {
+          "name": "证据覆盖",
+          "points": 20,
+          "max_points": 20,
+          "reason": "已核验官方资料条目数，最高 20 分"
+        },
+        {
+          "name": "供货风险扣分",
+          "points": 0,
+          "max_points": 0,
+          "reason": "官方停产 -10、欠货订购 -4；未核验库存不等于现货，无额外加分"
+        }
+      ],
+      "reasons": [
+        "通信接口：官方接口证据覆盖需求",
+        "颜色识别 / 色块跟踪：存在官方示例/文档；未承诺比赛环境帧率",
+        "离线运行：官方文档支持设备本地执行；依赖安装可需联网",
+        "禁用器件：未命中用户列出的禁用器件（仍须复核原题）"
+      ],
+      "risks": [
+        "K210 使用 MaixPy v1；新版 MaixPy / MaixCAM 示例不能直接视为本板可运行。",
+        "K210 本体无原生 USB 外设，板级 USB 用于下载与串口桥；不应推荐其作为通用 USB 主机。",
+        "GPIO 电压未在本轮完整读取并交叉核验，logic_voltage_v 为未知；连接前查具体修订版原理图。",
+        "颜色等视觉函数依赖固件功能集，minimum 固件可能缺失；相机需与引脚映射匹配。",
+        "采购成本必须核对相机、屏幕、电源、线材的完整 BOM。",
+        "本地运行前需预置模型/固件；未核验 AprilTag 与巡线能力，不将其列入已核验能力。",
+        "skill_level 与 docs_quality 是人工评审分。",
+        "指定方向的输入耐压：缺少对应输入耐压或转换电路输出证据，不能推定接线安全。",
+        "实时检索覆盖：实时搜索未完整完成或未找到该候选的官方域线索；不作完整联网推荐"
+      ],
+      "live_leads": [],
+      "evidence_ids": [
+        "maix-official-board",
+        "maix-official-usb",
+        "maix-official-peripherals",
+        "maix-official-color",
+        "maix-official-kpu"
+      ],
+      "suitability": {
+        "source": "user_reported",
+        "owned": false,
+        "adjustment": -3,
+        "risks": [
+          "仅有 C 基础，需验证 MicroPython/MaixPy 的示例修改能力。"
+        ],
+        "advantages": [],
+        "missing_inputs": [],
+        "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+      },
+      "ranking_score": 81
+    },
+    {
+      "hardware": {
+        "id": "esp32-s3-eye",
+        "name": "ESP32-S3-EYE v2.2",
+        "vendor": "Espressif",
+        "summary": "带 OV2640 摄像头、LCD 和麦克风的 ESP32-S3 视觉开发板，官方 ESP-WHO 教程提供板上检测示例。",
+        "interfaces": [
+          "USB"
+        ],
+        "logic_voltage_v": null,
+        "power_w": null,
+        "price_cny": null,
+        "price_kind": "unknown",
+        "capabilities": [
+          "object_detection",
+          "offline_inference"
+        ],
+        "skill_level": 4,
+        "docs_quality": 4,
+        "evidence": [
+          {
+            "id": "esp-eye-official-hardware",
+            "kind": "official",
+            "title": "Espressif ESP32-S3-EYE v2.2 官方指南",
+            "url": "https://docs.espressif.com/projects/esp-board-manager/en/latest/references/boards/esp32_s3_eye.html",
+            "claim": "指南确认 OV2640、LCD、Micro-USB 供电及芯片通信；板上 SPI LCD 等内部连接不视为可自由外接的接口。",
+            "field": "summary,interfaces",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "A Micro-USB port used for 5 V power supply"
+          },
+          {
+            "id": "esp-eye-official-local-ai",
+            "kind": "official",
+            "title": "Espressif Developer Portal：ESP-WHO Get started（2026-05-28）",
+            "url": "https://developer.espressif.com/blog/2026/05/esp-who-get-started/",
+            "claim": "官方教程在 ESP32-S3-EYE 上运行 ESP-WHO，并说明视觉处理在 SoC 本地执行。object_detection 此处是已有检测框架路径，不保证任意赛题目标。",
+            "field": "capabilities",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "run image processing workloads directly on Espressif SoCs"
+          },
+          {
+            "id": "esp-eye-community-windows-flash",
+            "kind": "community",
+            "title": "ESP-WHO issue #288：恢复固件后 Windows USB 识别异常",
+            "url": "https://github.com/espressif/esp-who/issues/288",
+            "claim": "SamHall 第一人称报告刷写后 Windows USB 连续连接/断开；讨论最后仅怀疑其板卡硬件问题。可提示准备恢复步骤与备用线材，不能推断所有板卡有此缺陷。",
+            "field": "engineering_experience",
+            "accessed_at": "2026-10-24",
+            "status": "needs_verification",
+            "excerpt": "the board is no longer recognized as a USB device"
+          }
+        ],
+        "caveats": [
+          "只将本轮确认可用于外部连接的 USB 写入 interfaces；SoC 自带 UART/I2C/SPI 不代表此板已引出可用接口。",
+          "模块供电 3.3V 不能自动证明全部可连接信号的逻辑电平，logic_voltage_v 保留未知。",
+          "官方教程要求匹配 ESP-IDF / ESP-WHO 版本；本项目尚未执行板卡刷写。",
+          "检测模型、固件与依赖需预先安装，推理可在本地执行；网络传输是可选能力。",
+          "未核验颜色追踪、AprilTag 或巡线的具体板卡示例，因此不列为已核验能力。",
+          "skill_level 与 docs_quality 是人工评审分。"
+        ],
+        "availability_status": "unknown"
+      },
+      "verdict": "unknown",
+      "checks": [
+        {
+          "constraint": "预算上限（板卡，不含完整系统）",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "功耗上限",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "通信接口",
+          "expected": [
+            "UART"
+          ],
+          "actual": [
+            "USB"
+          ],
+          "status": "unknown",
+          "reason": "缺少所需接口的已核验证据：UART"
+        },
+        {
+          "constraint": "逻辑电平 V",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未限定逻辑电平"
+        },
+        {
+          "constraint": "指定方向的输入耐压",
+          "expected": 5.0,
+          "actual": null,
+          "status": "unknown",
+          "reason": "缺少对应输入耐压或转换电路输出证据，不能推定接线安全。"
+        },
+        {
+          "constraint": "颜色识别 / 色块跟踪",
+          "expected": true,
+          "actual": false,
+          "status": "unknown",
+          "reason": "资料未覆盖该任务，需样机实测"
+        },
+        {
+          "constraint": "离线运行",
+          "expected": true,
+          "actual": true,
+          "status": "pass",
+          "reason": "官方文档支持设备本地执行；依赖安装可需联网"
+        },
+        {
+          "constraint": "禁用器件",
+          "expected": [],
+          "actual": "ESP32-S3-EYE v2.2",
+          "status": "pass",
+          "reason": "未命中用户列出的禁用器件（仍须复核原题）"
+        },
+        {
+          "constraint": "实时检索覆盖",
+          "expected": "查询完成且发现对应官方站点线索",
+          "actual": 0,
+          "status": "unknown",
+          "reason": "实时搜索未完整完成或未找到该候选的官方域线索；不作完整联网推荐"
+        }
+      ],
+      "score": 34,
+      "score_breakdown": [
+        {
+          "name": "任务资料覆盖",
+          "points": 0,
+          "max_points": 40,
+          "reason": "官方示例覆盖已识别任务的比例"
+        },
+        {
+          "name": "文档可用性",
+          "points": 16,
+          "max_points": 20,
+          "reason": "人工维护的文档完整度评分，非客观性能"
+        },
+        {
+          "name": "新生上手",
+          "points": 8,
+          "max_points": 20,
+          "reason": "人工维护的学习难度评分，需结合团队经验"
+        },
+        {
+          "name": "证据覆盖",
+          "points": 10,
+          "max_points": 20,
+          "reason": "已核验官方资料条目数，最高 20 分"
+        },
+        {
+          "name": "供货风险扣分",
+          "points": 0,
+          "max_points": 0,
+          "reason": "官方停产 -10、欠货订购 -4；未核验库存不等于现货，无额外加分"
+        }
+      ],
+      "reasons": [
+        "离线运行：官方文档支持设备本地执行；依赖安装可需联网",
+        "禁用器件：未命中用户列出的禁用器件（仍须复核原题）"
+      ],
+      "risks": [
+        "只将本轮确认可用于外部连接的 USB 写入 interfaces；SoC 自带 UART/I2C/SPI 不代表此板已引出可用接口。",
+        "模块供电 3.3V 不能自动证明全部可连接信号的逻辑电平，logic_voltage_v 保留未知。",
+        "官方教程要求匹配 ESP-IDF / ESP-WHO 版本；本项目尚未执行板卡刷写。",
+        "检测模型、固件与依赖需预先安装，推理可在本地执行；网络传输是可选能力。",
+        "未核验颜色追踪、AprilTag 或巡线的具体板卡示例，因此不列为已核验能力。",
+        "skill_level 与 docs_quality 是人工评审分。",
+        "通信接口：缺少所需接口的已核验证据：UART",
+        "指定方向的输入耐压：缺少对应输入耐压或转换电路输出证据，不能推定接线安全。",
+        "颜色识别 / 色块跟踪：资料未覆盖该任务，需样机实测",
+        "实时检索覆盖：实时搜索未完整完成或未找到该候选的官方域线索；不作完整联网推荐"
+      ],
+      "live_leads": [],
+      "evidence_ids": [
+        "esp-eye-official-hardware",
+        "esp-eye-official-local-ai",
+        "esp-eye-community-windows-flash"
+      ],
+      "suitability": {
+        "source": "user_reported",
+        "owned": false,
+        "adjustment": 0,
+        "risks": [],
+        "advantages": [],
+        "missing_inputs": [],
+        "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+      },
+      "ranking_score": 34
+    },
+    {
+      "hardware": {
+        "id": "raspberry-pi-5",
+        "name": "Raspberry Pi 5（需另配摄像头）",
+        "vendor": "Raspberry Pi",
+        "summary": "Linux 单板计算机；官方支持相机软件与 TensorFlow Lite 检测路径，摄像头、电源、存储与散热应单独纳入整机 BOM。",
+        "interfaces": [
+          "UART",
+          "I2C",
+          "SPI",
+          "USB",
+          "CSI"
+        ],
+        "logic_voltage_v": 3.3,
+        "power_w": null,
+        "price_cny": null,
+        "price_kind": "unknown",
+        "capabilities": [
+          "object_detection",
+          "offline_inference"
+        ],
+        "skill_level": 4,
+        "docs_quality": 5,
+        "evidence": [
+          {
+            "id": "pi5-official-product",
+            "kind": "official",
+            "title": "Raspberry Pi 5 官方产品规格",
+            "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+            "claim": "产品页列出 USB、双 MIPI 相机/显示连接器、40-pin 排针与 UART 调试口。电源供给能力不能用作算法实耗。",
+            "field": "summary,interfaces",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "2 × 4-lane MIPI camera/display transceivers"
+          },
+          {
+            "id": "pi5-official-gpio",
+            "kind": "official",
+            "title": "Raspberry Pi 官方 GPIO 文档源",
+            "url": "https://github.com/raspberrypi/documentation/blob/master/documentation/asciidoc/computers/raspberry-pi/gpio-on-raspberry-pi.adoc",
+            "claim": "官方文档确认 GPIO 输出高电平为 3.3V，并列出 SPI、I2C 与串行功能；外设需启用并检查引脚复用。",
+            "field": "logic_voltage_v,interfaces",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "high (3.3V) or low (0V)"
+          },
+          {
+            "id": "pi5-official-camera-detection",
+            "kind": "official",
+            "title": "Raspberry Pi 官方 Camera software 文档",
+            "url": "https://www.raspberrypi.com/documentation/computers/camera_software.html",
+            "claim": "官方介绍在 Raspberry Pi 上构建带 TensorFlow Lite 的 rpicam-detect 并运行相机检测，属于本地软件路径。需要摄像头、兼容模型及依赖，不代表预装即用或已实测 Pi 5 性能。",
+            "field": "capabilities",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "rpicam-detect: Not built by default"
+          }
+        ],
+        "caveats": [
+          "此候选为开发平台而非带摄像头完整视觉套件，价格不能引用裸板价当整机价。",
+          "需另配兼容摄像头和 Pi 5 相机排线、microSD/存储、电源及合适散热。",
+          "官方 5V/5A 供电规格表示供电要求，不能写成恒定 25W 算法功耗。",
+          "3.3V 为 GPIO 逻辑电平，不等于 USB-C 输入电压；严禁把 5V 电源引脚当作 GPIO。",
+          "本地检测前需要安装/构建依赖和下载模型；未验证任务帧率及准确率。",
+          "未核验本板颜色/巡线/AprilTag 的端到端示例，因此本轮能力表保守只列目标检测。",
+          "skill_level 与 docs_quality 是人工评审分。"
+        ],
+        "availability_status": "unknown"
+      },
+      "verdict": "unknown",
+      "checks": [
+        {
+          "constraint": "预算上限（板卡，不含完整系统）",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "功耗上限",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "通信接口",
+          "expected": [
+            "UART"
+          ],
+          "actual": [
+            "UART",
+            "I2C",
+            "SPI",
+            "USB",
+            "CSI"
+          ],
+          "status": "pass",
+          "reason": "官方接口证据覆盖需求"
+        },
+        {
+          "constraint": "逻辑电平 V",
+          "expected": null,
+          "actual": 3.3,
+          "status": "not_requested",
+          "reason": "未限定逻辑电平"
+        },
+        {
+          "constraint": "指定方向的输入耐压",
+          "expected": 5.0,
+          "actual": null,
+          "status": "unknown",
+          "reason": "缺少对应输入耐压或转换电路输出证据，不能推定接线安全。"
+        },
+        {
+          "constraint": "颜色识别 / 色块跟踪",
+          "expected": true,
+          "actual": false,
+          "status": "unknown",
+          "reason": "资料未覆盖该任务，需样机实测"
+        },
+        {
+          "constraint": "离线运行",
+          "expected": true,
+          "actual": true,
+          "status": "pass",
+          "reason": "官方文档支持设备本地执行；依赖安装可需联网"
+        },
+        {
+          "constraint": "禁用器件",
+          "expected": [],
+          "actual": "Raspberry Pi 5（需另配摄像头）",
+          "status": "pass",
+          "reason": "未命中用户列出的禁用器件（仍须复核原题）"
+        },
+        {
+          "constraint": "实时检索覆盖",
+          "expected": "查询完成且发现对应官方站点线索",
+          "actual": 0,
+          "status": "unknown",
+          "reason": "实时搜索未完整完成或未找到该候选的官方域线索；不作完整联网推荐"
+        }
+      ],
+      "score": 43,
+      "score_breakdown": [
+        {
+          "name": "任务资料覆盖",
+          "points": 0,
+          "max_points": 40,
+          "reason": "官方示例覆盖已识别任务的比例"
+        },
+        {
+          "name": "文档可用性",
+          "points": 20,
+          "max_points": 20,
+          "reason": "人工维护的文档完整度评分，非客观性能"
+        },
+        {
+          "name": "新生上手",
+          "points": 8,
+          "max_points": 20,
+          "reason": "人工维护的学习难度评分，需结合团队经验"
+        },
+        {
+          "name": "证据覆盖",
+          "points": 15,
+          "max_points": 20,
+          "reason": "已核验官方资料条目数，最高 20 分"
+        },
+        {
+          "name": "供货风险扣分",
+          "points": 0,
+          "max_points": 0,
+          "reason": "官方停产 -10、欠货订购 -4；未核验库存不等于现货，无额外加分"
+        }
+      ],
+      "reasons": [
+        "通信接口：官方接口证据覆盖需求",
+        "离线运行：官方文档支持设备本地执行；依赖安装可需联网",
+        "禁用器件：未命中用户列出的禁用器件（仍须复核原题）"
+      ],
+      "risks": [
+        "此候选为开发平台而非带摄像头完整视觉套件，价格不能引用裸板价当整机价。",
+        "需另配兼容摄像头和 Pi 5 相机排线、microSD/存储、电源及合适散热。",
+        "官方 5V/5A 供电规格表示供电要求，不能写成恒定 25W 算法功耗。",
+        "3.3V 为 GPIO 逻辑电平，不等于 USB-C 输入电压；严禁把 5V 电源引脚当作 GPIO。",
+        "本地检测前需要安装/构建依赖和下载模型；未验证任务帧率及准确率。",
+        "未核验本板颜色/巡线/AprilTag 的端到端示例，因此本轮能力表保守只列目标检测。",
+        "skill_level 与 docs_quality 是人工评审分。",
+        "指定方向的输入耐压：缺少对应输入耐压或转换电路输出证据，不能推定接线安全。",
+        "颜色识别 / 色块跟踪：资料未覆盖该任务，需样机实测",
+        "实时检索覆盖：实时搜索未完整完成或未找到该候选的官方域线索；不作完整联网推荐"
+      ],
+      "live_leads": [],
+      "evidence_ids": [
+        "pi5-official-product",
+        "pi5-official-gpio",
+        "pi5-official-camera-detection"
+      ],
+      "suitability": {
+        "source": "user_reported",
+        "owned": false,
+        "adjustment": -10,
+        "risks": [
+          "用户自述无 Linux 经验，需先验证系统、相机和依赖安装。",
+          "剩余时间小于产品规则阈值8小时，先做工具链冒烟；这不是实测工时预测。"
+        ],
+        "advantages": [],
+        "missing_inputs": [],
+        "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+      },
+      "ranking_score": 33
+    },
+    {
+      "hardware": {
+        "id": "openmv-rt1062",
+        "name": "OpenMV Cam RT1062（欠货可订购）",
+        "vendor": "OpenMV",
+        "summary": "带 OV5640 摄像头、可用 MicroPython 开发的视觉板，适合颜色、巡线与 AprilTag 原型；核验时官网可欠货订购，交期与现货待确认。",
+        "interfaces": [
+          "UART",
+          "I2C",
+          "SPI",
+          "USB"
+        ],
+        "logic_voltage_v": 3.3,
+        "power_w": null,
+        "price_cny": null,
+        "price_kind": "unknown",
+        "capabilities": [
+          "color_tracking",
+          "line_tracking",
+          "apriltag",
+          "offline_inference"
+        ],
+        "skill_level": 2,
+        "docs_quality": 5,
+        "evidence": [
+          {
+            "id": "rt1062-official-hardware",
+            "kind": "official",
+            "title": "OpenMV Cam RT1062 官方产品与电气说明",
+            "url": "https://openmv.io/products/openmv-cam-rt",
+            "claim": "官方列出 USB-C、SPI、I2C、异步串行接口、3.3V I/O 与 OV5640 摄像头；I/O 不耐 5V。",
+            "field": "interfaces,logic_voltage_v,summary,io_input_max_v",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "All I/O pins output 3.3V"
+          },
+          {
+            "id": "rt1062-official-availability",
+            "kind": "official",
+            "title": "OpenMV Cam RT1062 官网订购状态",
+            "url": "https://openmv.io/products/openmv-cam-rt",
+            "claim": "核验时官方产品正文显示可欠货订购。没有确认现货或送达日期，搜索缓存中的库存数字不能代替本次状态。",
+            "field": "caveats",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "Available for Backorder"
+          },
+          {
+            "id": "rt1062-official-image-api",
+            "kind": "official",
+            "title": "OpenMV Image API：颜色、直线与 AprilTag",
+            "url": "https://docs.openmv.io/v5.0.0/library/omv.image.Image.html",
+            "claim": "官方本地图像 API 提供颜色连通域、阈值直线回归与 AprilTag 检测；需要匹配固件并验证实际任务，不据此保证帧率。",
+            "field": "capabilities",
+            "accessed_at": "2026-10-24",
+            "status": "verified",
+            "excerpt": "find_blobs; get_regression; find_apriltags"
+          }
+        ],
+        "caveats": [
+          "2026-10-24 官网为欠货可订购状态；新购前必须确认现货、修订版、交期与到手成本，不能承诺比赛前送达。",
+          "RT1062 I/O 为 3.3V 且不耐 5V；3.3V 引脚为输出，不能当作供电输入。",
+          "官方说明排针未预焊，新生应将焊接或代焊、接线时间计入准备计划。",
+          "支持本地图像处理不代表已达成赛题帧率、定位精度或运动速度；需测完整处理和通信链路。",
+          "官方分工况电流不代表包含所有附件的统一功耗，power_w 保留未知。",
+          "人民币完整 BOM 未核验，price_cny 保留未知；不把美元板价换算当作现货套件报价。",
+          "skill_level 与 docs_quality 是人工评审分。"
+        ],
+        "availability_status": "backorder",
+        "io_input_max_v": 3.3
+      },
+      "verdict": "fail",
+      "checks": [
+        {
+          "constraint": "预算上限（板卡，不含完整系统）",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "功耗上限",
+          "expected": null,
+          "actual": null,
+          "status": "not_requested",
+          "reason": "未设置此上限"
+        },
+        {
+          "constraint": "通信接口",
+          "expected": [
+            "UART"
+          ],
+          "actual": [
+            "UART",
+            "I2C",
+            "SPI",
+            "USB"
+          ],
+          "status": "pass",
+          "reason": "官方接口证据覆盖需求"
+        },
+        {
+          "constraint": "逻辑电平 V",
+          "expected": null,
+          "actual": 3.3,
+          "status": "not_requested",
+          "reason": "未限定逻辑电平"
+        },
+        {
+          "constraint": "指定方向的输入耐压",
+          "expected": 5.0,
+          "actual": 3.3,
+          "status": "fail",
+          "reason": "直接输入5V超出官方标注3.3V耐受范围。"
+        },
+        {
+          "constraint": "颜色识别 / 色块跟踪",
+          "expected": true,
+          "actual": true,
+          "status": "pass",
+          "reason": "存在官方示例/文档；未承诺比赛环境帧率"
+        },
+        {
+          "constraint": "离线运行",
+          "expected": true,
+          "actual": true,
+          "status": "pass",
+          "reason": "官方文档支持设备本地执行；依赖安装可需联网"
+        },
+        {
+          "constraint": "禁用器件",
+          "expected": [],
+          "actual": "OpenMV Cam RT1062（欠货可订购）",
+          "status": "pass",
+          "reason": "未命中用户列出的禁用器件（仍须复核原题）"
+        },
+        {
+          "constraint": "实时检索覆盖",
+          "expected": "查询完成且发现对应官方站点线索",
+          "actual": 30,
+          "status": "pass",
+          "reason": "已检索到候选官方域线索；具体参数仍以固定库逐条官方证据为准"
+        }
+      ],
+      "score": 87,
+      "score_breakdown": [
+        {
+          "name": "任务资料覆盖",
+          "points": 40,
+          "max_points": 40,
+          "reason": "官方示例覆盖已识别任务的比例"
+        },
+        {
+          "name": "文档可用性",
+          "points": 20,
+          "max_points": 20,
+          "reason": "人工维护的文档完整度评分，非客观性能"
+        },
+        {
+          "name": "新生上手",
+          "points": 16,
+          "max_points": 20,
+          "reason": "人工维护的学习难度评分，需结合团队经验"
+        },
+        {
+          "name": "证据覆盖",
+          "points": 15,
+          "max_points": 20,
+          "reason": "已核验官方资料条目数，最高 20 分"
+        },
+        {
+          "name": "供货风险扣分",
+          "points": -4,
+          "max_points": 0,
+          "reason": "官方停产 -10、欠货订购 -4；未核验库存不等于现货，无额外加分"
+        }
+      ],
+      "reasons": [
+        "通信接口：官方接口证据覆盖需求",
+        "颜色识别 / 色块跟踪：存在官方示例/文档；未承诺比赛环境帧率",
+        "离线运行：官方文档支持设备本地执行；依赖安装可需联网",
+        "禁用器件：未命中用户列出的禁用器件（仍须复核原题）",
+        "实时检索覆盖：已检索到候选官方域线索；具体参数仍以固定库逐条官方证据为准"
+      ],
+      "risks": [
+        "2026-10-24 官网为欠货可订购状态；新购前必须确认现货、修订版、交期与到手成本，不能承诺比赛前送达。",
+        "RT1062 I/O 为 3.3V 且不耐 5V；3.3V 引脚为输出，不能当作供电输入。",
+        "官方说明排针未预焊，新生应将焊接或代焊、接线时间计入准备计划。",
+        "支持本地图像处理不代表已达成赛题帧率、定位精度或运动速度；需测完整处理和通信链路。",
+        "官方分工况电流不代表包含所有附件的统一功耗，power_w 保留未知。",
+        "人民币完整 BOM 未核验，price_cny 保留未知；不把美元板价换算当作现货套件报价。",
+        "skill_level 与 docs_quality 是人工评审分。",
+        "指定方向的输入耐压：直接输入5V超出官方标注3.3V耐受范围。"
+      ],
+      "live_leads": [
+        {
+          "id": "search-0-0",
+          "title": "OpenMV Cam RT1062",
+          "url": "https://openmv.io/products/openmv-cam-rt?srsltid=AfmBOorMjCmNBP1AZA_3V53JQMS-8N7Mg5ljP10ljHe4SLFoCauGWzZN",
+          "snippet": "OpenMV Cam RT1062 OpenMV。OpenMV Cam RT1062 $165.00 USD Shipping calculated at checkout. OpenMV does not pay for import taxes and duties. You are expected pay for customs clearance on all orders you purchase. The OpenMV Cam headers do not come pre-soldered. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and its I/O pins in Python. You can easily trigger taking pictures and video on external ...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-0-1",
+          "title": "OpenMV Cam RT1062",
+          "url": "https://openmv.io/products/openmv-cam-rt?utm_source=chatgpt.com",
+          "snippet": "OpenMV Cam RT1062 OpenMV。 Do not draw more than 250mA from your OpenMV Cam's 3.3V rail. Power Consumption Deep Sleep: 30µA @ 3.7V (Powered only via LiPo Battery) Deep Sleep: 1.6mA @ 5V Idle: 100mA @ 5V Active: 130mA @ 5V Dimensions Length: 45 mm Width: 36 mm Height: 29 mm Temperature Range Storage Temperature: -25°C to 85°C Operating Temperature: 0°C to 70°C Shipping Information Country of Origin: China HS Code: 8529.90.4200 Weight: 20 g UPC: 712179433410 (V4), 608275911122 (V5), 602772227168 (V6) SKU: OMV-CAM-RT1062-V1 (V4), OMV-CAM-RT1062-V2 (V5), OMV-CAM-RT1062-V3 (V6) ECCN: 5A992.C 3D Model OpenMV Cam RT1062 Model (.step) Case OpenMV Cam RT1062 V5/V6 3D Printable Case (.stl) OpenMV Cam RT1062 V4 3D Printable Case (.stl) Mount Tripod 1/4-20 Styled Board Mount (.stl/.step) Tripod 1/4-20 ...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-0-2",
+          "title": "OpenMV Cam RT1062 Camera for Machine Vision",
+          "url": "https://www.arduitronics.com/product/6172/openmv-cam-rt1062-camera-for-machine-vision",
+          "snippet": "OpenMV Cam RT1062 Camera for Machine Vision Ardui Tronics。 Most simple algorithms will run about 40 FPS on QVGA (320x240) resolutions and below. If you want to use more specialized lenses with your image sensor you can easily buy and attach them yourself A LiPo battery connector compatible with 3.7V LiPo batteries commonly sold online for hobbyist robotic applications with battery charging support via USB 100 mA Fast Charge Current With TVS Protection An ARM 10-pin JTAG Header Compatible with SEGGER J-Link Devices for debugging and programming With EMI Filtering and TVS protection External 5V VIN with reverse supply protection With TVS Protection Documents: OpenMV Cam RT1062 Model OpenMV Cam Base Schematic OpenMV Cam OV5640 Schematic Processor Datasheet: MIMXRT106FCVL5B Camera Datasheet: O...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-0-3",
+          "title": "OpenMV Cam RT1062",
+          "url": "https://singtown.com/eg/store/openmv-cam-rt1062",
+          "snippet": "OpenMV Cam RT1062。 It can also find non-infinite-length line segments. Watch our video here: /learn/50009 Circle Detection You can easily detect circles in the image using OpenMV. Rectangle Detection OpenMV can also detect rectangles, using the square detection code from the AprilTag library. Template Matching You can use OpenMV template matching to detect whether there are template-like images in the field of view. For example, template matching can be used to find marks on PCBs or read known numbers on displays. Image Capture You can use OpenMV to capture RGB565/grayscale BMP/JPG/PPM/PGM images. You can directly control how to capture images in Python scripts. Most importantly, using machine vision algorithms, you can draw lines, draw characters, and then save them. Video Recording You c...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-0-4",
+          "title": "OpenMV Cam RT1062",
+          "url": "https://openmv.io/zh/collections/products/products/openmv-cam-rt",
+          "snippet": "OpenMV Cam RT1062 OpenMV。My cart Price $165.00 USD Shipping calculated at checkout. OpenMV does not pay for import taxes and duties. You are expected pay for customs clearance on all orders you purchase. Available for Backorder Quantity Couldn't load pickup availability Refresh Add to cart The OpenMV Cam headers do not come pre-soldered. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and it...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-0-5",
+          "title": "OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython",
+          "url": "https://www.cnx-software.com/?p=120027/",
+          "snippet": "OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython CNX Software。OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython Following the success of the OpenMV Cam H7 and the original OpenMV VGA Camera, OpenMV recently launched the OpenMV CAM RT1062 powered by NXP’s RT1060 processor. This new camera module integrates a range of features, including a high-speed USB-C (480Mbps) interface, an accelerometer, and a LiPo connector for portability. Similar to its predecessor, this camera module also features a removable camera system, and it is built around the OV5640 image sensor which is more powerful in terms of resolution and versatility. However, the previous Omnivision OV7725 sensor, used in the OpenMV Cam H7 has a far superior frame rate and low-l...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-0-6",
+          "title": "OpenMV Cam RT1062: Projects, Specs & Setup",
+          "url": "https://rottenwifi.com/openmv-cam-rt1062-diy-projects-and-ideas-for-makers/?__v=PY-win",
+          "snippet": "OpenMV Cam RT1062: Projects, Specs & Setup RottenWiFi。 Random freezes, missing sound and display glitches usually trace back to one bad driver. Find and replace yours safely.Free scan · under a minuteFind the Right Drivers → Special offer. See more information about Outbyte and uninstall instructions. Please review EULA and Privacy policy. Choose the camera, lens, and mounting for the scene The RT1062’s OV5640 sensor is on a removable camera carrier. OpenMV lists other sensor modules and an M12 lens interface, giving a build some flexibility in sensor and optics choices. Compare field of view, resolution, rolling-shutter behavior, working distance, and lighting needs with the scene you need to capture before selecting a module or lens. The quick reference identifies the supplied OV5640 as ...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-0-7",
+          "title": "OpenMV Cam RT1062: Projects, Specs & Setup",
+          "url": "https://rottenwifi.com/openmv-cam-rt1062-diy-projects-and-ideas-for-makers",
+          "snippet": "OpenMV Cam RT1062: Projects, Specs & Setup RottenWiFi。 The quick reference identifies the supplied OV5640 as a rolling-shutter sensor; it does not establish that another module will have the same characteristics. OpenMV RT1062 quick reference OpenMV product page The board also has a microSD socket for projects that need removable storage. OpenMV links printable cases and tripod- or GoPro-style mounts. Treat these as optional, project-specific choices: a fixed robot installation and a portable camera build may need different enclosures and mounting hardware. Rank #4 Full HD 1080P 150° Wide View Rear Camera 20ft for AZDOME M550, M550 Max Dash Cam 【Compatibility】This 6 pin rear camera is only suitable for AZDOME M550 & M550 Max dash cam 【HD 1080P Recording】The rear car camera has excellent im...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-0-8",
+          "title": "3.4. 接腳與周邊裝置",
+          "url": "https://docs.openmv.io/dev/zh_TW/openmvcam/tutorial/hardware/foundations/pins-and-peripherals.html",
+          "snippet": "3.4. 接腳與周邊裝置 OpenMV文档。表格請見 OpenMV Cam 快速參考。 3.4.3. 板子差異# 有幾項細節因板而異,應始終對照快速參考查證,而不要從另一塊板子的情況去推測: 電壓耐受度。 有些 cam 具備 5 V 耐受的 I/O 接腳(可直接施加 5 V 訊號而不致損壞);其他則以 3.3 V 或 1.8 V 運作其 I/O,凡是高於該值的訊號都需要準位轉換器。把 5 V 來源接到不耐受的接腳上可能會損壞晶片。 ADC 參考電壓。 ADC 視為滿刻度的電壓取決於板子的 I/O 供電。read_u16() 一律回傳 0..65535,但 65535 所代表的電壓就是該板子的參考電壓。 驅動能力。 GPIO 接腳能提供或吸收的電流有限 —— 通常為數十毫安。足以透過電阻驅動一顆小 LED;但不足以驅動馬達、蜂鳴器或任何電感性負載。任何較重的負載請改用外部驅動元件(電晶體、MOSFET、H 橋)。 OpenMV Cam 快速參考 提供每塊板子的確切數值。...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-0-9",
+          "title": "OpenMV Cam RT1062: Affordable Innovation in Machine Vision Now Available for 130",
+          "url": "https://www.electronics-lab.com/openmv-cam-rt1062-affordable-innovation-in-machine-vision-now-available-for-130/",
+          "snippet": "OpenMV Cam RT1062: Affordable Innovation in Machine Vision Now Available for $130 Electronics-Lab。The OpenMV CAM RT1062 is a new camera from OpenMV that uses the powerful NXP RT1060 processor. You can write programs for it using MicroPython, a beginner-friendly version of Python. The OpenMV CAM RT1062 is a new camera from OpenMV that uses the powerful NXP RT1060 processor. You can write programs for it using MicroPython, a beginner-friendly version of Python. It has a fast USB-C connection, making it easy to connect to other devices. It also comes with an accelerometer, a sensor that can detect movement or tilting, which can be useful for keeping pictures steady. Another feature is the LiPo connector, allowing it to be powered by a rechargeable battery for portability. Overall, it’s a hand...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input official documentation",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-0",
+          "title": "OpenMV Cam RT1062",
+          "url": "https://openmv.io/products/openmv-cam-rt?srsltid=AfmBOoqxRbENlMkDcdq0AryvOct1sUXDmFgKrifUNLAfwiAjPS1cL6O2",
+          "snippet": "OpenMV Cam RT1062 OpenMV。View in space View in space View in space OpenMV Cam RT1062 Revision R4 R5 R4 R5 24 In stock The OpenMV Cam headers do not come pre-soldered. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and its I/O pins in Python. You can easily trigger taking pictures and video on external events or execute machine vision algorithms to figure out h... Read more Specs PLEASE NOTE...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-1-1",
+          "title": "OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython",
+          "url": "https://www.cnx-software.com/?p=120027/",
+          "snippet": "OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython CNX Software。OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython Following the success of the OpenMV Cam H7 and the original OpenMV VGA Camera, OpenMV recently launched the OpenMV CAM RT1062 powered by NXP’s RT1060 processor. This new camera module integrates a range of features, including a high-speed USB-C (480Mbps) interface, an accelerometer, and a LiPo connector for portability. Similar to its predecessor, this camera module also features a removable camera system, and it is built around the OV5640 image sensor which is more powerful in terms of resolution and versatility. However, the previous Omnivision OV7725 sensor, used in the OpenMV Cam H7 has a far superior frame rate and low-l...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-2",
+          "title": "OpenMV Cam RT1062: Projects, Specs & Setup",
+          "url": "https://rottenwifi.com/openmv-cam-rt1062-diy-projects-and-ideas-for-makers",
+          "snippet": "OpenMV Cam RT1062: Projects, Specs & Setup RottenWiFi。 The quick reference identifies the supplied OV5640 as a rolling-shutter sensor; it does not establish that another module will have the same characteristics. OpenMV RT1062 quick reference OpenMV product page The board also has a microSD socket for projects that need removable storage. OpenMV links printable cases and tripod- or GoPro-style mounts. Treat these as optional, project-specific choices: a fixed robot installation and a portable camera build may need different enclosures and mounting hardware. Rank #4 Full HD 1080P 150° Wide View Rear Camera 20ft for AZDOME M550, M550 Max Dash Cam 【Compatibility】This 6 pin rear camera is only suitable for AZDOME M550 & M550 Max dash cam 【HD 1080P Recording】The rear car camera has excellent im...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-3",
+          "title": "OpenMV Cam RT1062: Projects, Specs & Setup",
+          "url": "https://rottenwifi.com/openmv-cam-rt1062-diy-projects-and-ideas-for-makers/?__v=PY-win",
+          "snippet": "OpenMV Cam RT1062: Projects, Specs & Setup RottenWiFi。 Random freezes, missing sound and display glitches usually trace back to one bad driver. Find and replace yours safely.Free scan · under a minuteFind the Right Drivers → Special offer. See more information about Outbyte and uninstall instructions. Please review EULA and Privacy policy. Choose the camera, lens, and mounting for the scene The RT1062’s OV5640 sensor is on a removable camera carrier. OpenMV lists other sensor modules and an M12 lens interface, giving a build some flexibility in sensor and optics choices. Compare field of view, resolution, rolling-shutter behavior, working distance, and lighting needs with the scene you need to capture before selecting a module or lens. The quick reference identifies the supplied OV5640 as ...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-4",
+          "title": "OpenMV Cam RT1062: Affordable Innovation in Machine Vision Now Available for 130",
+          "url": "https://www.electronics-lab.com/openmv-cam-rt1062-affordable-innovation-in-machine-vision-now-available-for-130/",
+          "snippet": "OpenMV Cam RT1062: Affordable Innovation in Machine Vision Now Available for $130 Electronics-Lab。The OpenMV CAM RT1062 is a new camera from OpenMV that uses the powerful NXP RT1060 processor. You can write programs for it using MicroPython, a beginner-friendly version of Python. The OpenMV CAM RT1062 is a new camera from OpenMV that uses the powerful NXP RT1060 processor. You can write programs for it using MicroPython, a beginner-friendly version of Python. It has a fast USB-C connection, making it easy to connect to other devices. It also comes with an accelerometer, a sensor that can detect movement or tilting, which can be useful for keeping pictures steady. Another feature is the LiPo connector, allowing it to be powered by a rechargeable battery for portability. Overall, it’s a hand...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-5",
+          "title": "OpenMV Cam RT1062 Camera for Machine Vision",
+          "url": "https://www.arduitronics.com/product/6172/openmv-cam-rt1062-camera-for-machine-vision",
+          "snippet": "OpenMV Cam RT1062 Camera for Machine Vision Ardui Tronics。 Most simple algorithms will run about 40 FPS on QVGA (320x240) resolutions and below. If you want to use more specialized lenses with your image sensor you can easily buy and attach them yourself A LiPo battery connector compatible with 3.7V LiPo batteries commonly sold online for hobbyist robotic applications with battery charging support via USB 100 mA Fast Charge Current With TVS Protection An ARM 10-pin JTAG Header Compatible with SEGGER J-Link Devices for debugging and programming With EMI Filtering and TVS protection External 5V VIN with reverse supply protection With TVS Protection Documents: OpenMV Cam RT1062 Model OpenMV Cam Base Schematic OpenMV Cam OV5640 Schematic Processor Datasheet: MIMXRT106FCVL5B Camera Datasheet: O...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-6",
+          "title": "OpenMV Cam RT1062 Industrial Smart AI Camera",
+          "url": "https://openelab.io/it/products/openmv-cam-rt1062-industrial-smart",
+          "snippet": "OpenMV Cam RT1062 Industrial Smart AI Camera OpenELAB。OpenMV Cam RT1062 Industrial Smart AI Camera SKU: OpenMV-CamRT1062 Regular price 168,30 € Sale price 179,95 € incl. VAT excl. VAT The OpenMV Cam is a small, low-power microcontroller board designed to simplify the implementation of machine vision applications in real-world scenarios. Rather than using C/C++, the board is programmed using high-level Python scripts via the MicroPython Operating System. This approach significantly eases the management of complex machine vision algorithm outputs and the handling of high-level data structures. Despite the simplified programming interface, users maintain total control over the hardware and its I/O pins. The platform allows you to trigger internal image and video capture based on external even...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-7",
+          "title": "OpenMV Cam RT1062",
+          "url": "https://www.electropi.in/drone-ebike-3d-printer/cameras/openmv-cam-rt1062?limit=100",
+          "snippet": "OpenMV Cam RT1062 Electropi。OpenMV Cam RT1062 Product Code: EPI24997 Availability: 10 0 reviews Write a review The OpenMV Cam RT1062 is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and its I/O pins in Python. You can easily trigger taking pictures and video on external events or execute machine vision algorithms to figure out how to control your I/O pins. The RT1062 ARM Cortex M7 processor runs at 600 MHz ...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-8",
+          "title": "OpenMV Cam RT1062 Camera for Machine Vision",
+          "url": "https://www.dfrobot.com/product-2804.html?srsltid=AfmBOopTGc4NN5TWwHN2EtY7de0dZwkyV9OV4TMitJwYwKErXOyQzlWA",
+          "snippet": "OpenMV Cam RT1062 Camera for Machine Vision DFRobot。OpenMV Cam RT1062 Camera for Machine Vision $140.00 SKU: DFR1082 A compact microcontroller board with a camera, supporting machine vision applications via Python scripts. Features include USB, WiFi, Bluetooth, and various I/O interfaces. Introduction OpenMV Cam RT1062 is a compact, low-power microcontroller board with camera, facilitates the seamless implementation of real-world applications using machine vision. Programming of the OpenMV Cam is accomplished through high-level Python scripts, courtesy of the MicroPython Operating System, as opposed to C/C++. This approach simplifies the handling of complex outputs from machine vision algorithms and the manipulation of high-level data structures. Despite this, total control over the OpenMV...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-1-9",
+          "title": "OpenMV Cam RT1062 SingTown 5MP High Definition Image Detection Industrial AI Camera",
+          "url": "https://www.duino.lk/?p=75542",
+          "snippet": "OpenMV Cam RT1062 SingTown 5MP High Definition Image Detection Industrial AI Camera。OpenMV Cam RT1062 SingTown 5MP High Definition Image Detection Industrial AI Camera SKU: ML2304 OpenMV Cam RT1062 SingTown 5MP High Definition Image Detection Industrial AI Camera * මෙම අයිතමය ඔබගේ අවශ්‍යතාවය අනුව දින 14-21 අතර ගෙන්වා දෙන බැවින් අපවෙත whatsapp පණිවිඩයක් යොමුකරන්න. features: The RT1062 ARM Cortex M7 processor running at 600 MHz with 32MBs SDRAM + 1MB of SRAM and 16 MB of program/storage flash. All I/O pins output 3.3V and are 3.3V tolerant. The processor has the following I/O interfaces: 1.5A current limited. With EMI Filtering and TVS protection. With EMI Filtering and TVS protection. One I/O pin for low power wakeup. There is also a pin for device power button ON/OFF support. With EMI Filtering and TVS protecti...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input  适用条件",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-0",
+          "title": "OpenMV Cam RT failing on multiple occasions",
+          "url": "https://forums.openmv.io/t/openmv-cam-rt-failing-on-multiple-occasions/10976",
+          "snippet": "OpenMV Cam RT failing on multiple occasions。OpenMV Cam RT failing on multiple occasions post by yshaalan on May 6, 2025 yshaalan May 2025 Hi, we are using OpenMV RT1062 Cameras in our robot. we have 2 of the R4 type. The first camera failed a week ago when it stopped detecting on our laptops and started heating up. With a voltmeter it outputs 1v on the 3v3 rail. It heats up from the bottom side and the led glows dimly green and red. The second camera failed yesterday when it would run any code that didn’t use the image sensor (eg.blink sketches). But any sketch that uses the sensor would fail with the error: RuntimeError: Frame capture has timed out. We tried replacing the image sensor with others we have from the other RT and previous H7 units. For Camera 1 we have tried: Isolating the sh...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-1",
+          "title": "Broken tool detection with machine vision",
+          "url": "https://forums.parallax.com/discussion/comment/1570000",
+          "snippet": "Broken tool detection with machine vision。 I have to buy one of those OpenMV cameras. I think I can get much better lighting conditions with an LED backlight tile reducing background noise and shadows. ManAtWork Posts: 2,262 2025-10-29 09:14 Errr, next question: which camera module would suit my application best? It would be good to have 3 IO-pins, two inputs for the commands \"learn\" and \"check\" and one output for \"good/bad\". This way I can interface it to the CNC controller without having to send serial data over USB. Most camera modules have the two IO pin headers JP1 and JP2. The description says the IO pins drive 3.3V and are 5V tolerant. I can connect optocouplers to interface to the 24V signals of the CNC controler. But which pins can I use as general purpose IOs? The RT1062 has a lo...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-2",
+          "title": "OpenMV Cam RT1062: Affordable Innovation in Machine Vision Now Available for 130",
+          "url": "https://www.electronics-lab.com/openmv-cam-rt1062-affordable-innovation-in-machine-vision-now-available-for-130/",
+          "snippet": "OpenMV Cam RT1062: Affordable Innovation in Machine Vision Now Available for $130 Electronics-Lab。The OpenMV CAM RT1062 is a new camera from OpenMV that uses the powerful NXP RT1060 processor. You can write programs for it using MicroPython, a beginner-friendly version of Python. The OpenMV CAM RT1062 is a new camera from OpenMV that uses the powerful NXP RT1060 processor. You can write programs for it using MicroPython, a beginner-friendly version of Python. It has a fast USB-C connection, making it easy to connect to other devices. It also comes with an accelerometer, a sensor that can detect movement or tilting, which can be useful for keeping pictures steady. Another feature is the LiPo connector, allowing it to be powered by a rechargeable battery for portability. Overall, it’s a hand...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-3",
+          "title": "OpenMV与STM32串口通信实战:USART配置､帧协议与调试技巧",
+          "url": "https://blog.csdn.net/weixin_28256233/article/details/165111306",
+          "snippet": "OpenMV与STM32串口通信实战:USART配置、帧协议与调试技巧 CSDN博客。 // 与 OpenMV 保持一致 huart3.Init.WordLength = UART_WORDLENGTH_8B; huart3.Init.StopBits = UART_STOPBITS_1; huart3.Init.Parity = UART_PARITY_NONE; // 帧协议里有校验字段,就不启用硬件校验 huart3.Init.Mode = UART_MODE_TX_RX; huart3.Init.HwFlowCtl = UART_HWCONTROL_NONE; c 运行 1 2 3 4 5 6 7 8 9 10 这里要强调一个很多人忽略的点: WordLength 在 HAL 库里的枚举值是 UART_WORDLENGTH_8B ,在旧版标准库里对应的是 USART_WordLength_8b ,拼写差异经常导致移植时报编译错误。波特率两端必须严格一致,误差超过 2% 就可能出现乱码——尤其是使用内部 RC 振荡器跑 115200 时,实测有时不但误码,还会出现偶发丢字节。 2.2 电平匹配与接线 OpenMV 的 UART 引脚是 3.3V TTL 电平,STM32 绝大多数型号的 GPIO 也是 3.3V 容忍或 3.3V 输出,直接互连没有问题。真正常见的坑是用户把 STM32 的板载 5V 引脚接到 OpenMV 的串口 RX 上,一次就烧。两边的 TX 与 RX 交叉连接——OpenMV_TX 接 STM32_RX,OpenMV_RX 接 STM32_TX,GND 必须共地,否则通信时好时坏。 项目 OpenMV 端 STM32 端 电平标准 3.3V TTL 3.3V TTL(FT 引脚兼容 5V) 默认波特率 115200 115200 数据格式 8N...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-4",
+          "title": "OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython",
+          "url": "https://www.cnx-software.com/?p=120027/",
+          "snippet": "OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython CNX Software。OpenMV CAM RT1062 camera for machine vision is programmable with MicroPython Following the success of the OpenMV Cam H7 and the original OpenMV VGA Camera, OpenMV recently launched the OpenMV CAM RT1062 powered by NXP’s RT1060 processor. This new camera module integrates a range of features, including a high-speed USB-C (480Mbps) interface, an accelerometer, and a LiPo connector for portability. Similar to its predecessor, this camera module also features a removable camera system, and it is built around the OV5640 image sensor which is more powerful in terms of resolution and versatility. However, the previous Omnivision OV7725 sensor, used in the OpenMV Cam H7 has a far superior frame rate and low-l...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-5",
+          "title": "OpenMV Cam RT1062 SingTown 5MP High Definition Image Detection Industrial AI Camera",
+          "url": "https://www.duino.lk/?p=75542",
+          "snippet": "OpenMV Cam RT1062 SingTown 5MP High Definition Image Detection Industrial AI Camera。OpenMV Cam RT1062 SingTown 5MP High Definition Image Detection Industrial AI Camera SKU: ML2304 OpenMV Cam RT1062 SingTown 5MP High Definition Image Detection Industrial AI Camera * මෙම අයිතමය ඔබගේ අවශ්‍යතාවය අනුව දින 14-21 අතර ගෙන්වා දෙන බැවින් අපවෙත whatsapp පණිවිඩයක් යොමුකරන්න. features: The RT1062 ARM Cortex M7 processor running at 600 MHz with 32MBs SDRAM + 1MB of SRAM and 16 MB of program/storage flash. All I/O pins output 3.3V and are 3.3V tolerant. The processor has the following I/O interfaces: 1.5A current limited. With EMI Filtering and TVS protection. With EMI Filtering and TVS protection. One I/O pin for low power wakeup. There is also a pin for device power button ON/OFF support. With EMI Filtering and TVS protecti...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-6",
+          "title": "What are the connections between openmv cam rt1062 and arduino uno r3 - OpenMV Boards - OpenMV Forums",
+          "url": "https://forums.openmv.io/t/what-are-the-connections-between-openmv-cam-rt1062-and-arduino-uno-r3/10189/4",
+          "snippet": "What are the connections between openmv cam rt1062 and arduino uno r3 - OpenMV Boards - OpenMV Forums。What are the connections between openmv cam rt1062 and arduino uno r3 kkristofer Nov 2024 Currently I have it connected like this: 5v to 5v gnd to gnd rx to tx tx to rx Is that correct or not (complete novice here) also do I supply power to both or not (like connect them both to two different power sources) post by kwagyeman on Nov 11, 2024 kwagyeman Nov 2024 There’s no 5V pin on the RT1062. Why do you need the Arduino Uno in this picture? Note that the U3 has one uart which is used for programming. So, when you connect it to the OpenMV Cam it cannot be programmed. What’s your app? You might not need the Arduino Uno. post by kkristofer on Nov 11, 2024 kkristofer Nov 2024 Trying to make an ...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-7",
+          "title": "OpenMV Cam RT1062",
+          "url": "https://www.electropi.in/drone-ebike-3d-printer/cameras/openmv-cam-rt1062?limit=100",
+          "snippet": "OpenMV Cam RT1062 Electropi。OpenMV Cam RT1062 Product Code: EPI24997 Availability: 10 0 reviews Write a review The OpenMV Cam RT1062 is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and its I/O pins in Python. You can easily trigger taking pictures and video on external events or execute machine vision algorithms to figure out how to control your I/O pins. The RT1062 ARM Cortex M7 processor runs at 600 MHz ...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测",
+          "relation": "unverified_lead"
+        },
+        {
+          "id": "search-2-8",
+          "title": "OpenMV Cam RT1062",
+          "url": "https://openmv.io/products/openmv-cam-rt?srsltid=AfmBOoqxRbENlMkDcdq0AryvOct1sUXDmFgKrifUNLAfwiAjPS1cL6O2",
+          "snippet": "OpenMV Cam RT1062 OpenMV。View in space View in space View in space OpenMV Cam RT1062 Revision R4 R5 R4 R5 24 In stock The OpenMV Cam headers do not come pre-soldered. The OpenMV Cam is a small, low power, microcontroller board which allows you to easily implement applications using machine vision in the real-world. You program the OpenMV Cam in high level Python scripts (courtesy of the MicroPython Operating System) instead of C/C++. This makes it easier to deal with the complex outputs of machine vision algorithms and working with high level data structures. But, you still have total control over your OpenMV Cam and its I/O pins in Python. You can easily trigger taking pictures and video on external events or execute machine vision algorithms to figure out h... Read more Specs PLEASE NOTE...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测",
+          "relation": "official_domain_lead"
+        },
+        {
+          "id": "search-2-9",
+          "title": "OpenMV Cam RT1062 Industrial Smart AI Camera",
+          "url": "https://openelab.io/nl/products/openmv-cam-rt1062-industrial-smart",
+          "snippet": "OpenMV Cam RT1062 Industrial Smart AI Camera。OpenMV Cam RT1062 Industrial Smart AI Camera Trustpilot SKU: OpenMV-CamRT1062 OpenMV Cam RT1062 Industrial Smart AI Camera The OpenMV Cam is a small, low-power microcontroller board designed to simplify the implementation of machine vision applications in real-world scenarios. Rather than using C/C++, the board is programmed using high-level Python scripts via the MicroPython Operating System. This approach significantly eases the management of complex machine vision algorithm outputs and the handling of high-level data structures. Despite the simplified programming interface, users maintain total control over the hardware and its I/O pins. The platform allows you to trigger internal image and video capture based on external events, or conversel...",
+          "kind": "search_lead",
+          "source": "元宝 SearchPro 实时搜索（网页内容未自动核验）",
+          "query": "OpenMV Cam RT1062 I/O 3.3V tolerant 5V UART input forums engineering experience 实测",
+          "relation": "unverified_lead"
+        }
+      ],
+      "evidence_ids": [
+        "rt1062-official-hardware",
+        "rt1062-official-availability",
+        "rt1062-official-image-api"
+      ],
+      "suitability": {
+        "source": "user_reported",
+        "owned": false,
+        "adjustment": -9,
+        "risks": [
+          "需要新购，停产/欠货与交期不明会影响交付。",
+          "仅有 C 基础，需验证 MicroPython/MaixPy 的示例修改能力。"
+        ],
+        "advantages": [],
+        "missing_inputs": [],
+        "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+      },
+      "ranking_score": 78
+    }
+  ],
+  "claim": {
+    "text": "OpenMV Cam RT1062 可以安全直接接收5V UART数字信号。",
+    "hardware_id": "openmv-rt1062",
+    "field": "io_tolerance",
+    "source_url": "https://openmv.io/products/openmv-cam-rt",
+    "sensor": "OV5640",
+    "firmware": ""
+  },
+  "claim_checks": [
+    {
+      "claim": {
+        "text": "OpenMV Cam RT1062 可以安全直接接收5V UART数字信号。",
+        "hardware_id": "openmv-rt1062",
+        "field": "io_tolerance",
+        "source_url": "https://openmv.io/products/openmv-cam-rt",
+        "sensor": "OV5640",
+        "firmware": ""
+      },
+      "status": "contradicted",
+      "reason": "本型号官方标注 I/O 输入耐受上限 3.3V；直接输入 5V 超出声明范围，不能按安全兼容接线。",
+      "matching_conditions": [
+        "精确型号：OpenMV Cam RT1062（欠货可订购）",
+        "已匹配原文摘句，未进行硬件实验"
+      ],
+      "differing_conditions": [],
+      "evidence_ids": [
+        "rt1062-official-hardware"
+      ],
+      "missing": [],
+      "hardware_reproduced": false
+    }
+  ],
+  "source_reviews": [
+    {
+      "evidence_id": "rt1062-official-hardware",
+      "hardware_id": "openmv-rt1062",
+      "exact_model": "OpenMV Cam RT1062（欠货可订购）",
+      "url": "https://openmv.io/products/openmv-cam-rt",
+      "kind": "official",
+      "fields": [
+        "interfaces",
+        "logic_voltage_v",
+        "io_input_max_v"
+      ],
+      "status": "matched",
+      "excerpt": "All I/O pins output 3.3V and are 3.3V tolerant",
+      "locator": "产品页 Features / 生命周期段落",
+      "retrieved_at": "2026-10-24T18:46:02.024391+08:00",
+      "sha256": "67c5eb22c4451da14f18a5733e8d43edfae34b7811230d9bc27d73077490791d",
+      "review_method": "exact_catalog_url_and_bounded_phrase_match",
+      "reviewer": "RaceChip deterministic source checker v1",
+      "hardware_reproduced": false,
+      "error": null
+    },
+    {
+      "evidence_id": "rt1062-official-availability",
+      "hardware_id": "openmv-rt1062",
+      "exact_model": "OpenMV Cam RT1062（欠货可订购）",
+      "url": "https://openmv.io/products/openmv-cam-rt",
+      "kind": "official",
+      "fields": [
+        "caveats"
+      ],
+      "status": "matched",
+      "excerpt": "Available for Backorder",
+      "locator": "产品页 Features / 生命周期段落",
+      "retrieved_at": "2026-10-24T18:46:02.024391+08:00",
+      "sha256": "67c5eb22c4451da14f18a5733e8d43edfae34b7811230d9bc27d73077490791d",
+      "review_method": "exact_catalog_url_and_bounded_phrase_match",
+      "reviewer": "RaceChip deterministic source checker v1",
+      "hardware_reproduced": false,
+      "error": null
+    }
+  ],
+  "profile": {
+    "programming": "c",
+    "linux_experience": "none",
+    "available_hours": 6.0,
+    "existing_hardware": [],
+    "tools": [
+      "万用表"
+    ]
+  },
+  "signal_context": {
+    "direction": "to_board",
+    "voltage_v": 5.0,
+    "pin": "数字 UART RX（实际针脚编号待核对）",
+    "level_shifter": false
+  },
+  "suitability": [
+    {
+      "hardware_id": "openmv-h7-plus",
+      "source": "user_reported",
+      "owned": false,
+      "adjustment": -9,
+      "risks": [
+        "需要新购，停产/欠货与交期不明会影响交付。",
+        "仅有 C 基础，需验证 MicroPython/MaixPy 的示例修改能力。"
+      ],
+      "advantages": [],
+      "missing_inputs": [],
+      "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+    },
+    {
+      "hardware_id": "maix-bit-k210",
+      "source": "user_reported",
+      "owned": false,
+      "adjustment": -3,
+      "risks": [
+        "仅有 C 基础，需验证 MicroPython/MaixPy 的示例修改能力。"
+      ],
+      "advantages": [],
+      "missing_inputs": [],
+      "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+    },
+    {
+      "hardware_id": "esp32-s3-eye",
+      "source": "user_reported",
+      "owned": false,
+      "adjustment": 0,
+      "risks": [],
+      "advantages": [],
+      "missing_inputs": [],
+      "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+    },
+    {
+      "hardware_id": "raspberry-pi-5",
+      "source": "user_reported",
+      "owned": false,
+      "adjustment": -10,
+      "risks": [
+        "用户自述无 Linux 经验，需先验证系统、相机和依赖安装。",
+        "剩余时间小于产品规则阈值8小时，先做工具链冒烟；这不是实测工时预测。"
+      ],
+      "advantages": [],
+      "missing_inputs": [],
+      "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+    },
+    {
+      "hardware_id": "openmv-rt1062",
+      "source": "user_reported",
+      "owned": false,
+      "adjustment": -9,
+      "risks": [
+        "需要新购，停产/欠货与交期不明会影响交付。",
+        "仅有 C 基础，需验证 MicroPython/MaixPy 的示例修改能力。"
+      ],
+      "advantages": [],
+      "missing_inputs": [],
+      "rule_note": "适配只改变同技术状态内排序，不修改硬件事实或消除fail/unknown。"
+    }
+  ],
+  "verification_actions": [
+    {
+      "hardware_id": "openmv-rt1062",
+      "title": "先核对电气条件，再运行最小视觉示例",
+      "prerequisites": [
+        "精确板型与修订版",
+        "与信号方向对应的引脚图",
+        "可用电平转换/测量工具"
+      ],
+      "steps": [
+        "核对供电输入、信号输出和输入耐压；方向或引脚不明时不直接接线。",
+        "先用厂商示例读取一帧图像，再启用所需算法。",
+        "记录传感器、固件、分辨率、曝光和目标条件，测完整算法与通信链路。"
+      ],
+      "pass_condition": "电气条件有对应原文，示例可运行，完整链路达到本人赛题的已录入阈值。",
+      "failure_next_step": "停止不兼容接线；补转换电路或更换候选，降低分辨率后重新测量而非沿用他人FPS。",
+      "source_url": "https://openmv.io/products/openmv-cam-rt",
+      "suggested_timebox_minutes": 30,
+      "timebox_note": "建议验证时间预算，不是交付耗时保证。",
+      "executed": false
+    }
+  ],
+  "summary": "1 项通过已录入条件，3 项待核验，1 项存在冲突。 可优先验证通过项的样机。",
+  "warnings": [
+    "实时搜索结果是待核验线索，P0 不用网页摘要覆盖已核验的硬件参数；社区经验不构成规格保证。",
+    "评分为人工权重的解释性排序，不是成功概率、竞赛成绩或实时性能评测。",
+    "推荐仅覆盖已建库的视觉板卡；原题合规性、供货状态、完整系统成本与样机性能需用户核验。"
+  ],
+  "change_summary": {
+    "changes": [],
+    "reason": "未提供上次输入，无前后比较。",
+    "reused_evidence": false,
+    "new_search_requests": 3
+  },
+  "follow_up_questions": []
+}
+
+```

@@ -1,0 +1,98 @@
+{
+  "verified_at": "2026-10-25T12:39:06.382009+08:00",
+  "type": "offline_mock_acceptance",
+  "scenarios": [
+    {
+      "scenario": "case-a-electrical",
+      "http_status": 200,
+      "summary": "1 项通过已录入条件，3 项待核验，1 项存在冲突。 可优先验证通过项的样机。",
+      "mode": "mock",
+      "request_count": 0,
+      "verdicts": {
+        "openmv-h7-plus": "pass",
+        "maix-bit-k210": "unknown",
+        "esp32-s3-eye": "unknown",
+        "raspberry-pi-5": "unknown",
+        "openmv-rt1062": "fail"
+      }
+    },
+    {
+      "scenario": "case-b-experience",
+      "http_status": 200,
+      "summary": "0 项通过已录入条件，5 项待核验，0 项存在冲突。 当前没有可无条件推荐的候选，请补充证据或澄清条件。",
+      "mode": "mock",
+      "request_count": 0,
+      "verdicts": {
+        "openmv-rt1062": "unknown",
+        "openmv-h7-plus": "unknown",
+        "maix-bit-k210": "unknown",
+        "esp32-s3-eye": "unknown",
+        "raspberry-pi-5": "unknown"
+      }
+    },
+    {
+      "scenario": "case-c-lifecycle",
+      "http_status": 200,
+      "summary": "2 项通过已录入条件，3 项待核验，0 项存在冲突。 可优先验证通过项的样机。",
+      "mode": "mock",
+      "request_count": 0,
+      "verdicts": {
+        "openmv-rt1062": "pass",
+        "openmv-h7-plus": "pass",
+        "maix-bit-k210": "unknown",
+        "esp32-s3-eye": "unknown",
+        "raspberry-pi-5": "unknown"
+      }
+    },
+    {
+      "scenario": "synthetic-color-line",
+      "http_status": 200,
+      "summary": "0 项通过已录入条件，5 项待核验，0 项存在冲突。 当前没有可无条件推荐的候选，请补充证据或澄清条件。",
+      "mode": "mock",
+      "request_count": 0,
+      "verdicts": {
+        "openmv-rt1062": "unknown",
+        "openmv-h7-plus": "unknown",
+        "maix-bit-k210": "unknown",
+        "raspberry-pi-5": "unknown",
+        "esp32-s3-eye": "unknown"
+      }
+    },
+    {
+      "scenario": "synthetic-apriltag",
+      "http_status": 200,
+      "summary": "0 项通过已录入条件，5 项待核验，0 项存在冲突。 当前没有可无条件推荐的候选，请补充证据或澄清条件。",
+      "mode": "mock",
+      "request_count": 0,
+      "verdicts": {
+        "openmv-rt1062": "unknown",
+        "openmv-h7-plus": "unknown",
+        "maix-bit-k210": "unknown",
+        "raspberry-pi-5": "unknown",
+        "esp32-s3-eye": "unknown"
+      }
+    },
+    {
+      "scenario": "synthetic-budget-conflict",
+      "http_status": 200,
+      "summary": "0 项通过已录入条件，3 项待核验，2 项存在冲突。 当前没有可无条件推荐的候选，请补充证据或澄清条件。",
+      "mode": "mock",
+      "request_count": 0,
+      "verdicts": {
+        "maix-bit-k210": "unknown",
+        "raspberry-pi-5": "unknown",
+        "esp32-s3-eye": "unknown",
+        "openmv-rt1062": "fail",
+        "openmv-h7-plus": "fail"
+      }
+    }
+  ],
+  "missing_key_honest_error": true,
+  "real_searchpro_calls_performed": 0,
+  "not_covered_by_this_offline_run": [
+    "本记录仅为离线验收；真实查询以artifacts/live/manifest.json为准",
+    "硬件实测",
+    "公开部署",
+    "正式比赛提交"
+  ]
+}

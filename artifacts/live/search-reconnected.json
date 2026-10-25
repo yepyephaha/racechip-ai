@@ -1,0 +1,14 @@
+{
+  "status": "ok",
+  "auth_mode": "tc3",
+  "request_count": 1,
+  "result_count": 10,
+  "request_ids": [
+    "fbb77a23-1f36-4273-8fe4-930e9ce8a8e4"
+  ],
+  "error": null,
+  "model_settings_retained": true,
+  "verified_at": "2026-10-25T09:18:17.234567+08:00",
+  "credential_storage": "existing_user_csv_reference_only",
+  "model_api_requests": 0
+}
